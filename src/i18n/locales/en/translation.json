@@ -1,0 +1,94 @@
+
+{
+  "auth": {
+    "sidebar": {
+      "title": "Smart Medical Assistant",
+      "titleHighlight": "For Doctors",
+      "description": "An all-in-one platform that helps doctors manage medical records, track cases, and get instant clinical support.",
+      "features": [
+        {
+          "title": "Report ready immediately"
+        },
+        {
+          "title": "Saving documentation time"
+        },
+        {
+          "title": "Patient Data Protection"
+        }
+      ],
+      "quote": "Medicine is an art that requires precision and care. We're here to make your work easier and more efficient."
+    },
+    "welcomeBack": "Welcome back",
+    "welcomeSubtitle": "Sign in to continue to your dashboard",
+    "email": "Email address",
+    "emailPlaceholder": "doctor@hospital.com",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+    "login": "Sign in",
+    "loggingIn": "Signing in...",
+    "or": "or",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create a new account",
+    "errors": {
+      "emailInvalid": "Invalid email address",
+      "emailRequired": "Email is required",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordRequired": "Password is required",
+      "generic": "Something went wrong while signing in. Please check your details and try again"
+    },
+    "register": {
+      "title": "Create a new account",
+      "subtitle": "Join MedAssist and get complete support for pregnancy follow-up",
+      "steps": {
+        "personalInfo": "Personal information",
+        "professionalInfo": "Professional information"
+      },
+      "firstName": "First name",
+      "firstNamePlaceholder": "Zain",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Rahmoun",
+      "phone": "Phone number",
+      "phonePlaceholder": "9xx xxx xxx",
+      "specialty": "Medical specialty",
+      "specialtyPlaceholder": "Select specialty",
+      "specialties": [
+        "Obstetrics & Gynecology",
+        "Fetal & Neonatal Medicine",
+        "Pregnancy Nutrition",
+        "Other"
+      ],
+      "licenseNumber": "Medical license number",
+      "licenseNumberPlaceholder": "MED-XXXXXXX",
+      "clinicName": "Hospital / Clinic (optional)",
+      "clinicNamePlaceholder": "Maternity Specialist Hospital",
+      "confirmPassword": "Confirm password",
+      "passwordMin": "Password must be at least 8 characters",
+      "agreeTermsPrefix": "I agree to the",
+      "termsLink": "Terms & Conditions",
+      "and": "and",
+      "privacyLink": "Privacy Policy",
+      "next": "Next",
+      "back": "Back",
+      "createAccount": "Create account",
+      "creatingAccount": "Creating account...",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "errors": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "phoneRequired": "Phone number is required",
+        "specialtyRequired": "Please select your specialty",
+        "licenseRequired": "Medical license number is required",
+        "confirmPasswordRequired": "Please confirm your password",
+        "confirmPasswordMismatch": "Passwords do not match",
+        "termsRequired": "You must agree to the terms to continue",
+        "generic": "Something went wrong while creating your account, please try again"
+      }
+    }
+  },
+  "common": {
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية"
+  }
+}

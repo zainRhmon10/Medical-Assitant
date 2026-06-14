@@ -1,0 +1,94 @@
+
+{
+  "auth": {
+    "sidebar": {
+      "title": "المساعد الطبي",
+      "titleHighlight": "الذكي للأطباء",
+      "description": "منصة متكاملة تساعد الأطباء في إدارة الملفات الطبية، تتبع الحالات والحصول على دعم طبي فوري.",
+      "features": [
+        {
+          "title": "تقرير جاهز فوراً"
+        },
+        {
+          "title": "توفير وقت التوثيق"
+        },
+        {
+          "title": "حماية بيانات المرضى"
+        }
+      ],
+      "quote": "الطب فن يطلب الدقة والرعاية. نحن هنا لنجعل عملك أسهل وأكثر كفاءة."
+    },
+    "welcomeBack": "مرحباً بعودتك",
+    "welcomeSubtitle": "سجّل دخولك للمتابعة إلى لوحة التحكم",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "doctor@hospital.com",
+    "password": "كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني",
+    "login": "تسجيل الدخول",
+    "loggingIn": "جارٍ تسجيل الدخول...",
+    "or": "أو",
+    "noAccount": "ليس لديك حساب؟",
+    "createAccount": "إنشاء حساب جديد",
+    "errors": {
+      "emailInvalid": "البريد الإلكتروني غير صالح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "passwordMin": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "generic": "حدث خطأ أثناء تسجيل الدخول، تحقق من البيانات وحاول مرة أخرى"
+    },
+    "register": {
+      "title": "إنشاء حساب جديد",
+      "subtitle": "انضم إلى منصة MedAssist واحصل على دعم متكامل لمتابعة الحمل",
+      "steps": {
+        "personalInfo": "المعلومات الشخصية",
+        "professionalInfo": "معلومات مهنية"
+      },
+      "firstName": "الاسم الأول",
+      "firstNamePlaceholder": "زين",
+      "lastName": "اسم العائلة",
+      "lastNamePlaceholder": "رحمون",
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "9xx xxx xxx",
+      "specialty": "التخصص الطبي",
+      "specialtyPlaceholder": "اختر التخصص",
+      "specialties": [
+        "أمراض النسائية والتوليد",
+        "طب الأجنة وحديثي الولادة",
+        "التغذية وصحة الحمل",
+        "تخصص آخر"
+      ],
+      "licenseNumber": "رقم الترخيص الطبي",
+      "licenseNumberPlaceholder": "MED-XXXXXXX",
+      "clinicName": "المستشفى / العيادة (اختياري)",
+      "clinicNamePlaceholder": "مستشفى الولادة التخصصي",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "passwordMin": "كلمة المرور يجب أن تكون 8 أحرف على الأقل",
+      "agreeTermsPrefix": "أوافق على",
+      "termsLink": "الشروط والأحكام",
+      "and": "و",
+      "privacyLink": "سياسة الخصوصية",
+      "next": "التالي",
+      "back": "رجوع",
+      "createAccount": "إنشاء الحساب",
+      "creatingAccount": "جارٍ إنشاء الحساب...",
+      "haveAccount": "لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول",
+      "errors": {
+        "firstNameRequired": "الاسم الأول مطلوب",
+        "lastNameRequired": "اسم العائلة مطلوب",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "specialtyRequired": "يرجى اختيار التخصص",
+        "licenseRequired": "رقم الترخيص الطبي مطلوب",
+        "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+        "confirmPasswordMismatch": "كلمتا المرور غير متطابقتين",
+        "termsRequired": "يجب الموافقة على الشروط والأحكام للاستمرار",
+        "generic": "حدث خطأ أثناء إنشاء الحساب، حاول مرة أخرى"
+      }
+    }
+  },
+  "common": {
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية"
+  }
+}
