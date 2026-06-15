@@ -37,6 +37,10 @@
       "passwordRequired": "Password is required",
       "generic": "Something went wrong while signing in. Please check your details and try again"
     },
+
+
+
+
     "register": {
       "title": "Create a new account",
       "subtitle": "Join MedAssist and get complete support for pregnancy follow-up",
@@ -85,7 +89,43 @@
         "termsRequired": "You must agree to the terms to continue",
         "generic": "Something went wrong while creating your account, please try again"
       }
-    }
+    },
+    
+    "verify": {
+      "title": "Verify your email",
+      "subtitle": "Enter the verification code sent to your email",
+      "sentTo": "We sent a verification code to",
+      "codeLabel": "Verification code",
+      "verifyButton": "Verify code",
+      "verifying": "Verifying...",
+      "noCode": "Didn't receive the code?",
+      "resend": "Resend code",
+      "resendIn": "Resend in {{seconds}}s",
+      "backToLogin": "Back to sign in",
+      "errors": {
+        "codeIncomplete": "Please enter the full 6-digit code",
+        "codeInvalid": "Invalid verification code, please try again",
+        "resendFailed": "Couldn't resend the code, please try again"
+      }
+    },
+
+
+    "forgetPass": {
+  "title": "Forgot Password?",
+  "subtitle": "Enter your email address and we'll send you a reset link.",
+  "sendTo": "We'll send a link to your email to reset your password. Make sure you enter the email associated with your account.",
+  "Mail": "Email Address",
+  "sendButton": "Send Reset Link",
+  "back" : "Back to login"
+},
+"resetPass": {
+  "title": "Create a New Password",
+  "subtitle": "Enter a strong password to protect your account.",
+  "titleF1": "New Password",
+  "titleF2": "Confirm Password",
+  "sendButton": "Save New Password",
+  "back": "Back to Sign In"
+}
   },
   "common": {
     "switchToEnglish": "English",

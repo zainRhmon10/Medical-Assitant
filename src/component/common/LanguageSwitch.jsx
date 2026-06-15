@@ -2,10 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Languages } from "lucide-react";
 
-/**
- * زر لتبديل اللغة بين العربية والإنكليزية
- * يخزّن الاختيار في localStorage ويبدّل اتجاه الصفحة تلقائياً (تم في src/i18n/config.js)
- */
 const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation();
 
