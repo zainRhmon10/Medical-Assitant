@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { Mail, Eye, EyeOff, ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-
 const LoginForm = () => {
   const { t, i18n } = useTranslation();
   const [showPassword, setShowPassword] = useState(false);
@@ -61,8 +60,8 @@ const LoginForm = () => {
               onBlur={formik.handleBlur}
               className={`w-full rounded-lg border bg-white px-4 py-2.5 pe-11 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/30 ${
                 formik.touched.email && formik.errors.email
-                  ? "border-red-300"
-                  : "border-slate-200 focus:border-[#0b7a9e]"
+                  ? "border-danger"
+                  : "border-slate-200 focus:border-primary"
               }`}
             />
             <Mail className="absolute end-3.5 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-slate-400" />
@@ -80,9 +79,12 @@ const LoginForm = () => {
             >
               {t("auth.password")}
             </label>
-            <a href="#" className="text-xs text-[#0b7a9e] hover:underline">
+            <Link
+              to="/forget-password"
+              className="text-xs text-primary hover:underline"
+            >
               {t("auth.forgotPassword")}
-            </a>
+            </Link>
           </div>
           <div className="relative">
             <input
@@ -95,8 +97,8 @@ const LoginForm = () => {
               onBlur={formik.handleBlur}
               className={`w-full rounded-lg border bg-white px-4 py-2.5 ps-11 pe-4 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/30 ${
                 formik.touched.password && formik.errors.password
-                  ? "border-red-300"
-                  : "border-slate-200 focus:border-[#0b7a9e]"
+                  ? "border-danger"
+                  : "border-slate-200 focus:border-primary"
               }`}
             />
             <button
@@ -135,7 +137,7 @@ const LoginForm = () => {
 
         <button
           type="submit"
-          className="flex w-full items-center justify-center gap-2 rounded-lg  py-3 text-sm font-semibold bg-[#0b7a9e] text-white transition hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
+          className="flex w-full items-center justify-center gap-2 rounded-lg  py-3 text-sm font-semibold bg-primary text-white transition hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
         >
           {t("auth.login")}
         </button>
@@ -149,7 +151,12 @@ const LoginForm = () => {
 
       <p className="text-center text-sm text-slate-500">
         {t("auth.noAccount")}{" "}
-        <Link to="/register" className="font-medium text-[#0b7a9e] hover:underline">
+
+        <Link
+          to="/register"
+          className="font-medium text-primary hover:underline"
+        >
+
           {t("auth.createAccount")}
         </Link>
       </p>

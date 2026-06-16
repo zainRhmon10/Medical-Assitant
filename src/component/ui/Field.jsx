@@ -8,8 +8,8 @@ const FormField = (props) => {
   const baseClasses =
     "w-full rounded-xl border bg-white px-4 py-3 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/20";
   const borderClasses = hasError
-    ? "border-red-400"
-    : "border-slate-200 focus:border-teal-500";
+    ? "border-danger"
+    : "border-slate-200 focus:border-primary";
 
   const isLtrInRtl = props.isRtl && props.dir === "ltr";
 

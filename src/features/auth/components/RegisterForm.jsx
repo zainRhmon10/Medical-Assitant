@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import {
   Mail,
   Lock,
@@ -18,7 +19,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 import FormField from "../../../component/ui/Field";
-import { Link } from "react-router-dom";
 
 const STEP1_FIELDS = ["firstName", "lastName", "email", "phone"];
 
@@ -110,7 +110,7 @@ const RegisterForm = () => {
           <div
             className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-sm font-medium transition-colors ${
               step >= s
-                ? "bg-[#0b7a9e] text-white"
+                ? "bg-primary text-white"
                 : "bg-slate-100 text-slate-400"
             }`}
           >
@@ -218,19 +218,18 @@ const RegisterForm = () => {
             <motion.button
               type="submit"
               whileTap={{ scale: 0.98 }}
-              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-[#0b7a9e] py-3 text-sm font-semibold text-white transition hover:bg-[#0B4658]"
+              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-semibold text-white transition hover:cursor-pointer"
             >
               {t("auth.register.next")}
               <NextIcon className="h-4 w-4" />
             </motion.button>
 
-            {/* الانتقال ل  تسجيل الدخول */}
-          <p className="text-center text-sm text-slate-500">
-            {t("auth.register.haveAccount")}{" "}
-            <Link to="/login" className="font-medium text-[#0b7a9e] hover:underline">
-              {t("auth.register.signIn")}
-            </Link>
-          </p>
+            <p className="text-center text-sm text-slate-500">
+              {t("auth.register.haveAccount")}{" "}
+              <Link to="/" className="font-medium text-primary hover:underline">
+                {t("auth.register.signIn")}
+              </Link>
+            </p>
           </motion.form>
         ) : (
           <motion.form
@@ -258,7 +257,7 @@ const RegisterForm = () => {
                   onBlur={formik.handleBlur}
                   className={`w-full appearance-none rounded-xl border bg-white px-4 py-3 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/20 pe-10 ps-9 ${
                     formik.touched.specialty && formik.errors.specialty
-                      ? "border-red-400"
+                      ? "border-danger"
                       : "border-slate-200 focus:border-teal-500"
                   }`}
                 >
@@ -318,7 +317,7 @@ const RegisterForm = () => {
                   {[1, 2, 3, 4].map((lvl) => (
                     <div
                       key={lvl}
-                      className={`h-1 flex-1 rounded-full ${passwordStrength >= lvl ? "bg-[#0b7a9e]" : "bg-slate-100"}`}
+                      className={`h-1 flex-1 rounded-full ${passwordStrength >= lvl ? "bg-primary" : "bg-slate-100"}`}
                     />
                   ))}
                 </div>
@@ -355,14 +354,14 @@ const RegisterForm = () => {
               <button
                 type="button"
                 onClick={goBack}
-                className="flex-1 rounded-xl border border-slate-200 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+                className="flex-1 rounded-xl border border-slate-200 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 cursor-pointer"
               >
                 {t("auth.register.back")}
               </button>
               <motion.button
                 type="submit"
                 whileTap={{ scale: 0.98 }}
-                className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#0b7a9e] py-3 text-sm font-semibold text-white transition hover:bg-[#0B4658]"
+                className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-semibold text-white transition hover:cursor-pointer"
               >
                 {t("auth.register.createAccount")}
               </motion.button>
