@@ -1,9 +1,8 @@
-
 {
   "auth": {
     "sidebar": {
-      "title": "المساعد الطبي",
-      "titleHighlight": "الذكي للأطباء",
+      "title": "مساعد الطبيب",
+      "titleHighlight": "الذكاء الاصطناعي",
       "description": "منصة متكاملة تساعد الأطباء في إدارة الملفات الطبية، تتبع الحالات والحصول على دعم طبي فوري.",
       "features": [
         {
@@ -27,6 +26,7 @@
     "rememberMe": "تذكرني",
     "login": "تسجيل الدخول",
     "loggingIn": "جارٍ تسجيل الدخول...",
+    "logout": "تسجيل الخروج",
     "or": "أو",
     "noAccount": "ليس لديك حساب؟",
     "createAccount": "إنشاء حساب جديد",
@@ -87,6 +87,106 @@
       }
     }
   },
+
+  "dashboard": {
+    "stats": {
+      "warnings": "تحذيرات",
+      "alert": "تنبيه",
+      "approvedToday": "معتمدة اليوم",
+      "sessions": "جلسات",
+      "inProgress": "قيد المعالجة",
+      "session": "جلسة",
+      "todaySessions": "جلسات اليوم",
+      "newSessions": "جديدة",
+      "totalPatients": "إجمالي المرضى",
+      "appointmentsToday": "مواعيد اليوم",
+      "revenue": "الصافي المالي",
+      "occupancy": "معدل الإشغال السريري"
+    },
+    "sessions": {
+      "title": "الجلسات",
+      "subtitle": "إدارة ومراقبة جميع جلساتك الطبية",
+      "sessionNumber": "رقم الجلسة",
+      "patient": "المريض",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "status": "الحالة",
+      "actions": "الإجراءات",
+      "searchPatient": "البحث باسم المريض...",
+      "allCases": "جميع الحالات",
+      "pending": "بانتظار المراجعة",
+      "processing": "قيد المعالجة",
+      "approved": "معتمدة",
+      "pendingReview": "بانتظار المراجعة",
+      "inTreatment": "قيد المعالجة",
+      "newSession": "جلسة جديدة"
+    },
+    "charts": {
+      "weeklyActivity": "نشاط الأسبوع",
+      "analytics": "تحليلات التدفق الطبي والأرباح",
+      "viewReport": "تقرير مفصل",
+      "distribution": "توزيع الحالات المرضية"
+    },
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "newSession": "بدء جلسة جديدة",
+      "viewSessions": "عرض الجلسات"
+    },
+    "recentSessions": {
+      "title": "الجلسات الحديثة",
+      "subtitle": "آخر الجلسات",
+      "viewAll": "عرض الكل"
+    },
+    "menu": {
+      "overview": "المؤشرات العامة",
+      "appointments": "المواعيد والجدول",
+      "patients": "إدارة المرضى",
+      "sessions": "الجلسات",
+      "newSession": "جلسة جديدة",
+      "reports": "التقارير المعتمدة",
+      "settings": "الإعدادات"
+    },
+    "common": {
+      "emptyFeature": "هذه الشاشة تحت التطوير البرمجي حالياً سيتم ربطها قريباً."
+    },
+    "profile": {
+      "doctorName": "د. أحمد محمد",
+      "doctorTitle": "طبيب ممارس",
+      "doctorInitial": "د"
+    },
+    "reports": {
+      "title": "التقارير المعتمدة",
+      "subtitle": "جميع التقارير الطبية المعتمدة",
+      "approved": "معتمدة",
+      "viewAll": "عرض الكل",
+      "backToSessions": "العودة للتقارير",
+      "reportTitle": "التقرير الطبي",
+      "reportSubtitle": "مساعد الطبيب – نظام التوثيق الذكي",
+      "approvedOn": "معتمد بتاريخ",
+      "downloadPDF": "تحميل PDF",
+      "copyText": "نسخ النص",
+      "patientName": "اسم المريض",
+      "sessionNumber": "رقم الجلسة",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "symptoms": "أعراض",
+      "diagnosis": "تشخيص",
+      "treatmentPlan": "خطة علاج",
+      "soapSummary": "ملخص SOAP",
+      "reportDisclaimer": "هذا التقرير تم إنشاؤه بواسطة نظام مساعد الطبيب بالذكاء الاصطناعي وتمت مراجعته والاعتماد من قبل الطبيب.",
+      "doctorSignature": "توقيع الطبيب"
+    }
+  },
+  "days": {
+    "sat": "سب",
+    "sun": "أحد",
+    "mon": "إثن",
+    "tue": "ثل",
+    "wed": "أرب",
+    "thu": "خم",
+    "fri": "جم"
+  },
+
   "common": {
     "switchToEnglish": "English",
     "switchToArabic": "العربية"

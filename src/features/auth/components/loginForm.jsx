@@ -3,6 +3,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useTranslation } from "react-i18next";
 import { Mail, Eye, EyeOff, ArrowLeft, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 const LoginForm = () => {
   const { t, i18n } = useTranslation();
@@ -147,9 +149,9 @@ const LoginForm = () => {
 
       <p className="text-center text-sm text-slate-500">
         {t("auth.noAccount")}{" "}
-        <a href="#" className="font-medium text-[#0b7a9e] hover:underline">
+        <Link to="/register" className="font-medium text-[#0b7a9e] hover:underline">
           {t("auth.createAccount")}
-        </a>
+        </Link>
       </p>
     </div>
   );

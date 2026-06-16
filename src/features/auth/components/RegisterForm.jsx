@@ -18,6 +18,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import FormField from "../../../component/ui/Field";
+import { Link } from "react-router-dom";
 
 const STEP1_FIELDS = ["firstName", "lastName", "email", "phone"];
 
@@ -224,15 +225,12 @@ const RegisterForm = () => {
             </motion.button>
 
             {/* الانتقال ل  تسجيل الدخول */}
-            <p className="text-center text-sm text-slate-500">
-              {t("auth.register.haveAccount")}{" "}
-              <a
-                href="#"
-                className="font-medium text-[#0b7a9e] hover:underline"
-              >
-                {t("auth.register.signIn")}
-              </a>
-            </p>
+          <p className="text-center text-sm text-slate-500">
+            {t("auth.register.haveAccount")}{" "}
+            <Link to="/login" className="font-medium text-[#0b7a9e] hover:underline">
+              {t("auth.register.signIn")}
+            </Link>
+          </p>
           </motion.form>
         ) : (
           <motion.form
