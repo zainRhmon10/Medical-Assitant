@@ -8,13 +8,11 @@ const OverviewTab = () => {
   const navigate = useNavigate(); 
   const isRTL = i18n.language === "ar";
 
-  // ✅ دالة لترجمة الأرقام حسب اللغة
   const formatNumber = (num) => {
     const locale = isRTL ? 'ar-SA' : 'en-US';
     return new Intl.NumberFormat(locale).format(num);
   };
 
-  // ✅ دالة لترجمة التاريخ حسب اللغة
   const formatDate = (date) => {
     const locale = isRTL ? 'ar-SA' : 'en-US';
     return new Intl.DateTimeFormat(locale, {
@@ -30,8 +28,8 @@ const OverviewTab = () => {
       value: formatNumber(5), 
       subtitle: t("dashboard.stats.newSessions", isRTL ? "جديدة" : "New"),
       icon: Calendar, 
-      bgColor: "bg-[#0b7a9e]/10",
-      textColor: "text-[#0b7a9e]"
+      bgColor: "bg-primary/10",
+      textColor: "text-primary"
     },
     { 
       title: t("dashboard.stats.inProgress", isRTL ? "قيد المعالجة" : "In Progress"), 
@@ -118,7 +116,7 @@ const OverviewTab = () => {
 
   return (
     <div className="space-y-6">
-      {/* شبكة البطاقات الإحصائية الأربعة */}
+      {/* شبكة البطاقات الإحصائية */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, idx) => (
           <div 
@@ -157,7 +155,6 @@ const OverviewTab = () => {
               >
                 <div>
                   <h4 className="text-sm font-semibold text-slate-800">{session.name}</h4>
-                  {/* ✅ استخدام formatDate لعرض التاريخ */}
                   <p className="text-xs text-slate-400 mt-0.5">{formatDate(session.date)}</p>
                 </div>
                 <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium ${getStatusStyle(session.status)}`}>
@@ -168,10 +165,9 @@ const OverviewTab = () => {
             ))}
           </div>
           <div className="p-4 border-t border-slate-100">
-            {/* ✅ عند الضغط على عرض الكل ينتقل إلى صفحة الجلسات */}
             <button 
               onClick={() => navigate("/dashboard/appointments")}
-              className={`text-sm font-medium text-[#0b7a9e] hover:text-[#096684] transition-colors flex items-center gap-1 ${isRTL ? 'justify-start' : 'justify-end'} cursor-pointer`}
+              className={`text-sm font-medium text-primary hover:text-primary-dark transition-colors flex items-center gap-1 ${isRTL ? 'justify-start' : 'justify-end'} cursor-pointer`}
             >
               {t("dashboard.recentSessions.viewAll", isRTL ? "عرض الكل" : "View All")}
               <Eye className={`h-4 w-4 ${isRTL ? 'rotate-180' : ''}`} />
@@ -181,7 +177,6 @@ const OverviewTab = () => {
 
         {/* الرسم البياني والإجراءات السريعة */}
         <div className="lg:col-span-1 space-y-6">
-          {/* نشاط الأسبوع */}
           <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
             <h3 className="text-base font-bold text-slate-800 mb-6 text-center">
               {t("dashboard.charts.weeklyActivity", isRTL ? "نشاط الأسبوع" : "Weekly Activity")}
@@ -190,7 +185,7 @@ const OverviewTab = () => {
               {chartData.map((item, idx) => (
                 <div key={idx} className="flex-1 flex flex-col items-center gap-2">
                   <div 
-                    className="w-full bg-[#0b7a9e] rounded-t-md transition-all hover:bg-[#096684] cursor-pointer"
+                    className="w-full bg-primary rounded-t-md transition-all hover:bg-primary-dark cursor-pointer"
                     style={{ 
                       height: `${Math.max((item.value / maxValue) * 100, 5)}%`,
                       minHeight: '8px'
@@ -203,7 +198,6 @@ const OverviewTab = () => {
             </div>
           </div>
 
-          {/* إجراءات سريعة */}
           <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
             <h3 className="text-base font-bold text-slate-800 mb-4 text-center">
               {t("dashboard.quickActions.title", isRTL ? "إجراءات سريعة" : "Quick Actions")}
@@ -211,7 +205,7 @@ const OverviewTab = () => {
             <div className="space-y-3">
               <button 
                 onClick={() => navigate("/dashboard/new-session")}
-                className="w-full py-3 px-4 bg-[#0b7a9e] hover:bg-[#096684] text-white rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3 px-4 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
               >
                 <Mic className="h-5 w-5" />
                 {t("dashboard.quickActions.newSession", isRTL ? "بدء جلسة جديدة" : "Start New Session")}

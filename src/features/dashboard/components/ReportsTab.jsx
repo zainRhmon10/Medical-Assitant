@@ -8,7 +8,6 @@ const ReportsTab = () => {
   const navigate = useNavigate();
   const isRTL = i18n.language === "ar";
 
-  // ✅ دالة لترجمة التاريخ حسب اللغة
   const formatDate = (date) => {
     const locale = isRTL ? 'ar-SA' : 'en-US';
     return new Intl.DateTimeFormat(locale, {
@@ -22,7 +21,7 @@ const ReportsTab = () => {
     { 
       id: "SESS-2026-00140", 
       patientName: isRTL ? "خالد محمود" : "Khaled Mahmoud", 
-      date: new Date(2026, 5, 12), // يونيو 12, 2026
+      date: new Date(2026, 5, 12),
       status: "approved",
       statusText: t("dashboard.reports.approved", "معتمدة")
     },
@@ -62,7 +61,7 @@ const ReportsTab = () => {
               onClick={() => navigate(`/dashboard/reports/${report.id}`)}
             >
               <div className="flex items-center gap-4 flex-1">
-                <div className="h-12 w-12 rounded-xl bg-[#0b7a9e]/10 text-[#0b7a9e] flex items-center justify-center shrink-0">
+                <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                   <FileText className="h-5 w-5" />
                 </div>
 
@@ -70,7 +69,6 @@ const ReportsTab = () => {
                   <h3 className="text-sm font-bold text-slate-800 mb-1">
                     {report.patientName}
                   </h3>
-                  {/* ✅ استخدام formatDate لعرض التاريخ */}
                   <div className="flex items-center gap-2 text-xs text-slate-500">
                     <span className="font-mono">{report.id}</span>
                     <span>•</span>
@@ -89,7 +87,7 @@ const ReportsTab = () => {
 
                 <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   <button 
-                    className="p-2 rounded-lg text-slate-400 hover:text-[#0b7a9e] hover:bg-[#0b7a9e]/5 transition-colors"
+                    className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors"
                     onClick={(e) => {
                       e.stopPropagation();
                       navigate(`/dashboard/reports/${report.id}`);
@@ -98,7 +96,7 @@ const ReportsTab = () => {
                     <Eye className="h-4 w-4" />
                   </button>
                   <button 
-                    className="p-2 rounded-lg text-slate-400 hover:text-[#0b7a9e] hover:bg-[#0b7a9e]/5 transition-colors"
+                    className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <Download className="h-4 w-4" />

@@ -40,7 +40,7 @@ const PatientsTab = () => {
                 <td className="px-5 py-3.5 text-slate-500">{patient.lastVisit}</td>
                 <td className="px-5 py-3.5 text-center">
                   <div className="flex items-center justify-center gap-2">
-                    <button className="p-1.5 rounded-lg border border-slate-100 bg-white text-slate-400 hover:text-[#0b7a9e] hover:border-[#0b7a9e]/20 transition-colors">
+                    <button className="p-1.5 rounded-lg border border-slate-100 bg-white text-slate-400 hover:text-primary hover:border-primary/20 transition-colors">
                       <Eye className="h-3.5 w-3.5" />
                     </button>
                     <button className="p-1.5 rounded-lg border border-slate-100 bg-white text-slate-400 hover:text-amber-500 hover:border-amber-100 transition-colors">

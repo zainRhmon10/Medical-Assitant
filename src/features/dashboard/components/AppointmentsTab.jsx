@@ -6,7 +6,6 @@ const AppointmentsTab = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
-  // ✅ دالة لترجمة التاريخ حسب اللغة
   const formatDate = (date) => {
     const locale = isRTL ? 'ar-SA' : 'en-US';
     return new Intl.DateTimeFormat(locale, {
@@ -16,7 +15,6 @@ const AppointmentsTab = () => {
     }).format(date);
   };
 
-  // ✅ دالة لترجمة الأرقام
   const formatNumber = (num) => {
     const locale = isRTL ? 'ar-SA' : 'en-US';
     return new Intl.NumberFormat(locale).format(num);
@@ -110,19 +108,18 @@ const AppointmentsTab = () => {
 
       {/* Toolbar */}
       <div className="flex flex-col sm:flex-row gap-3 justify-between items-start sm:items-center">
-        {/* اليمين: حقل البحث + فلتر الحالات */}
         <div className="flex gap-3 w-full sm:w-auto order-1 sm:order-1">
           <div className="relative flex-1 sm:flex-none sm:min-w-[280px]">
             <input
               type="text"
               placeholder={t("dashboard.sessions.searchPatient", "البحث باسم المريض...")}
-              className={`w-full px-4 py-2.5 ${isRTL ? 'pr-10' : 'pl-10'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:border-[#0b7a9e] focus:ring-2 focus:ring-[#0b7a9e]/20`}
+              className={`w-full px-4 py-2.5 ${isRTL ? 'pr-10' : 'pl-10'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20`}
             />
             <Search className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400`} />
           </div>
 
           <div className="relative flex-1 sm:flex-none">
-            <select className={`w-full appearance-none px-4 py-2.5 ${isRTL ? 'pr-10 pl-4' : 'pl-10 pr-4'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 focus:outline-none focus:border-[#0b7a9e] focus:ring-2 focus:ring-[#0b7a9e]/20 cursor-pointer`}>
+            <select className={`w-full appearance-none px-4 py-2.5 ${isRTL ? 'pr-10 pl-4' : 'pl-10 pr-4'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 cursor-pointer`}>
               <option>{t("dashboard.sessions.allCases", "جميع الحالات")}</option>
               <option>{t("dashboard.sessions.pending", "بانتظار المراجعة")}</option>
               <option>{t("dashboard.sessions.processing", "قيد المعالجة")}</option>
@@ -132,8 +129,7 @@ const AppointmentsTab = () => {
           </div>
         </div>
 
-        {/* اليسار: زر جلسة جديدة */}
-        <button className="px-4 py-2.5 bg-[#0b7a9e] hover:bg-[#096684] text-white rounded-xl font-medium text-sm transition-all flex items-center gap-2 shadow-sm hover:shadow-[#0b7a9e]/25 order-2 sm:order-2">
+        <button className="px-4 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium text-sm transition-all flex items-center gap-2 shadow-sm hover:shadow-primary/25 order-2 sm:order-2">
           <Plus className="h-4 w-4" />
           {t("dashboard.sessions.newSession", "جلسة جديدة")}
         </button>
@@ -177,7 +173,6 @@ const AppointmentsTab = () => {
                       <div className="text-xs text-slate-400 mt-0.5">{appointment.patientId}</div>
                     </div>
                   </td>
-                  {/* ✅ استخدام formatDate لعرض التاريخ */}
                   <td className="px-6 py-4 text-sm text-slate-600">
                     {formatDate(appointment.date)}
                   </td>
@@ -192,7 +187,7 @@ const AppointmentsTab = () => {
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <button className="p-2 rounded-lg text-slate-400 hover:text-[#0b7a9e] hover:bg-[#0b7a9e]/5 transition-colors">
+                      <button className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors">
                         <Eye className="h-4 w-4" />
                       </button>
                       <button className="p-2 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors">

@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   LayoutDashboard,
@@ -14,6 +14,7 @@ import {
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
   const isRTL = i18n.language === "ar";
 
   const menuItems = [
@@ -70,7 +71,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <div className="flex items-center gap-3 flex-row justify-start">
               <NavLink 
                 to="/dashboard/new-session"
-                className="w-11 h-11 rounded-xl bg-[#0b7a9e] hover:bg-[#096684] flex items-center justify-center transition-all cursor-pointer hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#0b7a9e]/25 active:translate-y-0 shrink-0"
+                className="w-11 h-11 rounded-xl bg-primary hover:bg-primary-dark flex items-center justify-center transition-all cursor-pointer hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/25 active:translate-y-0 shrink-0"
               >
                 <Stethoscope size={22} className="text-white" />
               </NavLink>
@@ -102,7 +103,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                     <>
                       <motion.div
                         layoutId="activeMenu"
-                        className="absolute inset-0 rounded-xl bg-[#0b7a9e]/10"
+                        className="absolute inset-0 rounded-xl bg-primary/10"
                         transition={{
                           type: "spring",
                           stiffness: 380,
@@ -111,7 +112,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                       />
                       <motion.div
                         layoutId="activeLine"
-                        className={`absolute ${isRTL ? 'left-0' : 'right-0'} top-1 bottom-1 w-1 rounded-${isRTL ? 'l' : 'r'}-md bg-[#0b7a9e]`}
+                        className={`absolute ${isRTL ? 'left-0' : 'right-0'} top-1 bottom-1 w-1 rounded-${isRTL ? 'l' : 'r'}-md bg-primary`}
                         transition={{
                           type: "spring",
                           stiffness: 380,
@@ -124,8 +125,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                   <div
                     className={`relative z-10 h-11 px-4 rounded-xl flex items-center justify-start gap-3 transition-all ${
                       active
-                        ? "text-[#0b7a9e] font-semibold"
-                        : "text-slate-500 hover:bg-slate-50 hover:text-[#0b7a9e]"
+                        ? "text-primary font-semibold"
+                        : "text-slate-500 hover:bg-slate-50 hover:text-primary"
                     }`}
                   >
                     <Icon size={18} className="transition-transform group-hover:scale-105 shrink-0" />
@@ -143,7 +144,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         {/* Footer */}
         <div className="p-4 border-t border-slate-100 space-y-4 overflow-hidden">
           <div className="flex items-center justify-start gap-3 px-1">
-            <div className="w-10 h-10 rounded-xl bg-[#0b7a9e] text-white flex items-center justify-center font-bold text-sm shadow-md shadow-[#0b7a9e]/20 shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-sm shadow-md shadow-primary/20 shrink-0">
               {t("dashboard.profile.doctorInitial")}
             </div>
 
@@ -157,7 +158,15 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             </div>
           </div>
 
-          <button className="w-full h-11 rounded-xl border border-slate-200 bg-transparent hover:bg-red-50 hover:border-red-200 hover:text-red-600 transition-all flex items-center justify-center gap-2 text-slate-500 text-sm font-semibold cursor-pointer group">
+          {/* زر تسجيل الخروج */}
+          <button 
+            onClick={() => {
+              localStorage.removeItem("userToken");
+              localStorage.removeItem("userData");
+              navigate("/login");
+            }}
+            className="w-full h-11 rounded-xl border border-slate-200 bg-transparent hover:bg-red-50 hover:border-red-200 hover:text-red-600 transition-all flex items-center justify-center gap-2 text-slate-500 text-sm font-semibold cursor-pointer group"
+          >
             <LogOut size={18} className="transition-transform group-hover:-translate-x-0.5" />
             <span>{t("auth.logout")}</span>
           </button>
