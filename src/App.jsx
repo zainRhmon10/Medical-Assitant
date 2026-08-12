@@ -6,6 +6,7 @@ import VerifyPage from "./features/auth/pages/verifyPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthLayout from "../src/component/layout/AuthLayout";
+import NewSessionPage from "./features/create_session/pages/NewSession";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/reset-password" element={<ResetPassPage />} />
           <Route path="/" element={<LoginPage />} />
         </Route>
+        <Route path="/setup-session" element={<NewSessionPage />} />
       </Routes>
     </BrowserRouter>
   );
