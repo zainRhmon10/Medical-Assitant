@@ -1,0 +1,300 @@
+{
+  "auth": {
+    "sidebar": {
+      "title": "المساعد الطبي",
+      "titleHighlight": "الذكي للأطباء",
+      "description": "منصة متكاملة تساعد الأطباء في إدارة الملفات الطبية، تتبع الحالات والحصول على دعم طبي فوري.",
+      "features": [
+        {
+          "title": "تقرير جاهز فوراً"
+        },
+        {
+          "title": "توفير وقت التوثيق"
+        },
+        {
+          "title": "حماية بيانات المرضى"
+        }
+      ],
+      "quote": "الطب فن يطلب الدقة والرعاية. نحن هنا لنجعل عملك أسهل وأكثر كفاءة."
+    },
+
+    "welcomeBack": "مرحباً بعودتك",
+    "welcomeSubtitle": "سجّل دخولك للمتابعة إلى لوحة التحكم",
+
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "doctor@hospital.com",
+
+    "password": "كلمة المرور",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني",
+
+    "login": "تسجيل الدخول",
+    "loggingIn": "جارٍ تسجيل الدخول...",
+    "logout": "تسجيل الخروج",
+    "loggingOut": "جارٍ تسجيل الخروج...",
+
+    "or": "أو",
+    "noAccount": "ليس لديك حساب؟",
+    "createAccount": "إنشاء حساب جديد",
+
+    "errors": {
+      "emailInvalid": "البريد الإلكتروني غير صالح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "passwordMin": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "tokenMissing": "تم تسجيل الدخول ولكن لم يتم استلام رمز الدخول من الخادم.",
+      "generic": "حدث خطأ أثناء تسجيل الدخول، تحقق من البيانات وحاول مرة أخرى"
+    },
+
+    "register": {
+      "title": "إنشاء حساب جديد",
+      "subtitle": "انضم إلى منصة MedAssist واحصل على دعم متكامل لمتابعة الحمل",
+
+      "steps": {
+        "personalInfo": "المعلومات الشخصية",
+        "professionalInfo": "معلومات مهنية"
+      },
+
+      "firstName": "الاسم الأول",
+      "firstNamePlaceholder": "زين",
+
+      "lastName": "اسم العائلة",
+      "lastNamePlaceholder": "رحمون",
+
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "9xx xxx xxx",
+
+      "specialty": "التخصص الطبي",
+      "specialtyPlaceholder": "اختر التخصص",
+
+      "specialties": [
+        "أمراض النسائية والتوليد",
+        "طب الأجنة وحديثي الولادة",
+        "التغذية وصحة الحمل",
+        "تخصص آخر"
+      ],
+
+      "licenseNumber": "رقم الترخيص الطبي",
+      "licenseNumberPlaceholder": "MED-XXXXXXX",
+
+      "clinicName": "المستشفى / العيادة (اختياري)",
+      "clinicNamePlaceholder": "مستشفى الولادة التخصصي",
+
+      "confirmPassword": "تأكيد كلمة المرور",
+      "passwordMin": "كلمة المرور يجب أن تكون 8 أحرف على الأقل",
+
+      "agreeTermsPrefix": "أوافق على",
+      "termsLink": "الشروط والأحكام",
+      "and": "و",
+      "privacyLink": "سياسة الخصوصية",
+
+      "next": "التالي",
+      "back": "رجوع",
+
+      "createAccount": "إنشاء الحساب",
+      "creatingAccount": "جارٍ إنشاء الحساب...",
+
+      "haveAccount": "لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول",
+
+      "errors": {
+        "firstNameRequired": "الاسم الأول مطلوب",
+        "lastNameRequired": "اسم العائلة مطلوب",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "specialtyRequired": "يرجى اختيار التخصص",
+        "licenseRequired": "رقم الترخيص الطبي مطلوب",
+        "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+        "confirmPasswordMismatch": "كلمتا المرور غير متطابقتين",
+        "termsRequired": "يجب الموافقة على الشروط والأحكام للاستمرار",
+        "generic": "حدث خطأ أثناء إنشاء الحساب، حاول مرة أخرى"
+      }
+    },
+
+    "verify": {
+      "title": "تحقق من بريدك الإلكتروني",
+      "subtitle": "أدخل رمز التحقق المرسل إلى بريدك",
+      "sentTo": "أرسلنا رمز التحقق إلى",
+      "codeLabel": "رمز التحقق",
+
+      "verifyButton": "تحقق من الرمز",
+      "verifying": "جارٍ التحقق...",
+
+      "noCode": "لم يصلك الرمز؟",
+      "resend": "إعادة إرسال الرمز",
+      "resendIn": "إعادة الإرسال بعد {{seconds}} ثانية",
+
+      "backToLogin": "العودة إلى تسجيل الدخول",
+      "codeExpiresIn": "ينتهي صلاحية الرمز خلال",
+"codeExpired": "انتهت صلاحية رمز التحقق",
+"resendSuccess": "تم إرسال رمز تحقق جديد إلى بريدك الإلكتروني",
+"resending": "جارٍ إعادة الإرسال...",
+
+      "errors": {
+        "codeIncomplete": "يرجى إدخال الرمز كاملاً (6 أرقام)",
+        "codeInvalid": "رمز التحقق غير صحيح، حاول مرة أخرى",
+        "resendFailed": "تعذّر إعادة إرسال الرمز، حاول مرة أخرى"
+      }
+    },
+
+    "forgetPass": {
+      "title": "نسيت كلمة المرور؟",
+      "subtitle": "أدخل بريدك الإلكتروني وسنرسل لك رابط إعادة التعيين",
+      "sendTo": "سنرسل رابطاً إلى بريدك الإلكتروني لإعادة تعيين كلمة المرور. تأكد من إدخال البريد المرتبط بحسابك.",
+      "Mail": "البريد الإلكتروني",
+      "sendButton": "إرسال رابط الإعادة",
+      "back": "العودة لتسجيل الدخول",
+      "sending": "جارٍ إرسال رمز التحقق...",
+"errors": {
+  "sendFailed": "تعذّر إرسال رمز التحقق، تحقق من البريد الإلكتروني وحاول مرة أخرى"
+}
+    },
+
+    "resetPass": {
+
+      "title": "إنشاء كلمة مرور جديدة",
+      "subtitle": "أدخل كلمة مرور قوية لحماية حسابك",
+      "titleF1": "كلمة المرور الجديدة",
+      "titleF2": "تأكيد كلمة المرور",
+      "sendButton": "حفظ كلمة المرور الجديدة",
+      "back": "العودة لتسجيل الدخول",
+      "success": "تم تغيير كلمة المرور بنجاح. يمكنك تسجيل الدخول الآن.",
+
+      "resetting": "جارٍ تغيير كلمة المرور...",
+"errors": {
+  "uppercase": "يجب أن تحتوي كلمة المرور على حرف إنجليزي كبير واحد على الأقل",
+  "lowercase": "يجب أن تحتوي كلمة المرور على حرف إنجليزي صغير واحد على الأقل",
+  "symbol": "يجب أن تحتوي كلمة المرور على رمز خاص واحد على الأقل",
+  "resetFailed": "تعذّر تغيير كلمة المرور، حاول مرة أخرى"
+}
+    }
+  },
+
+  "dashboard": {
+    "stats": {
+      "warnings": "تحذيرات",
+      "alert": "تنبيه",
+      "approvedToday": "معتمدة اليوم",
+      "sessions": "جلسات",
+      "inProgress": "قيد المعالجة",
+      "session": "جلسة",
+      "todaySessions": "جلسات اليوم",
+      "newSessions": "جديدة",
+      "totalPatients": "إجمالي المرضى",
+      "appointmentsToday": "مواعيد اليوم",
+      "revenue": "الصافي المالي",
+      "occupancy": "معدل الإشغال السريري"
+    },
+
+    "sessions": {
+      "title": "الجلسات",
+      "subtitle": "إدارة ومراقبة جميع جلساتك الطبية",
+      "sessionNumber": "رقم الجلسة",
+      "patient": "المريض",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "status": "الحالة",
+      "actions": "الإجراءات",
+      "searchPatient": "البحث باسم المريض...",
+      "allCases": "جميع الحالات",
+      "pending": "بانتظار المراجعة",
+      "processing": "قيد المعالجة",
+      "approved": "معتمدة",
+      "pendingReview": "بانتظار المراجعة",
+      "inTreatment": "قيد المعالجة",
+      "newSession": "جلسة جديدة"
+    },
+
+    "charts": {
+      "weeklyActivity": "نشاط الأسبوع",
+      "analytics": "تحليلات التدفق الطبي والأرباح",
+      "viewReport": "تقرير مفصل",
+      "distribution": "توزيع الحالات المرضية"
+    },
+
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "newSession": "بدء جلسة جديدة",
+      "viewSessions": "عرض الجلسات"
+    },
+
+    "recentSessions": {
+      "title": "الجلسات الحديثة",
+      "subtitle": "آخر الجلسات",
+      "viewAll": "عرض الكل"
+    },
+
+    "menu": {
+      "overview": "المؤشرات العامة",
+      "appointments": "المواعيد والجدول",
+      "patients": "إدارة المرضى",
+      "sessions": "الجلسات",
+      "newSession": "جلسة جديدة",
+      "reports": "التقارير المعتمدة",
+      "settings": "الإعدادات"
+    },
+
+    "common": {
+      "emptyFeature": "هذه الشاشة تحت التطوير البرمجي حالياً سيتم ربطها قريباً."
+    },
+
+    "profile": {
+      "doctorName": "د. أحمد محمد",
+      "doctorTitle": "طبيب ممارس",
+      "doctorInitial": "د"
+    },
+
+    "reports": {
+      "title": "التقارير المعتمدة",
+      "subtitle": "جميع التقارير الطبية المعتمدة",
+      "approved": "معتمدة",
+      "viewAll": "عرض الكل",
+      "backToReports": "العودة للتقارير",
+      "reportTitle": "التقرير الطبي",
+      "medicalReport": "التقرير الطبي",
+      "reportSubtitle": "مساعد الطبيب – نظام التوثيق الذكي",
+      "approvedOn": "معتمد بتاريخ",
+      "downloadPDF": "تحميل PDF",
+      "copyText": "نسخ النص",
+      "copySuccess": "تم نسخ التقرير بنجاح!",
+      "patientName": "اسم المريض",
+      "sessionNumber": "رقم الجلسة",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "symptoms": "أعراض",
+      "symptomsLabel": "أعراض",
+      "diagnosis": "تشخيص",
+      "diagnosisLabel": "تشخيص",
+      "treatmentPlan": "خطة علاج",
+      "treatmentLabel": "خطة علاج",
+      "soapSummary": "ملخص SOAP",
+
+      "soap": {
+        "subjective": "ذاتي (S)",
+        "objective": "موضوعي (O)",
+        "assessment": "تقييم (A)",
+        "plan": "خطة (P)"
+      },
+
+      "reportDisclaimer": "هذا التقرير تم إنشاؤه بواسطة نظام مساعد الطبيب بالذكاء الاصطناعي وتمت مراجعته والاعتماد من قبل الطبيب.",
+      "doctorSignature": "توقيع الطبيب"
+    }
+  },
+
+  "days": {
+    "sat": "سب",
+    "sun": "أحد",
+    "mon": "إثن",
+    "tue": "ثل",
+    "wed": "أرب",
+    "thu": "خم",
+    "fri": "جم"
+  },
+
+  "common": {
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية"
+  }
+}
