@@ -118,8 +118,6 @@ const ResetPass = () => {
           resetToken,
           values.password,
           values.confirmPassword,
-
-          false,
         );
 
         console.log("RESET PASSWORD RESPONSE:", response.data);

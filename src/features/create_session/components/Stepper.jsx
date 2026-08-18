@@ -1,28 +1,64 @@
 import React from "react";
+
+import { useTranslation } from "react-i18next";
+
 const SessionStepper = ({ step }) => {
-  const steps = ["معلومات الجلسة", "التشخيص", "المعالجة", "التوصيات"];
+  const { t } = useTranslation();
+  const steps = [
+    t("createSession.steps.patient"),
+    t("createSession.steps.audio"),
+    t("createSession.steps.processing"),
+    t("createSession.steps.result"),
+  ];
 
   return (
     <div className="mb-8 flex items-center justify-center gap-2">
-      {[1, 2, 3, 4].map((s, idx) => (
-        <React.Fragment key={s}>
+      {[1, 2, 3, 4].map((stepNumber, index) => (
+        <React.Fragment key={stepNumber}>
           <div className="flex flex-col items-center gap-1">
             <div
-              className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium transition-colors ${
-                step >= s ? "bg-primary text-white" : "bg-white text-slate-400"
-              }`}
+              className={`
+                  flex
+                  h-8
+                  w-8
+                  items-center
+                  justify-center
+                  rounded-full
+                  text-sm
+                  font-medium
+                  transition-colors
+
+                  ${
+                    step >= stepNumber
+                      ? "bg-primary text-white"
+                      : "bg-white text-slate-400"
+                  }
+                `}
             >
-              {s}
+              {stepNumber}
             </div>
+
             <span
-              className={`text-xs ${step >= s ? "text-slate-700" : "text-slate-400"}`}
+              className={`
+                  text-xs
+                  whitespace-nowrap
+
+                  ${step >= stepNumber ? "text-slate-700" : "text-slate-400"}
+                `}
             >
-              {steps[idx]}
+              {steps[index]}
             </span>
           </div>
-          {s < 4 && (
+
+          {stepNumber < 4 && (
             <div
-              className={`mx-2 h-0.5 w-12 ${step > s ? "bg-primary" : "bg-slate-200"}`}
+              className={`
+                  mx-2
+                  h-0.5
+                  w-12
+
+                  ${step > stepNumber ? "bg-primary" : "bg-slate-200"}
+                `}
             />
           )}
         </React.Fragment>

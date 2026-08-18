@@ -1,205 +1,840 @@
-import React from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Search, ChevronDown, Plus, Eye, Trash2, CheckCircle2, Clock, AlertCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import {
+  Plus,
+  RefreshCw,
+  CheckCircle2,
+  Clock3,
+  AlertCircle,
+  Loader2,
+  FileAudio,
+  ChevronLeft,
+  ChevronRight,
+  RotateCcw,
+} from "lucide-react";
+import {
+  getClinicalSessions,
+  retryClinicalSession,
+} from "../../create_session/services/sessionApi";
 
+import { getApiErrorMessage } from "../../auth/services/authApi";
 const AppointmentsTab = () => {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+  const navigate = useNavigate();
+  const isRTL = i18n.language?.startsWith("ar");
 
-  const formatDate = (date) => {
-    const locale = isRTL ? 'ar-SA' : 'en-US';
-    return new Intl.DateTimeFormat(locale, {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
+  const [sessions, setSessions] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  const [statusFilter, setStatusFilter] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [lastPage, setLastPage] = useState(1);
+  const [total, setTotal] = useState(0);
+
+  const [retryingSessionId, setRetryingSessionId] = useState(null);
+
+  // GET /api/doctor/sessions
+  const loadSessions = useCallback(
+    async ({ page = currentPage, showLoading = true } = {}) => {
+      if (showLoading) {
+        setIsLoading(true);
+      }
+      setError("");
+
+      try {
+        const response = await getClinicalSessions({
+          status: statusFilter,
+          page,
+          perPage: 20,
+        });
+
+        const paginator = response?.data;
+        const rows = Array.isArray(paginator?.data) ? paginator.data : [];
+        setSessions(rows);
+        setCurrentPage(Number(paginator?.current_page || page));
+        setLastPage(Number(paginator?.last_page || 1));
+        setTotal(Number(paginator?.total || rows.length));
+      } catch (err) {
+        console.error(
+          "LOAD CLINICAL SESSIONS ERROR:",
+          err.response?.data || err.message,
+        );
+
+        setSessions([]);
+        setError(
+          getApiErrorMessage(
+            err,
+
+            t("dashboard.sessions.loadError"),
+          ),
+        );
+      } finally {
+        if (showLoading) {
+          setIsLoading(false);
+        }
+      }
+    },
+
+    [currentPage, statusFilter, t],
+  );
+
+  useEffect(() => {
+    loadSessions({
+      page: 1,
+    });
+  }, [statusFilter]);
+
+  const formatDateTime = (dateValue) => {
+    if (!dateValue) {
+      return "-";
+    }
+    const date = new Date(dateValue);
+    if (Number.isNaN(date.getTime())) {
+      return dateValue;
+    }
+
+    return new Intl.DateTimeFormat(isRTL ? "ar-SA" : "en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
     }).format(date);
   };
 
-  const formatNumber = (num) => {
-    const locale = isRTL ? 'ar-SA' : 'en-US';
-    return new Intl.NumberFormat(locale).format(num);
+  const getPatientName = (session) => {
+    const patient = session?.patient;
+
+    if (!patient) {
+      return "-";
+    }
+
+    return [patient.first_name, patient.last_name].filter(Boolean).join(" ");
   };
 
-  const appointments = [
-    { 
-      id: "SESS-2026-00142", 
-      patient: isRTL ? "محمد العلي" : "Mohammed Al-Ali", 
-      patientId: "PAT-2026-089",
-      date: new Date(2026, 5, 13),
-      duration: "10:34", 
-      status: "pending",
-      statusText: t("dashboard.sessions.pendingReview")
-    },
-    { 
-      id: "SESS-2026-00141", 
-      patient: isRTL ? "سارة أحمد" : "Sarah Ahmed", 
-      patientId: "PAT-2026-076",
-      date: new Date(2026, 5, 13),
-      duration: "07:00", 
-      status: "processing",
-      statusText: t("dashboard.sessions.inTreatment") 
-    },
-    { 
-      id: "SESS-2026-00140", 
-      patient: isRTL ? "خالد محمود" : "Khaled Mahmoud", 
-      patientId: "PAT-2026-065",
-      date: new Date(2026, 5, 12),
-      duration: "08:30", 
-      status: "approved",
-      statusText: t("dashboard.sessions.approved")
-    },
-    { 
-      id: "SESS-2026-00139", 
-      patient: isRTL ? "فاطمة حسن" : "Fatima Hassan", 
-      patientId: "PAT-2026-054",
-      date: new Date(2026, 5, 12),
-      duration: "06:20", 
-      status: "approved",
-      statusText: t("dashboard.sessions.approved") 
-    },
-    { 
-      id: "SESS-2026-00138", 
-      patient: isRTL ? "عبدالله سالم" : "Abdullah Salem", 
-      patientId: "PAT-2026-043",
-      date: new Date(2026, 5, 11),
-      duration: "04:50", 
-      status: "pending",
-      statusText: t("dashboard.sessions.pendingReview") 
-    },
-  ];
+  const getStatusLabel = (status) => {
+    switch (status) {
+      case "queued":
+        return t("dashboard.sessions.statuses.queued");
+
+      case "running":
+        return t("dashboard.sessions.statuses.running");
+
+      case "complete":
+        return t("dashboard.sessions.statuses.complete");
+
+      case "failed":
+        return t("dashboard.sessions.statuses.failed");
+
+      default:
+        return status || t("dashboard.sessions.statuses.unknown");
+    }
+  };
 
   const getStatusStyle = (status) => {
-    switch(status) {
-      case "approved":
+    switch (status) {
+      case "complete":
         return "bg-emerald-50 text-emerald-600 border border-emerald-100";
-      case "pending":
-        return "bg-purple-50 text-purple-600 border border-purple-100";
-      case "processing":
+
+      case "queued":
+        return "bg-blue-50 text-blue-600 border border-blue-100";
+
+      case "running":
         return "bg-amber-50 text-amber-600 border border-amber-100";
+
+      case "failed":
+        return "bg-red-50 text-red-600 border border-red-100";
+
       default:
         return "bg-slate-50 text-slate-600 border border-slate-100";
     }
   };
 
   const getStatusIcon = (status) => {
-    switch(status) {
-      case "approved":
+    switch (status) {
+      case "complete":
         return <CheckCircle2 className="h-3.5 w-3.5" />;
-      case "pending":
+
+      case "queued":
+        return <Clock3 className="h-3.5 w-3.5" />;
+
+      case "running":
+        return <Loader2 className="h-3.5 w-3.5 animate-spin" />;
+
+      case "failed":
         return <AlertCircle className="h-3.5 w-3.5" />;
-      case "processing":
-        return <Clock className="h-3.5 w-3.5" />;
+
       default:
         return null;
     }
   };
 
+  const handlePageChange = async (page) => {
+    if (page < 1 || page > lastPage || page === currentPage) {
+      return;
+    }
+
+    await loadSessions({
+      page,
+    });
+  };
+
+  const handleRetrySession = async (session) => {
+    if (!session?.id || retryingSessionId) {
+      return;
+    }
+
+    setRetryingSessionId(session.id);
+
+    setError("");
+
+    try {
+      await retryClinicalSession(session.id);
+      await loadSessions({
+        page: currentPage,
+
+        showLoading: false,
+      });
+    } catch (err) {
+      console.error(
+        "RETRY CLINICAL SESSION ERROR:",
+        err.response?.data || err.message,
+      );
+
+      setError(
+        getApiErrorMessage(
+          err,
+
+          t("dashboard.sessions.retryError"),
+        ),
+      );
+    } finally {
+      setRetryingSessionId(null);
+    }
+  };
+
   return (
     <div className="space-y-6">
-      {/* Header */}
+      {/*  Header */}
+
       <div className={isRTL ? "text-right" : "text-left"}>
         <h1 className="text-2xl font-bold text-slate-800">
-          {t("dashboard.sessions.title", "الجلسات")}
+          {t("dashboard.sessions.title")}
         </h1>
-        <p className="text-sm text-slate-500 mt-1">
-          {t("dashboard.sessions.subtitle", "إدارة ومراقبة جميع جلساتك الطبية")}
+
+        <p className="mt-1 text-sm text-slate-500">
+          {t("dashboard.sessions.subtitle")}
         </p>
       </div>
 
-      {/* Toolbar */}
-      <div className="flex flex-col sm:flex-row gap-3 justify-between items-start sm:items-center">
-        <div className="flex gap-3 w-full sm:w-auto order-1 sm:order-1">
-          <div className="relative flex-1 sm:flex-none sm:min-w-[280px]">
-            <input
-              type="text"
-              placeholder={t("dashboard.sessions.searchPatient", "البحث باسم المريض...")}
-              className={`w-full px-4 py-2.5 ${isRTL ? 'pr-10' : 'pl-10'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20`}
-            />
-            <Search className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400`} />
-          </div>
+      {/*  Toolbar  */}
 
-          <div className="relative flex-1 sm:flex-none">
-            <select className={`w-full appearance-none px-4 py-2.5 ${isRTL ? 'pr-10 pl-4' : 'pl-10 pr-4'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 cursor-pointer`}>
-              <option>{t("dashboard.sessions.allCases", "جميع الحالات")}</option>
-              <option>{t("dashboard.sessions.pending", "بانتظار المراجعة")}</option>
-              <option>{t("dashboard.sessions.processing", "قيد المعالجة")}</option>
-              <option>{t("dashboard.sessions.approved", "معتمدة")}</option>
-            </select>
-            <ChevronDown className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400 pointer-events-none`} />
-          </div>
+      <div
+        className="
+          flex
+          flex-col
+          gap-3
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
+        "
+      >
+        <div className="flex flex-wrap items-center gap-3">
+          <select
+            value={statusFilter}
+            onChange={(event) => setStatusFilter(event.target.value)}
+            className="
+              min-w-[190px]
+              rounded-xl
+              border
+              border-slate-200
+              bg-white
+              px-4
+              py-2.5
+              text-sm
+              text-slate-700
+              outline-none
+              transition
+              focus:border-primary
+              focus:ring-2
+              focus:ring-primary/20
+            "
+          >
+            <option value="">{t("dashboard.sessions.allStatuses")}</option>
+
+            <option value="queued">
+              {t("dashboard.sessions.statuses.queued")}
+            </option>
+
+            <option value="running">
+              {t("dashboard.sessions.statuses.running")}
+            </option>
+
+            <option value="complete">
+              {t("dashboard.sessions.statuses.complete")}
+            </option>
+
+            <option value="failed">
+              {t("dashboard.sessions.statuses.failed")}
+            </option>
+          </select>
+
+          {/* Refresh */}
+
+          <button
+            type="button"
+            onClick={() =>
+              loadSessions({
+                page: currentPage,
+              })
+            }
+            disabled={isLoading}
+            className="
+              flex
+              items-center
+              gap-2
+              rounded-xl
+              border
+              border-slate-200
+              bg-white
+              px-4
+              py-2.5
+              text-sm
+              font-medium
+              text-slate-600
+              transition
+              hover:bg-slate-50
+              disabled:cursor-not-allowed
+              disabled:opacity-50
+            "
+          >
+            <RefreshCw
+              className={`h-4 w-4 ${isLoading ? "animate-spin" : ""}`}
+            />
+
+            {t("dashboard.sessions.refresh")}
+          </button>
         </div>
 
-        <button className="px-4 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium text-sm transition-all flex items-center gap-2 shadow-sm hover:shadow-primary/25 order-2 sm:order-2">
+        {/* New Session */}
+
+        <button
+          type="button"
+          onClick={() => navigate("/dashboard/new-session")}
+          className="
+            flex
+            items-center
+            justify-center
+            gap-2
+            rounded-xl
+            bg-primary
+            px-4
+            py-2.5
+            text-sm
+            font-medium
+            text-white
+            shadow-sm
+            transition
+            hover:opacity-90
+          "
+        >
           <Plus className="h-4 w-4" />
-          {t("dashboard.sessions.newSession", "جلسة جديدة")}
+
+          {t("dashboard.sessions.newSession")}
         </button>
       </div>
 
-      {/* Table */}
-      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-slate-50/50 border-b border-slate-100">
-                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
-                  {t("dashboard.sessions.sessionNumber", "رقم الجلسة")}
-                </th>
-                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
-                  {t("dashboard.sessions.patient", "المريض")}
-                </th>
-                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
-                  {t("dashboard.sessions.date", "التاريخ")}
-                </th>
-                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
-                  {t("dashboard.sessions.duration", "المدة")}
-                </th>
-                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
-                  {t("dashboard.sessions.status", "الحالة")}
-                </th>
-                <th className="px-6 py-4 text-center text-xs font-semibold text-slate-600">
-                  {t("dashboard.sessions.actions", "الإجراءات")}
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {appointments.map((appointment) => (
-                <tr key={appointment.id} className="hover:bg-slate-50/50 transition-colors group">
-                  <td className="px-6 py-4 text-sm text-slate-600 font-mono">
-                    {appointment.id}
-                  </td>
-                  <td className="px-6 py-4">
-                    <div>
-                      <div className="text-sm font-semibold text-slate-800">{appointment.patient}</div>
-                      <div className="text-xs text-slate-400 mt-0.5">{appointment.patientId}</div>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 text-sm text-slate-600">
-                    {formatDate(appointment.date)}
-                  </td>
-                  <td className="px-6 py-4 text-sm text-slate-600">
-                    {appointment.duration}
-                  </td>
-                  <td className="px-6 py-4">
-                    <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium ${getStatusStyle(appointment.status)}`}>
-                      {getStatusIcon(appointment.status)}
-                      <span>{appointment.statusText}</span>
-                    </div>
-                  </td>
-                  <td className="px-6 py-4">
-                    <div className="flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <button className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors">
-                        <Eye className="h-4 w-4" />
-                      </button>
-                      <button className="p-2 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors">
-                        <Trash2 className="h-4 w-4" />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      {/*  Total  */}
+
+      <div className="flex items-center justify-between">
+        <p className="text-sm text-slate-500">
+          {t("dashboard.sessions.total", {
+            count: total,
+          })}
+        </p>
+      </div>
+
+      {/*  Error */}
+
+      {error && (
+        <div
+          className="
+            flex
+            items-start
+            gap-2
+            rounded-xl
+            border
+            border-red-200
+            bg-red-50
+            px-4
+            py-3
+            text-red-600
+          "
+        >
+          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+
+          <p className="text-sm">{error}</p>
         </div>
+      )}
+
+      <div
+        className="
+          overflow-hidden
+          rounded-2xl
+          border
+          border-slate-100
+          bg-white
+          shadow-sm
+        "
+      >
+        {isLoading ? (
+          /* Loading */
+
+          <div
+            className="
+              flex
+              min-h-[320px]
+              flex-col
+              items-center
+              justify-center
+              gap-3
+            "
+          >
+            <Loader2 className="h-7 w-7 animate-spin text-primary" />
+
+            <p className="text-sm text-slate-500">
+              {t("dashboard.sessions.loading")}
+            </p>
+          </div>
+        ) : sessions.length === 0 ? (
+          /* Empty */
+
+          <div
+            className="
+              flex
+              min-h-[320px]
+              flex-col
+              items-center
+              justify-center
+              gap-3
+              px-6
+              text-center
+            "
+          >
+            <div
+              className="
+                flex
+                h-14
+                w-14
+                items-center
+                justify-center
+                rounded-full
+                bg-slate-50
+              "
+            >
+              <FileAudio className="h-6 w-6 text-slate-400" />
+            </div>
+
+            <p className="font-semibold text-slate-700">
+              {t("dashboard.sessions.empty")}
+            </p>
+
+            <p className="max-w-md text-sm text-slate-400">
+              {t("dashboard.sessions.emptyHint")}
+            </p>
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr
+                  className="
+                    border-b
+                    border-slate-100
+                    bg-slate-50/50
+                  "
+                >
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-start
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.sessionNumber")}
+                  </th>
+
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-start
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.patient")}
+                  </th>
+
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-start
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.date")}
+                  </th>
+
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-start
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.audio")}
+                  </th>
+
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-start
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.stage")}
+                  </th>
+
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-start
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.status")}
+                  </th>
+
+                  <th
+                    className="
+                      px-6
+                      py-4
+                      text-center
+                      text-xs
+                      font-semibold
+                      text-slate-600
+                    "
+                  >
+                    {t("dashboard.sessions.actions")}
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody className="divide-y divide-slate-100">
+                {sessions.map((session) => {
+                  const patient = session.patient;
+
+                  const isRetrying = retryingSessionId === session.id;
+
+                  return (
+                    <tr
+                      key={session.id}
+                      className="
+                          transition-colors
+                          hover:bg-slate-50/50
+                        "
+                    >
+                      {/* Session ID */}
+
+                      <td className="px-6 py-4">
+                        <span
+                          className="
+                              font-mono
+                              text-sm
+                              font-semibold
+                              text-slate-700
+                            "
+                          dir="ltr"
+                        >
+                          #{session.id}
+                        </span>
+                      </td>
+
+                      {/* Patient */}
+
+                      <td className="px-6 py-4">
+                        <div>
+                          <p className="text-sm font-semibold text-slate-800">
+                            {getPatientName(session)}
+                          </p>
+
+                          <p
+                            className="
+                                mt-0.5
+                                text-xs
+                                text-slate-400
+                              "
+                            dir="ltr"
+                          >
+                            {patient?.mrn || `#${session.patient_id}`}
+                          </p>
+                        </div>
+                      </td>
+
+                      {/* Visit Date */}
+
+                      <td className="px-6 py-4">
+                        <p className="whitespace-nowrap text-sm text-slate-600">
+                          {formatDateTime(session.visit_at)}
+                        </p>
+                      </td>
+
+                      {/* Audio */}
+
+                      <td className="px-6 py-4">
+                        <div
+                          className="
+                              flex
+                              max-w-[200px]
+                              items-center
+                              gap-2
+                            "
+                        >
+                          <FileAudio className="h-4 w-4 shrink-0 text-slate-400" />
+
+                          <span
+                            className="
+                                truncate
+                                text-sm
+                                text-slate-600
+                              "
+                            title={session.original_filename || ""}
+                          >
+                            {session.original_filename || "-"}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* Stage */}
+
+                      <td className="px-6 py-4">
+                        <span className="text-sm text-slate-500">
+                          {session.stage || "-"}
+                        </span>
+                      </td>
+
+                      {/* Status */}
+
+                      <td className="px-6 py-4">
+                        <div
+                          className={`
+                              inline-flex
+                              items-center
+                              gap-1.5
+                              rounded-full
+                              px-3
+                              py-1.5
+                              text-xs
+                              font-medium
+
+                              ${getStatusStyle(session.status)}
+                            `}
+                        >
+                          {getStatusIcon(session.status)}
+
+                          <span>{getStatusLabel(session.status)}</span>
+                        </div>
+
+                        {/* AI Error */}
+
+                        {session.status === "failed" && session.ai_error && (
+                          <p
+                            className="
+                                mt-1.5
+                                max-w-[190px]
+                                truncate
+                                text-xs
+                                text-red-400
+                              "
+                            title={session.ai_error}
+                          >
+                            {session.ai_error}
+                          </p>
+                        )}
+                      </td>
+
+                      {/* Actions */}
+
+                      <td className="px-6 py-4">
+                        <div className="flex items-center justify-center">
+                          {session.status === "failed" ? (
+                            <button
+                              type="button"
+                              onClick={() => handleRetrySession(session)}
+                              disabled={isRetrying}
+                              title={t("dashboard.sessions.retry")}
+                              className="
+                                  flex
+                                  items-center
+                                  gap-1.5
+                                  rounded-lg
+                                  border
+                                  border-slate-200
+                                  px-3
+                                  py-2
+                                  text-xs
+                                  font-medium
+                                  text-slate-600
+                                  transition
+                                  hover:border-primary/30
+                                  hover:bg-primary/5
+                                  hover:text-primary
+                                  disabled:cursor-not-allowed
+                                  disabled:opacity-50
+                                "
+                            >
+                              {isRetrying ? (
+                                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                              ) : (
+                                <RotateCcw className="h-3.5 w-3.5" />
+                              )}
+
+                              {isRetrying
+                                ? t("dashboard.sessions.retrying")
+                                : t("dashboard.sessions.retry")}
+                            </button>
+                          ) : (
+                            <span className="text-xs text-slate-300">—</span>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {/* Pagination */}
+
+        {!isLoading && sessions.length > 0 && (
+          <div
+            className="
+              flex
+              flex-col
+              gap-3
+              border-t
+              border-slate-100
+              px-6
+              py-4
+              sm:flex-row
+              sm:items-center
+              sm:justify-between
+            "
+          >
+            <p className="text-xs text-slate-500">
+              {t("dashboard.sessions.page", {
+                current: currentPage,
+
+                last: lastPage,
+              })}
+            </p>
+
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage <= 1}
+                className="
+                  flex
+                  h-9
+                  w-9
+                  items-center
+                  justify-center
+                  rounded-lg
+                  border
+                  border-slate-200
+                  text-slate-500
+                  transition
+                  hover:bg-slate-50
+                  disabled:cursor-not-allowed
+                  disabled:opacity-40
+                "
+              >
+                {isRTL ? (
+                  <ChevronRight className="h-4 w-4" />
+                ) : (
+                  <ChevronLeft className="h-4 w-4" />
+                )}
+              </button>
+
+              <div
+                className="
+                  flex
+                  h-9
+                  min-w-9
+                  items-center
+                  justify-center
+                  rounded-lg
+                  bg-primary
+                  px-3
+                  text-xs
+                  font-semibold
+                  text-white
+                "
+              >
+                {currentPage}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage >= lastPage}
+                className="
+                  flex
+                  h-9
+                  w-9
+                  items-center
+                  justify-center
+                  rounded-lg
+                  border
+                  border-slate-200
+                  text-slate-500
+                  transition
+                  hover:bg-slate-50
+                  disabled:cursor-not-allowed
+                  disabled:opacity-40
+                "
+              >
+                {isRTL ? (
+                  <ChevronLeft className="h-4 w-4" />
+                ) : (
+                  <ChevronRight className="h-4 w-4" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
 import {
   LayoutDashboard,
   FolderOpen,
@@ -11,9 +10,10 @@ import {
   LogOut,
   Stethoscope,
   Loader2,
+  Users,
 } from "lucide-react";
-
-import {
+import { useDoctorProfile } from "../../features/profile/context/DoctorProfileContext";
+import api, {
   logoutDoctor,
   removeAuthToken,
 } from "../../features/auth/services/authApi";
@@ -23,18 +23,68 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const { profile } = useDoctorProfile();
   const [isLoggingOut, setIsLoggingOut] = useState(false);
+  const [imageError, setImageError] = useState(false);
+  const isRTL = i18n.language?.startsWith("ar");
+  const currentLang = isRTL ? "ar" : "en";
 
-  const isRTL = i18n.language === "ar";
+  const doctorName =
+    profile?.first_name || profile?.last_name
+      ? `${profile?.first_name || ""} ${profile?.last_name || ""}`.trim()
+      : t("dashboard.profile.doctorName");
+
+  const doctorInitial =
+    profile?.first_name?.trim()?.charAt(0)?.toUpperCase() ||
+    t("dashboard.profile.doctorInitial");
+
+  const doctorImageUrl = profile?.image
+    ? `${api.defaults.baseURL}/images/${encodeURIComponent(profile.image)}`
+    : null;
+
+  useEffect(() => {
+    setImageError(false);
+  }, [profile?.image]);
+
+  const getSpecialtyName = (specialty) => {
+    if (!specialty) {
+      return "";
+    }
+
+    if (currentLang === "ar" && specialty.name_ar) {
+      return specialty.name_ar;
+    }
+
+    if (currentLang === "en" && specialty.name_en) {
+      return specialty.name_en;
+    }
+
+    if (typeof specialty.name === "object") {
+      return (
+        specialty.name?.[currentLang] ||
+        specialty.name?.ar ||
+        specialty.name?.en ||
+        specialty.slug ||
+        ""
+      );
+    }
+
+    return specialty.name || specialty.slug || "";
+  };
+
+  const doctorTitle =
+    Array.isArray(profile?.specialties) && profile.specialties.length > 0
+      ? profile.specialties
+          .map(getSpecialtyName)
+          .filter(Boolean)
+          .join(isRTL ? "، " : ", ")
+      : t("dashboard.profile.doctorTitle");
 
   const handleLogout = async () => {
     if (isLoggingOut) return;
-
     setIsLoggingOut(true);
-
     try {
       const response = await logoutDoctor();
-
       console.log("LOGOUT RESPONSE:", response.data);
     } catch (error) {
       console.error("LOGOUT ERROR:", error.response?.data || error.message);
@@ -42,7 +92,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       // حذف الـ token من localStorage / sessionStorage
       removeAuthToken();
       localStorage.removeItem("userData");
+
       setIsLoggingOut(false);
+
       navigate("/login", {
         replace: true,
       });
@@ -61,6 +113,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       path: "/dashboard/appointments",
       label: t("dashboard.menu.sessions"),
       icon: FolderOpen,
+    },
+    {
+      id: "patients",
+      path: "/dashboard/patients",
+      label: t("dashboard.menu.patients"),
+      icon: Users,
     },
     {
       id: "new-session",
@@ -90,11 +148,10 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       <aside
         className={`
           fixed md:sticky top-0
-          ${isRTL ? "right-0" : "left-0"}
+          ${isRTL ? "right-0 border-l" : "left-0 border-r"}
           h-screen bg-white text-slate-700
           flex flex-col justify-between
           font-sans select-none
-          border-${isRTL ? "l" : "r"}
           border-slate-200
           transition-all duration-300 ease-in-out
           z-50
@@ -164,10 +221,13 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                         layoutId="activeLine"
                         className={`
                           absolute
-                          ${isRTL ? "left-0" : "right-0"}
+                          ${
+                            isRTL
+                              ? "left-0 rounded-l-md"
+                              : "right-0 rounded-r-md"
+                          }
                           top-1 bottom-1
                           w-1
-                          rounded-${isRTL ? "l" : "r"}-md
                           bg-primary
                         `}
                         transition={{
@@ -212,21 +272,59 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         {/* Footer  */}
 
         <div className="space-y-4 overflow-hidden border-t border-slate-100 p-4">
-          <div className="flex items-center justify-start gap-3 px-1">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white shadow-md shadow-primary/20">
-              {t("dashboard.profile.doctorInitial")}
+          <NavLink
+            to="/dashboard/profile"
+            onClick={() => {
+              if (window.innerWidth < 768) {
+                setIsOpen(false);
+              }
+            }}
+            className="
+              group
+              flex items-center justify-start gap-3
+              rounded-xl
+              px-2 py-2
+              transition-all
+              hover:bg-primary/5
+            "
+          >
+            <div
+              className="
+                flex h-10 w-10 shrink-0
+                items-center justify-center
+                overflow-hidden
+                rounded-xl
+                bg-primary
+                text-sm font-bold text-white
+                shadow-md shadow-primary/20
+                transition-transform
+                group-hover:scale-105
+              "
+            >
+              {doctorImageUrl && !imageError ? (
+                <img
+                  src={doctorImageUrl}
+                  alt={doctorName}
+                  onError={() => setImageError(true)}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                doctorInitial
+              )}
             </div>
 
-            <div className={isRTL ? "text-right" : "text-left"}>
-              <h4 className="text-sm font-semibold leading-tight text-slate-800">
-                {t("dashboard.profile.doctorName")}
+            <div
+              className={`min-w-0 flex-1 ${isRTL ? "text-right" : "text-left"}`}
+            >
+              <h4 className="truncate text-sm font-semibold leading-tight text-slate-800">
+                {doctorName}
               </h4>
 
-              <p className="mt-1 text-xs text-slate-500">
-                {t("dashboard.profile.doctorTitle")}
+              <p className="mt-1 truncate text-xs text-slate-500">
+                {doctorTitle}
               </p>
             </div>
-          </div>
+          </NavLink>
 
           {/*  Logout  */}
 

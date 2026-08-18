@@ -9,8 +9,10 @@ const Header = ({ currentTitle, onMenuClick }) => {
   const isRTL = i18n.language === "ar";
   const currentLocale = isRTL ? "ar-SA" : "en-US";
 
-  const currentDay = new Date().toLocaleDateString(currentLocale, { weekday: "long" });
-  
+  const currentDay = new Date().toLocaleDateString(currentLocale, {
+    weekday: "long",
+  });
+
   const currentDate = new Date().toLocaleDateString(currentLocale, {
     year: "numeric",
     month: "long",
@@ -29,9 +31,7 @@ const Header = ({ currentTitle, onMenuClick }) => {
         </button>
 
         {/* العنوان ظاهراً دائماً */}
-        <h1 className="text-base font-bold text-slate-800">
-          {currentTitle}
-        </h1>
+        <h1 className="text-base font-bold text-slate-800">{currentTitle}</h1>
       </div>
 
       <div className="flex items-center gap-4">
@@ -44,10 +44,16 @@ const Header = ({ currentTitle, onMenuClick }) => {
         </button>
 
         {/* التاريخ */}
-        <div className={`flex items-center gap-2.5 ${isRTL ? 'ps-3 border-s' : 'pe-3 border-e'} border-slate-200 flex-row`}>
-          <div className={`${isRTL ? 'text-end' : 'text-start'} hidden sm:block`}>
+        <div
+          className={`flex items-center gap-2.5 ${isRTL ? "ps-3 border-s" : "pe-3 border-e"} border-slate-200 flex-row`}
+        >
+          <div
+            className={`${isRTL ? "text-end" : "text-start"} hidden sm:block`}
+          >
             <p className="text-sm font-normal text-slate-400 whitespace-nowrap">
-              {isRTL ? `${currentDay}، ${currentDate}` : `${currentDay}, ${currentDate}`}
+              {isRTL
+                ? `${currentDay}، ${currentDate}`
+                : `${currentDay}, ${currentDate}`}
             </p>
           </div>
         </div>

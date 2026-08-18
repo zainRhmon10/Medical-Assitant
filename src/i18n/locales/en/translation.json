@@ -1,7 +1,9 @@
 {
   "auth": {
+
+    
     "sidebar": {
-      "title": "Smart Medical Assistant",
+      "title": "Tibscribe Ai",
       "titleHighlight": "For Doctors",
       "description": "An all-in-one platform that helps doctors manage medical records, track cases, and get instant clinical support.",
       "features": [
@@ -172,7 +174,598 @@
     }
   },
 
+  "createSession": {
+  "title": "New Clinical Session",
+  "subtitle": "Select the patient, then add the visit audio recording",
+
+  "steps": {
+    "patient": "Patient",
+    "audio": "Recording",
+    "processing": "Processing",
+    "result": "Result"
+  },
+  "audio": {
+  "recordTab": "Record Audio",
+  "uploadTab": "Upload File",
+
+  "clickToRecord": "Click to start recording",
+  "recording": "Recording...",
+  "recordingFinished": "Recording finished. You can review it before continuing.",
+
+  "recordAgain": "Record Again",
+  "next": "Next: Send for Processing",
+  "back": "Back",
+
+  "uploader": {
+    "dragHere": "Drag the audio file here",
+    "clickToChoose": "or click to choose a file from your device",
+    "formats": "WAV, MP3, M4A, OGG, FLAC, WEBM, MP4, MPEG, MPGA, OGA, OPUS, AAC, AMR, WMA",
+    "maxSize": "Maximum file size: 100 MB",
+    "remove": "Remove file"
+  },
+
+  "errors": {
+    "permissionDenied": "Microphone access was denied. Allow microphone access and try again.",
+    "microphoneFailed": "Couldn't access the microphone.",
+    "recordingFailed": "An error occurred while recording the audio.",
+    "notSupported": "This browser doesn't support the required audio recording functionality.",
+    "invalidType": "This audio file format is not supported.",
+    "fileTooLarge": "The file exceeds the maximum allowed size of 100 MB.",
+    "emptyFile": "The audio file is empty."
+  }
+},
+"processing": {
+  "title": "Processing Clinical Session",
+  "description": "The audio has been uploaded and is now being analyzed to generate the clinical report. This may take some time.",
+
+  "creating": "Uploading audio and creating the session...",
+  "currentStage": "Current stage:",
+
+  "completeTitle": "Session Processing Complete",
+  "completeDescription": "The audio was processed successfully and the session results are ready. The clinical report will be displayed in the next step.",
+
+  "failedTitle": "Session Processing Failed",
+  "failedDescription": "The audio could not be processed successfully. You can retry the same clinical session without creating a new visit.",
+
+  "sessionId": "Session ID",
+  "sessionStatus": "Session Status",
+  "file": "Audio File",
+
+  "keepOpen": "The processing status is checked automatically, so you don't need to refresh the page.",
+
+  "retryUpload": "Retry Upload",
+  "retryProcessing": "Retry Processing",
+  "retryCheck": "Check Status Again",
+
+  "status": {
+    "waiting": "Waiting for processing",
+    "queued": "Session is queued",
+    "running": "Processing audio",
+    "complete": "Processing complete",
+    "failed": "Processing failed"
+  },
+
+  "errors": {
+    "createFailed": "Couldn't create the clinical session or upload the audio.",
+    "pollFailed": "Couldn't check the session processing status.",
+    "retryFailed": "Couldn't retry the clinical session."
+  }
+},
+
+  "patient": {
+    "title": "Select Patient",
+    "searchPlaceholder": "Search by patient name or medical record number",
+    "loading": "Loading patients...",
+    "empty": "No patient found",
+    "emptyHint": "You can add the patient first from Patient Management",
+    "selected": "Selected patient:",
+    "startRecording": "Start Audio Recording",
+
+    "errors": {
+      "loadFailed": "Couldn't load the patients list"
+    }
+  },
+
+  "validation": {
+    "patientRequired": "Please select a patient from the list",
+    "patientInvalid": "Please select a valid patient"
+  }
+},
+
+"reports": {
+  "fullAudio": {
+    "title": "Full Session Audio",
+    "description": "Listen to the complete original audio recording of this clinical visit.",
+    "load": "Load Audio",
+    "loading": "Loading audio...",
+    "retry": "Try Again",
+    "loadFailed": "Couldn't load the full session audio."
+  },
+  "finalize": {
+  "title": "Finalize Clinical Report",
+  "description": "After reviewing the report, corrections and recommendations, you can approve and store the final immutable clinical record.",
+  "button": "Finalize Report",
+
+  "checking": "Checking report status...",
+
+  "immutableHint": "After finalization, the SOAP draft, session processing and recommendations cannot be silently modified.",
+
+  "confirmTitle": "Confirm Finalization",
+  "confirmSubtitle": "This action creates the final clinical record for this session.",
+
+  "confirmWarningTitle": "Final Action",
+  "confirmWarningDescription": "The current report and expert-system recommendations will be stored as an immutable snapshot.",
+
+  "confirmQuestion": "Have you reviewed the report, corrections and recommendations and want to approve this version as final?",
+
+  "cancel": "Cancel",
+  "confirmButton": "Yes, Finalize Report",
+  "finalizing": "Finalizing report...",
+
+  "finalizedTitle": "Report Finalized",
+  "finalizedDescription": "An immutable final snapshot of the report and recommendations has been stored for this visit.",
+  "finalizedBadge": "Finalized Report",
+
+  "finalizedAt": "Finalized At",
+  "snapshotId": "Final Snapshot ID",
+
+  "errors": {
+    "statusFailed": "Couldn't check the report finalization status.",
+    "finalizeFailed": "Couldn't finalize the clinical report."
+  }
+},
+  "suggestions": {
+  "title": "Expert System Recommendations",
+  "subtitle": "Clinical recommendations generated by EXPERTA_MED from the visit data and medical knowledge base.",
+  "count": "{{count}} recommendations",
+  "refresh": "Refresh recommendations",
+  "loading": "Loading expert system recommendations...",
+  "retry": "Try Again",
+
+  "emptyTitle": "No Active Recommendations",
+  "emptyDescription": "EXPERTA_MED did not generate any active recommendations for this visit.",
+
+  "recommendation": "Recommendation {{number}}",
+  "untitled": "Clinical Recommendation",
+  "noDetails": "No additional details are available for this recommendation.",
+
+  "missingTests": "Missing Tests or Data",
+  "scope": "Scope",
+
+  "evidenceAndReferences": "Evidence, Reasoning & References",
+  "condition": "Rule Condition",
+  "evidence": "Evidence",
+  "inferenceChain": "Inference Chain",
+  "references": "References",
+
+  "severity": {
+    "critical": "Critical",
+    "high": "High Priority",
+    "medium": "Medium Priority",
+    "low": "Low Priority",
+    "info": "Informational"
+  },
+
+  "feedback": {
+    "title": "Clinician Decision",
+    "subtitle": "Record your assessment of this recommendation before finalizing the report.",
+    "modalTitle": "Record Recommendation Decision",
+
+    "reason": "Reason",
+    "reasonPlaceholder": "Optionally explain your decision...",
+    "reasonOptional": "Optional — maximum 2000 characters",
+
+    "cancel": "Cancel",
+    "save": "Save Decision",
+    "saved": "Clinician feedback recorded successfully.",
+    "recordedReason": "Recorded Reason",
+
+    "actions": {
+      "accepted": "Accepted",
+      "rejected": "Rejected",
+      "deferred": "Deferred",
+      "acted": "Action Taken"
+    },
+
+    "errors": {
+      "saveFailed": "Couldn't record clinician feedback."
+    }
+  },
+
+  "errors": {
+    "title": "Unable to Load Recommendations",
+    "loadFailed": "Couldn't load the expert system recommendations."
+  }
+},
+  "title": "Clinical Report",
+  "subtitle": "Review the clinical report generated from this session",
+  "draft": "Draft for Review",
+  "backToSessions": "Back to Sessions",
+
+  "patient": "Patient",
+  "unknownPatient": "Unknown Patient",
+  "sessionId": "Session ID",
+  "audio": "Audio Recording",
+  "createdAt": "Report Created",
+
+  "loading": "Loading clinical report...",
+  "loadingHint": "Retrieving the session results",
+  "soapReport": "SOAP Report",
+  "soapDescription": "Clinical information organized into SOAP sections",
+  "itemsCount": "{{count}} items",
+
+  "confidence": "Confidence",
+  "speaker": "Speaker",
+  "needsReview": "Needs Review",
+
+  "draftNotice": "This report is still an AI-generated draft and must be reviewed by the physician before final approval.",
+  "visitNumber": "Visit #{{number}}",
+"visitDate": "Visit Date",
+"detectedLanguage": "Audio Language",
+"urgent": "Urgent",
+
+"languages": {
+  "arabic": "Arabic"
+},
+
+"patientState": {
+  "status": "Status",
+  "pregnant": "Pregnant",
+  "notPregnant": "Not Pregnant",
+  "postpartum": "Postpartum",
+
+  "gestationalAge": "Gestational Age",
+  "weeks": "{{count}} weeks",
+
+  "trimester": "Trimester",
+  "firstTrimester": "First Trimester",
+  "secondTrimester": "Second Trimester",
+  "thirdTrimester": "Third Trimester"
+},
+
+"summary": {
+  "total": "Report Items",
+  "confidence": "Average Confidence",
+  "review": "Needs Review",
+  "urgent": "Urgent Items"
+},
+
+"reviewNotice": {
+  "title": "{{count}} items need review",
+  "description": "The system identified items that should be confirmed by the clinician before the report is finalized.",
+  "openQueue": "Review Items"
+},
+
+"reviewQueue": {
+  "audio": {
+  "play": "Play Original Audio",
+  "title": "Original Audio Clip",
+  "loadFailed": "Couldn't load the audio clip."
+},
+
+"correction": {
+  "edit": "Edit Item",
+  "title": "Correct Clinical Item",
+  "subtitle": "Review the text, classification, SOAP section and speaker before saving.",
+
+  "text": "Clinical Text",
+  "label": "Classification",
+  "soapSection": "SOAP Section",
+  "speaker": "Speaker",
+
+  "cancel": "Cancel",
+  "save": "Save Correction",
+  "saved": "Correction saved and report updated successfully.",
+
+  "speakers": {
+    "none": "Not Specified",
+    "doctor": "Doctor",
+    "patient": "Patient",
+    "unknown": "Unknown Speaker"
+  },
+
+  "errors": {
+    "noChanges": "No changes were made to this item.",
+    "textRequired": "The text cannot be empty.",
+    "saveFailed": "Couldn't save the correction."
+  }
+},
+
+"labels": {
+  "symptom": "Symptom",
+  "diagnosis": "Diagnosis",
+  "medication": "Medication",
+  "history": "Medical History",
+  "allergy": "Allergy",
+  "lab": "Laboratory",
+  "vital": "Vital Signs",
+  "plan": "Plan",
+  "procedure": "Procedure",
+  "info": "General Information",
+  "treatment": "Treatment",
+  "follow_up": "Follow-up",
+  "nutrition": "Nutrition",
+  "pregnancy_risk": "Pregnancy Risk",
+  "cardiology": "Cardiology",
+  "neurology": "Neurology",
+  "gynecology": "Gynecology",
+  "infection": "Infection",
+  "postpartum": "Postpartum",
+  "emergency": "Emergency"
+},
+  "title": "Review Queue",
+  "subtitle": "Items identified by the system for clinician confirmation before final approval.",
+
+  "loading": "Loading review items...",
+  "refresh": "Refresh review queue",
+  "retry": "Try Again",
+
+  "count": "{{count}} items",
+  "reviewItem": "Review Item {{number}}",
+
+  "confidence": "System Confidence",
+  "priority": "Review Priority",
+  "audioPosition": "Audio Position",
+
+  "reasonTitle": "Why does this item need review?",
+  "genericReason": "The system selected this item for review because uncertainty was detected.",
+
+  "emptyTitle": "No Items Need Review",
+  "emptyDescription": "The system did not identify any high-priority review items for this session.",
+
+  "reasons": {
+    "lowConfidence": "Classification confidence is {{actual}}, below the review threshold of {{threshold}}.",
+    "ood": "The text differs from patterns seen in the model's training data, so clinician confirmation is recommended (OOD: {{score}})."
+  },
+
+  "errors": {
+    "title": "Unable to Load Review Queue",
+    "loadFailed": "Couldn't load the items that need review."
+  }
+},
+"entities": {
+  "title": "Extracted Clinical Data",
+
+  "present": "Present",
+  "absent": "Absent",
+
+  "high": "High",
+  "low": "Low",
+  "normal": "Normal",
+
+  "kinds": {
+    "symptom": "Symptom",
+    "condition": "Condition",
+    "test": "Test",
+    "lab": "Laboratory Result",
+    "medication": "Medication",
+    "nutrition": "Nutrition",
+    "measurement": "Measurement"
+  }
+},
+
+  "soap": {
+    "subjective": {
+      "title": "Subjective",
+      "description": "Symptoms, complaints and history reported by the patient"
+    },
+
+    "objective": {
+      "title": "Objective",
+      "description": "Measurements, examinations and clinical findings"
+    },
+
+    "assessment": {
+      "title": "Assessment",
+      "description": "Clinical assessment and diagnoses"
+    },
+
+    "plan": {
+      "title": "Plan",
+      "description": "Treatment, follow-up and clinical plan"
+    },
+
+    "empty": "No information is available in this section."
+  },
+
+  "errors": {
+    "title": "Unable to Display Report",
+    "invalidSession": "Invalid clinical session ID.",
+    "loadFailed": "Couldn't load the clinical report."
+  }
+},
+
   "dashboard": {
+    "patients": {
+      "updatedSuccess": "Patient {{name}} was updated successfully",
+  "title": "Patient Medical Records",
+  "total": "Total patients: {{total}}",
+  "search": "Search by name or medical record number...",
+  "reload": "Refresh",
+  "addPatient": "Add Patient",
+
+  "id": "Medical ID",
+  "name": "Full Name",
+  "age": "Age",
+  "ageValue": "{{age}} years",
+  "phone": "Phone",
+  "notes": "Notes",
+  "actions": "Actions",
+
+  "loading": "Loading patients...",
+  "loadError": "Couldn't load patients",
+  "empty": "No patients yet",
+  "emptyHint": "Add your first patient to start creating clinical sessions",
+  "noSearchResults": "No patients match your search",
+  "tryAnotherSearch": "Try another name or medical record number",
+
+  "view": "View patient",
+  "edit": "Edit patient",
+
+  "page": "Page {{current}} of {{last}}",
+
+  "createdSuccess": "Patient {{name}} was added successfully",
+
+  "obstetric": {
+  "button": "Update Obstetric State",
+
+  "title": "Obstetric State",
+  "subtitle": "Set or correct the patient's current obstetric state",
+
+  "stateLabel": "Current State",
+
+  "pregnant": "Pregnant",
+  "pregnantHint": "The patient is currently pregnant",
+
+  "postpartum": "Postpartum",
+  "postpartumHint": "The patient is currently in the postpartum period",
+
+  "notPregnant": "Not Pregnant",
+  "notPregnantHint": "The patient is not currently pregnant",
+
+  "gestationalWeeks": "Gestational Age (weeks)",
+  "gestationalWeeksPlaceholder": "Example: 32",
+  "gestationalWeeksHint": "Optional. Must be between weeks 1 and 44",
+
+  "cancel": "Cancel",
+  "save": "Save State",
+  "saving": "Saving state...",
+
+  "updatedSuccess": "The patient's obstetric state was updated successfully",
+
+  "errors": {
+    "stateRequired": "Please select an obstetric state",
+    "invalidWeeks": "Gestational age must be an integer between 1 and 44",
+    "updateFailed": "Couldn't update the patient's obstetric state"
+  }
+},
+
+  "details": {
+    "timeline": {
+      "visitCount": "{{count}} clinical visits",
+"clinicalVisit": "Clinical Visit",
+"openReport": "Open Report",
+"topLabels": "Top Clinical Labels",
+
+"status": {
+  "complete": "Completed",
+  "failed": "Failed",
+  "running": "Processing",
+  "queued": "Queued"
+},
+
+"stats": {
+  "items": "Report Items",
+  "confidence": "Average Confidence",
+  "review": "Needs Review",
+  "urgent": "Urgent"
+},
+
+"obstetric": {
+  "currentState": "Current Obstetric State",
+  "pregnant": "Pregnant",
+  "postpartum": "Postpartum",
+  "notPregnant": "Not Pregnant",
+
+  "source": "State Source",
+  "inferred": "Inferred by the system",
+  "manual": "Set by clinician",
+
+  "effectiveAt": "Effective Since"
+},
+
+"labels": {
+  "diagnosis": "Diagnosis",
+  "follow_up": "Follow-up",
+  "vital": "Vital Signs",
+  "gynecology": "Gynecology",
+  "treatment": "Treatment",
+  "lab": "Laboratory",
+  "plan": "Treatment Plan",
+  "info": "General Information",
+  "cardiology": "Cardiology"
+},
+  "title": "Medical Timeline",
+  "subtitle": "Patient's longitudinal clinical history and previous sessions",
+  "loading": "Loading medical timeline...",
+  "refresh": "Refresh timeline",
+  "retry": "Try Again",
+
+  "empty": "No previous medical history",
+  "emptyHint": "Clinical sessions and medical events will appear here once they are created for this patient.",
+
+  "clinicalEvent": "Clinical Event",
+  "session": "Clinical Session #{{id}}",
+
+  "errors": {
+    "loadFailed": "Couldn't load the patient's medical timeline"
+  }
+},
+  "patient": "Patient Profile",
+  "back": "Back to Patients",
+  "loading": "Loading patient information...",
+  "retry": "Try Again",
+
+  "basicInformation": "Basic Information",
+  "mrn": "Medical Record Number (MRN)",
+  "birthDate": "Birth Date",
+  "phone": "Phone Number",
+  "notes": "Notes",
+  "noNotes": "No notes have been recorded for this patient.",
+
+  "sessions": "Clinical Sessions",
+
+
+  "errors": {
+    "invalidPatient": "Invalid patient ID",
+    "invalidResponse": "Couldn't read patient information from the server",
+    "loadFailed": "Couldn't load patient information"
+  }
+},
+
+  "form": {
+    "editTitle": "Edit Patient",
+"editSubtitle": "Update the patient's basic information",
+"saveChanges": "Save Changes",
+"updating": "Saving changes...",
+    "addTitle": "Add New Patient",
+    "addSubtitle": "Enter the patient's basic information",
+
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Example: Lina",
+
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Example: Ali",
+
+    "mrn": "MRN (optional)",
+    "mrnPlaceholder": "MRN-1001",
+
+    "birthDate": "Birth Date (optional)",
+
+    "phone": "Phone Number (optional)",
+    "phonePlaceholder": "+49 123 456789",
+
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Enter any medical or administrative notes about the patient...",
+
+    "cancel": "Cancel",
+    "create": "Add Patient",
+    "creating": "Adding patient...",
+
+    "errors": {
+      "updateFailed": "Couldn't update the patient. Check the information and try again",
+      "firstNameRequired": "First name is required",
+      "firstNameMax": "First name must not exceed 75 characters",
+      "lastNameRequired": "Last name is required",
+      "lastNameMax": "Last name must not exceed 75 characters",
+      "mrnMax": "MRN must not exceed 64 characters",
+      "birthDateInvalid": "Birth date must be before today",
+      "phoneMax": "Phone number must not exceed 30 characters",
+      "notesMax": "Notes must not exceed 5000 characters",
+      "createFailed": "Couldn't add the patient. Check the information and try again"
+    }
+  }
+},
     "stats": {
       "warnings": "Warnings",
       "alert": "Alert",
@@ -188,24 +781,45 @@
       "occupancy": "Bed Occupancy Rate"
     },
 
-    "sessions": {
-      "title": "Sessions",
-      "subtitle": "Manage and monitor all your medical sessions",
-      "sessionNumber": "Session Number",
-      "patient": "Patient",
-      "date": "Date",
-      "duration": "Duration",
-      "status": "Status",
-      "actions": "Actions",
-      "searchPatient": "Search by patient name...",
-      "allCases": "All Cases",
-      "pending": "Pending Review",
-      "processing": "In Treatment",
-      "approved": "Approved",
-      "pendingReview": "Pending Review",
-      "inTreatment": "In Treatment",
-      "newSession": "New Session"
-    },
+  "sessions": {
+  "title": "Clinical Sessions",
+  "subtitle": "Manage and monitor all of your clinical sessions",
+
+  "sessionNumber": "Session ID",
+  "patient": "Patient",
+  "date": "Visit Date",
+  "audio": "Audio Recording",
+  "stage": "Processing Stage",
+  "status": "Status",
+  "actions": "Actions",
+
+  "allStatuses": "All Statuses",
+
+  "statuses": {
+    "queued": "Queued",
+    "running": "Processing",
+    "complete": "Complete",
+    "failed": "Failed",
+    "unknown": "Unknown"
+  },
+
+  "newSession": "New Session",
+  "refresh": "Refresh",
+
+  "total": "Total sessions: {{count}}",
+
+  "loading": "Loading clinical sessions...",
+  "loadError": "Couldn't load clinical sessions.",
+
+  "empty": "No Clinical Sessions",
+  "emptyHint": "Clinical sessions will appear here after you create the first session.",
+
+  "retry": "Retry",
+  "retrying": "Retrying...",
+  "retryError": "Couldn't retry the clinical session.",
+
+  "page": "Page {{current}} of {{last}}"
+},
 
     "charts": {
       "weeklyActivity": "Weekly Activity",
@@ -227,7 +841,7 @@
     },
 
     "menu": {
-      "overview": "Overview",
+      "overview": "Dashboard",
       "appointments": "Appointments & Schedule",
       "patients": "Patient Management",
       "sessions": "Sessions",
@@ -240,11 +854,38 @@
       "emptyFeature": "This screen is currently under development and will be linked soon."
     },
 
-    "profile": {
-      "doctorName": "Dr. Ahmed Mohamed",
-      "doctorTitle": "Practicing Physician",
-      "doctorInitial": "Dr"
-    },
+   "profile": {
+  "doctorName": "Doctor",
+  "doctorTitle": "Physician",
+  "doctorInitial": "Dr",
+
+  "personalInfo": "Personal Information",
+  "professionalInfo": "Professional Information",
+
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email Address",
+  "phone": "Phone Number",
+  "hospitalOrClinic": "Hospital or Clinic",
+
+  "specialties": "Medical Specialties",
+  "selectSpecialty": "Add a specialty...",
+  "specialtyRequired": "At least one specialty is required",
+
+  "changePhoto": "Change Photo",
+  "imageSuccess": "Profile picture updated successfully.",
+  "imageError": "Failed to update profile picture.",
+  "imageSizeError": "Image must be smaller than 5 MB.",
+
+  "save": "Save Changes",
+  "saving": "Saving changes...",
+  "success": "Profile updated successfully.",
+  "saveError": "Failed to update profile details.",
+
+  "loadingData": "Loading profile details...",
+  "fetchErrorTitle": "Failed to Load Profile",
+  "tryAgain": "Try Again"
+},
 
     "reports": {
       "title": "Approved Reports",

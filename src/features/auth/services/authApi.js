@@ -3,7 +3,7 @@ import axios from "axios";
 const TOKEN_KEY = "doctorToken";
 
 const api = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/doctor",
+  baseURL: "https://tibscribe-api.onrender.com/api/doctor",
 
   headers: {
     Accept: "application/json",
@@ -190,31 +190,20 @@ export const verifyResetPasswordOtp = async (email, otp) => {
   return response;
 };
 
-// ==========================================
 // Reset Password
-// ==========================================
-
 export const resetDoctorPassword = async (
   token,
   password,
   passwordConfirmation,
-  logoutOtherDevices = false,
 ) => {
   const formData = new FormData();
-
   formData.append("password", password);
-
   formData.append("password_confirmation", passwordConfirmation);
-
-  formData.append("logout_oth_dev", String(logoutOtherDevices));
-
-  const response = await api.post("/passwords/reset", formData, {
+  return await api.post("/passwords/reset", formData, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   });
-
-  return response;
 };
 
 export default api;
