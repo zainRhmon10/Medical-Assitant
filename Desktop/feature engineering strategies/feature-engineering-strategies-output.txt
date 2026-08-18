@@ -1,0 +1,4825 @@
+====================================================================================================
+PROJECT EXPORT FOR LLMs
+====================================================================================================
+
+PROJECT INFORMATION:
+--------------------------------------------------
+Project Name: feature-engineering-strategies
+Generated On: 2026-06-26 14:15:36 (Asia/Damascus / GMT+03:00)
+Total Files Processed: 26
+Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
+Tool Author: Jota / José Guilherme Pandolfi
+
+EXPORT CONFIGURATION:
+--------------------------------------------------
+Language: en
+Max File Size: 1 MB
+Include Hidden Files: false
+Output Format: both
+Notification Level: minimal
+Custom File Name Pattern: {workspaceName}-output
+
+================================================================================
+PROJECT STRUCTURE
+================================================================================
+└── 📁 kbs_extractor/
+    ├── 📁 __pycache__/
+    │   ├── 📄 __init__.cpython-311.pyc (613 B)
+    │   ├── 📄 __main__.cpython-311.pyc (327 B)
+    │   ├── 📄 cli.cpython-311.pyc (5.1 KB)
+    │   ├── 📄 facts.cpython-311.pyc (2.47 KB)
+    │   ├── 📄 feature_engine.cpython-311.pyc (37.58 KB)
+    │   ├── 📄 graph.cpython-311.pyc (7.85 KB)
+    │   ├── 📄 gui.cpython-311.pyc (72.52 KB)
+    │   ├── 📄 logger.cpython-311.pyc (1.42 KB)
+    │   ├── 📄 pipeline.cpython-311.pyc (53.34 KB)
+    │   ├── 📄 profiler.cpython-311.pyc (17.82 KB)
+    │   ├── 📄 quality_engine.cpython-311.pyc (18.62 KB)
+    │   └── 📄 validator.cpython-311.pyc (10.92 KB)
+    ├── 📄 __init__.py (318 B)
+    ├── 📄 __main__.py (64 B)
+    ├── 📄 asef.md (10.96 KB)
+    ├── 📄 cli.py (3.32 KB)
+    ├── 📄 facts.py (1.8 KB)
+    ├── 📄 feature_engine.py (25.02 KB)
+    ├── 📄 graph.py (3.92 KB)
+    ├── 📄 gui.py (40.41 KB)
+    ├── 📄 logger.py (638 B)
+    ├── 📄 pipeline.py (31.42 KB)
+    ├── 📄 profiler.py (8.84 KB)
+    ├── 📄 PROJECT_MAP.md (46.29 KB)
+    ├── 📄 quality_engine.py (11.43 KB)
+    └── 📄 validator.py (6.01 KB)
+
+================================================================================
+PROJECT STATISTICS
+================================================================================
+Total Files: 26
+Total Directories: 2
+Text Files: 14
+Binary Files: 12
+Total Size: 418.98 KB
+
+FILE TYPES DISTRIBUTION:
+------------------------------
+.pyc            : 12
+.py             : 12
+.md             : 2
+
+================================================================================
+FILE CODE CONTENTS
+================================================================================
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- kbs_extractor/__pycache__/__init__.cpython-311.pyc
+- kbs_extractor/__pycache__/__main__.cpython-311.pyc
+- kbs_extractor/__pycache__/cli.cpython-311.pyc
+- kbs_extractor/__pycache__/facts.cpython-311.pyc
+- kbs_extractor/__pycache__/feature_engine.cpython-311.pyc
+- kbs_extractor/__pycache__/graph.cpython-311.pyc
+- kbs_extractor/__pycache__/gui.cpython-311.pyc
+- kbs_extractor/__pycache__/logger.cpython-311.pyc
+- kbs_extractor/__pycache__/pipeline.cpython-311.pyc
+- kbs_extractor/__pycache__/profiler.cpython-311.pyc
+- kbs_extractor/__pycache__/quality_engine.cpython-311.pyc
+- kbs_extractor/__pycache__/validator.cpython-311.pyc
+
+
+================================================================================
+FILE: kbs_extractor/__init__.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 318 B
+Extension: .py
+Language: python
+Location: kbs_extractor/__init__.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-21 23:22:03 (Asia/Damascus / GMT+03:00)
+MD5: 29db923dfd9089bd7cf9b4a6e2e849ab
+SHA256: 7098bba7479b883b57e0d71d5e236c01bce8f64969b93e1628d3d6663022426d
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+"""KBS Feature Extractor — Knowledge-Based Feature Extraction System."""
+
+__version__ = "1.0.0"
+
+from kbs_extractor.pipeline import Pipeline
+from kbs_extractor.graph import KnowledgeGraph
+from kbs_extractor.quality_engine import run_quality_assessment
+from kbs_extractor.feature_engine import run_feature_extraction
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/__main__.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 64 B
+Extension: .py
+Language: python
+Location: kbs_extractor/__main__.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-21 22:57:31 (Asia/Damascus / GMT+03:00)
+MD5: ef9ce4e2d87a566913cc304228525985
+SHA256: 30b028d6239994e8fc8fff132640a8e3957ca378db691819438f9694c67535d7
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+import sys
+from kbs_extractor.cli import main
+
+sys.exit(main())
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/asef.md
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 10.96 KB
+Extension: .md
+Language: text
+Location: kbs_extractor/asef.md
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-25 16:43:35 (Asia/Damascus / GMT+03:00)
+MD5: 4e5a708c8f610242a8dc24c88da1aaa3
+SHA256: 475cca0cb941d485491d96a1316d59cdf6dc2c12fb5bcb2eece1450e11540299
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+# ASEF — إطار هندسة الميزات المعمم
+## Automated Smart Expert Framework
+
+> المشروع لا يُعدّل البيانات — يقترح الإصلاحات + يستخرج الميزات + يُقيّم النتائج.
+
+---
+
+## المرحلة 0: السؤال الأول (قبل أي كود)
+
+```
+"لو إنسان خبير يتخذ هذا القرار — ماذا سينظر إليه؟"
+
+┌─────────────────────────────────────────────────┐
+│  1. ماذا نتنبأ؟         (target)               │
+│  2. متى نتنبأ؟        (ما المتاح لحظة التنبؤ) │
+│  3. ما المقياس؟         (accuracy / RMSE / F1) │
+│  4. ما القرار بعد التنبؤ؟ (إجراء عملي)        │
+└─────────────────────────────────────────────────┘
+
+⚠ أي ميزة لا تكون متاحة لحظة التنبؤ = تسريب بيانات
+```
+
+### ما يفعله نظامنا:
+- [x] تحديد target واستبعاده
+- [x] كشف تسريب (correlation > 0.95 / determines_target)
+- [ ] **مفقود: سؤال "هل هذا متاح وقت التنبؤ؟"** ← يحتاج وعي بترتيب الأحداث
+
+### القرار:
+نظامنا لا يعرف ترتيب الأحداث الزمني — وهذا مقبول. يكفي أن يكشف التسريب الإحصائي (correlation + deterministic).
+
+---
+
+## المرحلة 1: تصنيف الأعمدة بالدور
+
+```
+كل عمود يقع في دور واحد:
+
+  يُحذف                             │ ID, unique_ratio ≈ 1.0
+  TARGET                            │ العمود المستهدف — يُستبعد
+  مقياس      │  أرقام مستمرة (سعر، عمر، مسافة)
+  بُعد       │         فئات (مدينة، نوع، حالة)
+  زمن        │                      تاريخ / وقت
+  مكان       │                         إحداثيات
+  نص         │                         نصوص حرة
+```
+
+### ما يفعله نظامنا:
+- [x] كشف ID تلقائي (unique_ratio = 1.0)
+- [x] كشف الفئويات المخفية (nunique ≤ min(10, √n) + أعداد صحيحة)
+- [x] كشف binary (0,1) تلقائي
+- [x] كشف datetime
+- [x] كشف text (avg_words > 5)
+- [x] Semantic matching للإحداثيات (lat/lon aliases)
+- [x] استبعاد target
+
+### الحالة: ✅ مكتمل.
+
+---
+
+## المرحلة 2: الأسئلة الثلاثة لكل عمود
+
+> كل عمود يُسأل 3 أسئلة — هذه الأسئلة تُولّد كل الميزات الممكنة.
+
+### س1: ما القيمة نفسها؟ (تحويلات مباشرة)
+
+#### المقاييس (Numeric):
+| الشرط | العملية | الحالة |
+|-------|---------|--------|
+| \|skew\| > 2, min ≥ 0 | log1p | ✅ |
+| 0.5 < \|skew\| ≤ 2, min ≥ 0 | sqrt | ✅ |
+| \|skew\| ≤ 0.5 | standard_scale | ✅ |
+| skew + min < 0 | yeo_johnson | ✅ |
+| kurtosis > 7 | robust_scale | ✅ |
+| kurtosis < -1 | quantile_bin | ✅ |
+
+#### الأبعاد (Categorical):
+| الشرط | العملية | الحالة |
+|-------|---------|--------|
+| cardinality = 2 | binary (0/1) | ✅ |
+| cardinality 3-10 | one_hot | ✅ |
+| cardinality 11-50 | frequency_encode | ✅ |
+| cardinality > 50 | target_encode | ✅ |
+| ordinal | ordinal_encode | ✅ |
+| boolean | bool_to_int | ✅ |
+
+#### الزمن (Temporal):
+| المكون | الحالة |
+|--------|--------|
+| year, month, day | ✅ |
+| day_of_week, quarter | ✅ |
+| is_weekend | ✅ |
+| hour, minute | ✅ |
+| minute_of_day (hour×60+min) | ✅ |
+| is_rush_hour (7-9am, 5-7pm) | ✅ |
+| sin/cos cyclical encoding | ✅ (month, day_of_week, hour) |
+| sin/cos لـ hour | ✅ |
+
+#### المكان (Spatial):
+| العملية | الحالة |
+|---------|--------|
+| haversine (نقطتين) | ✅ |
+| centroid distance (نقطة واحدة) | ✅ |
+| manhattan_distance | ✅ |
+| bearing (اتجاه) | ✅ |
+
+#### النص (Text):
+| العملية | الحالة |
+|---------|--------|
+| word_count, char_count | ✅ |
+| TF-IDF / BoW | ✅ |
+| has_url, has_email, has_number | ✅ |
+| uppercase_ratio, digit_ratio | ✅ |
+
+### س2: ما مقارنتها بغيرها؟ (تفاعلات)
+
+| العملية | الحالة |
+|---------|--------|
+| A × B (product) | ✅ (مع Guided FE) |
+| A / B (ratio) | ✅ |
+| A - B (difference) | ✅ |
+| A / mean(A) (انحراف نسبي) | ✅ |
+
+الحالة: Guided FE يختبر التفاعلات ويسقط الضعيف ✅
+**مشكلة:** حساب MI يعطي 0 دائماً في regression ← يحتاج إصلاح بـ F-score.
+
+### س3: ما سياقها في المجموعة؟ (Aggregation) ← الأقوى
+
+| العملية | الحالة |
+|---------|--------|
+| groupby(cat)[num].mean() | ✅ |
+| groupby(cat)[num].std() | ✅ |
+| groupby(cat)[num].min/max() | ❌ (مستقبلي) |
+| groupby(cat)[num].count() | ❌ (مستقبلي) |
+| groupby(cat)[num].rank() | ❌ (مستقبلي) |
+| value - group_mean | ❌ (مستقبلي) |
+| groupby([cat1,cat2])[num].mean() | ❌ (مستقبلي) |
+
+> ✅ **الفجوة الأساسية سُدّت.** mean + std يعملان. باقي التجميعات مستقبلية.
+
+---
+
+## المرحلة 3: الجودة — اقتراح بدون تعديل
+
+> النظام يقترح الإصلاحات ولا يطبقها. المستخدم يقرر.
+
+### MQ1: القيم المفقودة
+| الشرط | الاقتراح | الحالة |
+|-------|---------|--------|
+| null < 5% + numeric | impute_median | ✅ |
+| null 5-30% + numeric | impute_median + create_indicator | ✅ |
+| null > 30% | create_indicator_and_drop | ✅ |
+| null + categorical | impute_mode | ✅ |
+| null + text | fill_empty_string | ✅ |
+
+### MQ2: القيم الشاذة
+| الشرط | الاقتراح | الحالة |
+|-------|---------|--------|
+| outlier < 1% | remove_rows | ✅ |
+| outlier 1-5% | winsorize | ✅ |
+| outlier > 5% | keep (طبيعي) | ✅ |
+
+### MQ3: الاتساق
+| الكشف | الحالة |
+|-------|--------|
+| unique_ratio = 1.0 → possible ID | ✅ |
+| std = 0 → constant column | ✅ |
+| unique_count = 1 → single value | ✅ |
+| top_freq > 95% → near constant | ✅ |
+
+### MQ4: التكرار
+| الكشف | الحالة |
+|-------|--------|
+| \|correlation\| > 0.95 بين عمودين | ✅ |
+
+### MQ5: تسريب البيانات
+| الكشف | الحالة |
+|-------|--------|
+| \|correlation with target\| > 0.95 | ✅ |
+| feature uniquely determines target | ✅ |
+
+### الحالة: ✅ مكتمل. النظام يقترح فقط ولا يعدّل.
+
+---
+
+## المرحلة 4: Knowledge Templates (الأنماط المجالية)
+
+### Semantic Matching Layer:
+- 15 مفهوم دلالي × 5-8 aliases لكل واحد ≈ 100 اسم مدعوم ✅
+- confidence score لكل template ✅
+- unit detection (BMI: cm vs m) ✅
+
+### Templates المنفذة:
+| Template | Confidence | الحالة |
+|----------|-----------|--------|
+| BMI (weight/height²) | 95% | ✅ |
+| Duration (end - start) → days + weeks | 99% | ✅ |
+| Age from birth_date | 98% | ✅ |
+| Geo trip distance (haversine, 4 أعمدة) | 95% | ✅ |
+| Geo centroid distance (2 أعمدة) | 70% | ✅ |
+| Revenue (price × quantity) | 98% | ✅ |
+| Profit (revenue - cost) | 95% | ✅ |
+| Debt/Income ratio | 92% | ✅ |
+| Income/Family size | 88% | ✅ |
+| Rooms/Person | 85% | ✅ |
+| Income/Age (ضعيف) | 55% | ✅ |
+
+### الحالة: ✅ مكتمل.
+
+---
+
+## المرحلة 5: الذكاء (Meta-Rules + Guided FE)
+
+### Meta-Rules:
+| القاعدة | الحالة |
+|---------|--------|
+| rows < 100 → disable interactions | ✅ |
+| rows < 50 → disable binning | ✅ |
+| rows ≥ 100 → enable interactions | ✅ |
+
+### Guided Feature Engineering:
+| العملية | الحالة |
+|---------|--------|
+| توليد كل التفاعلات الممكنة | ✅ |
+| حساب MI/F-score لكل تفاعل | ✅ (MI فقط) |
+| الاحتفاظ بالأفضل فقط (MI > 0.01) | ✅ |
+| إصلاح MI للـ regression (F-score) | ✅ |
+
+---
+
+## المرحلة 6: التحقق (Validation)
+
+| القدرة | الحالة |
+|--------|--------|
+| مقارنة raw vs extracted بـ 5-fold CV | ✅ |
+| Feature importance (RandomForest) | ✅ |
+| كشف الميزات عديمة القيمة | ✅ |
+| حفظ تقرير JSON | ✅ |
+| **حلقة تكرار (iterate and validate)** | **❌ جولة واحدة فقط** |
+
+---
+
+## ملخص الفجوات — مرتب بالأولوية
+
+### أولوية قصوى — ✅ مُنفّذة:
+
+| # | الفجوة | الحالة |
+|---|--------|--------|
+| 1 | إضافة hour, minute, minute_of_day, is_rush_hour | ✅ مُنفّذ |
+| 2 | إضافة Aggregation Features (groupby.agg) | ✅ مُنفّذ (mean, std) |
+| 3 | إصلاح Guided FE للـ regression (F-score) | ✅ مُنفّذ |
+| 4 | عدم بناء ميزات من أعمدة صُنّفت للحذف | ✅ مُنفّذ |
+
+### أولوية متوسطة — ✅ مُنفّذة:
+
+| # | الفجوة | الحالة |
+|---|--------|--------|
+| 5 | manhattan_distance + bearing | ✅ مُنفّذ | 
+| 6 | sin/cos لـ hour | ✅ مُنفّذ |
+| 7 | is_rush_hour كقاعدة زمنية | ✅ مُنفّذ |
+| 8 | A / mean(A) كميزة نسبية (relative_deviation) | ✅ مُنفّذ |
+
+### أولوية منخفضة (مستقبلي):
+
+| # | الفجوة | الحالة |
+|---|--------|--------|
+| 9 | Feature selection نهائي (حذف importance < 0.005 تلقائياً) | ❌ مستقبلي |
+| 10 | حلقة تكرار متعددة الجولات | ❌ مستقبلي |
+| 11 | تقاطعات فئوية (cat1 + cat2) | ❌ مستقبلي |
+| 12 | Self-evaluation مع cross-validated importance | ❌ مستقبلي |
+| 13 | groupby min/max/count/rank | ❌ مستقبلي |
+| 14 | value - group_mean | ❌ مستقبلي |
+
+---
+
+## التقييم المُحدّث
+
+### نتائج الاختبار على NYC Taxi (50K صف):
+
+```
+                    قبل ASEF          بعد ASEF
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+R²                  -0.0525           +0.0200
+الحالة              أسوأ من المتوسط    أفضل من المتوسط ✅
+أهم ميزة            trip_distance_km   trip_distance_km
+                    (وحيدة)            + manhattan + bearing
+ميزات زمنية         year,month,day     + hour, minute, minute_of_day
+                                       + is_rush_hour + cyclical hour
+Aggregation         لا يوجد           8 ميزات groupby
+اتساق منطقي        يبني من id!        حذف 13 خطة متناقضة ✅
+```
+
+### التقييم:
+
+```
+قبل ASEF:                           6.5 / 10
+بعد ASEF (الأولوية القصوى 1-4):     8.0 / 10 ✅
+بعد ASEF (المتوسطة 5-8):            8.5 / 10 ✅
+بعد تنفيذ المنخفضة (9-14):          9.0+ / 10 (مستقبلي)
+```
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/cli.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 3.32 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/cli.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 22:35:39 (Asia/Damascus / GMT+03:00)
+MD5: 6677ce5b90aa64f2c999b1c1703f2f04
+SHA256: dc5e4e5b138eafb1343cdcf4ebbec485c3f10326946b0b6ecc5dae4122439146
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+import argparse
+import sys
+
+from kbs_extractor.logger import get_logger
+
+log = get_logger("cli")
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="kbs-extractor",
+        description="Knowledge-Based Feature Extraction System — "
+                    "Assess data quality and extract ML-ready features using rule graphs.",
+    )
+    parser.add_argument("--input", "-i", required=True, help="Path to input file (CSV, JSON, Excel)")
+    parser.add_argument("--output", "-o", default=None, help="Path for output features CSV (default: <input>_features.csv)")
+    parser.add_argument(
+        "--mode", "-m",
+        choices=["full", "quality", "features"],
+        default="full",
+        help="Run mode: 'full' (quality + features), 'quality' (assessment only), 'features' (extraction only)",
+    )
+    parser.add_argument("--target", "-t", default=None, help="Name of the target column (excluded from features, used for MI)")
+    parser.add_argument("--report", "-r", default=None, help="Path to save quality report JSON")
+    parser.add_argument(
+        "--categorical", "-c",
+        nargs="+", default=None,
+        help="Columns to force as categorical (e.g., --categorical sex cp fbs)",
+    )
+    parser.add_argument(
+        "--task",
+        choices=["classification", "regression"],
+        default=None,
+        help="ML task type (auto-detected from target if not specified)",
+    )
+    parser.add_argument(
+        "--validate", "-v",
+        action="store_true",
+        help="Run validation: compare raw vs extracted features using cross-validated ML",
+    )
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+
+    from pathlib import Path
+    input_path = Path(args.input)
+    if not input_path.exists():
+        log.error("Input file not found: %s", input_path)
+        print(f"Error: file not found: {input_path}", file=sys.stderr)
+        return 1
+
+    if args.output is None:
+        args.output = str(input_path.with_name(input_path.stem + "_features.csv"))
+
+    if args.validate and not args.target:
+        print("Error: --validate requires --target", file=sys.stderr)
+        return 1
+
+    from kbs_extractor.pipeline import Pipeline
+
+    pipeline = Pipeline(
+        input_path=str(input_path),
+        output_path=args.output,
+        mode=args.mode,
+        target_column=args.target,
+        report_path=args.report,
+        categorical_columns=args.categorical,
+        task_type=args.task,
+    )
+    result_df = pipeline.run()
+
+    if args.validate and result_df is not None:
+        from kbs_extractor.validator import validate
+        df_original = Pipeline._load_data(str(input_path))
+        df_original.columns = df_original.columns.str.strip()
+        validation = validate(
+            df_original=df_original,
+            df_features=result_df,
+            target_col=args.target,
+            task_type=pipeline.task_type or "classification",
+        )
+        report_path = args.report or str(Path(args.output).with_suffix(".report.json"))
+        import json
+        vpath = str(Path(report_path).with_suffix(".validation.json"))
+        Path(vpath).write_text(json.dumps(validation, indent=2), encoding="utf-8")
+        log.info("Validation report saved to %s", vpath)
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/facts.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 1.8 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/facts.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 20:08:02 (Asia/Damascus / GMT+03:00)
+MD5: a47710f668a5c83c52a7148108ab5a40
+SHA256: bc7b82371f61449ef75e422ddb621ac94c0d7c3fab1e570f149321ecb04b3fbe
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+"""All Fact subclasses for the KBS engines."""
+
+from experta import Fact
+
+
+class DatasetMeta(Fact):
+    """Root fact: dataset-level metadata."""
+    # row_count, col_count, task_type ("classification"|"regression"|None)
+
+
+class ColumnProfile(Fact):
+    """Profile of a single tabular column."""
+    # name, dtype ("numeric" | "categorical" | "datetime" | "boolean")
+    # null_count, null_pct, unique_count, unique_ratio
+    # mean, std, min_val, max_val, skewness, kurtosis, q1, median, q3
+    # outlier_count, outlier_pct
+    # cardinality (for categorical)
+    # is_ordinal (bool), top_freq (float)
+    # mi_score (mutual information with target, optional)
+    # target_corr (abs correlation with target, optional)
+    # determines_target (bool, optional)
+
+
+class TextProfile(Fact):
+    """Profile of a text column."""
+    # name, avg_word_count, avg_char_count, avg_word_length
+    # vocab_size, avg_sentence_length
+    # has_urls (bool), has_emails (bool), has_numbers (bool)
+    # language, uppercase_ratio, digit_ratio, special_char_ratio
+
+
+class CorrelationFact(Fact):
+    """Pairwise correlation between two numeric columns."""
+    # col_a, col_b, pearson, abs_pearson
+
+
+class QualityIssue(Fact):
+    """A detected data quality problem."""
+    # column, kind, severity ("low" | "medium" | "high" | "critical"), description
+
+
+class FixSuggestion(Fact):
+    """A suggested fix for a quality issue."""
+    # column, action, params (dict), rationale
+
+
+class TransformPlan(Fact):
+    """A planned feature transformation."""
+    # source (str or list), operation, params (dict), rationale
+
+
+class TargetColumn(Fact):
+    """Identifies the ML target column."""
+    # name, dtype
+
+
+class KnowledgeTemplate(Fact):
+    """A detected domain pattern suggesting a derived feature."""
+    # pattern_name, columns (list), operation, formula, rationale
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/feature_engine.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 25.02 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/feature_engine.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-24 16:16:32 (Asia/Damascus / GMT+03:00)
+MD5: d63a5ee1497424aeefdd4da863d0b7ed
+SHA256: 6dd1da165926ae60e4a34699a38b410760e35c6d1b318812ed42bef8458d8e75
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+"""KnowledgeEngine for feature extraction (MD1-MD6 + Meta-Rules + Knowledge Templates)."""
+
+from experta import KnowledgeEngine, Rule, MATCH, P, Fact
+
+from kbs_extractor.facts import (
+    ColumnProfile, TextProfile, CorrelationFact, TransformPlan, DatasetMeta,
+)
+from kbs_extractor.logger import get_logger
+
+log = get_logger("features")
+
+# Internal flags set by meta-rules
+class _AllowInteractions(Fact):
+    pass
+
+class _AllowPolynomial(Fact):
+    pass
+
+
+class FeatureEngine(KnowledgeEngine):
+    """Runs Meta-Rules → MD1–MD6 → Knowledge Templates."""
+
+    # ==================================================================
+    # META-RULES: gate other rules based on dataset characteristics
+    # ==================================================================
+
+    @Rule(DatasetMeta(row_count=P(lambda r: r >= 100)))
+    def meta_allow_interactions(self):
+        log.info("META: rows >= 100, interaction features ENABLED")
+        self.declare(_AllowInteractions(enabled=True))
+
+    @Rule(DatasetMeta(row_count=P(lambda r: r < 100)))
+    def meta_disable_interactions(self):
+        log.info("META: rows < 100, interaction features DISABLED (sample too small)")
+        self.declare(_AllowInteractions(enabled=False))
+
+    @Rule(DatasetMeta(row_count=P(lambda r: r >= 50)))
+    def meta_allow_polynomial(self):
+        self.declare(_AllowPolynomial(enabled=True))
+
+    @Rule(DatasetMeta(row_count=P(lambda r: r < 50)))
+    def meta_disable_polynomial(self):
+        log.info("META: rows < 50, polynomial/binning features DISABLED")
+        self.declare(_AllowPolynomial(enabled=False))
+
+    # ==================================================================
+    # MD1: Statistical Distribution Analysis
+    # ==================================================================
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        skewness=P(lambda s: abs(s) <= 0.5),
+                        kurtosis=P(lambda k: k <= 7),
+                        std=P(lambda s: s > 0)))
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        std=P(lambda s: s > 0)))
+    def md1_relative_deviation(self, n):
+        self.declare(TransformPlan(
+            source=n, operation="relative_deviation",
+            params={}, rationale="Value / mean — relative deviation from average"))
+
+    def md1_symmetric(self, n):
+        log.info("MD1: '%s' is near-symmetric, apply standard_scale", n)
+        self.declare(TransformPlan(
+            source=n, operation="standard_scale",
+            params={}, rationale="Near-symmetric distribution (|skew|<=0.5)"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        skewness=P(lambda s: 0.5 < abs(s) <= 2),
+                        min_val=P(lambda m: m >= 0),
+                        std=P(lambda s: s > 0)))
+    def md1_moderate_skew_positive(self, n):
+        log.info("MD1: '%s' has moderate skew, apply sqrt + scale", n)
+        self.declare(TransformPlan(
+            source=n, operation="sqrt",
+            params={}, rationale="Moderate skew (0.5<|skew|<=2), min>=0"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        skewness=P(lambda s: 0.5 < abs(s) <= 2),
+                        min_val=P(lambda m: m < 0),
+                        std=P(lambda s: s > 0)))
+    def md1_moderate_skew_negative_vals(self, n):
+        log.info("MD1: '%s' has moderate skew with negatives, apply yeo_johnson", n)
+        self.declare(TransformPlan(
+            source=n, operation="yeo_johnson",
+            params={}, rationale="Moderate skew with negative values"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        skewness=P(lambda s: abs(s) > 2),
+                        min_val=P(lambda m: m >= 0),
+                        std=P(lambda s: s > 0)))
+    def md1_high_skew_positive(self, n):
+        log.info("MD1: '%s' has high skew, apply log1p", n)
+        self.declare(TransformPlan(
+            source=n, operation="log1p",
+            params={}, rationale="High positive skew (|skew|>2), min>=0"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        skewness=P(lambda s: abs(s) > 2),
+                        min_val=P(lambda m: m < 0),
+                        std=P(lambda s: s > 0)))
+    def md1_high_skew_negative_vals(self, n):
+        log.info("MD1: '%s' has high skew with negatives, apply yeo_johnson", n)
+        self.declare(TransformPlan(
+            source=n, operation="yeo_johnson",
+            params={}, rationale="High skew with negative values, yeo-johnson handles negatives"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        kurtosis=P(lambda k: k > 7),
+                        std=P(lambda s: s > 0)))
+    def md1_heavy_tails(self, n):
+        log.info("MD1: '%s' has heavy tails (kurtosis>7), apply robust_scale", n)
+        self.declare(TransformPlan(
+            source=n, operation="robust_scale",
+            params={}, rationale="Heavy tails (kurtosis>7), RobustScaler resists outliers"))
+
+    @Rule(_AllowPolynomial(enabled=True),
+          ColumnProfile(name=MATCH.n, dtype="numeric",
+                        kurtosis=P(lambda k: k < -1),
+                        std=P(lambda s: s > 0)))
+    def md1_flat_distribution(self, n):
+        log.info("MD1: '%s' is flat (kurtosis<-1), apply quantile_bin", n)
+        self.declare(TransformPlan(
+            source=n, operation="quantile_bin",
+            params={"n_bins": 5}, rationale="Flat distribution, discretize into quantile bins"))
+
+    # ==================================================================
+    # MD2: Correlation & Dependency Analysis (gated by meta-rules)
+    # ==================================================================
+
+    @Rule(_AllowInteractions(enabled=True),
+          CorrelationFact(col_a=MATCH.a, col_b=MATCH.b,
+                          abs_pearson=P(lambda r: 0.7 < r <= 0.95)))
+    def md2_strong_correlation(self, a, b):
+        log.info("MD2: '%s' and '%s' strongly correlated, create ratio", a, b)
+        self.declare(TransformPlan(
+            source=[a, b], operation="create_ratio",
+            params={}, rationale=f"Strong correlation ({a},{b}), ratio captures relationship"))
+        self.declare(TransformPlan(
+            source=[a, b], operation="create_difference",
+            params={}, rationale=f"Strong correlation ({a},{b}), difference may be informative"))
+
+    @Rule(_AllowInteractions(enabled=True),
+          CorrelationFact(col_a=MATCH.a, col_b=MATCH.b,
+                          abs_pearson=P(lambda r: 0.3 < r <= 0.7)))
+    def md2_moderate_correlation(self, a, b):
+        log.info("MD2: '%s' and '%s' moderately correlated, create product", a, b)
+        self.declare(TransformPlan(
+            source=[a, b], operation="create_product",
+            params={}, rationale=f"Moderate correlation ({a},{b}), product captures interaction"))
+
+    # ==================================================================
+    # MD3: Information-Theoretic Analysis
+    # ==================================================================
+
+    @Rule(ColumnProfile(name=MATCH.n, mi_score=P(lambda mi: mi is not None and mi < 0.01)))
+    def md3_zero_information(self, n):
+        log.info("MD3: '%s' has near-zero MI with target, suggest drop", n)
+        self.declare(TransformPlan(
+            source=n, operation="drop",
+            params={}, rationale="Near-zero mutual information with target"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        mi_score=P(lambda mi: mi is not None and mi > 0.3)))
+    def md3_high_info_categorical(self, n):
+        log.info("MD3: '%s' has high MI, use target_encode", n)
+        self.declare(TransformPlan(
+            source=n, operation="target_encode",
+            params={}, rationale="High MI categorical column, target encoding preserves info"))
+
+    # ==================================================================
+    # MD4: Cardinality Analysis
+    # ==================================================================
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        is_ordinal=P(lambda x: x is True)))
+    def md4_ordinal(self, n):
+        log.info("MD4: '%s' is ordinal, apply ordinal_encode", n)
+        self.declare(TransformPlan(
+            source=n, operation="ordinal_encode",
+            params={}, rationale="Known ordinal column"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        is_ordinal=P(lambda x: not x),
+                        cardinality=P(lambda c: c == 2)))
+    def md4_binary(self, n):
+        log.info("MD4: '%s' is binary, apply binary_encode", n)
+        self.declare(TransformPlan(
+            source=n, operation="binary_encode",
+            params={}, rationale="Binary categorical column (2 values)"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        is_ordinal=P(lambda x: not x),
+                        cardinality=P(lambda c: 3 <= c <= 10)))
+    def md4_low_cardinality(self, n):
+        log.info("MD4: '%s' has low cardinality (3-10), apply one_hot", n)
+        self.declare(TransformPlan(
+            source=n, operation="one_hot",
+            params={}, rationale="Low cardinality categorical (3-10 values)"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        is_ordinal=P(lambda x: not x),
+                        cardinality=P(lambda c: 11 <= c <= 50)))
+    def md4_medium_cardinality(self, n):
+        log.info("MD4: '%s' has medium cardinality (11-50), apply frequency_encode", n)
+        self.declare(TransformPlan(
+            source=n, operation="frequency_encode",
+            params={}, rationale="Medium cardinality (11-50), frequency encoding is lightweight"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        is_ordinal=P(lambda x: not x),
+                        cardinality=P(lambda c: c > 50)))
+    def md4_high_cardinality(self, n):
+        log.info("MD4: '%s' has high cardinality (>50), apply target_encode", n)
+        self.declare(TransformPlan(
+            source=n, operation="target_encode",
+            params={}, rationale="High cardinality (>50), target encoding reduces dimensionality"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="boolean"))
+    def md4_boolean(self, n):
+        log.info("MD4: '%s' is boolean, cast to int", n)
+        self.declare(TransformPlan(
+            source=n, operation="bool_to_int",
+            params={}, rationale="Boolean -> integer (0/1)"))
+
+    # ==================================================================
+    # MD5: Temporal Pattern Recognition
+    # ==================================================================
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="datetime"))
+    def md5_datetime_decompose(self, n):
+        log.info("MD5: '%s' is datetime, extract components", n)
+        self.declare(TransformPlan(
+            source=n, operation="extract_datetime_components",
+            params={"components": ["year", "month", "day", "day_of_week", "quarter",
+                                   "is_weekend", "hour", "minute", "minute_of_day",
+                                   "is_rush_hour"]},
+            rationale="Datetime column -> extract all temporal components"))
+        self.declare(TransformPlan(
+            source=n, operation="cyclical_encode",
+            params={"columns": {"month": 12, "day_of_week": 7, "hour": 24}},
+            rationale="Cyclical encoding preserves periodicity"))
+
+    # ==================================================================
+    # MD6: Text Structure Analysis
+    # ==================================================================
+
+    @Rule(TextProfile(name=MATCH.n, vocab_size=P(lambda v: 0 < v <= 500)))
+    def md6_small_vocab(self, n):
+        log.info("MD6: '%s' has small vocab (<=500), apply count_vectorize", n)
+        self.declare(TransformPlan(
+            source=n, operation="count_vectorize",
+            params={"max_features": 200}, rationale="Small vocabulary, CountVectorizer sufficient"))
+
+    @Rule(TextProfile(name=MATCH.n, vocab_size=P(lambda v: 500 < v <= 5000)))
+    def md6_medium_vocab(self, n):
+        log.info("MD6: '%s' has medium vocab (500-5000), apply tfidf", n)
+        self.declare(TransformPlan(
+            source=n, operation="tfidf",
+            params={"max_features": 500, "ngram_range": [1, 2]},
+            rationale="Medium vocabulary, TF-IDF with bigrams"))
+
+    @Rule(TextProfile(name=MATCH.n, vocab_size=P(lambda v: v > 5000)))
+    def md6_large_vocab(self, n):
+        log.info("MD6: '%s' has large vocab (>5000), apply tfidf with sublinear", n)
+        self.declare(TransformPlan(
+            source=n, operation="tfidf",
+            params={"max_features": 1000, "sublinear_tf": True, "ngram_range": [1, 2]},
+            rationale="Large vocabulary, TF-IDF with sublinear_tf dampening"))
+
+    @Rule(TextProfile(name=MATCH.n, avg_word_count=P(lambda w: w > 0)))
+    def md6_text_stats(self, n):
+        log.info("MD6: '%s' extracting text meta-features", n)
+        self.declare(TransformPlan(
+            source=n, operation="extract_text_stats",
+            params={}, rationale="Statistical meta-features from text"))
+
+    @Rule(TextProfile(name=MATCH.n, has_urls=True))
+    def md6_url_extraction(self, n):
+        self.declare(TransformPlan(
+            source=n, operation="extract_patterns",
+            params={"patterns": ["url_count", "has_url"]},
+            rationale="Text contains URLs, extract count and indicator"))
+
+    @Rule(TextProfile(name=MATCH.n, has_emails=True))
+    def md6_email_extraction(self, n):
+        self.declare(TransformPlan(
+            source=n, operation="extract_patterns",
+            params={"patterns": ["email_count", "has_email"]},
+            rationale="Text contains emails, extract count and indicator"))
+
+    @Rule(TextProfile(name=MATCH.n, has_numbers=True))
+    def md6_number_extraction(self, n):
+        self.declare(TransformPlan(
+            source=n, operation="extract_patterns",
+            params={"patterns": ["number_count"]},
+            rationale="Text contains numeric mentions"))
+
+    # ==================================================================
+    # MD8: Aggregation Features (groupby) — gated by meta-rules
+    # ==================================================================
+
+    @Rule(_AllowInteractions(enabled=True),
+          ColumnProfile(name=MATCH.cat, dtype="categorical",
+                        cardinality=P(lambda c: 2 <= c <= 50)),
+          ColumnProfile(name=MATCH.num, dtype="numeric",
+                        std=P(lambda s: s > 0)))
+    def md8_aggregation(self, cat, num):
+        log.info("MD8: groupby('%s')['%s'].agg → aggregation features", cat, num)
+        self.declare(TransformPlan(
+            source=[cat, num], operation="groupby_agg",
+            params={"aggs": ["mean", "std"]},
+            rationale=f"Aggregation: {num} statistics per {cat} group"))
+
+    # ==================================================================
+    # MD7: Knowledge Templates — built by SemanticTemplateMatcher
+    # ==================================================================
+    # Templates are injected as KnowledgeTemplate facts BEFORE engine.run()
+    # by the SemanticTemplateMatcher. No hardcoded @Rule patterns here.
+
+
+# ── Semantic Matching Layer ─────────────────────────────────────
+
+SEMANTIC_ALIASES = {
+    "height": {
+        "aliases": ["height", "height_cm", "height_m", "body_height", "person_height",
+                     "الطول", "طول"],
+        "dtype": "numeric",
+    },
+    "weight": {
+        "aliases": ["weight", "weight_kg", "body_weight", "mass", "الوزن", "وزن"],
+        "dtype": "numeric",
+    },
+    "age": {
+        "aliases": ["age", "patient_age", "person_age", "العمر", "عمر"],
+        "dtype": "numeric",
+    },
+    "income": {
+        "aliases": ["income", "salary", "wage", "earnings", "pay", "compensation",
+                     "الدخل", "دخل", "الراتب", "راتب"],
+        "dtype": "numeric",
+    },
+    "price": {
+        "aliases": ["price", "unit_price", "item_price", "cost", "السعر", "سعر"],
+        "dtype": "numeric",
+    },
+    "quantity": {
+        "aliases": ["quantity", "qty", "amount", "count", "units",
+                     "الكمية", "كمية"],
+        "dtype": "numeric",
+    },
+    "revenue": {
+        "aliases": ["revenue", "total_revenue", "sales", "الإيرادات"],
+        "dtype": "numeric",
+    },
+    "cost": {
+        "aliases": ["cost", "total_cost", "expense", "التكلفة", "تكلفة"],
+        "dtype": "numeric",
+    },
+    "debt": {
+        "aliases": ["debt", "loan", "liability", "الدين", "دين", "قرض"],
+        "dtype": "numeric",
+    },
+    "family_size": {
+        "aliases": ["family_size", "household_size", "dependents", "عدد_الأفراد"],
+        "dtype": "numeric",
+    },
+    "rooms": {
+        "aliases": ["rooms", "num_rooms", "bedrooms", "غرف"],
+        "dtype": "numeric",
+    },
+    "people": {
+        "aliases": ["people", "persons", "occupants", "guests", "passengers", "أشخاص"],
+        "dtype": "numeric",
+    },
+    "start_date": {
+        "aliases": ["start_date", "start_time", "begin_date", "begin_time",
+                     "created_at", "order_date", "hire_date", "تاريخ_البداية"],
+        "dtype": "datetime",
+    },
+    "end_date": {
+        "aliases": ["end_date", "end_time", "finish_date", "finish_time",
+                     "completed_at", "delivery_date", "تاريخ_النهاية"],
+        "dtype": "datetime",
+    },
+    "birth_date": {
+        "aliases": ["birth_date", "birthdate", "dob", "date_of_birth", "تاريخ_الميلاد"],
+        "dtype": "datetime",
+    },
+    "lat_origin": {
+        "aliases": ["pickup_lat", "origin_lat", "start_lat", "from_lat", "lat_1"],
+        "dtype": "numeric",
+    },
+    "lon_origin": {
+        "aliases": ["pickup_lon", "pickup_lng", "origin_lon", "origin_lng",
+                     "start_lon", "from_lon", "lon_1", "lng_1"],
+        "dtype": "numeric",
+    },
+    "lat_dest": {
+        "aliases": ["dropoff_lat", "dest_lat", "end_lat", "to_lat", "lat_2"],
+        "dtype": "numeric",
+    },
+    "lon_dest": {
+        "aliases": ["dropoff_lon", "dropoff_lng", "dest_lon", "dest_lng",
+                     "end_lon", "to_lon", "lon_2", "lng_2"],
+        "dtype": "numeric",
+    },
+    "lat_single": {
+        "aliases": ["lat", "latitude", "خط_العرض"],
+        "dtype": "numeric",
+    },
+    "lon_single": {
+        "aliases": ["lon", "lng", "longitude", "خط_الطول"],
+        "dtype": "numeric",
+    },
+}
+
+
+TEMPLATE_DEFINITIONS = [
+    # ── Medical ──
+    {
+        "name": "BMI",
+        "requires": ["weight", "height"],
+        "operation": "bmi",
+        "confidence": 95,
+        "rationale": "BMI = weight / height_m^2 — standard medical index",
+    },
+    # ── Temporal ──
+    {
+        "name": "duration",
+        "requires": ["start_date", "end_date"],
+        "operation": "date_diff",
+        "confidence": 99,
+        "rationale": "Duration between start and end dates",
+    },
+    {
+        "name": "age_from_birth",
+        "requires": ["birth_date"],
+        "operation": "age_from_birth",
+        "confidence": 98,
+        "rationale": "Calculate age from birth date",
+    },
+    # ── Geographic (two-point) ──
+    {
+        "name": "geo_trip_distance",
+        "requires": ["lat_origin", "lon_origin", "lat_dest", "lon_dest"],
+        "operation": "haversine_trip",
+        "confidence": 95,
+        "rationale": "Haversine distance between origin and destination",
+    },
+    {
+        "name": "geo_manhattan_distance",
+        "requires": ["lat_origin", "lon_origin", "lat_dest", "lon_dest"],
+        "operation": "manhattan_geo",
+        "confidence": 90,
+        "rationale": "Manhattan (grid) distance — better for city street networks",
+    },
+    {
+        "name": "geo_bearing",
+        "requires": ["lat_origin", "lon_origin", "lat_dest", "lon_dest"],
+        "operation": "bearing",
+        "confidence": 95,
+        "rationale": "Haversine distance between origin and destination",
+    },
+    # ── Geographic (single point — centroid distance) ──
+    {
+        "name": "geo_centroid",
+        "requires": ["lat_single", "lon_single"],
+        "operation": "geo_centroid",
+        "confidence": 70,
+        "rationale": "Distance from centroid (single lat/lon pair)",
+    },
+    # ── Financial ──
+    {
+        "name": "revenue",
+        "requires": ["price", "quantity"],
+        "operation": "product",
+        "confidence": 98,
+        "rationale": "Revenue = price * quantity",
+    },
+    {
+        "name": "profit",
+        "requires": ["revenue", "cost"],
+        "operation": "difference",
+        "confidence": 95,
+        "rationale": "Profit = revenue - cost",
+    },
+    {
+        "name": "debt_to_income",
+        "requires": ["debt", "income"],
+        "operation": "ratio",
+        "confidence": 92,
+        "rationale": "Debt-to-income ratio — key financial health indicator",
+    },
+    {
+        "name": "income_per_family",
+        "requires": ["income", "family_size"],
+        "operation": "ratio",
+        "confidence": 88,
+        "rationale": "Income per family member — economic wellbeing proxy",
+    },
+    # ── Occupancy ──
+    {
+        "name": "rooms_per_person",
+        "requires": ["rooms", "people"],
+        "operation": "ratio",
+        "confidence": 85,
+        "rationale": "Rooms per person — occupancy density",
+    },
+    # ── Weak (optional) ──
+    {
+        "name": "income_per_age",
+        "requires": ["income", "age"],
+        "operation": "ratio",
+        "confidence": 55,
+        "rationale": "Income per year of age — weak economic proxy",
+    },
+]
+
+
+def _match_semantic(col_name: str, col_dtype: str) -> str | None:
+    """Match a column name to a semantic concept using aliases."""
+    lower = col_name.lower().strip()
+    for concept, info in SEMANTIC_ALIASES.items():
+        if info["dtype"] != "any" and info["dtype"] != col_dtype:
+            continue
+        for alias in info["aliases"]:
+            if lower == alias or lower.replace(" ", "_") == alias:
+                return concept
+    for concept, info in SEMANTIC_ALIASES.items():
+        if info["dtype"] != "any" and info["dtype"] != col_dtype:
+            continue
+        for alias in info["aliases"]:
+            if alias in lower or lower in alias:
+                return concept
+    return None
+
+
+class SemanticTemplateMatcher:
+    """Matches column profiles against template definitions using semantic aliases."""
+
+    def __init__(self, profiles: list[dict]):
+        self.profiles = profiles
+        self.col_map: dict[str, str] = {}
+        self._build_map()
+
+    def _build_map(self):
+        for p in self.profiles:
+            concept = _match_semantic(p["name"], p["dtype"])
+            if concept:
+                self.col_map[concept] = p["name"]
+                log.info("SEMANTIC: column '%s' matched concept '%s'", p["name"], concept)
+
+    def detect_templates(self) -> list[dict]:
+        detected = []
+        for tdef in TEMPLATE_DEFINITIONS:
+            required = tdef["requires"]
+            resolved = {}
+            all_found = True
+            for concept in required:
+                if concept in self.col_map:
+                    resolved[concept] = self.col_map[concept]
+                else:
+                    all_found = False
+                    break
+            if all_found:
+                actual_cols = [resolved[c] for c in required]
+                template = {
+                    "pattern_name": tdef["name"],
+                    "columns": actual_cols,
+                    "column_concepts": dict(resolved),
+                    "operation": tdef["operation"],
+                    "confidence": tdef["confidence"],
+                    "rationale": tdef["rationale"],
+                }
+                log.info("TEMPLATE [%s] confidence=%d%% columns=%s",
+                         tdef["name"], tdef["confidence"], actual_cols)
+                detected.append(template)
+        return detected
+
+
+# ── run_feature_extraction ──────────────────────────────────────
+
+def run_feature_extraction(profiles: list[dict], correlations: list[dict],
+                           dataset_meta: dict | None = None) -> tuple[list[dict], list[dict]]:
+    """Run the feature engine and return (transform_plans, templates)."""
+    engine = FeatureEngine()
+    engine.reset()
+
+    if dataset_meta:
+        engine.declare(DatasetMeta(**dataset_meta))
+    else:
+        engine.declare(DatasetMeta(row_count=9999, col_count=0, task_type=None))
+
+    for p in profiles:
+        if p["dtype"] == "text":
+            engine.declare(TextProfile(**p))
+        else:
+            engine.declare(ColumnProfile(**p))
+
+    for c in correlations:
+        engine.declare(CorrelationFact(**c))
+
+    engine.run()
+
+    plans = []
+    for fact in engine.facts.values():
+        if isinstance(fact, TransformPlan):
+            plans.append({k: v for k, v in fact.items() if k != "__factid__"})
+
+    matcher = SemanticTemplateMatcher(profiles)
+    templates = matcher.detect_templates()
+
+    log.info("Feature extraction: %d plans, %d templates detected", len(plans), len(templates))
+    return plans, templates
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/graph.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 3.92 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/graph.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 16:10:48 (Asia/Damascus / GMT+03:00)
+MD5: 6a73de274e19a3b5d516eca57bbfadb1
+SHA256: de0b97e132b46653e3b1753e73ec09777676890de0c988780fa4ac1650116a20
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+"""Knowledge Graph built on NetworkX DiGraph."""
+
+import networkx as nx
+import pandas as pd
+
+from kbs_extractor.logger import get_logger
+from kbs_extractor.profiler import profile_dataframe, compute_correlations
+
+log = get_logger("graph")
+
+
+class KnowledgeGraph:
+    def __init__(self):
+        self.g = nx.DiGraph()
+
+    def build_from_dataframe(self, df: pd.DataFrame, dataset_name: str = "dataset",
+                             categorical_overrides: list[str] | None = None) -> None:
+        self.g.add_node(dataset_name, type="dataset", row_count=len(df), col_count=len(df.columns))
+
+        profiles = profile_dataframe(df, categorical_overrides=categorical_overrides)
+        for p in profiles:
+            node_type = "text_column" if p["dtype"] == "text" else "column"
+            node_id = f"col:{p['name']}"
+            self.g.add_node(node_id, type=node_type, **p)
+            self.g.add_edge(dataset_name, node_id, relation="has_column")
+            log.info("Added graph node '%s' [%s]", node_id, node_type)
+
+        correlations = compute_correlations(df, threshold=0.3)
+        for c in correlations:
+            src, dst = f"col:{c['col_a']}", f"col:{c['col_b']}"
+            self.g.add_edge(src, dst, relation="correlates",
+                            pearson=c["pearson"], abs_pearson=c["abs_pearson"])
+
+        log.info("Knowledge graph built: %d nodes, %d edges",
+                 self.g.number_of_nodes(), self.g.number_of_edges())
+
+    def get_columns(self, dtype: str | None = None) -> list[dict]:
+        results = []
+        for node, attrs in self.g.nodes(data=True):
+            if attrs.get("type") not in ("column", "text_column"):
+                continue
+            if dtype and attrs.get("dtype") != dtype:
+                continue
+            results.append(attrs)
+        return results
+
+    def get_all_profiles(self) -> list[dict]:
+        return [attrs for _, attrs in self.g.nodes(data=True)
+                if attrs.get("type") in ("column", "text_column")]
+
+    def get_correlations(self) -> list[dict]:
+        results = []
+        for u, v, attrs in self.g.edges(data=True):
+            if attrs.get("relation") == "correlates":
+                results.append({
+                    "col_a": u.removeprefix("col:"),
+                    "col_b": v.removeprefix("col:"),
+                    "pearson": attrs["pearson"],
+                    "abs_pearson": attrs["abs_pearson"],
+                })
+        return results
+
+    def get_dataset_meta(self) -> dict:
+        for node, attrs in self.g.nodes(data=True):
+            if attrs.get("type") == "dataset":
+                return attrs
+        return {}
+
+    def add_issue(self, column: str, kind: str, severity: str, description: str) -> str:
+        issue_id = f"issue:{column}:{kind}"
+        self.g.add_node(issue_id, type="issue", column=column,
+                        kind=kind, severity=severity, description=description)
+        self.g.add_edge(f"col:{column}", issue_id, relation="has_issue")
+        return issue_id
+
+    def add_feature_plan(self, source: str | list, operation: str,
+                         params: dict | None, rationale: str) -> str:
+        src_label = source if isinstance(source, str) else "_".join(source)
+        plan_id = f"plan:{src_label}:{operation}"
+        self.g.add_node(plan_id, type="feature_plan", source=source,
+                        operation=operation, params=params or {}, rationale=rationale)
+        if isinstance(source, str):
+            self.g.add_edge(f"col:{source}", plan_id, relation="planned_as")
+        else:
+            for s in source:
+                self.g.add_edge(f"col:{s}", plan_id, relation="planned_as")
+        return plan_id
+
+    def get_issues(self) -> list[dict]:
+        return [attrs for _, attrs in self.g.nodes(data=True)
+                if attrs.get("type") == "issue"]
+
+    def get_feature_plans(self) -> list[dict]:
+        return [attrs for _, attrs in self.g.nodes(data=True)
+                if attrs.get("type") == "feature_plan"]
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/gui.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 40.41 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/gui.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 21:50:16 (Asia/Damascus / GMT+03:00)
+MD5: e7569ef63d3cce73a4848bb2ef134a84
+SHA256: 1b167753b3ee2b83cae90f442d83b162ba5c689d14c7bc5d889fced0fbc2d509
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+"""Pygame GUI for KBS Feature Extractor."""
+
+import json
+import logging
+import os
+import subprocess
+import sys
+import threading
+from pathlib import Path
+
+import arabic_reshaper
+import pandas as pd
+import pygame
+import pygame.freetype
+from bidi.algorithm import get_display
+
+from kbs_extractor.pipeline import Pipeline
+
+# ── Constants ───────────────────────────────────────────────────
+WIN_W, WIN_H = 1050, 720
+FPS = 30
+MARGIN = 20
+PAD = 12
+ROW_H = 32
+BTN_H = 40
+INPUT_H = 36
+
+COLORS = {
+    "bg": (240, 243, 248),
+    "surface": (255, 255, 255),
+    "primary": (37, 99, 235),
+    "primary_hover": (29, 78, 216),
+    "primary_text": (255, 255, 255),
+    "text": (30, 41, 59),
+    "text2": (100, 116, 139),
+    "border": (203, 213, 225),
+    "input_bg": (248, 250, 252),
+    "success": (22, 163, 74),
+    "warning": (202, 138, 4),
+    "error": (220, 38, 38),
+    "high": (220, 38, 38),
+    "medium": (202, 138, 4),
+    "low": (22, 163, 74),
+    "tab_active": (37, 99, 235),
+    "tab_inactive": (226, 232, 240),
+    "header": (30, 41, 59),
+    "header_text": (255, 255, 255),
+    "check": (37, 99, 235),
+    "scroll_bg": (226, 232, 240),
+    "scroll_thumb": (148, 163, 184),
+}
+
+AR = {
+    "title": "مستخرج الميزات",
+    "subtitle": "KBS Feature Extractor",
+    "input_file": "ملف الإدخال",
+    "output_file": "ملف الإخراج",
+    "browse": "استعراض",
+    "mode": "الوضع",
+    "task_type": "نوع المهمة",
+    "auto": "تلقائي",
+    "target_col": "العمود الهدف",
+    "cat_cols": "الأعمدة الفئوية",
+    "run": "تشغيل الاستخراج",
+    "running": "جاري المعالجة...",
+    "done": "اكتمل!",
+    "quality_tab": "تقرير الجودة",
+    "features_tab": "الميزات",
+    "metadata_tab": "البيانات الوصفية",
+    "issues": "المشاكل",
+    "suggestions": "الاقتراحات",
+    "back": "رجوع",
+    "open_folder": "فتح المجلد",
+    "error": "خطأ",
+    "no_file": "الرجاء اختيار ملف إدخال",
+    "none": "-- بدون --",
+    "rows": "صف",
+    "cols": "عمود",
+    "features_count": "عدد الميزات",
+}
+
+FONT_PATH = "C:/Windows/Fonts/segoeui.ttf"
+FONT_BOLD = "C:/Windows/Fonts/segoeuib.ttf"
+
+# ── Arabic Text Helpers ─────────────────────────────────────────
+
+def _has_arabic(text: str) -> bool:
+    return any("؀" <= c <= "ۿ" for c in text)
+
+
+def render_text(font, text: str, color, size=0):
+    if _has_arabic(text):
+        shaped = arabic_reshaper.reshape(text)
+        visual = get_display(shaped)
+    else:
+        visual = text
+    surf, rect = font.render(visual, fgcolor=color, size=size)
+    return surf
+
+
+# ── File Dialog ─────────────────────────────────────────────────
+
+def _file_dialog_open():
+    import tkinter as tk
+    from tkinter import filedialog
+    root = tk.Tk()
+    root.withdraw()
+    root.attributes("-topmost", True)
+    path = filedialog.askopenfilename(
+        title="Select Data File",
+        filetypes=[("All supported", "*.csv;*.json;*.jsonl;*.xlsx;*.xls"),
+                   ("CSV", "*.csv"), ("JSON", "*.json;*.jsonl"),
+                   ("Excel", "*.xlsx;*.xls"), ("All", "*.*")])
+    root.destroy()
+    return path
+
+
+def _file_dialog_save():
+    import tkinter as tk
+    from tkinter import filedialog
+    root = tk.Tk()
+    root.withdraw()
+    root.attributes("-topmost", True)
+    path = filedialog.asksaveasfilename(
+        title="Save Features", defaultextension=".csv",
+        filetypes=[("CSV files", "*.csv")])
+    root.destroy()
+    return path
+
+
+# ── Drawing Helpers ─────────────────────────────────────────────
+
+def draw_card(surf, rect, color=None):
+    color = color or COLORS["surface"]
+    pygame.draw.rect(surf, color, rect, border_radius=8)
+    pygame.draw.rect(surf, COLORS["border"], rect, width=1, border_radius=8)
+
+
+def draw_text_right(surf, font, text, color, x_right, y, size=0):
+    ts = render_text(font, text, color, size)
+    surf.blit(ts, (x_right - ts.get_width(), y))
+    return ts
+
+
+# ── Widgets ─────────────────────────────────────────────────────
+
+class Button:
+    def __init__(self, rect, label, font, on_click=None, primary=True):
+        self.rect = pygame.Rect(rect)
+        self.label = label
+        self.font = font
+        self.on_click = on_click
+        self.primary = primary
+        self.hovered = False
+
+    def draw(self, surf):
+        mx, my = pygame.mouse.get_pos()
+        self.hovered = self.rect.collidepoint(mx, my)
+        if self.primary:
+            bg = COLORS["primary_hover"] if self.hovered else COLORS["primary"]
+            fg = COLORS["primary_text"]
+        else:
+            bg = COLORS["tab_inactive"] if not self.hovered else COLORS["border"]
+            fg = COLORS["text"]
+        pygame.draw.rect(surf, bg, self.rect, border_radius=6)
+        ts = render_text(self.font, self.label, fg)
+        surf.blit(ts, (self.rect.centerx - ts.get_width() // 2,
+                       self.rect.centery - ts.get_height() // 2))
+
+    def handle(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if self.rect.collidepoint(event.pos) and self.on_click:
+                self.on_click()
+                return True
+        return False
+
+
+class RadioGroup:
+    def __init__(self, x, y, options, font, selected=0):
+        self.x, self.y = x, y
+        self.options = options
+        self.font = font
+        self.selected = selected
+        self.rects = []
+        self._build()
+
+    def _build(self):
+        self.rects = []
+        cy = self.y
+        for opt in self.options:
+            self.rects.append(pygame.Rect(self.x, cy, 200, ROW_H))
+            cy += ROW_H
+
+    def draw(self, surf):
+        for i, (opt, rc) in enumerate(zip(self.options, self.rects)):
+            cx, cy = rc.x + 10, rc.centery
+            color = COLORS["primary"] if i == self.selected else COLORS["border"]
+            pygame.draw.circle(surf, color, (cx, cy), 8, 2)
+            if i == self.selected:
+                pygame.draw.circle(surf, COLORS["primary"], (cx, cy), 4)
+            ts = render_text(self.font, opt, COLORS["text"])
+            surf.blit(ts, (cx + 16, cy - ts.get_height() // 2))
+
+    def handle(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            for i, rc in enumerate(self.rects):
+                if rc.collidepoint(event.pos):
+                    self.selected = i
+                    return True
+        return False
+
+    @property
+    def value(self):
+        return self.options[self.selected]
+
+
+class CheckboxGrid:
+    def __init__(self, rect, items, font):
+        self.rect = pygame.Rect(rect)
+        self.items = items
+        self.font = font
+        self.checked = set()
+        self.scroll_y = 0
+        self.col_w = 150
+        self.row_h = 30
+        self.cols = max(1, (self.rect.w - 20) // self.col_w)
+
+    def set_items(self, items):
+        self.items = items
+        self.checked = set()
+        self.scroll_y = 0
+        self.cols = max(1, (self.rect.w - 20) // self.col_w)
+
+    @property
+    def total_h(self):
+        rows = (len(self.items) + self.cols - 1) // self.cols
+        return rows * self.row_h
+
+    def draw(self, surf):
+        clip_prev = surf.get_clip()
+        surf.set_clip(self.rect)
+        for idx, name in enumerate(self.items):
+            row, col = divmod(idx, self.cols)
+            x = self.rect.x + col * self.col_w + 4
+            y = self.rect.y + row * self.row_h - self.scroll_y + 4
+            if y + self.row_h < self.rect.y or y > self.rect.bottom:
+                continue
+            box = pygame.Rect(x, y + 4, 18, 18)
+            pygame.draw.rect(surf, COLORS["border"], box, border_radius=3)
+            if name in self.checked:
+                pygame.draw.rect(surf, COLORS["check"], box.inflate(-4, -4), border_radius=2)
+            ts = render_text(self.font, name, COLORS["text"])
+            surf.blit(ts, (x + 24, y + 4))
+        surf.set_clip(clip_prev)
+
+        if self.total_h > self.rect.h:
+            sb_rect = pygame.Rect(self.rect.right - 6, self.rect.y, 6, self.rect.h)
+            pygame.draw.rect(surf, COLORS["scroll_bg"], sb_rect, border_radius=3)
+            ratio = self.rect.h / self.total_h
+            thumb_h = max(20, int(self.rect.h * ratio))
+            thumb_y = self.rect.y + int(self.scroll_y / self.total_h * self.rect.h)
+            thumb = pygame.Rect(sb_rect.x, thumb_y, 6, thumb_h)
+            pygame.draw.rect(surf, COLORS["scroll_thumb"], thumb, border_radius=3)
+
+    def handle(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if self.rect.collidepoint(event.pos):
+                mx, my = event.pos
+                for idx, name in enumerate(self.items):
+                    row, col = divmod(idx, self.cols)
+                    x = self.rect.x + col * self.col_w + 4
+                    y = self.rect.y + row * self.row_h - self.scroll_y + 4
+                    box = pygame.Rect(x, y + 4, 18, 18)
+                    if box.collidepoint(mx, my):
+                        if name in self.checked:
+                            self.checked.discard(name)
+                        else:
+                            self.checked.add(name)
+                        return True
+                return True
+        if event.type == pygame.MOUSEWHEEL and self.rect.collidepoint(pygame.mouse.get_pos()):
+            self.scroll_y = max(0, min(self.scroll_y - event.y * 20,
+                                       max(0, self.total_h - self.rect.h)))
+            return True
+        return False
+
+
+class Dropdown:
+    def __init__(self, rect, options, font, selected=0):
+        self.rect = pygame.Rect(rect)
+        self.options = options
+        self.font = font
+        self.selected = selected
+        self.open = False
+
+    def set_options(self, options):
+        self.options = options
+        self.selected = 0
+        self.open = False
+
+    @property
+    def value(self):
+        if not self.options:
+            return None
+        return self.options[self.selected]
+
+    def draw(self, surf):
+        pygame.draw.rect(surf, COLORS["input_bg"], self.rect, border_radius=4)
+        pygame.draw.rect(surf, COLORS["border"], self.rect, width=1, border_radius=4)
+        label = self.options[self.selected] if self.options else "---"
+        ts = render_text(self.font, label, COLORS["text"])
+        surf.blit(ts, (self.rect.x + 8, self.rect.centery - ts.get_height() // 2))
+        arrow = render_text(self.font, "▼" if not self.open else "▲", COLORS["text2"])
+        surf.blit(arrow, (self.rect.right - 24, self.rect.centery - arrow.get_height() // 2))
+
+    def draw_overlay(self, surf):
+        if not self.open or not self.options:
+            return
+        item_h = ROW_H
+        list_h = min(len(self.options) * item_h, 200)
+        list_rect = pygame.Rect(self.rect.x, self.rect.bottom, self.rect.w, list_h)
+        pygame.draw.rect(surf, COLORS["surface"], list_rect, border_radius=4)
+        pygame.draw.rect(surf, COLORS["border"], list_rect, width=1, border_radius=4)
+        mx, my = pygame.mouse.get_pos()
+        for i, opt in enumerate(self.options):
+            ry = list_rect.y + i * item_h
+            if ry + item_h > list_rect.bottom:
+                break
+            item_rect = pygame.Rect(list_rect.x, ry, list_rect.w, item_h)
+            if item_rect.collidepoint(mx, my):
+                pygame.draw.rect(surf, COLORS["tab_inactive"], item_rect)
+            ts = render_text(self.font, opt, COLORS["text"])
+            surf.blit(ts, (item_rect.x + 8, item_rect.centery - ts.get_height() // 2))
+
+    def handle(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if self.rect.collidepoint(event.pos):
+                self.open = not self.open
+                return True
+            if self.open:
+                item_h = ROW_H
+                list_rect = pygame.Rect(self.rect.x, self.rect.bottom,
+                                        self.rect.w, len(self.options) * item_h)
+                if list_rect.collidepoint(event.pos):
+                    idx = (event.pos[1] - list_rect.y) // item_h
+                    if 0 <= idx < len(self.options):
+                        self.selected = idx
+                self.open = False
+                return True
+        return False
+
+
+class ScrollList:
+    SEL_COLOR = (219, 234, 254)
+    SEL_BORDER = (147, 197, 253)
+
+    def __init__(self, rect, font):
+        self.rect = pygame.Rect(rect)
+        self.font = font
+        self.items = []
+        self.scroll_y = 0
+        self.selected: set[int] = set()
+
+    def set_items(self, items):
+        self.items = items
+        self.scroll_y = 0
+        self.selected = set()
+
+    @property
+    def total_h(self):
+        return len(self.items) * ROW_H
+
+    def _item_to_text(self, item) -> str:
+        if isinstance(item, dict):
+            sev = item.get("severity", "")
+            col = item.get("column", "")
+            kind = item.get("kind", "")
+            desc = item.get("description", item.get("rationale", ""))
+            action = item.get("action", "")
+            if action:
+                return f"[{sev.upper()}] {col} | {action} — {desc}"
+            return f"[{sev.upper()}] {col} | {kind} — {desc}"
+        return str(item)
+
+    def get_selected_text(self) -> str:
+        if not self.selected:
+            return "\n".join(self._item_to_text(it) for it in self.items)
+        indices = sorted(self.selected)
+        return "\n".join(self._item_to_text(self.items[i]) for i in indices if i < len(self.items))
+
+    def get_all_text(self) -> str:
+        return "\n".join(self._item_to_text(it) for it in self.items)
+
+    def copy_to_clipboard(self, text: str | None = None):
+        content = text or self.get_selected_text()
+        try:
+            import subprocess
+            process = subprocess.Popen(["clip"], stdin=subprocess.PIPE)
+            process.communicate(content.encode("utf-16-le"))
+        except Exception:
+            pass
+
+    def draw(self, surf):
+        clip_prev = surf.get_clip()
+        surf.set_clip(self.rect)
+        for i, item in enumerate(self.items):
+            y = self.rect.y + i * ROW_H - self.scroll_y
+            if y + ROW_H < self.rect.y or y > self.rect.bottom:
+                continue
+            row_rect = pygame.Rect(self.rect.x, y, self.rect.w - 8, ROW_H)
+            if i in self.selected:
+                pygame.draw.rect(surf, self.SEL_COLOR, row_rect)
+                pygame.draw.rect(surf, self.SEL_BORDER, row_rect, width=1)
+            if isinstance(item, dict):
+                self._draw_issue_row(surf, item, self.rect.x + 4, y)
+            else:
+                ts = render_text(self.font, str(item), COLORS["text"])
+                surf.blit(ts, (self.rect.x + 8, y + 4))
+        surf.set_clip(clip_prev)
+
+        if self.total_h > self.rect.h:
+            sb_x = self.rect.right - 6
+            pygame.draw.rect(surf, COLORS["scroll_bg"],
+                             (sb_x, self.rect.y, 6, self.rect.h), border_radius=3)
+            ratio = self.rect.h / max(self.total_h, 1)
+            th = max(20, int(self.rect.h * ratio))
+            ty = self.rect.y + int(self.scroll_y / max(self.total_h, 1) * self.rect.h)
+            pygame.draw.rect(surf, COLORS["scroll_thumb"],
+                             (sb_x, ty, 6, th), border_radius=3)
+
+    def _draw_issue_row(self, surf, item, x, y):
+        sev = item.get("severity", "low")
+        badge_color = COLORS.get(sev, COLORS["text2"])
+        badge_rect = pygame.Rect(x + 4, y + 6, 60, 20)
+        pygame.draw.rect(surf, badge_color, badge_rect, border_radius=3)
+        ts = render_text(self.font, sev.upper(), COLORS["primary_text"], size=12)
+        surf.blit(ts, (badge_rect.centerx - ts.get_width() // 2,
+                       badge_rect.centery - ts.get_height() // 2))
+        col = item.get("column", "")
+        kind = item.get("kind", "")
+        desc = item.get("description", item.get("rationale", ""))
+        action = item.get("action", "")
+        if action:
+            line = f"{col} | {action} — {desc}"
+        else:
+            line = f"{col} | {kind} — {desc}"
+        ts2 = render_text(self.font, line, COLORS["text"], size=13)
+        surf.blit(ts2, (x + 70, y + 7))
+
+    def handle(self, event):
+        if event.type == pygame.MOUSEWHEEL and self.rect.collidepoint(pygame.mouse.get_pos()):
+            self.scroll_y = max(0, min(self.scroll_y - event.y * 30,
+                                       max(0, self.total_h - self.rect.h)))
+            return True
+
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if self.rect.collidepoint(event.pos):
+                row_idx = int((event.pos[1] - self.rect.y + self.scroll_y) // ROW_H)
+                if 0 <= row_idx < len(self.items):
+                    mods = pygame.key.get_mods()
+                    if mods & pygame.KMOD_CTRL:
+                        if row_idx in self.selected:
+                            self.selected.discard(row_idx)
+                        else:
+                            self.selected.add(row_idx)
+                    elif mods & pygame.KMOD_SHIFT and self.selected:
+                        anchor = min(self.selected)
+                        start, end = min(anchor, row_idx), max(anchor, row_idx)
+                        self.selected = set(range(start, end + 1))
+                    else:
+                        self.selected = {row_idx}
+                    return True
+
+        if event.type == pygame.KEYDOWN:
+            mods = pygame.key.get_mods()
+            if mods & pygame.KMOD_CTRL:
+                if event.key == pygame.K_c:
+                    self.copy_to_clipboard()
+                    return True
+                if event.key == pygame.K_a:
+                    self.selected = set(range(len(self.items)))
+                    return True
+
+        return False
+
+
+# ── Pipeline Runner (threaded) ──────────────────────────────────
+
+class GUILogHandler(logging.Handler):
+    def __init__(self, runner):
+        super().__init__()
+        self.runner = runner
+
+    def emit(self, record):
+        msg = record.getMessage()
+        with self.runner.lock:
+            self.runner.message = msg
+
+
+class PipelineRunner:
+    def __init__(self):
+        self.status = "idle"
+        self.message = ""
+        self.pipeline = None
+        self.result_df = None
+        self.error = None
+        self.lock = threading.Lock()
+        self._thread = None
+
+    def start(self, input_path, output_path, mode, target, report_path,
+              categoricals, task_type):
+        with self.lock:
+            self.status = "running"
+            self.message = "جاري التحميل..."
+            self.error = None
+            self.result_df = None
+            self.pipeline = None
+
+        handler = GUILogHandler(self)
+        for name in ["kbs.pipeline", "kbs.profiler", "kbs.graph",
+                      "kbs.quality", "kbs.features"]:
+            logging.getLogger(name).addHandler(handler)
+
+        self._thread = threading.Thread(
+            target=self._run, daemon=True,
+            args=(input_path, output_path, mode, target, report_path,
+                  categoricals, task_type, handler))
+        self._thread.start()
+
+    def _run(self, input_path, output_path, mode, target, report_path,
+             categoricals, task_type, handler):
+        try:
+            pipe = Pipeline(
+                input_path=input_path,
+                output_path=output_path,
+                mode=mode,
+                target_column=target,
+                report_path=report_path,
+                categorical_columns=categoricals,
+                task_type=task_type,
+            )
+            result = pipe.run()
+            with self.lock:
+                self.pipeline = pipe
+                self.result_df = result
+                self.status = "done"
+        except Exception as e:
+            with self.lock:
+                self.error = str(e)
+                self.status = "error"
+        finally:
+            for name in ["kbs.pipeline", "kbs.profiler", "kbs.graph",
+                          "kbs.quality", "kbs.features"]:
+                logging.getLogger(name).removeHandler(handler)
+
+
+# ── Screens ─────────────────────────────────────────────────────
+
+class SetupScreen:
+    def __init__(self, fonts):
+        self.fonts = fonts
+        self.input_path = ""
+        self.output_path = ""
+        self.columns = []
+
+        lx = MARGIN + 20
+        rx = WIN_W - MARGIN - 20
+
+        self.mode_radio = RadioGroup(lx, 270, ["full", "quality", "features"],
+                                     fonts["normal"], 0)
+        self.task_radio = RadioGroup(lx + 250, 270, ["auto", "classification", "regression"],
+                                     fonts["normal"], 0)
+        self.target_dd = Dropdown((lx, 400, 400, INPUT_H), [AR["none"]], fonts["normal"])
+        self.cat_grid = CheckboxGrid((lx, 480, rx - lx, 130), [], fonts["small"])
+
+        self.browse_in = Button((rx - 90, 155, 90, INPUT_H), AR["browse"],
+                                fonts["normal"], self._browse_input, False)
+        self.browse_out = Button((rx - 90, 210, 90, INPUT_H), AR["browse"],
+                                 fonts["normal"], self._browse_output, False)
+        self.run_btn = Button((WIN_W // 2 - 120, 630, 240, 45), AR["run"],
+                              fonts["bold"], None, True)
+        self.error_msg = ""
+
+    def _browse_input(self):
+        path = _file_dialog_open()
+        if path:
+            self.input_path = path
+            stem = Path(path).stem
+            self.output_path = str(Path(path).with_name(stem + "_features.csv"))
+            try:
+                from kbs_extractor.pipeline import Pipeline
+                df = Pipeline._load_data(path).head(0)
+                cols = [c.strip() for c in df.columns.tolist()]
+                self.columns = cols
+                self.target_dd.set_options([AR["none"]] + cols)
+                self.cat_grid.set_items(cols)
+            except Exception:
+                self.columns = []
+            self.error_msg = ""
+
+    def _browse_output(self):
+        path = _file_dialog_save()
+        if path:
+            self.output_path = path
+
+    def draw(self, surf):
+        f, fb, fs = self.fonts["normal"], self.fonts["bold"], self.fonts["small"]
+        lx = MARGIN + 20
+        rx = WIN_W - MARGIN - 20
+
+        card = pygame.Rect(MARGIN, 130, WIN_W - 2 * MARGIN, 540)
+        draw_card(surf, card)
+
+        y = 140
+        draw_text_right(surf, fb, AR["input_file"], COLORS["text"], rx, y)
+        inp_rect = pygame.Rect(lx, y + 20, rx - lx - 100, INPUT_H)
+        pygame.draw.rect(surf, COLORS["input_bg"], inp_rect, border_radius=4)
+        pygame.draw.rect(surf, COLORS["border"], inp_rect, width=1, border_radius=4)
+        disp = self.input_path if self.input_path else "..."
+        if len(disp) > 70:
+            disp = "..." + disp[-67:]
+        ts = render_text(fs, disp, COLORS["text2"] if not self.input_path else COLORS["text"])
+        surf.blit(ts, (inp_rect.x + 6, inp_rect.centery - ts.get_height() // 2))
+        self.browse_in.rect.topleft = (rx - 90, y + 20)
+        self.browse_in.draw(surf)
+
+        y = 195
+        draw_text_right(surf, fb, AR["output_file"], COLORS["text"], rx, y)
+        out_rect = pygame.Rect(lx, y + 20, rx - lx - 100, INPUT_H)
+        pygame.draw.rect(surf, COLORS["input_bg"], out_rect, border_radius=4)
+        pygame.draw.rect(surf, COLORS["border"], out_rect, width=1, border_radius=4)
+        disp2 = self.output_path if self.output_path else "..."
+        if len(disp2) > 70:
+            disp2 = "..." + disp2[-67:]
+        ts2 = render_text(fs, disp2, COLORS["text2"] if not self.output_path else COLORS["text"])
+        surf.blit(ts2, (out_rect.x + 6, out_rect.centery - ts2.get_height() // 2))
+        self.browse_out.rect.topleft = (rx - 90, y + 20)
+        self.browse_out.draw(surf)
+
+        y = 255
+        draw_text_right(surf, fb, AR["mode"], COLORS["text"], lx + 200, y)
+        draw_text_right(surf, fb, AR["task_type"], COLORS["text"], lx + 450, y)
+        self.mode_radio.y = y + 22
+        self.mode_radio._build()
+        self.mode_radio.draw(surf)
+        self.task_radio.x = lx + 250
+        self.task_radio.y = y + 22
+        self.task_radio._build()
+        self.task_radio.draw(surf)
+
+        y = 380
+        draw_text_right(surf, fb, AR["target_col"], COLORS["text"], rx, y)
+        self.target_dd.rect.topleft = (lx, y + 22)
+        self.target_dd.draw(surf)
+
+        y = 450
+        draw_text_right(surf, fb, AR["cat_cols"], COLORS["text"], rx, y)
+        self.cat_grid.rect.topleft = (lx, y + 25)
+        self.cat_grid.draw(surf)
+
+        self.run_btn.draw(surf)
+
+        if self.error_msg:
+            ts_err = render_text(fb, self.error_msg, COLORS["error"])
+            surf.blit(ts_err, (WIN_W // 2 - ts_err.get_width() // 2, 615))
+
+        self.target_dd.draw_overlay(surf)
+
+    def handle(self, event):
+        if self.target_dd.open:
+            if self.target_dd.handle(event):
+                return True
+
+        for w in [self.browse_in, self.browse_out, self.run_btn,
+                  self.mode_radio, self.task_radio, self.target_dd, self.cat_grid]:
+            if w.handle(event):
+                return True
+        return False
+
+    def get_config(self):
+        target = self.target_dd.value
+        if target == AR["none"]:
+            target = None
+        task = self.task_radio.value
+        if task == "auto":
+            task = None
+        cats = list(self.cat_grid.checked)
+        return {
+            "input_path": self.input_path,
+            "output_path": self.output_path,
+            "mode": self.mode_radio.value,
+            "target": target,
+            "categoricals": cats,
+            "task_type": task,
+        }
+
+    def validate(self) -> str | None:
+        if not self.input_path or not Path(self.input_path).exists():
+            return AR["no_file"]
+        return None
+
+
+class RunningScreen:
+    def __init__(self, fonts, runner: PipelineRunner):
+        self.fonts = fonts
+        self.runner = runner
+        self.anim_x = 0
+        self.anim_dir = 1
+
+    def draw(self, surf):
+        f, fb = self.fonts["normal"], self.fonts["bold"]
+
+        card = pygame.Rect(WIN_W // 2 - 250, WIN_H // 2 - 120, 500, 240)
+        draw_card(surf, card)
+
+        ts = render_text(fb, AR["running"], COLORS["primary"], size=22)
+        surf.blit(ts, (card.centerx - ts.get_width() // 2, card.y + 30))
+
+        bar_rect = pygame.Rect(card.x + 30, card.centery - 10, card.w - 60, 20)
+        pygame.draw.rect(surf, COLORS["scroll_bg"], bar_rect, border_radius=10)
+        self.anim_x += self.anim_dir * 4
+        if self.anim_x > bar_rect.w - 80:
+            self.anim_dir = -1
+        elif self.anim_x < 0:
+            self.anim_dir = 1
+        pill = pygame.Rect(bar_rect.x + self.anim_x, bar_rect.y, 80, 20)
+        pygame.draw.rect(surf, COLORS["primary"], pill, border_radius=10)
+
+        with self.runner.lock:
+            msg = self.runner.message
+        if msg:
+            if len(msg) > 70:
+                msg = msg[:67] + "..."
+            ts2 = render_text(f, msg, COLORS["text2"], size=13)
+            surf.blit(ts2, (card.centerx - ts2.get_width() // 2, card.centery + 30))
+
+    def handle(self, event):
+        return False
+
+
+class ResultsScreen:
+    def __init__(self, fonts):
+        self.fonts = fonts
+        self.active_tab = 0
+        self.tab_names = [AR["quality_tab"], AR["features_tab"], AR["metadata_tab"]]
+        self.tab_rects = []
+
+        content_rect = pygame.Rect(MARGIN, 180, WIN_W - 2 * MARGIN, WIN_H - 250)
+        self.issues_list = ScrollList(
+            (content_rect.x + 10, content_rect.y + 40,
+             content_rect.w - 20, (content_rect.h - 80) // 2),
+            fonts["small"])
+        self.suggestions_list = ScrollList(
+            (content_rect.x + 10, content_rect.y + content_rect.h // 2 + 10,
+             content_rect.w - 20, (content_rect.h - 80) // 2),
+            fonts["small"])
+        self.features_list = ScrollList(
+            (content_rect.x + 10, content_rect.y + 40, content_rect.w - 20, content_rect.h - 60),
+            fonts["small"])
+        self.meta_list = ScrollList(
+            (content_rect.x + 10, content_rect.y + 40, content_rect.w - 20, content_rect.h - 60),
+            fonts["small"])
+
+        self.back_btn = Button((MARGIN + 20, WIN_H - 55, 120, 38), AR["back"],
+                               fonts["normal"], None, False)
+        self.copy_btn = Button((WIN_W // 2 - 70, WIN_H - 55, 140, 38),
+                                "Ctrl+C / نسخ", fonts["normal"], self._copy_active, False)
+        self.folder_btn = Button((WIN_W - MARGIN - 150, WIN_H - 55, 140, 38),
+                                 AR["open_folder"], fonts["normal"], None, False)
+        self.output_path = ""
+        self.quality_result = {}
+        self.result_df = None
+        self.metadata = []
+        self.features_summary = ""
+        self.copy_flash = 0
+
+    def _get_active_lists(self) -> list[ScrollList]:
+        if self.active_tab == 0:
+            return [self.issues_list, self.suggestions_list]
+        elif self.active_tab == 1:
+            return [self.features_list]
+        elif self.active_tab == 2:
+            return [self.meta_list]
+        return []
+
+    def _copy_active(self):
+        parts = []
+        for lst in self._get_active_lists():
+            text = lst.get_selected_text()
+            if text:
+                parts.append(text)
+        combined = "\n\n".join(parts)
+        if combined:
+            try:
+                import subprocess
+                process = subprocess.Popen(["clip"], stdin=subprocess.PIPE)
+                process.communicate(combined.encode("utf-16-le"))
+                self.copy_flash = 60
+            except Exception:
+                pass
+
+    def set_results(self, pipeline, result_df, output_path):
+        self.output_path = output_path
+        self.quality_result = pipeline.quality_result if pipeline else {}
+        self.result_df = result_df
+        self.metadata = pipeline.metadata if pipeline else []
+
+        issues = self.quality_result.get("issues", [])
+        suggestions = self.quality_result.get("suggestions", [])
+        self.issues_list.set_items(issues)
+        self.suggestions_list.set_items(suggestions)
+
+        if result_df is not None:
+            lines = []
+            cols = list(result_df.columns)
+            self.features_summary = f"{len(result_df)} {AR['rows']} x {len(cols)} {AR['cols']}"
+            header = " | ".join(cols[:8])
+            if len(cols) > 8:
+                header += f" ... (+{len(cols)-8})"
+            lines.append(header)
+            lines.append("-" * 80)
+            for _, row in result_df.head(30).iterrows():
+                vals = [f"{row[c]:.3f}" if isinstance(row[c], float) else str(row[c])
+                        for c in cols[:8]]
+                lines.append(" | ".join(vals))
+            self.features_list.set_items(lines)
+        else:
+            self.features_list.set_items(["Quality-only mode — no features generated"])
+            self.features_summary = ""
+
+        meta_lines = []
+        for m in self.metadata:
+            feat = m.get("feature", "")
+            src = str(m.get("source", ""))
+            op = m.get("operation", "")
+            rat = m.get("rationale", "")
+            meta_lines.append(f"{feat}  |  {op}  |  {rat[:50]}")
+        self.meta_list.set_items(meta_lines)
+
+    def draw(self, surf):
+        f, fb, fs = self.fonts["normal"], self.fonts["bold"], self.fonts["small"]
+
+        tab_w = 160
+        tab_y = 140
+        self.tab_rects = []
+        for i, name in enumerate(self.tab_names):
+            tr = pygame.Rect(MARGIN + i * (tab_w + 4), tab_y, tab_w, 34)
+            self.tab_rects.append(tr)
+            bg = COLORS["tab_active"] if i == self.active_tab else COLORS["tab_inactive"]
+            fg = COLORS["primary_text"] if i == self.active_tab else COLORS["text"]
+            pygame.draw.rect(surf, bg, tr, border_radius=6)
+            ts = render_text(f, name, fg)
+            surf.blit(ts, (tr.centerx - ts.get_width() // 2,
+                           tr.centery - ts.get_height() // 2))
+
+        content = pygame.Rect(MARGIN, 180, WIN_W - 2 * MARGIN, WIN_H - 250)
+        draw_card(surf, content)
+
+        if self.active_tab == 0:
+            issues = self.quality_result.get("issues", [])
+            suggestions = self.quality_result.get("suggestions", [])
+            ts = render_text(fb, f"{AR['issues']} ({len(issues)})", COLORS["text"])
+            surf.blit(ts, (content.x + 10, content.y + 10))
+            self.issues_list.draw(surf)
+
+            mid_y = content.y + content.h // 2 - 5
+            pygame.draw.line(surf, COLORS["border"], (content.x + 10, mid_y),
+                             (content.right - 10, mid_y))
+            ts2 = render_text(fb, f"{AR['suggestions']} ({len(suggestions)})", COLORS["text"])
+            surf.blit(ts2, (content.x + 10, mid_y + 5))
+            self.suggestions_list.rect.top = mid_y + 30
+            self.suggestions_list.rect.height = content.bottom - mid_y - 40
+            self.suggestions_list.draw(surf)
+
+        elif self.active_tab == 1:
+            if self.features_summary:
+                ts = render_text(fb, f"{AR['features_count']}: {self.features_summary}",
+                                 COLORS["primary"])
+                surf.blit(ts, (content.x + 10, content.y + 10))
+            self.features_list.draw(surf)
+
+        elif self.active_tab == 2:
+            ts = render_text(fb, f"{AR['metadata_tab']} ({len(self.metadata)})", COLORS["text"])
+            surf.blit(ts, (content.x + 10, content.y + 10))
+            self.meta_list.draw(surf)
+
+        self.back_btn.draw(surf)
+        self.copy_btn.draw(surf)
+        self.folder_btn.draw(surf)
+
+        if self.copy_flash > 0:
+            self.copy_flash -= 1
+            ts_cp = render_text(fb, "-- تم النسخ --", COLORS["success"])
+            surf.blit(ts_cp, (WIN_W // 2 - ts_cp.get_width() // 2, WIN_H - 85))
+
+    def handle(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            for i, tr in enumerate(self.tab_rects):
+                if tr.collidepoint(event.pos):
+                    self.active_tab = i
+                    return True
+
+        for w in [self.back_btn, self.copy_btn, self.folder_btn]:
+            if w.handle(event):
+                return True
+
+        for lst in self._get_active_lists():
+            if lst.handle(event):
+                return True
+
+        if event.type == pygame.KEYDOWN and (pygame.key.get_mods() & pygame.KMOD_CTRL):
+            if event.key == pygame.K_c:
+                self._copy_active()
+                return True
+            if event.key == pygame.K_a:
+                for lst in self._get_active_lists():
+                    lst.selected = set(range(len(lst.items)))
+                return True
+
+        return False
+
+
+# ── App Controller ──────────────────────────────────────────────
+
+class App:
+    def __init__(self):
+        pygame.init()
+        pygame.freetype.init()
+        self.screen = pygame.display.set_mode((WIN_W, WIN_H))
+        pygame.display.set_caption("KBS Feature Extractor")
+        self.clock = pygame.time.Clock()
+
+        self.font = pygame.freetype.Font(FONT_PATH, 16)
+        self.font_bold = pygame.freetype.Font(FONT_BOLD, 16)
+        self.font_sm = pygame.freetype.Font(FONT_PATH, 13)
+        self.font_lg = pygame.freetype.Font(FONT_PATH, 24)
+        self.fonts = {
+            "normal": self.font, "bold": self.font_bold,
+            "small": self.font_sm, "large": self.font_lg,
+        }
+
+        self.runner = PipelineRunner()
+        self.setup = SetupScreen(self.fonts)
+        self.running_scr = RunningScreen(self.fonts, self.runner)
+        self.results = ResultsScreen(self.fonts)
+
+        self.state = "setup"
+        self.alive = True
+        self.error_text = ""
+
+        self.setup.run_btn.on_click = self._on_run
+        self.results.back_btn.on_click = self._on_back
+        self.results.folder_btn.on_click = self._on_open_folder
+
+    def _on_run(self):
+        err = self.setup.validate()
+        if err:
+            self.setup.error_msg = err
+            return
+        cfg = self.setup.get_config()
+        report_path = str(Path(cfg["output_path"]).with_suffix(".report.json"))
+        self.runner.start(
+            input_path=cfg["input_path"],
+            output_path=cfg["output_path"],
+            mode=cfg["mode"],
+            target=cfg["target"],
+            report_path=report_path,
+            categoricals=cfg["categoricals"],
+            task_type=cfg["task_type"],
+        )
+        self.state = "running"
+
+    def _on_back(self):
+        self.state = "setup"
+
+    def _on_open_folder(self):
+        path = self.results.output_path
+        if path and Path(path).exists():
+            subprocess.Popen(f'explorer /select,"{path}"')
+
+    def run(self):
+        while self.alive:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    self.alive = False
+                    break
+                self._handle_event(event)
+
+            self._update()
+            self._draw()
+            self.clock.tick(FPS)
+
+        pygame.quit()
+
+    def _handle_event(self, event):
+        if self.state == "setup":
+            self.setup.handle(event)
+        elif self.state == "running":
+            self.running_scr.handle(event)
+        elif self.state == "results":
+            self.results.handle(event)
+        elif self.state == "error":
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                self.state = "setup"
+
+    def _update(self):
+        if self.state == "running":
+            with self.runner.lock:
+                status = self.runner.status
+            if status == "done":
+                cfg = self.setup.get_config()
+                self.results.set_results(
+                    self.runner.pipeline, self.runner.result_df, cfg["output_path"])
+                self.state = "results"
+            elif status == "error":
+                self.error_text = self.runner.error or "Unknown error"
+                self.state = "error"
+
+    def _draw(self):
+        self.screen.fill(COLORS["bg"])
+        self._draw_header()
+
+        if self.state == "setup":
+            self.setup.draw(self.screen)
+        elif self.state == "running":
+            self.running_scr.draw(self.screen)
+        elif self.state == "results":
+            self.results.draw(self.screen)
+        elif self.state == "error":
+            self._draw_error()
+
+        pygame.display.flip()
+
+    def _draw_header(self):
+        header = pygame.Rect(0, 0, WIN_W, 110)
+        pygame.draw.rect(self.screen, COLORS["header"], header)
+
+        ts = render_text(self.font_lg, AR["title"], COLORS["header_text"], size=28)
+        self.screen.blit(ts, (WIN_W // 2 - ts.get_width() // 2, 20))
+
+        ts2 = render_text(self.font, AR["subtitle"], COLORS["tab_inactive"], size=16)
+        self.screen.blit(ts2, (WIN_W // 2 - ts2.get_width() // 2, 60))
+
+        ts3 = render_text(self.font_sm, "v1.0.0", COLORS["text2"], size=12)
+        self.screen.blit(ts3, (WIN_W // 2 - ts3.get_width() // 2, 85))
+
+    def _draw_error(self):
+        overlay = pygame.Surface((WIN_W, WIN_H), pygame.SRCALPHA)
+        overlay.fill((0, 0, 0, 120))
+        self.screen.blit(overlay, (0, 0))
+
+        card = pygame.Rect(WIN_W // 2 - 250, WIN_H // 2 - 80, 500, 160)
+        pygame.draw.rect(self.screen, COLORS["surface"], card, border_radius=10)
+        pygame.draw.rect(self.screen, COLORS["error"], card, width=2, border_radius=10)
+
+        ts = render_text(self.font_bold, AR["error"], COLORS["error"], size=20)
+        self.screen.blit(ts, (card.centerx - ts.get_width() // 2, card.y + 15))
+
+        err_text = self.error_text
+        if len(err_text) > 60:
+            err_text = err_text[:57] + "..."
+        ts2 = render_text(self.font, err_text, COLORS["text"], size=14)
+        self.screen.blit(ts2, (card.centerx - ts2.get_width() // 2, card.centery - 5))
+
+        ts3 = render_text(self.font_sm, "Click anywhere to go back", COLORS["text2"])
+        self.screen.blit(ts3, (card.centerx - ts3.get_width() // 2, card.bottom - 30))
+
+
+# ── Entry Point ─────────────────────────────────────────────────
+
+def main():
+    app = App()
+    app.run()
+
+
+if __name__ == "__main__":
+    main()
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/logger.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 638 B
+Extension: .py
+Language: python
+Location: kbs_extractor/logger.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-21 22:56:46 (Asia/Damascus / GMT+03:00)
+MD5: 9d2b23b1eedb73fc2e5aa456e2d246b3
+SHA256: f6b75ddfff14c4d9e3dd666679e128178e2a1e68f1f013142db7ae1b9e6954e6
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+import logging
+from logging.handlers import QueueHandler, QueueListener
+from queue import Queue
+
+_log_queue = Queue()
+_handler = logging.StreamHandler()
+_handler.setFormatter(logging.Formatter("[%(levelname)s] %(name)s: %(message)s"))
+_listener = QueueListener(_log_queue, _handler, respect_handler_level=True)
+_listener.start()
+
+import atexit
+atexit.register(_listener.stop)
+
+
+def get_logger(name: str) -> logging.Logger:
+    logger = logging.getLogger(f"kbs.{name}")
+    if not logger.handlers:
+        logger.addHandler(QueueHandler(_log_queue))
+        logger.setLevel(logging.INFO)
+        logger.propagate = False
+    return logger
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/pipeline.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 31.42 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/pipeline.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-24 16:30:28 (Asia/Damascus / GMT+03:00)
+MD5: 7150114228ecc0703d5e058e4f24c93a
+SHA256: 0be35b89c46de6a272829904cccd5155020880bf153736dedda9eeb95529d28d
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+"""Pipeline orchestrator — ties profiling, quality, and feature extraction together."""
+
+import json
+import re
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+from scipy import stats as sp_stats
+from sklearn.preprocessing import (
+    StandardScaler, MinMaxScaler, RobustScaler, PowerTransformer,
+    OrdinalEncoder, LabelEncoder, OneHotEncoder,
+    KBinsDiscretizer,
+)
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+
+from kbs_extractor.graph import KnowledgeGraph
+from kbs_extractor.quality_engine import run_quality_assessment
+from kbs_extractor.feature_engine import run_feature_extraction
+from kbs_extractor.logger import get_logger
+
+log = get_logger("pipeline")
+
+_URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
+_EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
+_NUMBER_RE = re.compile(r"\b\d+\.?\d*\b")
+
+
+class Pipeline:
+    def __init__(self, input_path: str, output_path: str, mode: str = "full",
+                 target_column: str | None = None, report_path: str | None = None,
+                 categorical_columns: list[str] | None = None,
+                 task_type: str | None = None):
+        self.input_path = input_path
+        self.output_path = output_path
+        self.mode = mode
+        self.target_column = target_column
+        self.report_path = report_path
+        self.categorical_columns = categorical_columns or []
+        self.task_type = task_type
+        self.kg = KnowledgeGraph()
+        self.quality_result: dict = {}
+        self.transform_plans: list[dict] = []
+        self.detected_templates: list[dict] = []
+        self.metadata: list[dict] = []
+
+    def run(self) -> pd.DataFrame | None:
+        log.info("Pipeline starting — mode=%s, input=%s", self.mode, self.input_path)
+        df = self._load_data(self.input_path)
+        df.columns = df.columns.str.strip()
+        log.info("Loaded %d rows, %d columns from %s", len(df), len(df.columns), self.input_path)
+
+        if self.target_column and self.target_column in df.columns:
+            log.info("Target column: '%s' — will be excluded from features", self.target_column)
+        elif self.target_column:
+            log.warning("Target column '%s' not found in data", self.target_column)
+            self.target_column = None
+
+        if self.task_type is None and self.target_column:
+            nunique = df[self.target_column].nunique()
+            self.task_type = "classification" if nunique <= 20 else "regression"
+            log.info("Auto-detected task type: %s (target has %d unique values)",
+                     self.task_type, nunique)
+
+        for col in df.columns:
+            if df[col].dtype == object:
+                try:
+                    df[col] = pd.to_numeric(df[col])
+                    log.info("Auto-cast '%s' from object to numeric", col)
+                except (ValueError, TypeError):
+                    pass
+
+        if self.categorical_columns:
+            log.info("User-specified categorical columns: %s", self.categorical_columns)
+
+        feature_cols = [c for c in df.columns if c != self.target_column]
+        df_features = df[feature_cols]
+
+        cat_overrides = [c for c in self.categorical_columns if c in feature_cols]
+        self.kg.build_from_dataframe(df_features, categorical_overrides=cat_overrides)
+
+        if self.target_column:
+            self._compute_mi_scores(df, feature_cols)
+
+        profiles = self.kg.get_all_profiles()
+        correlations = self.kg.get_correlations()
+
+        if self.mode in ("full", "quality"):
+            self.quality_result = run_quality_assessment(profiles, correlations)
+            self._print_quality_report()
+            if self.report_path:
+                self._save_report()
+
+        if self.mode == "quality":
+            log.info("Quality-only mode complete")
+            return None
+
+        dataset_meta = {
+            "row_count": len(df_features),
+            "col_count": len(df_features.columns),
+            "task_type": self.task_type,
+        }
+        self.transform_plans, self.detected_templates = run_feature_extraction(
+            profiles, correlations, dataset_meta=dataset_meta)
+
+        drop_cols = set()
+        for issue in self.quality_result.get("issues", []):
+            if issue.get("kind") in ("possible_id", "constant", "leakage_correlation",
+                                      "leakage_deterministic"):
+                drop_cols.add(issue.get("column", ""))
+        for plan in self.transform_plans:
+            if plan.get("operation") == "drop":
+                src = plan.get("source", "")
+                if isinstance(src, str):
+                    drop_cols.add(src)
+
+        if drop_cols:
+            before = len(self.transform_plans)
+            self.transform_plans = [
+                p for p in self.transform_plans
+                if not self._plan_uses_dropped(p, drop_cols)
+            ]
+            removed = before - len(self.transform_plans)
+            if removed:
+                log.info("CONSISTENCY: removed %d plans that use flagged columns: %s",
+                         removed, drop_cols)
+
+        if self.target_column and self.task_type:
+            self.transform_plans = self._guided_interaction_filter(
+                df, df_features, self.transform_plans)
+
+        result_df = self._apply_transforms(df_features)
+
+        if self.detected_templates:
+            template_df = self._apply_templates(df, df_features)
+            for col_name, col_data in template_df.items():
+                result_df[col_name] = col_data
+
+        result_df.to_csv(self.output_path, index=False)
+        log.info("Features saved to %s (%d rows, %d columns)",
+                 self.output_path, len(result_df), len(result_df.columns))
+
+        self._save_metadata()
+        return result_df
+
+    @staticmethod
+    def _load_data(path: str) -> pd.DataFrame:
+        na_vals = ["?", "??", "N/A", "n/a", "NA", ""]
+        ext = Path(path).suffix.lower()
+        if ext == ".json" or ext == ".jsonl":
+            df = pd.read_json(path, lines=(ext == ".jsonl"))
+        elif ext in (".xlsx", ".xls"):
+            df = pd.read_excel(path, na_values=na_vals)
+        else:
+            df = pd.read_csv(path, na_values=na_vals)
+        return df
+
+    def _compute_mi_scores(self, df: pd.DataFrame, feature_cols: list[str]) -> None:
+        from sklearn.feature_selection import mutual_info_classif, mutual_info_regression
+        target = df[self.target_column].dropna()
+        valid_idx = target.index
+
+        mi_func = mutual_info_classif if self.task_type == "classification" else mutual_info_regression
+
+        numeric_features = []
+        for col in feature_cols:
+            if pd.api.types.is_numeric_dtype(df[col]):
+                numeric_features.append(col)
+
+        if not numeric_features:
+            return
+
+        X = df.loc[valid_idx, numeric_features].fillna(0)
+        y = target.loc[valid_idx]
+
+        mi_scores = mi_func(X, y, random_state=42)
+
+        for col, score in zip(numeric_features, mi_scores):
+            node_id = f"col:{col}"
+            if self.kg.g.has_node(node_id):
+                self.kg.g.nodes[node_id]["mi_score"] = round(float(score), 4)
+                log.info("MI score for '%s': %.4f", col, score)
+
+        target_numeric = pd.to_numeric(df[self.target_column], errors="coerce")
+        if target_numeric.notna().sum() > 10:
+            for col in feature_cols:
+                node_id = f"col:{col}"
+                if not self.kg.g.has_node(node_id):
+                    continue
+                col_numeric = pd.to_numeric(df[col], errors="coerce")
+                both_valid = target_numeric.notna() & col_numeric.notna()
+                if both_valid.sum() > 10:
+                    r = abs(float(target_numeric[both_valid].corr(col_numeric[both_valid])))
+                    self.kg.g.nodes[node_id]["target_corr"] = round(r, 4)
+                    if r > 0.95:
+                        log.warning("LEAKAGE? '%s' has |r|=%.3f with target", col, r)
+
+                mapping = df.groupby(col)[self.target_column].nunique()
+                if (mapping == 1).all() and len(mapping) > 1:
+                    self.kg.g.nodes[node_id]["determines_target"] = True
+                    log.warning("LEAKAGE? '%s' uniquely determines target", col)
+
+    # ------------------------------------------------------------------
+    # Guided Feature Engineering (L3)
+    # ------------------------------------------------------------------
+
+    # ------------------------------------------------------------------
+    # Template Execution
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _plan_uses_dropped(plan: dict, drop_cols: set) -> bool:
+        src = plan.get("source", "")
+        if isinstance(src, str):
+            return src in drop_cols
+        if isinstance(src, (list, tuple)):
+            return any(s in drop_cols for s in src)
+        return False
+
+    def _apply_templates(self, df_full: pd.DataFrame,
+                          df_features: pd.DataFrame) -> dict[str, pd.Series]:
+        result = {}
+        for tmpl in self.detected_templates:
+            op = tmpl["operation"]
+            cols = tmpl["columns"]
+            concepts = tmpl.get("column_concepts", {})
+            name = tmpl["pattern_name"]
+            confidence = tmpl["confidence"]
+
+            try:
+                new_cols = self._exec_template(df_full, df_features, op, cols, concepts)
+                for col_name, col_data in new_cols.items():
+                    result[col_name] = col_data
+                    self.metadata.append({
+                        "feature": col_name,
+                        "source": str(cols),
+                        "operation": f"template:{name}",
+                        "rationale": f"{tmpl['rationale']} [confidence={confidence}%]",
+                    })
+                    log.info("TEMPLATE generated '%s' via %s (confidence=%d%%)",
+                             col_name, name, confidence)
+            except Exception as e:
+                log.error("TEMPLATE %s failed: %s", name, e)
+        return result
+
+    def _exec_template(self, df_full, df_feat, op, cols, concepts) -> dict:
+        src = df_full if all(c in df_full.columns for c in cols) else df_feat
+
+        if op == "bmi":
+            h_col = cols[1] if len(cols) > 1 else cols[0]
+            w_col = cols[0]
+            h = pd.to_numeric(src[h_col], errors="coerce")
+            w = pd.to_numeric(src[w_col], errors="coerce")
+            h_m = h.copy()
+            if h.dropna().mean() > 3:
+                h_m = h / 100.0
+                log.info("BMI: height in cm (avg=%.1f), converting to meters", h.dropna().mean())
+            bmi = w / (h_m ** 2)
+            return {"bmi": bmi.clip(10, 60)}
+
+        if op == "date_diff":
+            d1 = pd.to_datetime(src[cols[0]], errors="coerce")
+            d2 = pd.to_datetime(src[cols[1]], errors="coerce")
+            delta = (d2 - d1).dt.total_seconds()
+            return {
+                "duration_days": (delta / 86400).round(2),
+                "duration_weeks": (delta / 604800).round(2),
+            }
+
+        if op == "age_from_birth":
+            born = pd.to_datetime(src[cols[0]], errors="coerce")
+            today = pd.Timestamp.now()
+            age_years = ((today - born).dt.days / 365.25).round(1)
+            return {"age_from_birth": age_years}
+
+        if op == "haversine_trip":
+            import numpy as _np
+            lat1 = _np.radians(pd.to_numeric(src[cols[0]], errors="coerce").fillna(0))
+            lon1 = _np.radians(pd.to_numeric(src[cols[1]], errors="coerce").fillna(0))
+            lat2 = _np.radians(pd.to_numeric(src[cols[2]], errors="coerce").fillna(0))
+            lon2 = _np.radians(pd.to_numeric(src[cols[3]], errors="coerce").fillna(0))
+            dlat = lat2 - lat1
+            dlon = lon2 - lon1
+            a = _np.sin(dlat/2)**2 + _np.cos(lat1) * _np.cos(lat2) * _np.sin(dlon/2)**2
+            return {"trip_distance_km": pd.Series(6371 * 2 * _np.arcsin(_np.sqrt(a)),
+                                                   index=src.index)}
+
+        if op == "manhattan_geo":
+            lat1 = pd.to_numeric(src[cols[0]], errors="coerce").fillna(0)
+            lon1 = pd.to_numeric(src[cols[1]], errors="coerce").fillna(0)
+            lat2 = pd.to_numeric(src[cols[2]], errors="coerce").fillna(0)
+            lon2 = pd.to_numeric(src[cols[3]], errors="coerce").fillna(0)
+            manhattan = (abs(lat2 - lat1) + abs(lon2 - lon1)) * 111.32
+            return {"manhattan_distance_km": manhattan}
+
+        if op == "bearing":
+            import numpy as _np
+            lat1 = _np.radians(pd.to_numeric(src[cols[0]], errors="coerce").fillna(0))
+            lon1 = _np.radians(pd.to_numeric(src[cols[1]], errors="coerce").fillna(0))
+            lat2 = _np.radians(pd.to_numeric(src[cols[2]], errors="coerce").fillna(0))
+            lon2 = _np.radians(pd.to_numeric(src[cols[3]], errors="coerce").fillna(0))
+            dlon = lon2 - lon1
+            x = _np.sin(dlon) * _np.cos(lat2)
+            y = _np.cos(lat1) * _np.sin(lat2) - _np.sin(lat1) * _np.cos(lat2) * _np.cos(dlon)
+            bearing = (_np.degrees(_np.arctan2(x, y)) + 360) % 360
+            return {"bearing_degrees": pd.Series(bearing, index=src.index)}
+
+        if op == "geo_centroid":
+            lat = pd.to_numeric(src[cols[0]], errors="coerce")
+            lon = pd.to_numeric(src[cols[1]], errors="coerce")
+            clat, clon = lat.mean(), lon.mean()
+            dist = ((lat - clat)**2 + (lon - clon)**2).pow(0.5)
+            return {"dist_from_centroid": dist}
+
+        if op == "product":
+            a = pd.to_numeric(src[cols[0]], errors="coerce").fillna(0)
+            b = pd.to_numeric(src[cols[1]], errors="coerce").fillna(0)
+            feat_name = f"{cols[0]}_x_{cols[1]}"
+            return {feat_name: a * b}
+
+        if op == "difference":
+            a = pd.to_numeric(src[cols[0]], errors="coerce").fillna(0)
+            b = pd.to_numeric(src[cols[1]], errors="coerce").fillna(0)
+            feat_name = f"{cols[0]}_minus_{cols[1]}"
+            return {feat_name: a - b}
+
+        if op == "ratio":
+            a = pd.to_numeric(src[cols[0]], errors="coerce").fillna(0)
+            b = pd.to_numeric(src[cols[1]], errors="coerce").replace(0, np.nan)
+            feat_name = f"{cols[0]}_per_{cols[1]}"
+            return {feat_name: (a / b).fillna(0)}
+
+        log.warning("Unknown template operation '%s'", op)
+        return {}
+
+    def _guided_interaction_filter(self, df_full: pd.DataFrame,
+                                    df_features: pd.DataFrame,
+                                    plans: list[dict]) -> list[dict]:
+        """Test interaction features, keep only those that improve MI with target."""
+        from sklearn.feature_selection import mutual_info_classif, mutual_info_regression
+        interaction_ops = {"create_product", "create_ratio", "create_difference"}
+        interactions = [p for p in plans if p.get("operation") in interaction_ops]
+        non_interactions = [p for p in plans if p.get("operation") not in interaction_ops]
+
+        if not interactions or self.target_column not in df_full.columns:
+            return plans
+
+        target = pd.to_numeric(df_full[self.target_column], errors="coerce").dropna()
+        valid_idx = target.index
+
+        if self.task_type == "classification":
+            score_func = mutual_info_classif
+        else:
+            from sklearn.feature_selection import f_regression
+            score_func = f_regression
+
+        scored = []
+        for plan in interactions:
+            source = plan.get("source", [])
+            op = plan["operation"]
+            if not isinstance(source, list) or len(source) != 2:
+                scored.append((plan, 0.0))
+                continue
+            a, b = source[0], source[1]
+            if a not in df_features.columns or b not in df_features.columns:
+                continue
+            ca = pd.to_numeric(df_features[a], errors="coerce")
+            cb = pd.to_numeric(df_features[b], errors="coerce")
+            both_valid = ca.notna() & cb.notna() & ca.index.isin(valid_idx)
+            if both_valid.sum() < 10:
+                continue
+            ca = ca.fillna(0)
+            cb = cb.fillna(0)
+            if op == "create_product":
+                feat = ca * cb
+            elif op == "create_ratio":
+                feat = ca / cb.replace(0, np.nan)
+                feat = feat.fillna(0)
+            elif op == "create_difference":
+                feat = ca - cb
+            else:
+                continue
+
+            common_idx = feat.index.intersection(valid_idx)
+            feat_series = feat.loc[common_idx].fillna(0)
+            feat_valid = feat_series.values.reshape(-1, 1)
+            target_valid = target.loc[common_idx].values
+            try:
+                if self.task_type == "classification":
+                    score = score_func(feat_valid, target_valid, random_state=42)[0]
+                else:
+                    f_scores, p_values = score_func(feat_valid, target_valid)
+                    score = float(f_scores[0]) if p_values[0] < 0.05 else 0.0
+                scored.append((plan, float(score)))
+            except Exception:
+                scored.append((plan, 0.0))
+
+        scored.sort(key=lambda x: x[1], reverse=True)
+        threshold = 0.01 if self.task_type == "classification" else 1.0
+        kept = []
+        dropped = []
+        for plan, score in scored:
+            if score > threshold:
+                plan["rationale"] += f" [score={score:.4f}]"
+                kept.append(plan)
+            else:
+                dropped.append(plan)
+
+        if dropped:
+            log.info("Guided FE: kept %d interactions, dropped %d (MI<=0.01)",
+                     len(kept), len(dropped))
+        for plan, mi in scored[:3]:
+            log.info("  Top interaction: %s %s MI=%.4f",
+                     plan.get("source"), plan.get("operation"), mi)
+
+        return non_interactions + kept
+
+    # ------------------------------------------------------------------
+    # ME1-ME7: Transform execution
+    # ------------------------------------------------------------------
+
+    def _apply_transforms(self, df: pd.DataFrame) -> pd.DataFrame:
+        result = pd.DataFrame(index=df.index)
+
+        for plan in self.transform_plans:
+            op = plan["operation"]
+            source = plan.get("source")
+            params = plan.get("params", {})
+
+            try:
+                new_cols = self._execute_transform(df, result, op, source, params)
+                for col_name, col_data in new_cols.items():
+                    result[col_name] = col_data
+                    self.metadata.append({
+                        "feature": col_name, "source": str(source),
+                        "operation": op, "rationale": plan.get("rationale", ""),
+                    })
+                    log.info("Generated feature '%s' via %s", col_name, op)
+            except Exception as e:
+                log.error("Failed to apply %s on %s: %s", op, source, e)
+
+        return result
+
+    def _execute_transform(self, df: pd.DataFrame, result: pd.DataFrame,
+                           op: str, source, params: dict) -> dict[str, pd.Series]:
+        dispatch = {
+            "standard_scale": self._me2_standard_scale,
+            "robust_scale": self._me2_robust_scale,
+            "log1p": self._me1_log1p,
+            "sqrt": self._me1_sqrt,
+            "yeo_johnson": self._me1_yeo_johnson,
+            "quantile_bin": self._me7_quantile_bin,
+            "one_hot": self._me3_one_hot,
+            "binary_encode": self._me3_binary_encode,
+            "ordinal_encode": self._me3_ordinal_encode,
+            "frequency_encode": self._me3_frequency_encode,
+            "target_encode": self._me3_target_encode,
+            "bool_to_int": self._me3_bool_to_int,
+            "extract_datetime_components": self._me5_datetime_components,
+            "cyclical_encode": self._me5_cyclical_encode,
+            "count_vectorize": self._me6_count_vectorize,
+            "tfidf": self._me6_tfidf,
+            "extract_text_stats": self._me6_text_stats,
+            "extract_patterns": self._me6_extract_patterns,
+            "create_ratio": self._me4_ratio,
+            "create_difference": self._me4_difference,
+            "create_product": self._me4_product,
+            "groupby_agg": self._me8_groupby_agg,
+            "relative_deviation": self._me1_relative_deviation,
+            "drop": self._noop,
+        }
+
+        handler = dispatch.get(op)
+        if handler is None:
+            log.warning("Unknown operation '%s', skipping", op)
+            return {}
+        return handler(df, source, params)
+
+    # -- ME1: Mathematical Transforms --
+
+    def _me1_log1p(self, df, source, params) -> dict:
+        col = df[source].fillna(0)
+        return {f"{source}_log1p": np.log1p(col.clip(lower=0))}
+
+    def _me1_sqrt(self, df, source, params) -> dict:
+        col = df[source].fillna(0)
+        return {f"{source}_sqrt": np.sqrt(col.clip(lower=0))}
+
+    def _me1_yeo_johnson(self, df, source, params) -> dict:
+        col = df[[source]].fillna(df[source].median())
+        pt = PowerTransformer(method="yeo-johnson")
+        transformed = pt.fit_transform(col).ravel()
+        return {f"{source}_yeojohnson": pd.Series(transformed, index=df.index)}
+
+    # -- ME2: Scaling & Normalization --
+
+    def _me1_relative_deviation(self, df, source, params) -> dict:
+        col = pd.to_numeric(df[source], errors="coerce")
+        mean_val = col.mean()
+        if mean_val == 0 or pd.isna(mean_val):
+            return {}
+        return {f"{source}_rel_dev": (col / mean_val).fillna(1.0)}
+
+    # -- ME2: Scaling & Normalization --
+
+    def _me2_standard_scale(self, df, source, params) -> dict:
+        col = df[[source]].fillna(df[source].median())
+        scaled = StandardScaler().fit_transform(col).ravel()
+        return {f"{source}_scaled": pd.Series(scaled, index=df.index)}
+
+    def _me2_robust_scale(self, df, source, params) -> dict:
+        col = df[[source]].fillna(df[source].median())
+        scaled = RobustScaler().fit_transform(col).ravel()
+        return {f"{source}_robust": pd.Series(scaled, index=df.index)}
+
+    # -- ME3: Encoding Strategies --
+
+    def _me3_one_hot(self, df, source, params) -> dict:
+        dummies = pd.get_dummies(df[source], prefix=source, dtype=int)
+        return {col: dummies[col] for col in dummies.columns}
+
+    def _me3_binary_encode(self, df, source, params) -> dict:
+        le = LabelEncoder()
+        encoded = le.fit_transform(df[source].fillna("_missing_").astype(str))
+        return {f"{source}_binary": pd.Series(encoded, index=df.index)}
+
+    def _me3_ordinal_encode(self, df, source, params) -> dict:
+        oe = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1)
+        encoded = oe.fit_transform(df[[source]].fillna("_missing_").astype(str)).ravel()
+        return {f"{source}_ordinal": pd.Series(encoded, index=df.index)}
+
+    def _me3_frequency_encode(self, df, source, params) -> dict:
+        freq = df[source].value_counts(normalize=True)
+        encoded = df[source].map(freq).fillna(0)
+        return {f"{source}_freq": encoded}
+
+    def _me3_target_encode(self, df, source, params) -> dict:
+        if self.target_column is None or self.target_column not in df.columns:
+            return self._me3_frequency_encode(df, source, params)
+        target = df[self.target_column]
+        if not pd.api.types.is_numeric_dtype(target):
+            return self._me3_frequency_encode(df, source, params)
+        global_mean = target.mean()
+        means = df.groupby(source)[self.target_column].mean()
+        encoded = df[source].map(means).fillna(global_mean)
+        return {f"{source}_target_enc": encoded}
+
+    def _me3_bool_to_int(self, df, source, params) -> dict:
+        return {f"{source}_int": df[source].fillna(0).astype(int)}
+
+    # -- ME4: Feature Interaction --
+
+    def _me4_ratio(self, df, source, params) -> dict:
+        a, b = source[0], source[1]
+        denominator = df[b].replace(0, np.nan)
+        ratio = df[a] / denominator
+        return {f"{a}_div_{b}": ratio.fillna(0)}
+
+    def _me4_difference(self, df, source, params) -> dict:
+        a, b = source[0], source[1]
+        return {f"{a}_minus_{b}": df[a].fillna(0) - df[b].fillna(0)}
+
+    def _me4_product(self, df, source, params) -> dict:
+        a, b = source[0], source[1]
+        return {f"{a}_times_{b}": df[a].fillna(0) * df[b].fillna(0)}
+
+    # -- ME5: Temporal Decomposition --
+
+    def _me5_datetime_components(self, df, source, params) -> dict:
+        dt = pd.to_datetime(df[source], errors="coerce")
+        components = params.get("components",
+                                ["year", "month", "day", "day_of_week", "quarter",
+                                 "is_weekend", "hour", "minute", "minute_of_day",
+                                 "is_rush_hour"])
+        result = {}
+        mapping = {
+            "year": dt.dt.year,
+            "month": dt.dt.month,
+            "day": dt.dt.day,
+            "day_of_week": dt.dt.dayofweek,
+            "day_of_year": dt.dt.dayofyear,
+            "quarter": dt.dt.quarter,
+            "hour": dt.dt.hour,
+            "minute": dt.dt.minute,
+            "is_weekend": (dt.dt.dayofweek >= 5).astype(int),
+            "minute_of_day": (dt.dt.hour * 60 + dt.dt.minute),
+            "is_rush_hour": (((dt.dt.hour >= 7) & (dt.dt.hour <= 9)) |
+                             ((dt.dt.hour >= 17) & (dt.dt.hour <= 19))).astype(int),
+        }
+        for comp in components:
+            if comp in mapping:
+                series = mapping[comp]
+                result[f"{source}_{comp}"] = series.fillna(0).astype(int)
+        return result
+
+    def _me5_cyclical_encode(self, df, source, params) -> dict:
+        dt = pd.to_datetime(df[source], errors="coerce")
+        cols_periods = params.get("columns", {"month": 12, "day_of_week": 7})
+        result = {}
+        extractors = {"month": dt.dt.month, "day_of_week": dt.dt.dayofweek,
+                       "hour": dt.dt.hour, "day": dt.dt.day}
+        for col_name, period in cols_periods.items():
+            if col_name in extractors:
+                values = extractors[col_name].fillna(0)
+                result[f"{source}_{col_name}_sin"] = np.sin(2 * np.pi * values / period)
+                result[f"{source}_{col_name}_cos"] = np.cos(2 * np.pi * values / period)
+        return result
+
+    # -- ME6: Text Vectorization --
+
+    def _me6_count_vectorize(self, df, source, params) -> dict:
+        text = df[source].fillna("").astype(str)
+        max_features = params.get("max_features", 200)
+        vectorizer = CountVectorizer(max_features=max_features)
+        matrix = vectorizer.fit_transform(text)
+        feature_names = vectorizer.get_feature_names_out()
+        result = {}
+        for i, name in enumerate(feature_names):
+            result[f"{source}_bow_{name}"] = pd.Series(
+                matrix[:, i].toarray().ravel(), index=df.index)
+        return result
+
+    def _me6_tfidf(self, df, source, params) -> dict:
+        text = df[source].fillna("").astype(str)
+        max_features = params.get("max_features", 500)
+        ngram_range = tuple(params.get("ngram_range", [1, 1]))
+        sublinear_tf = params.get("sublinear_tf", False)
+        vectorizer = TfidfVectorizer(
+            max_features=max_features, ngram_range=ngram_range, sublinear_tf=sublinear_tf)
+        matrix = vectorizer.fit_transform(text)
+        feature_names = vectorizer.get_feature_names_out()
+        result = {}
+        for i, name in enumerate(feature_names):
+            result[f"{source}_tfidf_{name}"] = pd.Series(
+                matrix[:, i].toarray().ravel(), index=df.index)
+        return result
+
+    def _me6_text_stats(self, df, source, params) -> dict:
+        text = df[source].fillna("").astype(str)
+        words = text.str.split()
+        return {
+            f"{source}_word_count": words.str.len().fillna(0).astype(int),
+            f"{source}_char_count": text.str.len(),
+            f"{source}_avg_word_len": words.apply(
+                lambda w: np.mean([len(x) for x in w]) if w else 0),
+            f"{source}_upper_ratio": text.str.count(r"[A-Z]") / text.str.len().clip(lower=1),
+            f"{source}_digit_ratio": text.str.count(r"\d") / text.str.len().clip(lower=1),
+        }
+
+    def _me6_extract_patterns(self, df, source, params) -> dict:
+        text = df[source].fillna("").astype(str)
+        patterns = params.get("patterns", [])
+        result = {}
+        for p in patterns:
+            if p == "url_count":
+                result[f"{source}_url_count"] = text.str.count(_URL_RE)
+            elif p == "has_url":
+                result[f"{source}_has_url"] = text.str.contains(_URL_RE, na=False).astype(int)
+            elif p == "email_count":
+                result[f"{source}_email_count"] = text.str.count(_EMAIL_RE)
+            elif p == "has_email":
+                result[f"{source}_has_email"] = text.str.contains(_EMAIL_RE, na=False).astype(int)
+            elif p == "number_count":
+                result[f"{source}_number_count"] = text.str.count(_NUMBER_RE)
+        return result
+
+    # -- ME7: Binning --
+
+    # -- ME8: Aggregation Features --
+
+    def _me8_groupby_agg(self, df, source, params) -> dict:
+        cat_col, num_col = source[0], source[1]
+        aggs = params.get("aggs", ["mean", "std"])
+        result = {}
+        cat_series = df[cat_col].astype(str).fillna("_missing_")
+        num_series = pd.to_numeric(df[num_col], errors="coerce")
+        grouped = num_series.groupby(cat_series)
+        for agg in aggs:
+            agg_map = grouped.agg(agg)
+            feat_name = f"{num_col}_by_{cat_col}_{agg}"
+            result[feat_name] = cat_series.map(agg_map).fillna(0)
+        return result
+
+    # -- ME7: Binning --
+
+    def _me7_quantile_bin(self, df, source, params) -> dict:
+        n_bins = params.get("n_bins", 5)
+        col = df[source].fillna(df[source].median())
+        try:
+            binned = pd.qcut(col, q=n_bins, labels=False, duplicates="drop")
+        except ValueError:
+            binned = pd.cut(col, bins=n_bins, labels=False)
+        return {f"{source}_qbin": binned.fillna(0).astype(int)}
+
+    # -- No-op --
+
+    def _noop(self, df, source, params) -> dict:
+        return {}
+
+    # ------------------------------------------------------------------
+    # Reporting
+    # ------------------------------------------------------------------
+
+    def _print_quality_report(self) -> None:
+        issues = self.quality_result.get("issues", [])
+        suggestions = self.quality_result.get("suggestions", [])
+
+        if not issues:
+            print("\n[Quality Report] No issues detected.")
+            return
+
+        print(f"\n{'='*60}")
+        print(f" QUALITY REPORT — {len(issues)} issues found")
+        print(f"{'='*60}")
+        for issue in sorted(issues, key=lambda x: {"high": 0, "medium": 1, "low": 2}.get(x.get("severity", "low"), 3)):
+            sev = issue.get("severity", "?").upper()
+            print(f"  [{sev:6s}] {issue.get('kind', '?'):25s} | {issue.get('description', '')}")
+
+        print(f"\n{'-'*60}")
+        print(f" SUGGESTIONS — {len(suggestions)} recommendations")
+        print(f"{'-'*60}")
+        for sug in suggestions:
+            col = sug.get("column", "?")
+            print(f"  [{col}] {sug.get('action', '?')} — {sug.get('rationale', '')}")
+        print()
+
+    def _save_report(self) -> None:
+        report = {
+            "quality": self.quality_result,
+            "templates": self.detected_templates,
+            "transforms": self.metadata,
+        }
+        path = Path(self.report_path)
+        path.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
+        log.info("Report saved to %s", path)
+
+    def _save_metadata(self) -> None:
+        meta_path = Path(self.output_path).with_suffix(".meta.json")
+        meta_path.write_text(json.dumps(self.metadata, indent=2, default=str), encoding="utf-8")
+        log.info("Metadata saved to %s", meta_path)
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/profiler.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 8.84 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/profiler.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 20:05:29 (Asia/Damascus / GMT+03:00)
+MD5: d43782e1975d8072d70f1719012a734e
+SHA256: 9929f9c034e66526c041a4f87753183d4ea6f04d3a2cd1211387b9e9eb464cd7
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+"""Data profiling for tabular and text columns."""
+
+import re
+
+import numpy as np
+import pandas as pd
+from scipy import stats as sp_stats
+
+from kbs_extractor.logger import get_logger
+
+log = get_logger("profiler")
+
+_URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
+_EMAIL_RE = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
+_NUMBER_RE = re.compile(r"\b\d+\.?\d*\b")
+
+
+def _is_hidden_categorical(series: pd.Series) -> str | None:
+    """Detect numeric columns that are actually categorical.
+    Returns 'categorical' or 'boolean' if hidden, None if truly numeric."""
+    clean = series.dropna()
+    if len(clean) == 0:
+        return None
+
+    nunique = clean.nunique()
+    n_rows = len(clean)
+
+    if nunique == 2:
+        vals = set(clean.unique())
+        if vals <= {0, 1} or vals <= {0.0, 1.0}:
+            log.info("Auto-detected '%s' as hidden binary (values={0,1})", series.name)
+            return "boolean"
+
+    all_integers = (clean == clean.astype(int)).all() if clean.dtype != int else True
+    threshold = min(10, int(np.sqrt(n_rows)))
+
+    if all_integers and nunique <= threshold and nunique >= 2:
+        log.info("Auto-detected '%s' as hidden categorical "
+                 "(nunique=%d <= threshold=%d, all integers)", series.name, nunique, threshold)
+        return "categorical"
+
+    return None
+
+
+def _detect_column_type(series: pd.Series) -> str:
+    if pd.api.types.is_bool_dtype(series):
+        return "boolean"
+    if pd.api.types.is_datetime64_any_dtype(series):
+        return "datetime"
+    if pd.api.types.is_numeric_dtype(series):
+        hidden = _is_hidden_categorical(series)
+        if hidden:
+            return hidden
+        return "numeric"
+    if pd.api.types.is_object_dtype(series) or pd.api.types.is_string_dtype(series):
+        try:
+            pd.to_datetime(series.dropna().head(50))
+            return "datetime"
+        except (ValueError, TypeError):
+            pass
+        avg_words = series.dropna().astype(str).str.split().str.len().mean()
+        if avg_words > 5:
+            return "text"
+        return "categorical"
+    return "categorical"
+
+
+def _outlier_stats(series: pd.Series) -> tuple[int, float]:
+    clean = series.dropna()
+    if len(clean) < 4:
+        return 0, 0.0
+    q1, q3 = clean.quantile(0.25), clean.quantile(0.75)
+    iqr = q3 - q1
+    if iqr == 0:
+        return 0, 0.0
+    lower, upper = q1 - 1.5 * iqr, q3 + 1.5 * iqr
+    outliers = ((clean < lower) | (clean > upper)).sum()
+    return int(outliers), round(outliers / len(clean) * 100, 2)
+
+
+def profile_numeric(name: str, series: pd.Series) -> dict:
+    clean = series.dropna()
+    outlier_count, outlier_pct = _outlier_stats(series)
+    return {
+        "name": name,
+        "dtype": "numeric",
+        "null_count": int(series.isna().sum()),
+        "null_pct": round(series.isna().mean() * 100, 2),
+        "unique_count": int(series.nunique()),
+        "unique_ratio": round(series.nunique() / max(len(series), 1), 4),
+        "mean": round(float(clean.mean()), 6) if len(clean) else 0.0,
+        "std": round(float(clean.std()), 6) if len(clean) > 1 else 0.0,
+        "min_val": float(clean.min()) if len(clean) else 0.0,
+        "max_val": float(clean.max()) if len(clean) else 0.0,
+        "q1": float(clean.quantile(0.25)) if len(clean) else 0.0,
+        "median": float(clean.median()) if len(clean) else 0.0,
+        "q3": float(clean.quantile(0.75)) if len(clean) else 0.0,
+        "skewness": round(float(clean.skew()), 4) if len(clean) > 2 else 0.0,
+        "kurtosis": round(float(clean.kurtosis()), 4) if len(clean) > 3 else 0.0,
+        "outlier_count": outlier_count,
+        "outlier_pct": outlier_pct,
+    }
+
+
+def profile_categorical(name: str, series: pd.Series) -> dict:
+    clean = series.dropna()
+    vc = clean.value_counts(normalize=True)
+    return {
+        "name": name,
+        "dtype": "categorical",
+        "null_count": int(series.isna().sum()),
+        "null_pct": round(series.isna().mean() * 100, 2),
+        "unique_count": int(series.nunique()),
+        "unique_ratio": round(series.nunique() / max(len(series), 1), 4),
+        "cardinality": int(series.nunique()),
+        "top_freq": round(float(vc.iloc[0]), 4) if len(vc) else 0.0,
+        "is_ordinal": False,
+    }
+
+
+def profile_datetime(name: str, series: pd.Series) -> dict:
+    clean = series.dropna()
+    try:
+        parsed = pd.to_datetime(clean)
+    except (ValueError, TypeError):
+        parsed = pd.Series(dtype="datetime64[ns]")
+    return {
+        "name": name,
+        "dtype": "datetime",
+        "null_count": int(series.isna().sum()),
+        "null_pct": round(series.isna().mean() * 100, 2),
+        "unique_count": int(series.nunique()),
+        "unique_ratio": round(series.nunique() / max(len(series), 1), 4),
+        "min_date": str(parsed.min()) if len(parsed) else "",
+        "max_date": str(parsed.max()) if len(parsed) else "",
+        "granularity": _detect_granularity(parsed),
+    }
+
+
+def _detect_granularity(dt_series: pd.Series) -> str:
+    if dt_series.empty:
+        return "unknown"
+    if (dt_series.dt.second != 0).any():
+        return "second"
+    if (dt_series.dt.minute != 0).any():
+        return "minute"
+    if (dt_series.dt.hour != 0).any():
+        return "hour"
+    return "day"
+
+
+def profile_text(name: str, series: pd.Series) -> dict:
+    clean = series.dropna().astype(str)
+    if clean.empty:
+        return {"name": name, "dtype": "text", "null_count": int(series.isna().sum()),
+                "null_pct": 100.0, "vocab_size": 0, "avg_word_count": 0}
+
+    words = clean.str.split()
+    word_counts = words.str.len()
+    all_words = words.explode().dropna()
+    word_lengths = clean.str.len()
+
+    url_flags = clean.str.contains(_URL_RE, na=False)
+    email_flags = clean.str.contains(_EMAIL_RE, na=False)
+    num_flags = clean.str.contains(_NUMBER_RE, na=False)
+
+    char_counts = clean.str.len()
+    upper_counts = clean.str.count(r"[A-Z]")
+    digit_counts = clean.str.count(r"\d")
+    special_counts = clean.str.count(r"[^a-zA-Z0-9\s]")
+
+    total_chars = char_counts.sum()
+    safe_total = max(total_chars, 1)
+
+    return {
+        "name": name,
+        "dtype": "text",
+        "null_count": int(series.isna().sum()),
+        "null_pct": round(series.isna().mean() * 100, 2),
+        "avg_word_count": round(float(word_counts.mean()), 2),
+        "avg_char_count": round(float(char_counts.mean()), 2),
+        "avg_word_length": round(float(all_words.str.len().mean()), 2) if len(all_words) else 0.0,
+        "vocab_size": int(all_words.nunique()),
+        "has_urls": bool(url_flags.any()),
+        "has_emails": bool(email_flags.any()),
+        "has_numbers": bool(num_flags.any()),
+        "uppercase_ratio": round(float(upper_counts.sum() / safe_total), 4),
+        "digit_ratio": round(float(digit_counts.sum() / safe_total), 4),
+        "special_char_ratio": round(float(special_counts.sum() / safe_total), 4),
+    }
+
+
+def profile_boolean(name: str, series: pd.Series) -> dict:
+    return {
+        "name": name,
+        "dtype": "boolean",
+        "null_count": int(series.isna().sum()),
+        "null_pct": round(series.isna().mean() * 100, 2),
+        "unique_count": int(series.nunique()),
+        "unique_ratio": round(series.nunique() / max(len(series), 1), 4),
+    }
+
+
+_PROFILERS = {
+    "numeric": profile_numeric,
+    "categorical": profile_categorical,
+    "datetime": profile_datetime,
+    "text": profile_text,
+    "boolean": profile_boolean,
+}
+
+
+def profile_dataframe(df: pd.DataFrame,
+                      categorical_overrides: list[str] | None = None) -> list[dict]:
+    forced_cats = set(categorical_overrides or [])
+    profiles = []
+    for col in df.columns:
+        if col in forced_cats:
+            dtype = "categorical"
+        else:
+            dtype = _detect_column_type(df[col])
+        profiler_fn = _PROFILERS[dtype]
+        profile = profiler_fn(col, df[col])
+        log.info("Profiled column '%s' as %s", col, dtype)
+        profiles.append(profile)
+    return profiles
+
+
+def compute_correlations(df: pd.DataFrame, threshold: float = 0.0) -> list[dict]:
+    numeric_cols = df.select_dtypes(include="number").columns.tolist()
+    if len(numeric_cols) < 2:
+        return []
+
+    corr_matrix = df[numeric_cols].corr(method="pearson")
+    correlations = []
+    seen = set()
+    for i, col_a in enumerate(numeric_cols):
+        for col_b in numeric_cols[i + 1:]:
+            r = corr_matrix.loc[col_a, col_b]
+            if np.isnan(r):
+                continue
+            if abs(r) >= threshold:
+                pair_key = tuple(sorted([col_a, col_b]))
+                if pair_key not in seen:
+                    seen.add(pair_key)
+                    correlations.append({
+                        "col_a": col_a,
+                        "col_b": col_b,
+                        "pearson": round(float(r), 4),
+                        "abs_pearson": round(abs(float(r)), 4),
+                    })
+    log.info("Computed %d correlation pairs (threshold=%.2f)", len(correlations), threshold)
+    return correlations
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/PROJECT_MAP.md
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 46.29 KB
+Extension: .md
+Language: text
+Location: kbs_extractor/PROJECT_MAP.md
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 20:34:24 (Asia/Damascus / GMT+03:00)
+MD5: 18d6418261aa9b196896412ee3a612a0
+SHA256: a879eae60677e53e99cd17c56a5143faaa9e0a2a3601d0ab0256af31972d14e9
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+# PROJECT_MAP — KBS Feature Extractor
+
+## [TECH_STACK]
+
+| Component        | Technology       | Version  | Role                              |
+|------------------|------------------|----------|-----------------------------------|
+| Runtime          | Python           | 3.11.9   | Language                          |
+| Rule Engine      | experta          | 1.9.4    | Production rules (Rete algorithm) |
+| Knowledge Graph  | networkx         | 3.6.1    | Graph-based data representation   |
+| Data Processing  | pandas           | 2.3.3    | Tabular data manipulation         |
+| Numerical        | numpy            | 2.3.5    | Array operations & stats          |
+| Statistics       | scipy            | 1.16.3   | Statistical tests & distributions |
+| ML Transforms    | scikit-learn     | 1.8.0    | Encoders, scalers, transformers   |
+| Text Processing  | nltk             | 3.9.4    | Tokenization, stopwords, NLP      |
+| Logging          | stdlib logging   | builtin  | QueueHandler (async, non-blocking)|
+
+## [SYSTEM_FLOW]
+
+```
+CSV/DataFrame
+    │
+    ├─► [profiler.py] ──► Column statistics + text analysis
+    │                         │
+    ▼                         ▼
+[graph.py] ◄──── Profile nodes + correlation edges
+    │
+    │   ┌─────────────────── QUALITY METHODOLOGIES ───────────────────┐
+    │   │  MQ1: Missing Value Analysis                                │
+    │   │  MQ2: Outlier Detection (IQR + Z-score)                    │
+    │   │  MQ3: Consistency & Type Checking                          │
+    │   │  MQ4: Duplicate & Near-Duplicate Detection                 │
+    │   └─────────────────────────────────────────────────────────────┘
+    ├─► [quality_engine.py] ──► QualityIssue + FixSuggestion facts
+    │                              │
+    │                              ▼
+    │                         Suggestions Report (JSON/stdout)
+    │
+    │   ┌─────────────────── DISCOVERY METHODOLOGIES ─────────────────┐
+    │   │  MD1: Statistical Distribution Analysis                     │
+    │   │  MD2: Correlation & Dependency Analysis                     │
+    │   │  MD3: Information-Theoretic Analysis                        │
+    │   │  MD4: Cardinality Analysis                                  │
+    │   │  MD5: Temporal Pattern Recognition                          │
+    │   │  MD6: Text Structure Analysis                               │
+    │   └─────────────────────────────────────────────────────────────┘
+    │               │
+    │               ▼
+    │   ┌─────────────────── ENGINEERING METHODOLOGIES ───────────────┐
+    │   │  ME1: Mathematical Transforms (log, power, box-cox)         │
+    │   │  ME2: Scaling & Normalization                               │
+    │   │  ME3: Encoding Strategies (one-hot, ordinal, target)        │
+    │   │  ME4: Feature Interaction Generation                        │
+    │   │  ME5: Temporal Decomposition                                │
+    │   │  ME6: Text Vectorization (BoW, TF-IDF)                     │
+    │   │  ME7: Binning & Discretization                              │
+    │   └─────────────────────────────────────────────────────────────┘
+    │
+    ├─► [feature_engine.py] ──► TransformPlan facts
+    │                              │
+    │                              ▼
+    └─► [pipeline.py] ──► Applies transforms ──► Feature DataFrame + metadata
+```
+
+## [METHODOLOGIES]
+
+كل منهجية هي **مجموعة قواعد Experta** تعمل على عقد Knowledge Graph.
+المبدأ: المنهجية تُقرر **ماذا نفعل**، ثم `pipeline.py` يُنفذ فعلياً.
+
+```
+  ┌──────────────┐      ┌───────────────┐      ┌──────────────┐
+  │  Graph Node  │─────►│  @Rule fires  │─────►│  New Fact     │
+  │  (Profile)   │      │  (Methodology)│      │  (Plan/Issue) │
+  └──────────────┘      └───────────────┘      └──────┬───────┘
+                                                      │
+                                                      ▼
+                                               ┌──────────────┐
+                                               │  Graph gets   │
+                                               │  new node/edge│
+                                               └──────────────┘
+```
+
+---
+
+### MQ: منهجيات تقييم الجودة (Quality Assessment)
+
+هذه المنهجيات تعمل داخل `quality_engine.py` وتُنتج `QualityIssue` + `FixSuggestion`.
+
+#### MQ1: تحليل القيم المفقودة (Missing Value Analysis)
+
+```
+الدخل ──► ColumnProfile(null_pct, dtype, distribution)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────┐
+     │  التفكير:                                       │
+     │  1. ما نسبة الفقدان؟ (<5%, 5-30%, >30%)        │
+     │  2. هل الفقدان عشوائي (MCAR) أم مرتبط بعمود    │
+     │     آخر (MAR) أم مرتبط بالقيمة نفسها (MNAR)؟   │
+     │  3. ما نوع العمود؟ (رقمي ← وسيط، فئوي ← mode) │
+     └────────────────────┬────────────────────────────┘
+                          ▼
+الخرج ──► QualityIssue(kind="missing", severity=...)
+          FixSuggestion(action="impute_median" | "impute_mode" |
+                        "create_indicator" | "drop_column")
+```
+
+**البرمجة كقواعد:**
+```python
+@Rule(ColumnProfile(name=MATCH.n, null_pct=P(lambda x: 0 < x <= 5), dtype="numeric"))
+def low_missing_numeric(self, n):
+    # فقدان قليل + رقمي → استبدال بالوسيط
+    self.declare(FixSuggestion(column=n, action="impute_median"))
+
+@Rule(ColumnProfile(name=MATCH.n, null_pct=P(lambda x: x > 30)))
+def high_missing(self, n):
+    # فقدان كبير → مؤشر ثنائي + حذف العمود الأصلي
+    self.declare(FixSuggestion(column=n, action="create_indicator_and_drop"))
+```
+
+---
+
+#### MQ2: كشف القيم الشاذة (Outlier Detection)
+
+```
+الدخل ──► ColumnProfile(name, dtype="numeric", mean, std, q1, q3, min, max)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────┐
+     │  التفكير:                                       │
+     │  1. حساب IQR = Q3 - Q1                         │
+     │  2. الحدود: [Q1 - 1.5*IQR, Q3 + 1.5*IQR]      │
+     │  3. كم نسبة القيم خارج الحدود؟                 │
+     │  4. Z-score: كم قيمة |z| > 3 ؟                 │
+     │  5. القرار بناءً على النسبة:                    │
+     │     - <1% → حذف الصفوف                         │
+     │     - 1-5% → قص (clip/winsorize)                │
+     │     - >5% → ربما ليست شاذة، احتفظ بها          │
+     └────────────────────┬────────────────────────────┘
+                          ▼
+الخرج ──► QualityIssue(kind="outlier", severity=..., outlier_pct=...)
+          FixSuggestion(action="clip" | "winsorize" | "remove_rows" | "keep")
+```
+
+**البرمجة كقواعد:**
+```python
+@Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                    outlier_pct=P(lambda x: 0 < x <= 1)))
+def few_outliers(self, n):
+    self.declare(FixSuggestion(column=n, action="remove_rows",
+                               rationale="<1% outliers, safe to drop rows"))
+
+@Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                    outlier_pct=P(lambda x: 1 < x <= 5)))
+def moderate_outliers(self, n):
+    self.declare(FixSuggestion(column=n, action="winsorize",
+                               rationale="1-5% outliers, clip to bounds"))
+```
+
+---
+
+#### MQ3: فحص الاتساق والأنواع (Consistency & Type Checking)
+
+```
+الدخل ──► ColumnProfile(name, dtype, unique_values_sample, pattern_detected)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────┐
+     │  التفكير:                                       │
+     │  1. هل dtype المُكتشف يطابق المحتوى الفعلي؟   │
+     │     (مثلاً: عمود "age" مخزن كـ string)         │
+     │  2. هل توجد قيم مختلطة الأنواع في نفس العمود؟  │
+     │  3. هل توجد أنماط متضاربة؟                     │
+     │     (مثلاً: "2024-01-01" و "Jan 1, 2024")      │
+     │  4. هل القيم ضمن نطاق منطقي؟                   │
+     │     (مثلاً: عمر سالب، نسبة > 100%)             │
+     └────────────────────┬────────────────────────────┘
+                          ▼
+الخرج ──► QualityIssue(kind="type_mismatch" | "inconsistent_format" |
+                        "out_of_range")
+          FixSuggestion(action="cast_to_numeric" | "standardize_format" |
+                        "flag_invalid_rows")
+```
+
+---
+
+#### MQ4: كشف التكرار (Duplicate & Near-Duplicate Detection)
+
+```
+الدخل ──► DatasetMeta(row_count), ColumnProfile(all columns)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────┐
+     │  التفكير:                                       │
+     │  1. هل توجد صفوف مكررة بالكامل؟                │
+     │  2. هل يوجد عمود unique_ratio = 1.0 (مرشح ID)؟ │
+     │  3. هل يوجد عمود فيه قيمة واحدة فقط (ثابت)؟   │
+     │     → عمود ثابت لا يضيف معلومة = حذفه          │
+     │  4. هل عمودان متطابقان تماماً (محتوى مكرر)؟    │
+     └────────────────────┬────────────────────────────┘
+                          ▼
+الخرج ──► QualityIssue(kind="duplicate_rows" | "constant_column" |
+                        "duplicate_columns")
+          FixSuggestion(action="drop_duplicates" | "drop_constant" |
+                        "drop_duplicate_col")
+```
+
+---
+
+### MD: منهجيات اكتشاف الميزات (Feature Discovery)
+
+هذه المنهجيات تعمل **بعد** تقييم الجودة. تفحص البيانات لتقرر **أي تحويلات مناسبة**.
+تعمل داخل `feature_engine.py` وتُنتج `TransformPlan`.
+
+#### MD1: تحليل التوزيع الإحصائي (Statistical Distribution Analysis)
+
+```
+الدخل ──► ColumnProfile(dtype="numeric", mean, std, skewness, kurtosis,
+                         min, max, distribution_shape)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────────────┐
+     │  التفكير:                                               │
+     │                                                         │
+     │  ┌─ skewness ────────────────────────────────────────┐  │
+     │  │  |skew| < 0.5  → توزيع متماثل ≈ طبيعي           │  │
+     │  │                  → StandardScaler كافٍ            │  │
+     │  │  0.5 < |skew| < 2 → التواء معتدل                 │  │
+     │  │                     → sqrt_transform ثم scale     │  │
+     │  │  |skew| > 2  → التواء شديد                        │  │
+     │  │               → log1p_transform ثم scale          │  │
+     │  └───────────────────────────────────────────────────┘  │
+     │                                                         │
+     │  ┌─ kurtosis ────────────────────────────────────────┐  │
+     │  │  kurtosis > 7 → ذيول ثقيلة                       │  │
+     │  │               → RobustScaler بدل Standard         │  │
+     │  │  kurtosis < 1 → توزيع مسطح                       │  │
+     │  │               → قد يستفيد من binning              │  │
+     │  └───────────────────────────────────────────────────┘  │
+     │                                                         │
+     │  ┌─ range ───────────────────────────────────────────┐  │
+     │  │  min >= 0 AND skewed → log1p آمن                  │  │
+     │  │  min < 0 AND skewed  → box-cox غير ممكن          │  │
+     │  │                      → yeo-johnson بدلاً منه      │  │
+     │  └───────────────────────────────────────────────────┘  │
+     └────────────────────────┬────────────────────────────────┘
+                              ▼
+الخرج ──► TransformPlan(source=col, operation="log1p" | "sqrt" | "boxcox" |
+                         "yeo_johnson" | "robust_scale" | "standard_scale",
+                         rationale="skewness=3.2, applying log1p")
+```
+
+**البرمجة كقواعد:**
+```python
+@Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                    skewness=P(lambda s: abs(s) > 2),
+                    min_val=P(lambda m: m >= 0)))
+def high_skew_positive(self, n):
+    self.declare(TransformPlan(source=n, operation="log1p",
+                               rationale="High positive skew, min>=0"))
+
+@Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                    kurtosis=P(lambda k: k > 7)))
+def heavy_tails(self, n):
+    self.declare(TransformPlan(source=n, operation="robust_scale",
+                               rationale="Heavy tails, kurtosis>7"))
+```
+
+---
+
+#### MD2: تحليل الارتباط والتبعية (Correlation & Dependency Analysis)
+
+```
+الدخل ──► Graph edges: column ──correlates(weight=r)──► column
+          ColumnProfile(name_a, name_b, dtype="numeric")
+          │
+          ▼
+     ┌─────────────────────────────────────────────────────────┐
+     │  التفكير:                                               │
+     │                                                         │
+     │  ┌─ Pearson correlation r ───────────────────────────┐  │
+     │  │  |r| > 0.95 → تكرار شبه تام                      │  │
+     │  │             → حذف أحدهما (الأقل أهمية)            │  │
+     │  │  0.7 < |r| < 0.95 → ارتباط قوي                   │  │
+     │  │                    → إنشاء ratio = A/B            │  │
+     │  │                    → أو difference = A - B         │  │
+     │  │  0.3 < |r| < 0.7 → ارتباط معتدل                  │  │
+     │  │                   → إنشاء product = A * B          │  │
+     │  │  |r| < 0.3 → مستقلان تقريباً                      │  │
+     │  │            → لا تفاعل مطلوب                        │  │
+     │  └───────────────────────────────────────────────────┘  │
+     │                                                         │
+     │  ┌─ Multicollinearity check ─────────────────────────┐  │
+     │  │  VIF > 10 لعمود → يجب حذفه أو دمجه مع المرتبطين │  │
+     │  │  الأولوية: حذف العمود ذو أقل ارتباط بالـ target   │  │
+     │  └───────────────────────────────────────────────────┘  │
+     └────────────────────────┬────────────────────────────────┘
+                              ▼
+الخرج ──► TransformPlan(operation="create_ratio" | "create_difference" |
+                         "create_product" | "drop_redundant",
+                         source=[col_a, col_b], rationale="r=0.82")
+```
+
+**البرمجة كقواعد:**
+```python
+@Rule(ColumnProfile(name=MATCH.a, dtype="numeric"),
+      ColumnProfile(name=MATCH.b, dtype="numeric"),
+      TEST(lambda a, b: a < b),  # تجنب التكرار
+      CorrelationFact(col_a=MATCH.a, col_b=MATCH.b,
+                      pearson=P(lambda r: 0.7 < abs(r) < 0.95)))
+def strong_correlation(self, a, b):
+    self.declare(TransformPlan(source=[a, b], operation="create_ratio",
+                               rationale=f"Strong correlation between {a} and {b}"))
+```
+
+---
+
+#### MD3: التحليل المعلوماتي (Information-Theoretic Analysis)
+
+```
+الدخل ──► ColumnProfile(name, dtype), TargetColumn(name, dtype)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────────────┐
+     │  التفكير:                                               │
+     │                                                         │
+     │  1. حساب Mutual Information بين كل عمود والـ target    │
+     │     MI(X, Y) = ΣΣ p(x,y) * log(p(x,y) / p(x)*p(y))   │
+     │                                                         │
+     │  2. حساب Entropy لكل عمود فئوي:                        │
+     │     H(X) = -Σ p(x) * log(p(x))                         │
+     │                                                         │
+     │  ┌─ MI score ────────────────────────────────────────┐  │
+     │  │  MI ≈ 0 → العمود لا يحمل معلومة عن الـ target    │  │
+     │  │        → مرشح للحذف                               │  │
+     │  │  MI عالي → عمود مهم                               │  │
+     │  │         → أولوية في الهندسة                        │  │
+     │  └───────────────────────────────────────────────────┘  │
+     │                                                         │
+     │  ┌─ Entropy ─────────────────────────────────────────┐  │
+     │  │  H ≈ 0 → عمود ثابت تقريباً → حذف                │  │
+     │  │  H عالية جداً (≈ log(n)) → كل قيمة فريدة → حذف   │  │
+     │  │  H متوسطة → عمود يحمل معلومة → احتفظ             │  │
+     │  └───────────────────────────────────────────────────┘  │
+     └────────────────────────┬────────────────────────────────┘
+                              ▼
+الخرج ──► TransformPlan(operation="keep_high_mi" | "drop_zero_mi" |
+                         "prioritize_engineering",
+                         mi_score=..., entropy=...)
+```
+
+**البرمجة كقواعد:**
+```python
+@Rule(ColumnProfile(name=MATCH.n, mi_score=P(lambda mi: mi < 0.01)))
+def zero_information(self, n):
+    self.declare(TransformPlan(source=n, operation="drop",
+                               rationale="Near-zero mutual information with target"))
+
+@Rule(ColumnProfile(name=MATCH.n, mi_score=P(lambda mi: mi > 0.5),
+                    dtype="categorical"))
+def high_info_categorical(self, n):
+    self.declare(TransformPlan(source=n, operation="target_encode",
+                               rationale="High MI categorical, target encoding preserves info"))
+```
+
+---
+
+#### MD4: تحليل الكاردنالية (Cardinality Analysis)
+
+```
+الدخل ──► ColumnProfile(name, dtype="categorical", cardinality, unique_ratio,
+                         top_freq, is_ordinal)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────────────┐
+     │  التفكير (شجرة قرار):                                   │
+     │                                                         │
+     │  dtype == "categorical"?                                │
+     │  ├── YES                                                │
+     │  │   ├── is_ordinal == True?                            │
+     │  │   │   └── YES → OrdinalEncoder (ترتيب معروف)        │
+     │  │   │                                                  │
+     │  │   ├── cardinality <= 2?                              │
+     │  │   │   └── YES → BinaryEncoder (0/1)                 │
+     │  │   │                                                  │
+     │  │   ├── cardinality 3-10?                              │
+     │  │   │   └── YES → OneHotEncoder                       │
+     │  │   │                                                  │
+     │  │   ├── cardinality 11-50?                             │
+     │  │   │   └── YES → FrequencyEncoder أو TargetEncoder   │
+     │  │   │                                                  │
+     │  │   └── cardinality > 50?                              │
+     │  │       └── YES → TargetEncoder أو HashingEncoder     │
+     │  │                                                      │
+     │  └── NO (numeric stored as string?)                     │
+     │      └── cast_to_numeric أولاً                          │
+     └────────────────────────┬────────────────────────────────┘
+                              ▼
+الخرج ──► TransformPlan(operation="one_hot" | "ordinal" | "binary" |
+                         "target_encode" | "frequency_encode" | "hash",
+                         cardinality=..., rationale="...")
+```
+
+---
+
+#### MD5: التعرف على الأنماط الزمنية (Temporal Pattern Recognition)
+
+```
+الدخل ──► ColumnProfile(name, dtype="datetime", min_date, max_date, granularity)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────────────┐
+     │  التفكير:                                               │
+     │                                                         │
+     │  1. ما دقة الزمن؟ (سنة / شهر / يوم / ساعة / دقيقة)   │
+     │     → يحدد أي مكونات نستخرج                            │
+     │                                                         │
+     │  2. هل يوجد عمود زمني آخر؟                             │
+     │     → YES: حساب الفرق بينهما (duration)                │
+     │                                                         │
+     │  3. استخراج المكونات:                                   │
+     │     ┌─────────────────────────────────────────────┐     │
+     │     │ year, month, day, day_of_week, day_of_year  │     │
+     │     │ quarter, is_weekend, is_month_start         │     │
+     │     │ hour, minute (إذا الدقة ≤ ساعة)            │     │
+     │     └─────────────────────────────────────────────┘     │
+     │                                                         │
+     │  4. ترميز دوري (Cyclical Encoding):                    │
+     │     month → sin(2π*m/12), cos(2π*m/12)                  │
+     │     day_of_week → sin(2π*d/7), cos(2π*d/7)             │
+     │     → يحافظ على العلاقة: ديسمبر قريب من يناير          │
+     └────────────────────────┬────────────────────────────────┘
+                              ▼
+الخرج ──► TransformPlan(operation="extract_datetime_components" |
+                         "compute_duration" | "cyclical_encode",
+                         components=[...], rationale="...")
+```
+
+---
+
+#### MD6: تحليل بنية النصوص (Text Structure Analysis)
+
+```
+الدخل ──► TextProfile(name, avg_word_count, vocab_size, avg_sentence_length,
+                       has_urls, has_emails, has_numbers, has_special_patterns,
+                       language, encoding)
+          │
+          ▼
+     ┌─────────────────────────────────────────────────────────┐
+     │  التفكير:                                               │
+     │                                                         │
+     │  1. هل النص قصير (< 20 كلمة) أم طويل؟                 │
+     │     قصير → مرشح للترميز المباشر (BoW/TF-IDF)          │
+     │     طويل → يحتاج تقسيم أو تلخيص أولاً                 │
+     │                                                         │
+     │  2. هل يحتوي أنماط منظمة (structured patterns)؟        │
+     │     URLs → extract_url_count, has_url flag              │
+     │     Emails → extract_email_domain                       │
+     │     Numbers → extract_numeric_mentions                  │
+     │     Dates → extract_date_mentions                       │
+     │                                                         │
+     │  3. ما حجم المفردات؟                                   │
+     │     vocab_size < 500 → CountVectorizer كافٍ            │
+     │     500-5000 → TF-IDF مع n-grams                       │
+     │     > 5000 → TF-IDF مع max_features + sublinear_tf     │
+     │                                                         │
+     │  4. خصائص إحصائية للنص نفسه (meta-features):           │
+     │     word_count, char_count, avg_word_length             │
+     │     sentence_count, uppercase_ratio, digit_ratio        │
+     │     special_char_ratio, stopword_ratio                  │
+     └────────────────────────┬────────────────────────────────┘
+                              ▼
+الخرج ──► TransformPlan(operation="tfidf" | "count_vectorize" |
+                         "extract_text_stats" | "extract_patterns",
+                         vocab_size=..., max_features=..., rationale="...")
+```
+
+---
+
+### ME: منهجيات هندسة الميزات (Feature Engineering)
+
+هذه المنهجيات تُنفّذ القرارات. تأخذ `TransformPlan` كدخل وتُنتج الأعمدة الجديدة فعلياً.
+تعمل داخل `pipeline.py` عند استدعاء `apply_transforms()`.
+
+#### ME1: التحويلات الرياضية (Mathematical Transforms)
+
+```
+الدخل ──► TransformPlan(operation ∈ {"log1p","sqrt","boxcox","yeo_johnson"})
+          + العمود الأصلي من DataFrame
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  "log1p"       → np.log1p(col)                     │
+     │  "sqrt"        → np.sqrt(col)  # يتطلب col >= 0   │
+     │  "boxcox"      → scipy.stats.boxcox(col)           │
+     │  "yeo_johnson" → PowerTransformer(method="yj")     │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► عمود جديد: "{col_name}_log" | "{col_name}_sqrt" | ...
+```
+
+#### ME2: التطبيع والتوحيد (Scaling & Normalization)
+
+```
+الدخل ──► TransformPlan(operation ∈ {"standard_scale","minmax","robust_scale"})
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  "standard_scale" → StandardScaler()                │
+     │                     (z = (x-μ)/σ)                   │
+     │  "minmax"         → MinMaxScaler()                  │
+     │                     (x' = (x-min)/(max-min))        │
+     │  "robust_scale"   → RobustScaler()                  │
+     │                     (x' = (x-median)/IQR)           │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► عمود موحّد: "{col_name}_scaled"
+```
+
+#### ME3: استراتيجيات الترميز (Encoding Strategies)
+
+```
+الدخل ──► TransformPlan(operation ∈ {"one_hot","ordinal","binary",
+                                     "target_encode","frequency_encode"})
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  "one_hot"          → pd.get_dummies() أو          │
+     │                       OneHotEncoder(sparse=False)   │
+     │  "ordinal"          → OrdinalEncoder(categories=..) │
+     │  "binary"           → LabelEncoder() (0/1)         │
+     │  "target_encode"    → TargetEncoder()               │
+     │  "frequency_encode" → col.map(col.value_counts()/n) │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► أعمدة مرمزة: "{col_name}_encoded" أو أعمدة متعددة (one-hot)
+```
+
+#### ME4: توليد ميزات التفاعل (Feature Interaction Generation)
+
+```
+الدخل ──► TransformPlan(operation ∈ {"create_ratio","create_difference",
+                                     "create_product","group_stats"},
+                         source=[col_a, col_b])
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  "create_ratio"      → col_a / col_b               │
+     │  "create_difference"  → col_a - col_b               │
+     │  "create_product"    → col_a * col_b               │
+     │  "group_stats"       → groupby(cat_col).agg(       │
+     │                         {num_col: [mean,std,min,max]│
+     │                        )                            │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► عمود جديد: "{a}_div_{b}" | "{a}_minus_{b}" | "{a}_times_{b}"
+          أو أعمدة grouped: "{cat}_{num}_mean", "{cat}_{num}_std"
+```
+
+#### ME5: تفكيك الأعمدة الزمنية (Temporal Decomposition)
+
+```
+الدخل ──► TransformPlan(operation="extract_datetime_components",
+                         components=["year","month","day_of_week",...])
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  dt.year, dt.month, dt.day, dt.dayofweek           │
+     │  dt.quarter, dt.hour, dt.minute                    │
+     │  is_weekend = dayofweek >= 5                        │
+     │                                                    │
+     │  Cyclical (إذا مطلوب):                             │
+     │  sin_month = sin(2π * month / 12)                   │
+     │  cos_month = cos(2π * month / 12)                   │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► أعمدة: "{col}_year", "{col}_month", "{col}_day_of_week",
+          "{col}_is_weekend", "{col}_sin_month", "{col}_cos_month"
+```
+
+#### ME6: تحويل النصوص لأرقام (Text Vectorization)
+
+```
+الدخل ──► TransformPlan(operation ∈ {"count_vectorize","tfidf",
+                                     "extract_text_stats","extract_patterns"})
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  "count_vectorize"                                  │
+     │    → CountVectorizer(max_features=N)                │
+     │    → sparse matrix → أعمدة: word_0, word_1, ...    │
+     │                                                    │
+     │  "tfidf"                                            │
+     │    → TfidfVectorizer(max_features=N,                │
+     │        sublinear_tf=True, ngram_range=(1,2))        │
+     │    → أعمدة: tfidf_0, tfidf_1, ...                  │
+     │                                                    │
+     │  "extract_text_stats"                               │
+     │    → word_count, char_count, avg_word_len           │
+     │      sentence_count, uppercase_ratio                │
+     │                                                    │
+     │  "extract_patterns"                                 │
+     │    → url_count, email_count, number_count           │
+     │      has_url (binary), has_email (binary)           │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► أعمدة نصية رقمية جاهزة للنموذج
+```
+
+#### ME7: التقطيع والتصنيف (Binning & Discretization)
+
+```
+الدخل ──► TransformPlan(operation ∈ {"equal_width_bin","quantile_bin",
+                                     "kmeans_bin"}, n_bins=...)
+          │
+          ▼
+     ┌────────────────────────────────────────────────────┐
+     │  التنفيذ:                                          │
+     │  "equal_width_bin"                                  │
+     │    → pd.cut(col, bins=n)                            │
+     │                                                    │
+     │  "quantile_bin"                                     │
+     │    → pd.qcut(col, q=n)                              │
+     │                                                    │
+     │  "kmeans_bin"                                       │
+     │    → KBinsDiscretizer(strategy="kmeans", n_bins=n)  │
+     └─────────────────────┬──────────────────────────────┘
+                           ▼
+الخرج ──► عمود: "{col_name}_binned" (categorical/ordinal)
+```
+
+---
+
+### مخطط تدفق المنهجيات الكامل
+
+```
+                         CSV / DataFrame
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+             ┌───────────┐       ┌───────────┐
+             │  Tabular  │       │   Text    │
+             │  Profiler │       │  Profiler │
+             └─────┬─────┘       └─────┬─────┘
+                   │                   │
+                   └────────┬──────────┘
+                            ▼
+                   ┌─────────────────┐
+                   │ Knowledge Graph │ ◄── عقد: profiles + حواف: correlations
+                   └────────┬────────┘
+                            │
+              ┌─────────────┼─────────────┐
+              ▼             ▼             ▼
+         ┌─────────┐  ┌─────────┐  ┌──────────┐
+         │   MQ1   │  │   MQ2   │  │  MQ3/4   │
+         │ Missing │  │ Outlier │  │ Consist. │
+         └────┬────┘  └────┬────┘  └────┬─────┘
+              │            │            │
+              └────────────┼────────────┘
+                           ▼
+                  ┌─────────────────┐
+                  │ Quality Report  │ ──► اقتراحات إصلاح للمستخدم
+                  └────────┬────────┘
+                           │
+         ┌────────┬────────┼────────┬────────┬────────┐
+         ▼        ▼        ▼        ▼        ▼        ▼
+      ┌──────┐┌──────┐┌──────┐┌──────┐┌──────┐┌──────┐
+      │ MD1  ││ MD2  ││ MD3  ││ MD4  ││ MD5  ││ MD6  │
+      │Stats ││Corr. ││Info  ││Card. ││Temp. ││Text  │
+      └──┬───┘└──┬───┘└──┬───┘└──┬───┘└──┬───┘└──┬───┘
+         │       │       │       │       │       │
+         └───────┴───────┴───┬───┴───────┴───────┘
+                             ▼
+                    ┌─────────────────┐
+                    │ TransformPlans  │ (قائمة التحويلات المقررة)
+                    └────────┬────────┘
+                             │
+       ┌──────┬──────┬───────┼───────┬──────┬──────┐
+       ▼      ▼      ▼      ▼       ▼      ▼      ▼
+    ┌─────┐┌─────┐┌─────┐┌─────┐┌─────┐┌─────┐┌─────┐
+    │ ME1 ││ ME2 ││ ME3 ││ ME4 ││ ME5 ││ ME6 ││ ME7 │
+    │Math ││Scale││Encod││Inter││Temp ││Text ││ Bin │
+    └──┬──┘└──┬──┘└──┬──┘└──┬──┘└──┬──┘└──┬──┘└──┬──┘
+       │      │      │      │      │      │      │
+       └──────┴──────┴──────┼──────┴──────┴──────┘
+                            ▼
+                   ┌─────────────────┐
+                   │ Feature Matrix  │ ──► DataFrame جاهز لبناء نموذج ML
+                   │   + Metadata    │ ──► سجل: أي منهجية أنتجت أي عمود
+                   └─────────────────┘
+```
+
+## [ARCHITECTURE]
+
+```
+kbs_extractor/
+├── __init__.py            # Public API
+├── __main__.py            # CLI entry: python -m kbs_extractor
+├── cli.py                 # argparse interface
+├── graph.py               # Knowledge Graph (NetworkX DiGraph)
+├── facts.py               # All Fact subclasses
+├── profiler.py            # Data profiling (tabular + text)
+├── quality_engine.py      # KnowledgeEngine: data quality rules
+├── feature_engine.py      # KnowledgeEngine: feature extraction rules
+├── pipeline.py            # Orchestrator
+└── logger.py              # Async logging (QueueHandler)
+```
+
+### Module Dependency Graph
+
+```
+cli.py ──► pipeline.py ──► quality_engine.py ──► facts.py
+                │          feature_engine.py ──► facts.py
+                │                │
+                ├──► profiler.py ──► graph.py
+                │                     │
+                └─────────────────────┘
+                          │
+                     logger.py (used by all)
+```
+
+### Knowledge Graph Node Types
+
+- `dataset`      : root node, dataset metadata
+- `column`       : numeric/categorical column profile
+- `text_column`  : text column profile with NLP stats
+- `issue`        : detected quality problem
+- `feature_plan` : planned transformation
+
+### Knowledge Graph Edge Types
+
+- `has_column`   : dataset → column
+- `correlates`   : column → column (weighted)
+- `has_issue`    : column → issue
+- `planned_as`   : column → feature_plan
+
+## [MILESTONES]
+
+| #  | Milestone                  | Verifiable Goal                                         | Status    |
+|----|----------------------------|---------------------------------------------------------|-----------|
+| M1 | Project skeleton           | `pip install -e .` + `python -m kbs_extractor --help`   | DONE      |
+| M2 | Profiler + Knowledge Graph | CSV → NetworkX graph with correct column profile nodes  | DONE      |
+| M3 | Quality Engine             | Dataset with known issues → report lists all issues     | DONE      |
+| M4 | Feature Engine (numeric)   | Numeric columns → appropriate transforms selected       | DONE      |
+| M5 | Feature Engine (cat+text)  | Categorical + text columns → correct encoding/features  | DONE      |
+| M6 | Pipeline integration       | End-to-end: CSV in → feature DataFrame + report out     | DONE      |
+| M7 | CLI polish + verification  | All modes work, error handling, metadata output          | DONE      |
+
+## [SMART FEATURES — v1.1]
+
+| Feature | Status | Location |
+|---------|--------|----------|
+| Auto-detect hidden categoricals | DONE | profiler.py `_is_hidden_categorical()` |
+| Data Leakage detection (MQ5) | DONE | quality_engine.py (correlation + deterministic) |
+| Meta-Rules (gate interactions) | DONE | feature_engine.py `_AllowInteractions` / `_AllowPolynomial` |
+| Guided Feature Engineering | DONE | pipeline.py `_guided_interaction_filter()` |
+| Knowledge Templates | DONE | feature_engine.py MD7 (BMI, duration, geo, revenue, income/age) |
+| Pygame GUI | DONE | gui.py (3 screens: setup, running, results) |
+
+## [ORPHANS & PENDING]
+
+- [ ] Auto-apply quality fixes (v1 = suggestions only, user applies manually)
+- [ ] Self-evaluation with cross-validated feature importance (L2 — future)
+- [ ] Graph visualization export (e.g., GraphML) — PENDING decision
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/quality_engine.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 11.43 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/quality_engine.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 20:08:48 (Asia/Damascus / GMT+03:00)
+MD5: 4e660308f99d16044ef2b15b84405cf7
+SHA256: 76007ab0a7d65f46a81993142678b132453f45973d0ce34d27576abfdc72108b
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+"""KnowledgeEngine for data quality assessment (MQ1-MQ4)."""
+
+from experta import KnowledgeEngine, Rule, DefFacts, Fact, MATCH, P, NOT, AS
+
+from kbs_extractor.facts import (
+    ColumnProfile, TextProfile, DatasetMeta,
+    QualityIssue, FixSuggestion, CorrelationFact,
+)
+from kbs_extractor.logger import get_logger
+
+log = get_logger("quality")
+
+
+class QualityEngine(KnowledgeEngine):
+    """Runs MQ1–MQ4 quality assessment rules over column profiles."""
+
+    # ------------------------------------------------------------------
+    # MQ1: Missing Value Analysis
+    # ------------------------------------------------------------------
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        null_pct=P(lambda x: 0 < x <= 5)))
+    def mq1_low_missing_numeric(self, n):
+        log.info("MQ1: column '%s' has low missing (<= 5%%), suggest impute_median", n)
+        self.declare(QualityIssue(column=n, kind="missing", severity="low",
+                                  description=f"Column '{n}' has low missing values"))
+        self.declare(FixSuggestion(column=n, action="impute_median",
+                                   params={"strategy": "median"},
+                                   rationale="<5% missing in numeric column, median is robust"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        null_pct=P(lambda x: 5 < x <= 30)))
+    def mq1_moderate_missing_numeric(self, n):
+        log.info("MQ1: column '%s' has moderate missing (5-30%%)", n)
+        self.declare(QualityIssue(column=n, kind="missing", severity="medium",
+                                  description=f"Column '{n}' has moderate missing values"))
+        self.declare(FixSuggestion(column=n, action="impute_median",
+                                   params={"strategy": "median"},
+                                   rationale="5-30% missing, impute with median"))
+        self.declare(FixSuggestion(column=n, action="create_indicator",
+                                   params={},
+                                   rationale="Create binary missingness indicator"))
+
+    @Rule(ColumnProfile(name=MATCH.n, null_pct=P(lambda x: x > 30)))
+    def mq1_high_missing(self, n):
+        log.info("MQ1: column '%s' has high missing (>30%%)", n)
+        self.declare(QualityIssue(column=n, kind="missing", severity="high",
+                                  description=f"Column '{n}' has >30% missing values"))
+        self.declare(FixSuggestion(column=n, action="create_indicator_and_drop",
+                                   params={},
+                                   rationale=">30% missing, create indicator then drop original"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        null_pct=P(lambda x: 0 < x <= 30)))
+    def mq1_missing_categorical(self, n):
+        log.info("MQ1: categorical column '%s' has missing values", n)
+        self.declare(QualityIssue(column=n, kind="missing", severity="low",
+                                  description=f"Categorical column '{n}' has missing values"))
+        self.declare(FixSuggestion(column=n, action="impute_mode",
+                                   params={"strategy": "most_frequent"},
+                                   rationale="Fill categorical NaN with most frequent value"))
+
+    @Rule(TextProfile(name=MATCH.n, null_pct=P(lambda x: x > 0)))
+    def mq1_missing_text(self, n):
+        log.info("MQ1: text column '%s' has missing values", n)
+        self.declare(QualityIssue(column=n, kind="missing", severity="medium",
+                                  description=f"Text column '{n}' has missing values"))
+        self.declare(FixSuggestion(column=n, action="fill_empty_string",
+                                   params={},
+                                   rationale="Fill text NaN with empty string before vectorization"))
+
+    # ------------------------------------------------------------------
+    # MQ2: Outlier Detection
+    # ------------------------------------------------------------------
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        outlier_pct=P(lambda x: 0 < x <= 1)))
+    def mq2_few_outliers(self, n):
+        log.info("MQ2: column '%s' has few outliers (<= 1%%)", n)
+        self.declare(QualityIssue(column=n, kind="outlier", severity="low",
+                                  description=f"Column '{n}' has <1% outliers"))
+        self.declare(FixSuggestion(column=n, action="remove_rows",
+                                   params={},
+                                   rationale="<1% outliers, safe to drop these rows"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        outlier_pct=P(lambda x: 1 < x <= 5)))
+    def mq2_moderate_outliers(self, n):
+        log.info("MQ2: column '%s' has moderate outliers (1-5%%)", n)
+        self.declare(QualityIssue(column=n, kind="outlier", severity="medium",
+                                  description=f"Column '{n}' has 1-5% outliers"))
+        self.declare(FixSuggestion(column=n, action="winsorize",
+                                   params={"limits": [0.05, 0.05]},
+                                   rationale="1-5% outliers, clip to 5th/95th percentile"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        outlier_pct=P(lambda x: x > 5)))
+    def mq2_many_outliers(self, n):
+        log.info("MQ2: column '%s' has many outliers (>5%%)", n)
+        self.declare(QualityIssue(column=n, kind="outlier", severity="low",
+                                  description=f"Column '{n}' has >5% outliers — may be natural variance"))
+        self.declare(FixSuggestion(column=n, action="keep",
+                                   params={},
+                                   rationale=">5% outliers, likely part of natural distribution"))
+
+    # ------------------------------------------------------------------
+    # MQ3: Consistency & Type Checking
+    # ------------------------------------------------------------------
+
+    @Rule(ColumnProfile(name=MATCH.n, unique_ratio=P(lambda x: x == 1.0)))
+    def mq3_all_unique(self, n):
+        log.info("MQ3: column '%s' has all unique values (possible ID column)", n)
+        self.declare(QualityIssue(column=n, kind="possible_id", severity="medium",
+                                  description=f"Column '{n}' has 100% unique values — likely an ID"))
+        self.declare(FixSuggestion(column=n, action="drop_column",
+                                   params={},
+                                   rationale="ID columns carry no predictive information"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="numeric",
+                        std=P(lambda x: x == 0)))
+    def mq3_zero_variance_numeric(self, n):
+        log.info("MQ3: numeric column '%s' has zero variance", n)
+        self.declare(QualityIssue(column=n, kind="constant", severity="high",
+                                  description=f"Column '{n}' is constant (std=0)"))
+        self.declare(FixSuggestion(column=n, action="drop_column",
+                                   params={},
+                                   rationale="Constant column adds no information"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        unique_count=P(lambda x: x == 1)))
+    def mq3_single_value_categorical(self, n):
+        log.info("MQ3: categorical column '%s' has only one value", n)
+        self.declare(QualityIssue(column=n, kind="constant", severity="high",
+                                  description=f"Categorical column '{n}' has only one value"))
+        self.declare(FixSuggestion(column=n, action="drop_column",
+                                   params={},
+                                   rationale="Single-value categorical is useless for prediction"))
+
+    @Rule(ColumnProfile(name=MATCH.n, dtype="categorical",
+                        top_freq=P(lambda x: x > 0.95)))
+    def mq3_dominant_value(self, n):
+        log.info("MQ3: column '%s' has a dominant value (>95%% frequency)", n)
+        self.declare(QualityIssue(column=n, kind="near_constant", severity="medium",
+                                  description=f"Column '{n}' has one value dominating >95%"))
+        self.declare(FixSuggestion(column=n, action="flag_review",
+                                   params={},
+                                   rationale="Near-constant column, review for usefulness"))
+
+    # ------------------------------------------------------------------
+    # MQ4: Duplicate & Near-Duplicate Detection
+    # ------------------------------------------------------------------
+
+    @Rule(CorrelationFact(col_a=MATCH.a, col_b=MATCH.b,
+                          abs_pearson=P(lambda x: x > 0.95)))
+    def mq4_near_duplicate_columns(self, a, b):
+        log.info("MQ4: columns '%s' and '%s' are near-duplicates (|r|>0.95)", a, b)
+        self.declare(QualityIssue(column=f"{a},{b}", kind="near_duplicate_columns",
+                                  severity="high",
+                                  description=f"Columns '{a}' and '{b}' are nearly identical (|r|>0.95)"))
+        self.declare(FixSuggestion(column=f"{a},{b}", action="drop_one",
+                                   params={"keep": a, "drop": b},
+                                   rationale="Near-duplicate columns, drop one to reduce multicollinearity"))
+
+    # ------------------------------------------------------------------
+    # MQ5: Data Leakage Detection
+    # ------------------------------------------------------------------
+
+    @Rule(ColumnProfile(name=MATCH.n,
+                        target_corr=P(lambda x: x is not None and x > 0.95)))
+    def mq5_leakage_correlation(self, n):
+        log.info("MQ5: column '%s' has suspiciously high correlation with target (>0.95)", n)
+        self.declare(QualityIssue(
+            column=n, kind="leakage_correlation", severity="critical",
+            description=f"Column '{n}' has |r|>0.95 with target — probable data leakage"))
+        self.declare(FixSuggestion(
+            column=n, action="drop_column", params={},
+            rationale="Suspected data leakage: near-perfect correlation with target"))
+
+    @Rule(ColumnProfile(name=MATCH.n,
+                        determines_target=P(lambda x: x is True)))
+    def mq5_leakage_deterministic(self, n):
+        log.info("MQ5: column '%s' uniquely determines the target", n)
+        self.declare(QualityIssue(
+            column=n, kind="leakage_deterministic", severity="critical",
+            description=f"Column '{n}' uniquely determines the target — data leakage"))
+        self.declare(FixSuggestion(
+            column=n, action="drop_column", params={},
+            rationale="Each value of this feature maps to exactly one target value"))
+
+
+def run_quality_assessment(profiles: list[dict], correlations: list[dict]) -> dict:
+    """Run the quality engine and return issues + suggestions."""
+    engine = QualityEngine()
+    engine.reset()
+
+    for p in profiles:
+        if p["dtype"] == "text":
+            engine.declare(TextProfile(**p))
+        else:
+            engine.declare(ColumnProfile(**p))
+
+    for c in correlations:
+        engine.declare(CorrelationFact(**c))
+
+    engine.run()
+
+    issues = []
+    suggestions = []
+    for fact in engine.facts.values():
+        if isinstance(fact, QualityIssue):
+            issues.append({k: v for k, v in fact.items() if k != "__factid__"})
+        elif isinstance(fact, FixSuggestion):
+            suggestions.append({k: v for k, v in fact.items() if k != "__factid__"})
+
+    log.info("Quality assessment complete: %d issues, %d suggestions", len(issues), len(suggestions))
+    return {"issues": issues, "suggestions": suggestions}
+
+================================================================================
+
+
+================================================================================
+FILE: kbs_extractor/validator.py
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 6.01 KB
+Extension: .py
+Language: python
+Location: kbs_extractor/validator.py
+Relative Path: kbs_extractor
+Created: 2026-06-26 14:09:39 (Asia/Damascus / GMT+03:00)
+Modified: 2026-06-22 22:34:10 (Asia/Damascus / GMT+03:00)
+MD5: 33984bd7640908e859da3caa5e96cef5
+SHA256: d9ad9fc84d6c87c2bdbe8e6df355a70f4268362238d2f685cc5ee2573506b3d3
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+"""Validation module — compares raw vs extracted features using ML models."""
+
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.model_selection import cross_val_score, StratifiedKFold, KFold
+from sklearn.preprocessing import LabelEncoder
+from sklearn.impute import SimpleImputer
+
+from kbs_extractor.logger import get_logger
+
+log = get_logger("validator")
+
+
+def _prepare_raw(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
+    """Prepare raw features: encode categoricals, impute missing."""
+    raw = df.drop(columns=[target_col]).copy()
+    result = pd.DataFrame(index=raw.index)
+
+    for col in raw.columns:
+        if pd.api.types.is_numeric_dtype(raw[col]):
+            result[col] = raw[col].fillna(raw[col].median())
+        elif pd.api.types.is_bool_dtype(raw[col]):
+            result[col] = raw[col].astype(int)
+        else:
+            le = LabelEncoder()
+            filled = raw[col].fillna("__missing__").astype(str)
+            result[col] = le.fit_transform(filled)
+
+    return result
+
+
+def validate(df_original: pd.DataFrame, df_features: pd.DataFrame,
+             target_col: str, task_type: str) -> dict:
+    """Run validation: raw vs extracted, feature importance, useless features."""
+
+    target = df_original[target_col].copy()
+    valid_mask = target.notna()
+
+    if task_type == "classification":
+        le_target = LabelEncoder()
+        y = le_target.fit_transform(target[valid_mask].astype(str))
+    else:
+        y = pd.to_numeric(target[valid_mask], errors="coerce").values
+
+    nan_mask = np.isnan(y) if task_type == "regression" else np.zeros(len(y), dtype=bool)
+    y = y[~nan_mask]
+    valid_idx = valid_mask[valid_mask].index[~nan_mask]
+
+    X_raw = _prepare_raw(df_original, target_col).loc[valid_idx]
+    X_ext = df_features.loc[valid_idx].fillna(0)
+
+    if task_type == "classification":
+        model_cls = RandomForestClassifier
+        cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+        scoring = "accuracy"
+    else:
+        model_cls = RandomForestRegressor
+        cv = KFold(n_splits=5, shuffle=True, random_state=42)
+        scoring = "r2"
+
+    log.info("Validating: %d samples, raw=%d features, extracted=%d features",
+             len(y), X_raw.shape[1], X_ext.shape[1])
+
+    model_raw = model_cls(n_estimators=100, random_state=42, n_jobs=-1)
+    scores_raw = cross_val_score(model_raw, X_raw, y, cv=cv, scoring=scoring)
+    mean_raw = float(scores_raw.mean())
+    std_raw = float(scores_raw.std())
+    log.info("Raw features %s: %.4f (+/- %.4f)", scoring, mean_raw, std_raw)
+
+    model_ext = model_cls(n_estimators=100, random_state=42, n_jobs=-1)
+    scores_ext = cross_val_score(model_ext, X_ext, y, cv=cv, scoring=scoring)
+    mean_ext = float(scores_ext.mean())
+    std_ext = float(scores_ext.std())
+    log.info("Extracted features %s: %.4f (+/- %.4f)", scoring, mean_ext, std_ext)
+
+    improvement = mean_ext - mean_raw
+
+    model_imp = model_cls(n_estimators=100, random_state=42, n_jobs=-1)
+    model_imp.fit(X_ext, y)
+    importances = model_imp.feature_importances_
+    feat_names = list(X_ext.columns)
+    feat_imp = sorted(zip(feat_names, importances), key=lambda x: x[1], reverse=True)
+
+    top_features = [{"feature": name, "importance": round(float(imp), 4)}
+                    for name, imp in feat_imp[:10]]
+    useless = [{"feature": name, "importance": round(float(imp), 4)}
+               for name, imp in feat_imp if imp < 0.005]
+
+    result = {
+        "samples": len(y),
+        "task_type": task_type,
+        "scoring": scoring,
+        "raw": {
+            "n_features": X_raw.shape[1],
+            "mean_score": round(mean_raw, 4),
+            "std_score": round(std_raw, 4),
+            "cv_scores": [round(float(s), 4) for s in scores_raw],
+        },
+        "extracted": {
+            "n_features": X_ext.shape[1],
+            "mean_score": round(mean_ext, 4),
+            "std_score": round(std_ext, 4),
+            "cv_scores": [round(float(s), 4) for s in scores_ext],
+        },
+        "improvement": round(improvement, 4),
+        "top_features": top_features,
+        "useless_features": useless,
+    }
+
+    _print_report(result)
+    return result
+
+
+def _print_report(r: dict) -> None:
+    scoring = r["scoring"]
+    raw_s = r["raw"]["mean_score"] * 100
+    ext_s = r["extracted"]["mean_score"] * 100
+    imp = r["improvement"] * 100
+    sign = "+" if imp >= 0 else ""
+
+    if scoring == "r2":
+        raw_s = r["raw"]["mean_score"]
+        ext_s = r["extracted"]["mean_score"]
+        imp = r["improvement"]
+
+    w = 54
+    print()
+    print(f"{'=' * w}")
+    print(f"{'VALIDATION REPORT':^{w}}")
+    print(f"{'=' * w}")
+
+    print(f"  Samples: {r['samples']}   |   Task: {r['task_type']}   |   Metric: {scoring}")
+    print(f"{'-' * w}")
+
+    if scoring == "accuracy":
+        print(f"  Raw features ({r['raw']['n_features']:3d} cols)    {scoring}: {raw_s:6.2f}%")
+        print(f"  Extracted    ({r['extracted']['n_features']:3d} cols)    {scoring}: {ext_s:6.2f}%")
+        print(f"{'-' * w}")
+        color_mark = ">>>" if imp > 0 else "---"
+        print(f"  {color_mark} Improvement: {sign}{imp:.2f}%")
+    else:
+        print(f"  Raw features ({r['raw']['n_features']:3d} cols)    {scoring}: {raw_s:.4f}")
+        print(f"  Extracted    ({r['extracted']['n_features']:3d} cols)    {scoring}: {ext_s:.4f}")
+        print(f"{'-' * w}")
+        color_mark = ">>>" if imp > 0 else "---"
+        print(f"  {color_mark} Improvement: {sign}{imp:.4f}")
+
+    print(f"{'=' * w}")
+    print(f"  Top features by importance:")
+    for i, f in enumerate(r["top_features"], 1):
+        bar_len = int(f["importance"] * 40)
+        bar = "#" * bar_len
+        print(f"    {i:2d}. {f['feature']:30s} {f['importance']:.3f}  {bar}")
+
+    if r["useless_features"]:
+        print(f"{'-' * w}")
+        print(f"  Useless features (importance < 0.005):")
+        names = [f["feature"] for f in r["useless_features"]]
+        for i in range(0, len(names), 4):
+            chunk = ", ".join(names[i:i+4])
+            print(f"    {chunk}")
+
+    print(f"{'=' * w}")
+    print()
+
+================================================================================

@@ -1,0 +1,11018 @@
+# 📁 PROJECT EXPORT FOR LLMs
+
+## 📊 Project Information
+
+- **Project Name**: `Medical-Assitant`
+- **Generated On**: 2026-08-17 21:44:31 (Asia/Damascus / GMT+03:00)
+- **Total Files Processed**: 58
+- **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
+- **Tool Author**: Jota / José Guilherme Pandolfi
+
+### ⚙️ Export Configuration
+
+| Setting | Value |
+|---------|-------|
+| Language | `en` |
+| Max File Size | `1 MB` |
+| Include Hidden Files | `false` |
+| Output Format | `both` |
+
+## 🌳 Project Structure
+
+```
+├── 📁 public/
+│   ├── 📄 favicon.svg (9.3 KB)
+│   └── 📄 icons.svg (4.94 KB)
+├── 📁 src/
+│   ├── 📁 assets/
+│   │   ├── 📄 hero.png (12.75 KB)
+│   │   ├── 📄 react.svg (4.03 KB)
+│   │   └── 📄 vite.svg (8.51 KB)
+│   ├── 📁 component/
+│   │   ├── 📁 common/
+│   │   │   └── 📄 LanguageSwitch.jsx (857 B)
+│   │   ├── 📁 layout/
+│   │   │   ├── 📄 AuthLayout.jsx (666 B)
+│   │   │   ├── 📄 Header.jsx (2.18 KB)
+│   │   │   ├── 📄 l.txt (25 B)
+│   │   │   └── 📄 Sidebar.jsx (10.16 KB)
+│   │   └── 📁 ui/
+│   │       ├── 📄 Field.jsx (1.97 KB)
+│   │       └── 📄 u.txt (22 B)
+│   ├── 📁 features/
+│   │   ├── 📁 auth/
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📄 authSidebar.jsx (2.2 KB)
+│   │   │   │   ├── 📄 forgetPass.jsx (4.85 KB)
+│   │   │   │   ├── 📄 loginForm.jsx (8.56 KB)
+│   │   │   │   ├── 📄 ProtectedRoute.jsx (467 B)
+│   │   │   │   ├── 📄 RegisterForm.jsx (21.42 KB)
+│   │   │   │   ├── 📄 ResetPass.jsx (7.99 KB)
+│   │   │   │   └── 📄 VerifyForm.jsx (14.33 KB)
+│   │   │   ├── 📁 hooks/
+│   │   │   │   └── 📄 h.txt (10 B)
+│   │   │   ├── 📁 pages/
+│   │   │   │   ├── 📄 ForgetPage.jsx (150 B)
+│   │   │   │   ├── 📄 loginpage.jsx (137 B)
+│   │   │   │   ├── 📄 RegisterPage.jsx (152 B)
+│   │   │   │   ├── 📄 ResetPage.jsx (145 B)
+│   │   │   │   └── 📄 verifyPage.jsx (156 B)
+│   │   │   └── 📁 services/
+│   │   │       ├── 📄 authApi.js (4.88 KB)
+│   │   │       └── 📄 s.txt (12 B)
+│   │   ├── 📁 create_session/
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📄 FileUploader.jsx (3.56 KB)
+│   │   │   │   ├── 📄 sessionSchema.jsx (1.91 KB)
+│   │   │   │   ├── 📄 SetupSess.jsx (5.37 KB)
+│   │   │   │   ├── 📄 StepDiagnosis.jsx (9.29 KB)
+│   │   │   │   └── 📄 Stepper.jsx (1.1 KB)
+│   │   │   └── 📁 pages/
+│   │   │       └── 📄 NewSession.jsx (2.16 KB)
+│   │   ├── 📁 dashboard/
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📄 AppointmentsTab.jsx (9.09 KB)
+│   │   │   │   ├── 📄 OverviewTab.jsx (10.93 KB)
+│   │   │   │   ├── 📄 PatientsTab.jsx (3.82 KB)
+│   │   │   │   ├── 📄 ReportDetail.jsx (13.82 KB)
+│   │   │   │   └── 📄 ReportsTab.jsx (4.33 KB)
+│   │   │   ├── 📁 context/
+│   │   │   ├── 📁 hooks/
+│   │   │   │   └── 📄 h.txt (10 B)
+│   │   │   ├── 📁 pages/
+│   │   │   │   └── 📄 DashboardPage.jsx (2.31 KB)
+│   │   │   ├── 📁 services/
+│   │   │   │   └── 📄 s.txt (12 B)
+│   │   │   └── 📄 d.txt (20 B)
+│   │   └── 📁 profile/
+│   │       ├── 📁 context/
+│   │       │   └── 📄 DoctorProfileContext.jsx (3.41 KB)
+│   │       ├── 📁 pages/
+│   │       │   └── 📄 ProfileTab.jsx (26.12 KB)
+│   │       └── 📁 services/
+│   │           └── 📄 profileApi.js (1.01 KB)
+│   ├── 📁 i18n/
+│   │   ├── 📁 locales/
+│   │   │   ├── 📁 ar/
+│   │   │   │   └── 📄 translation.json (13.42 KB)
+│   │   │   └── 📁 en/
+│   │   │       └── 📄 translation.json (10.47 KB)
+│   │   └── 📄 config.js (876 B)
+│   ├── 📄 App.jsx (2.65 KB)
+│   ├── 📄 index.css (321 B)
+│   └── 📄 main.jsx (269 B)
+├── 📄 eslint.config.js (589 B)
+├── 📄 index.html (382 B)
+├── 📄 package-lock.json (117.86 KB)
+├── 📄 package.json (968 B)
+├── 📄 pregnancy_mt5_train.jsonl (1.48 MB)
+├── 📄 README.md (1.02 KB)
+└── 📄 vite.config.js (342 B)
+```
+
+## 📑 Table of Contents
+
+**Project Files:**
+
+- [📄 src/component/common/LanguageSwitch.jsx](#📄-src-component-common-languageswitch-jsx)
+- [📄 src/component/layout/AuthLayout.jsx](#📄-src-component-layout-authlayout-jsx)
+- [📄 src/component/layout/Header.jsx](#📄-src-component-layout-header-jsx)
+- [📄 src/component/layout/l.txt](#📄-src-component-layout-l-txt)
+- [📄 src/component/layout/Sidebar.jsx](#📄-src-component-layout-sidebar-jsx)
+- [📄 src/component/ui/Field.jsx](#📄-src-component-ui-field-jsx)
+- [📄 src/component/ui/u.txt](#📄-src-component-ui-u-txt)
+- [📄 src/features/auth/components/authSidebar.jsx](#📄-src-features-auth-components-authsidebar-jsx)
+- [📄 src/features/auth/components/forgetPass.jsx](#📄-src-features-auth-components-forgetpass-jsx)
+- [📄 src/features/auth/components/loginForm.jsx](#📄-src-features-auth-components-loginform-jsx)
+- [📄 src/features/auth/components/ProtectedRoute.jsx](#📄-src-features-auth-components-protectedroute-jsx)
+- [📄 src/features/auth/components/RegisterForm.jsx](#📄-src-features-auth-components-registerform-jsx)
+- [📄 src/features/auth/components/ResetPass.jsx](#📄-src-features-auth-components-resetpass-jsx)
+- [📄 src/features/auth/components/VerifyForm.jsx](#📄-src-features-auth-components-verifyform-jsx)
+- [📄 src/features/auth/hooks/h.txt](#📄-src-features-auth-hooks-h-txt)
+- [📄 src/features/auth/pages/ForgetPage.jsx](#📄-src-features-auth-pages-forgetpage-jsx)
+- [📄 src/features/auth/pages/loginpage.jsx](#📄-src-features-auth-pages-loginpage-jsx)
+- [📄 src/features/auth/pages/RegisterPage.jsx](#📄-src-features-auth-pages-registerpage-jsx)
+- [📄 src/features/auth/pages/ResetPage.jsx](#📄-src-features-auth-pages-resetpage-jsx)
+- [📄 src/features/auth/pages/verifyPage.jsx](#📄-src-features-auth-pages-verifypage-jsx)
+- [📄 src/features/auth/services/authApi.js](#📄-src-features-auth-services-authapi-js)
+- [📄 src/features/auth/services/s.txt](#📄-src-features-auth-services-s-txt)
+- [📄 src/features/create_session/components/FileUploader.jsx](#📄-src-features-create-session-components-fileuploader-jsx)
+- [📄 src/features/create_session/components/sessionSchema.jsx](#📄-src-features-create-session-components-sessionschema-jsx)
+- [📄 src/features/create_session/components/SetupSess.jsx](#📄-src-features-create-session-components-setupsess-jsx)
+- [📄 src/features/create_session/components/StepDiagnosis.jsx](#📄-src-features-create-session-components-stepdiagnosis-jsx)
+- [📄 src/features/create_session/components/Stepper.jsx](#📄-src-features-create-session-components-stepper-jsx)
+- [📄 src/features/create_session/pages/NewSession.jsx](#📄-src-features-create-session-pages-newsession-jsx)
+- [📄 src/features/dashboard/components/AppointmentsTab.jsx](#📄-src-features-dashboard-components-appointmentstab-jsx)
+- [📄 src/features/dashboard/components/OverviewTab.jsx](#📄-src-features-dashboard-components-overviewtab-jsx)
+- [📄 src/features/dashboard/components/PatientsTab.jsx](#📄-src-features-dashboard-components-patientstab-jsx)
+- [📄 src/features/dashboard/components/ReportDetail.jsx](#📄-src-features-dashboard-components-reportdetail-jsx)
+- [📄 src/features/dashboard/components/ReportsTab.jsx](#📄-src-features-dashboard-components-reportstab-jsx)
+- [📄 src/features/dashboard/hooks/h.txt](#📄-src-features-dashboard-hooks-h-txt)
+- [📄 src/features/dashboard/pages/DashboardPage.jsx](#📄-src-features-dashboard-pages-dashboardpage-jsx)
+- [📄 src/features/dashboard/services/s.txt](#📄-src-features-dashboard-services-s-txt)
+- [📄 src/features/dashboard/d.txt](#📄-src-features-dashboard-d-txt)
+- [📄 src/features/profile/context/DoctorProfileContext.jsx](#📄-src-features-profile-context-doctorprofilecontext-jsx)
+- [📄 src/features/profile/pages/ProfileTab.jsx](#📄-src-features-profile-pages-profiletab-jsx)
+- [📄 src/features/profile/services/profileApi.js](#📄-src-features-profile-services-profileapi-js)
+- [📄 src/i18n/locales/ar/translation.json](#📄-src-i18n-locales-ar-translation-json)
+- [📄 src/i18n/locales/en/translation.json](#📄-src-i18n-locales-en-translation-json)
+- [📄 src/i18n/config.js](#📄-src-i18n-config-js)
+- [📄 src/App.jsx](#📄-src-app-jsx)
+- [📄 src/index.css](#📄-src-index-css)
+- [📄 src/main.jsx](#📄-src-main-jsx)
+- [📄 eslint.config.js](#📄-eslint-config-js)
+- [📄 index.html](#📄-index-html)
+- [📄 package-lock.json](#📄-package-lock-json)
+- [📄 package.json](#📄-package-json)
+- [📄 README.md](#📄-readme-md)
+- [📄 vite.config.js](#📄-vite-config-js)
+
+---
+
+## 📈 Project Statistics
+
+| Metric | Count |
+|--------|-------|
+| Total Files | 58 |
+| Total Directories | 30 |
+| Text Files | 52 |
+| Binary Files | 6 |
+| Total Size | 1.84 MB |
+
+### 📄 File Types Distribution
+
+| Extension | Count |
+|-----------|-------|
+| `.jsx` | 33 |
+| `.txt` | 7 |
+| `.js` | 5 |
+| `.svg` | 4 |
+| `.json` | 4 |
+| `.png` | 1 |
+| `.css` | 1 |
+| `.html` | 1 |
+| `.jsonl` | 1 |
+| `.md` | 1 |
+
+## 💻 File Code Contents
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `public/favicon.svg`
+- `public/icons.svg`
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `src/assets/hero.png`
+- `src/assets/react.svg`
+- `src/assets/vite.svg`
+
+### <a id="📄-src-component-common-languageswitch-jsx"></a>📄 `src/component/common/LanguageSwitch.jsx`
+
+**File Info:**
+- **Size**: 857 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/component/common/LanguageSwitch.jsx`
+- **Relative Path**: `src/component/common`
+- **Created**: 2026-08-17 16:50:36 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `7cf09abef79d0f8d396dba2d6c077cd4`
+- **SHA256**: `15471c704da4d0827e0c55184016b99dbc6859e30f1821916df53a3df2efc9cc`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Languages } from "lucide-react";
+
+const LanguageSwitcher = () => {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const nextLang = i18n.language === "ar" ? "en" : "ar";
+    i18n.changeLanguage(nextLang);
+    localStorage.setItem("lang", nextLang);
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={toggleLanguage}
+      className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm transition hover:bg-slate-50"
+    >
+      <Languages className="h-3.5 w-3.5" />
+      {i18n.language === "ar"
+        ? t("common.switchToEnglish")
+        : t("common.switchToArabic")}
+    </button>
+  );
+};
+
+export default LanguageSwitcher;
+
+```
+
+---
+
+### <a id="📄-src-component-layout-authlayout-jsx"></a>📄 `src/component/layout/AuthLayout.jsx`
+
+**File Info:**
+- **Size**: 666 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/component/layout/AuthLayout.jsx`
+- **Relative Path**: `src/component/layout`
+- **Created**: 2026-08-17 16:50:38 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `1e85290dfeb5221be77ae846e9dee8c5`
+- **SHA256**: `02aff3b06810bbd934c382cd5aed1e017607da9d3efcf898a0edc5f03bc20533`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import { Outlet } from "react-router-dom";
+import AuthSidebar from "../../features/auth/components/authSidebar";
+import LanguageSwitcher from "../../component/common/LanguageSwitch";
+
+const AuthLayout = () => {
+  return (
+    <div className="flex min-h-screen flex-col font-sans md:flex-row">
+      <AuthSidebar />
+      <main className="relative flex flex-1 items-center justify-center bg-slate-50 p-6 md:p-12">
+        <div className="absolute top-6 end-6">
+          <LanguageSwitcher />
+        </div>
+        <Outlet /> {/* ← هون بيظهر LoginForm أو RegisterForm... */}
+      </main>
+    </div>
+  );
+};
+
+export default AuthLayout;
+
+```
+
+---
+
+### <a id="📄-src-component-layout-header-jsx"></a>📄 `src/component/layout/Header.jsx`
+
+**File Info:**
+- **Size**: 2.18 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/component/layout/Header.jsx`
+- **Relative Path**: `src/component/layout`
+- **Created**: 2026-08-17 16:50:38 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `7eecd7a52a58d66423589f6107a00a81`
+- **SHA256**: `59be8cd42412bc5bf552090119d8dc8538c43934ef1b18f3c0aa981a7d999bb5`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../common/LanguageSwitch";
+import { Bell, Menu } from "lucide-react";
+
+const Header = ({ currentTitle, onMenuClick }) => {
+  const { t, i18n } = useTranslation();
+
+  const isRTL = i18n.language === "ar";
+  const currentLocale = isRTL ? "ar-SA" : "en-US";
+
+  const currentDay = new Date().toLocaleDateString(currentLocale, { weekday: "long" });
+  
+  const currentDate = new Date().toLocaleDateString(currentLocale, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  return (
+    <header className="h-16 border-b border-slate-200/60 bg-white px-6 flex items-center justify-between sticky top-0 z-30 shadow-sm shadow-slate-100/40">
+      <div className="flex items-center gap-6 flex-1">
+        {/* زر القائمة للشاشات الصغيرة */}
+        <button
+          onClick={onMenuClick}
+          className="p-2 rounded-lg hover:bg-slate-100 transition-colors text-slate-600 md:hidden"
+        >
+          <Menu size={20} />
+        </button>
+
+        {/* العنوان ظاهراً دائماً */}
+        <h1 className="text-base font-bold text-slate-800">
+          {currentTitle}
+        </h1>
+      </div>
+
+      <div className="flex items-center gap-4">
+        <LanguageSwitcher />
+
+        {/* الإشعارات */}
+        <button className="p-2.5 text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-xl transition relative cursor-pointer">
+          <Bell className="h-5 w-5" />
+          <span className="absolute top-2 end-2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+        </button>
+
+        {/* التاريخ */}
+        <div className={`flex items-center gap-2.5 ${isRTL ? 'ps-3 border-s' : 'pe-3 border-e'} border-slate-200 flex-row`}>
+          <div className={`${isRTL ? 'text-end' : 'text-start'} hidden sm:block`}>
+            <p className="text-sm font-normal text-slate-400 whitespace-nowrap">
+              {isRTL ? `${currentDay}، ${currentDate}` : `${currentDay}, ${currentDate}`}
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
+```
+
+---
+
+### <a id="📄-src-component-layout-l-txt"></a>📄 `src/component/layout/l.txt`
+
+**File Info:**
+- **Size**: 25 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/component/layout/l.txt`
+- **Relative Path**: `src/component/layout`
+- **Created**: 2026-08-17 16:50:38 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `ddd634ccec81c54878e7c621728a99d9`
+- **SHA256**: `793aab57d7569ee27767af4f9700691cb53978d9256923507da7bb715d5bd16a`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+Sidebar, Header, Footer
+
+```
+
+---
+
+### <a id="📄-src-component-layout-sidebar-jsx"></a>📄 `src/component/layout/Sidebar.jsx`
+
+**File Info:**
+- **Size**: 10.16 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/component/layout/Sidebar.jsx`
+- **Relative Path**: `src/component/layout`
+- **Created**: 2026-08-17 16:52:02 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `47a4b811e7b8f598b40e2e50ae1fc8d2`
+- **SHA256**: `399334613f13faed7eda216605c3c5b36e4d936390ee2999e0e1fe171192e2ae`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
+import {
+  LayoutDashboard,
+  FolderOpen,
+  ClipboardCheck,
+  Mic,
+  LogOut,
+  Stethoscope,
+  Loader2,
+  User,
+} from "lucide-react";
+
+import {
+  logoutDoctor,
+  removeAuthToken,
+} from "../../features/auth/services/authApi";
+
+import { useDoctorProfile } from "../../features/profile/context/DoctorProfileContext";
+
+const Sidebar = ({ isOpen, setIsOpen }) => {
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const { profile } = useDoctorProfile();
+
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
+
+  const isRTL = i18n.language === "ar";
+
+  const initials = profile?.first_name && profile?.last_name
+    ? `${profile.first_name[0]}${profile.last_name[0]}`.toUpperCase()
+    : t("dashboard.profile.doctorInitial");
+
+  const doctorName = profile?.first_name && profile?.last_name
+    ? isRTL
+      ? `د. ${profile.first_name} ${profile.last_name}`
+      : `Dr. ${profile.first_name} ${profile.last_name}`
+    : t("dashboard.profile.doctorName");
+
+  const doctorTitle = (() => {
+    if (profile?.specialties && profile.specialties.length > 0) {
+      const spec = profile.specialties[0];
+      const lang = i18n.language === "ar" ? "ar" : "en";
+      if (typeof spec.name === "object") {
+        return spec.name[lang] || spec.name.en || spec.name.ar || spec.slug;
+      }
+      return spec.name;
+    }
+    return t("dashboard.profile.doctorTitle");
+  })();
+
+  const handleLogout = async () => {
+    if (isLoggingOut) return;
+
+    setIsLoggingOut(true);
+
+    try {
+      const response = await logoutDoctor();
+
+      console.log("LOGOUT RESPONSE:", response.data);
+    } catch (error) {
+      console.error("LOGOUT ERROR:", error.response?.data || error.message);
+    } finally {
+      // حذف الـ token من localStorage / sessionStorage
+      removeAuthToken();
+      localStorage.removeItem("userData");
+      setIsLoggingOut(false);
+      navigate("/login", {
+        replace: true,
+      });
+    }
+  };
+
+  const menuItems = [
+    {
+      id: "overview",
+      path: "/dashboard/overview",
+      label: t("dashboard.menu.overview"),
+      icon: LayoutDashboard,
+    },
+    {
+      id: "appointments",
+      path: "/dashboard/appointments",
+      label: t("dashboard.menu.sessions"),
+      icon: FolderOpen,
+    },
+    {
+      id: "new-session",
+      path: "/dashboard/new-session",
+      label: t("dashboard.menu.newSession"),
+      icon: Mic,
+    },
+    {
+      id: "reports",
+      path: "/dashboard/reports",
+      label: t("dashboard.menu.reports"),
+      icon: ClipboardCheck,
+    },
+    {
+      id: "profile",
+      path: "/dashboard/profile",
+      label: t("dashboard.menu.profile", "الملف الشخصي"),
+      icon: User,
+    },
+  ];
+
+  const isActive = (path) => location.pathname === path;
+
+  return (
+    <>
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/50 md:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      <aside
+        className={`
+          fixed md:sticky top-0
+          ${isRTL ? "right-0" : "left-0"}
+          h-screen bg-white text-slate-700
+          flex flex-col justify-between
+          font-sans select-none
+          border-${isRTL ? "l" : "r"}
+          border-slate-200
+          transition-all duration-300 ease-in-out
+          z-50
+          overflow-hidden
+          ${
+            isOpen
+              ? "w-72 translate-x-0"
+              : "w-0 md:w-72 translate-x-full md:translate-x-0"
+          }
+        `}
+        dir={isRTL ? "rtl" : "ltr"}
+      >
+        {/* Header  */}
+        <div className="overflow-hidden">
+          <div className="border-b border-slate-100 p-3">
+            <div className="flex flex-row items-center justify-start gap-3">
+              <NavLink
+                to="/dashboard/new-session"
+                className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-xl bg-primary transition-all hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 active:translate-y-0"
+              >
+                <Stethoscope size={22} className="text-white" />
+              </NavLink>
+
+              <div className={isRTL ? "text-right" : "text-left"}>
+                <h2 className="text-xl font-bold leading-none tracking-tight text-slate-800">
+                  {t("auth.sidebar.title")}
+                </h2>
+
+                <p className="mt-1.5 text-xs text-slate-500">
+                  {t("auth.sidebar.titleHighlight")}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Menu */}
+
+          <div className="space-y-2 p-4">
+            {menuItems.map((item) => {
+              const Icon = item.icon;
+              const active = isActive(item.path);
+
+              return (
+                <NavLink
+                  key={item.id}
+                  to={item.path}
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      setIsOpen(false);
+                    }
+                  }}
+                  className="group relative block w-full cursor-pointer"
+                >
+                  {active && (
+                    <>
+                      <motion.div
+                        layoutId="activeMenu"
+                        className="absolute inset-0 rounded-xl bg-primary/10"
+                        transition={{
+                          type: "spring",
+                          stiffness: 380,
+                          damping: 30,
+                        }}
+                      />
+
+                      <motion.div
+                        layoutId="activeLine"
+                        className={`
+                          absolute
+                          ${isRTL ? "left-0" : "right-0"}
+                          top-1 bottom-1
+                          w-1
+                          rounded-${isRTL ? "l" : "r"}-md
+                          bg-primary
+                        `}
+                        transition={{
+                          type: "spring",
+                          stiffness: 380,
+                          damping: 30,
+                        }}
+                      />
+                    </>
+                  )}
+
+                  <div
+                    className={`
+                      relative z-10
+                      flex h-11
+                      items-center
+                      justify-start
+                      gap-3
+                      rounded-xl
+                      px-4
+                      transition-all
+                      ${
+                        active
+                          ? "font-semibold text-primary"
+                          : "text-slate-500 hover:bg-slate-50 hover:text-primary"
+                      }
+                    `}
+                  >
+                    <Icon
+                      size={18}
+                      className="shrink-0 transition-transform group-hover:scale-105"
+                    />
+
+                    <span className="truncate text-sm">{item.label}</span>
+                  </div>
+                </NavLink>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Footer  */}
+
+        <div className="space-y-4 overflow-hidden border-t border-slate-100 p-4">
+          <div className="flex items-center justify-start gap-3 px-1">
+            {profile?.image ? (
+              <div className="relative h-10 w-10 shrink-0">
+                <img
+                  src={`https://tibscribe-api.onrender.com/api/doctor/images/${profile.image}`}
+                  alt={doctorName}
+                  className="absolute inset-0 h-10 w-10 rounded-xl object-cover shadow-md shadow-primary/10 z-10 transition-opacity duration-300"
+                  onError={(e) => {
+                    e.target.style.opacity = 0;
+                  }}
+                />
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white shadow-md shadow-primary/20">
+                  {initials}
+                </div>
+              </div>
+            ) : (
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white shadow-md shadow-primary/20">
+                {initials}
+              </div>
+            )}
+
+            <div className={isRTL ? "text-right" : "text-left"}>
+              <h4 className="text-sm font-semibold leading-tight text-slate-800">
+                {doctorName}
+              </h4>
+
+              <p className="mt-1 text-xs text-slate-500">
+                {doctorTitle}
+              </p>
+            </div>
+          </div>
+
+          {/*  Logout  */}
+
+          <button
+            type="button"
+            onClick={handleLogout}
+            disabled={isLoggingOut}
+            className="
+              group
+              flex h-11 w-full
+              cursor-pointer
+              items-center
+              justify-center
+              gap-2
+              rounded-xl
+              border border-slate-200
+              bg-transparent
+              text-sm
+              font-semibold
+              text-slate-500
+              transition-all
+              hover:border-red-200
+              hover:bg-red-50
+              hover:text-red-600
+              disabled:cursor-not-allowed
+              disabled:opacity-60
+            "
+          >
+            {isLoggingOut ? (
+              <Loader2 size={18} className="animate-spin" />
+            ) : (
+              <LogOut
+                size={18}
+                className="transition-transform group-hover:-translate-x-0.5"
+              />
+            )}
+
+            <span>
+              {isLoggingOut ? t("auth.loggingOut") : t("auth.logout")}
+            </span>
+          </button>
+        </div>
+      </aside>
+    </>
+  );
+};
+
+export default Sidebar;
+
+```
+
+---
+
+### <a id="📄-src-component-ui-field-jsx"></a>📄 `src/component/ui/Field.jsx`
+
+**File Info:**
+- **Size**: 1.97 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/component/ui/Field.jsx`
+- **Relative Path**: `src/component/ui`
+- **Created**: 2026-08-17 16:50:40 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `c727d02c097cb13c2f4bafee12a59208`
+- **SHA256**: `46130114baf104b139ce4b2508d902f02516045829d2180e69e46c42adc1f99b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React from "react";
+
+const FormField = (props) => {
+  const error =
+    props.formik.touched[props.name] && props.formik.errors[props.name];
+  const hasError = Boolean(error);
+
+  const baseClasses =
+    "w-full rounded-xl border bg-white px-4 py-3 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/20";
+  const borderClasses = hasError
+    ? "border-danger"
+    : "border-slate-200 focus:border-primary";
+
+  const isLtrInRtl = props.isRtl && props.dir === "ltr";
+
+  return (
+    <div className="space-y-1.5">
+      {props.label && (
+        <label className="block text-sm font-medium text-slate-700">
+          {props.label}
+        </label>
+      )}
+
+      <div className="relative">
+        {props.startElement && (
+          <div className="absolute start-3 top-1/2 -translate-y-1/2 z-10">
+            {props.startElement}
+          </div>
+        )}
+
+        {props.secondaryIcon &&
+          React.createElement(props.secondaryIcon, {
+            className:
+              "absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400 pointer-events-none",
+          })}
+
+        <input
+          type={props.type || "text"}
+          name={props.name}
+          dir={props.dir || "auto"}
+          placeholder={props.placeholder || ""}
+          value={props.formik.values[props.name]}
+          onChange={props.formik.handleChange}
+          onBlur={props.formik.handleBlur}
+          style={{ textAlign: isLtrInRtl ? "right" : undefined }}
+          className={`${baseClasses} ${borderClasses} ${props.extraClasses || ""}`}
+        />
+
+        {props.icon &&
+          React.createElement(props.icon, {
+            className:
+              "absolute end-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400 pointer-events-none",
+          })}
+      </div>
+
+      {hasError && <p className="text-xs text-red-500">{error}</p>}
+      {props.children}
+    </div>
+  );
+};
+
+export default React.memo(FormField);
+
+```
+
+---
+
+### <a id="📄-src-component-ui-u-txt"></a>📄 `src/component/ui/u.txt`
+
+**File Info:**
+- **Size**: 22 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/component/ui/u.txt`
+- **Relative Path**: `src/component/ui`
+- **Created**: 2026-08-17 16:50:40 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `39f9bdc04fd84a54f2ef777077899784`
+- **SHA256**: `ef838fc59b7aa9407f05056b690a4e72cb3518532ae3579ec0fbc26360b4e969`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+(Button, Input, Modal)
+```
+
+---
+
+### <a id="📄-src-features-auth-components-authsidebar-jsx"></a>📄 `src/features/auth/components/authSidebar.jsx`
+
+**File Info:**
+- **Size**: 2.2 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/authSidebar.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:42 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `34a55fc4e1c62c28b0022fac338b31e9`
+- **SHA256**: `c6aa9d4ea9d3efe8b46fe04b16b3d654a6991389afcedcd30a50f53e4d465fb1`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useTranslation } from "react-i18next";
+import { Stethoscope } from "lucide-react";
+
+const AuthSidebar = () => {
+  const { t } = useTranslation();
+  const features = t("auth.sidebar.features", { returnObjects: true });
+
+  return (
+    <aside className="relative hidden md:flex md:w-[44%] flex-col justify-between overflow-hidden bg-gradient-to-br from-[#0A3A48] via-[#0E5A6E] to-[#1A92AC] px-10 py-12 text-white">
+      <div className="pointer-events-none absolute -bottom-32 -end-32 h-[420px] w-[420px] rounded-full border border-white/10" />
+      <div className="pointer-events-none absolute -bottom-20 -end-20 h-[300px] w-[300px] rounded-full border border-white/10" />
+      <div className="pointer-events-none absolute -bottom-10 -end-10 h-[180px] w-[180px] rounded-full border border-white/10" />
+
+      <div className="relative z-10 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15">
+          <Stethoscope className="h-5 w-5" />
+        </div>
+        <span className="text-lg font-bold">MedAssist</span>
+      </div>
+
+      <div className="relative z-10 max-w-md">
+        <h1 className="text-4xl font-extrabold leading-tight">
+          {t("auth.sidebar.title")}
+          <br />
+          <span className="text-cyan-300">
+            {t("auth.sidebar.titleHighlight")}
+          </span>
+        </h1>
+        <p className="mt-4 text-sm leading-7 text-white/70">
+          {t("auth.sidebar.description")}
+        </p>
+
+        <div className="mt-10 space-y-4 flex flex-row  gap-4">
+          {features.map((feature, index) => {
+            return (
+              <div
+                key={feature.title}
+                className="flex justify-between h-20  rounded-xl bg-white/10 p-4 backdrop-blur-sm"
+              >
+                <div className="flex-1">
+                  <p className="text-sm font-semibold">{feature.title}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <p className="relative z-10 max-w-sm text-sm leading-7 text-white/60">
+        {t("auth.sidebar.quote")}
+      </p>
+    </aside>
+  );
+};
+
+export default AuthSidebar;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-components-forgetpass-jsx"></a>📄 `src/features/auth/components/forgetPass.jsx`
+
+**File Info:**
+- **Size**: 4.85 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/forgetPass.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:42 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `d4505a5b278dd4e6af83b77a1108bc07`
+- **SHA256**: `eeaf9016b47bbeeba6e01591cb01d8c2027806e8ebc2349f0c9be592862e8218`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useState } from "react";
+import { Mail, ArrowLeft, ArrowRight, Loader2 } from "lucide-react";
+import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import FormField from "../../../component/ui/Field";
+import { getApiErrorMessage, sendResetPasswordOtp } from "../services/authApi";
+
+const ForgetPass = () => {
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const isRtl = i18n.dir() === "rtl";
+  const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const [apiError, setApiError] = useState("");
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .trim()
+        .email(t("auth.errors.emailInvalid"))
+        .required(t("auth.errors.emailRequired")),
+    }),
+    onSubmit: async (values, helpers) => {
+      setApiError("");
+      const email = values.email.trim().toLowerCase();
+
+      try {
+        const response = await sendResetPasswordOtp(email);
+        console.log("FORGOT PASSWORD RESPONSE:", response.data);
+
+        /*
+         * تنظيف أي Verification قديم.
+         * حتى لا تختلط عملية Confirm Email
+         * مع عملية Forgot Password.
+         */
+        sessionStorage.removeItem("pendingVerificationEmail");
+        sessionStorage.removeItem("pendingVerificationExpiresAt");
+        sessionStorage.removeItem("pendingVerificationRemember");
+        sessionStorage.removeItem("pendingVerificationPurpose");
+
+        navigate("/verify", {
+          replace: true,
+
+          state: {
+            email,
+            purpose: "password-reset",
+            otpJustSent: true,
+          },
+        });
+      } catch (error) {
+        console.error(
+          "FORGOT PASSWORD ERROR:",
+          error.response?.data || error.message,
+        );
+
+        setApiError(
+          getApiErrorMessage(error, t("auth.forgetPass.errors.sendFailed")),
+        );
+      } finally {
+        helpers.setSubmitting(false);
+      }
+    },
+  });
+
+  return (
+    <div className="w-full max-w-md">
+      {/* Title */}
+
+      <h1 className="text-2xl font-bold text-slate-800">
+        {t("auth.forgetPass.title")}
+      </h1>
+
+      <p className="mt-2 mb-8 text-sm text-slate-500">
+        {t("auth.forgetPass.subtitle")}
+      </p>
+
+      {/*  Info  */}
+
+      <div className="mb-8 flex items-center justify-between rounded-xl bg-sky-100 px-4 py-4">
+        <div className="flex items-center">
+          <p className="text-sm text-slate-500">
+            {t("auth.forgetPass.sendTo")}
+          </p>
+        </div>
+      </div>
+
+      {/* API Error */}
+
+      {apiError && (
+        <div
+          role="alert"
+          className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600"
+        >
+          {apiError}
+        </div>
+      )}
+
+      {/* Form  */}
+
+      <form onSubmit={formik.handleSubmit} noValidate>
+        {/* Email */}
+
+        <div className="mb-6">
+          <FormField
+            label={t("auth.email")}
+            name="email"
+            type="email"
+            formik={formik}
+            dir="ltr"
+            placeholder={t("auth.emailPlaceholder")}
+            icon={Mail}
+            isRtl={isRtl}
+            extraClasses="pe-10 ps-4"
+          />
+        </div>
+
+        {/*Send Button  */}
+
+        <motion.button
+          type="submit"
+          whileTap={
+            formik.isSubmitting
+              ? {}
+              : {
+                  scale: 0.98,
+                }
+          }
+          disabled={formik.isSubmitting}
+          className="
+            flex
+            w-full
+            items-center
+            justify-center
+            gap-2
+            rounded-xl
+            bg-primary
+            py-3
+            text-sm
+            font-semibold
+            text-white
+            transition
+            hover:cursor-pointer
+            disabled:cursor-not-allowed
+            disabled:opacity-60
+          "
+        >
+          {formik.isSubmitting ? (
+            <>
+              <Loader2 className="h-5 w-5 animate-spin" />
+
+              <span>{t("auth.forgetPass.sending")}</span>
+            </>
+          ) : (
+            <>
+              <span>{t("auth.forgetPass.sendButton")}</span>
+
+              <ArrowIcon className="h-4 w-4" />
+            </>
+          )}
+        </motion.button>
+      </form>
+
+      {/*  Back To Login  */}
+
+      <p className="mt-6 text-center text-sm text-slate-500">
+        <Link to="/login" className="font-medium text-primary hover:underline">
+          {t("auth.forgetPass.back")}
+        </Link>
+      </p>
+    </div>
+  );
+};
+
+export default ForgetPass;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-components-loginform-jsx"></a>📄 `src/features/auth/components/loginForm.jsx`
+
+**File Info:**
+- **Size**: 8.56 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/loginForm.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:44 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `b567572da513e0524eab80440f70a867`
+- **SHA256**: `500dd1e7ed88759543aeb7577f6373ed401e03f3ab273122399ddb536be1e5f7`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useMemo, useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
+import { Mail, Eye, EyeOff, Loader2 } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
+import {
+  extractToken,
+  getApiErrorMessage,
+  isEmailVerificationRequired,
+  loginDoctor,
+  saveAuthToken,
+} from "../services/authApi";
+
+const LoginForm = () => {
+  const { t } = useTranslation();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const [apiError, setApiError] = useState("");
+
+  const validationSchema = useMemo(
+    () =>
+      Yup.object({
+        email: Yup.string()
+          .email(t("auth.errors.emailInvalid"))
+          .required(t("auth.errors.emailRequired")),
+
+        password: Yup.string().required(t("auth.errors.passwordRequired")),
+      }),
+    [t],
+  );
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+      remember: false,
+    },
+
+    validationSchema,
+
+    onSubmit: async (values, helpers) => {
+      setApiError("");
+
+      try {
+        const response = await loginDoctor(values.email, values.password);
+
+        const token = extractToken(response);
+
+        if (!token) {
+          throw new Error(t("auth.errors.tokenMissing"));
+        }
+
+        saveAuthToken(token, values.remember);
+
+        const destination = location.state?.from || "/dashboard/overview";
+
+        navigate(destination, {
+          replace: true,
+        });
+      } catch (error) {
+        if (isEmailVerificationRequired(error)) {
+          sessionStorage.removeItem("pendingVerificationEmail");
+          sessionStorage.removeItem("pendingVerificationExpiresAt");
+
+          navigate("/verify", {
+            replace: true,
+            state: {
+              email: values.email,
+
+              purpose: "confirmation",
+
+              remember: values.remember,
+
+              otpJustSent: true,
+            },
+          });
+
+          return;
+        }
+
+        const message = getApiErrorMessage(error, t("auth.errors.generic"));
+
+        setApiError(message);
+      } finally {
+        helpers.setSubmitting(false);
+      }
+    },
+  });
+
+  return (
+    <div className="w-full max-w-md">
+      <h1 className="text-2xl font-bold text-slate-800">
+        {t("auth.welcomeBack")}
+      </h1>
+
+      <p className="mt-1 mb-8 text-sm text-slate-500">
+        {t("auth.welcomeSubtitle")}
+      </p>
+
+      {location.state?.passwordReset && (
+        <div className="mb-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
+          {t("auth.resetPass.success")}
+        </div>
+      )}
+
+      {apiError && (
+        <div
+          role="alert"
+          className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600"
+        >
+          {apiError}
+        </div>
+      )}
+
+      <form onSubmit={formik.handleSubmit} className="space-y-5" noValidate>
+        {/* Email */}
+
+        <div>
+          <label
+            htmlFor="email"
+            className="mb-1.5 block text-sm font-medium text-slate-700"
+          >
+            {t("auth.email")}
+          </label>
+
+          <div className="relative">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder={t("auth.emailPlaceholder")}
+              value={formik.values.email}
+              onChange={(event) => {
+                formik.handleChange(event);
+
+                if (apiError) {
+                  setApiError("");
+                }
+              }}
+              onBlur={formik.handleBlur}
+              autoComplete="email"
+              aria-invalid={Boolean(
+                formik.touched.email && formik.errors.email,
+              )}
+              className={`w-full rounded-lg border bg-white px-4 py-2.5 pe-11 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/30 ${
+                formik.touched.email && formik.errors.email
+                  ? "border-danger"
+                  : "border-slate-200 focus:border-primary"
+              }`}
+            />
+
+            <Mail className="absolute end-3.5 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-slate-400" />
+          </div>
+
+          {formik.touched.email && formik.errors.email && (
+            <p className="mt-1 text-xs text-red-500">{formik.errors.email}</p>
+          )}
+        </div>
+
+        {/* Password */}
+
+        <div>
+          <div className="mb-1.5 flex items-center justify-between">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-slate-700"
+            >
+              {t("auth.password")}
+            </label>
+
+            <Link
+              to="/forget-password"
+              className="text-xs text-primary hover:underline"
+            >
+              {t("auth.forgotPassword")}
+            </Link>
+          </div>
+
+          <div className="relative">
+            <input
+              id="password"
+              name="password"
+              type={showPassword ? "text" : "password"}
+              placeholder="••••••••"
+              value={formik.values.password}
+              onChange={(event) => {
+                formik.handleChange(event);
+
+                if (apiError) {
+                  setApiError("");
+                }
+              }}
+              onBlur={formik.handleBlur}
+              autoComplete="current-password"
+              aria-invalid={Boolean(
+                formik.touched.password && formik.errors.password,
+              )}
+              className={`w-full rounded-lg border bg-white px-4 py-2.5 ps-11 pe-4 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/30 ${
+                formik.touched.password && formik.errors.password
+                  ? "border-danger"
+                  : "border-slate-200 focus:border-primary"
+              }`}
+            />
+
+            <button
+              type="button"
+              onClick={() => setShowPassword((prev) => !prev)}
+              className="absolute start-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition hover:text-slate-600"
+              aria-label={
+                showPassword ? t("auth.hidePassword") : t("auth.showPassword")
+              }
+            >
+              {showPassword ? (
+                <EyeOff className="h-4.5 w-4.5" />
+              ) : (
+                <Eye className="h-4.5 w-4.5" />
+              )}
+            </button>
+          </div>
+
+          {formik.touched.password && formik.errors.password && (
+            <p className="mt-1 text-xs text-red-500">
+              {formik.errors.password}
+            </p>
+          )}
+        </div>
+
+        {/* Remember Me */}
+
+        <div className="flex items-center justify-end gap-2">
+          <label htmlFor="remember" className="text-sm text-slate-600">
+            {t("auth.rememberMe")}
+          </label>
+
+          <input
+            id="remember"
+            name="remember"
+            type="checkbox"
+            checked={formik.values.remember}
+            onChange={formik.handleChange}
+            className="h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500"
+          />
+        </div>
+
+        {/* Login Button */}
+
+        <button
+          type="submit"
+          disabled={formik.isSubmitting}
+          className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-semibold text-white transition hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          {formik.isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
+
+          {formik.isSubmitting ? t("auth.loggingIn") : t("auth.login")}
+        </button>
+      </form>
+
+      {/* Separator */}
+
+      <div className="my-6 flex items-center gap-3">
+        <span className="h-px flex-1 bg-slate-200" />
+
+        <span className="text-xs text-slate-400">{t("auth.or")}</span>
+
+        <span className="h-px flex-1 bg-slate-200" />
+      </div>
+
+      {/* Register */}
+
+      <p className="text-center text-sm text-slate-500">
+        {t("auth.noAccount")}{" "}
+        <Link
+          to="/register"
+          className="font-medium text-primary hover:underline"
+        >
+          {t("auth.createAccount")}
+        </Link>
+      </p>
+    </div>
+  );
+};
+
+export default LoginForm;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-components-protectedroute-jsx"></a>📄 `src/features/auth/components/ProtectedRoute.jsx`
+
+**File Info:**
+- **Size**: 467 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/ProtectedRoute.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:44 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `4c217a6ef8d021fe1a4abceb9ef55c58`
+- **SHA256**: `4961149e0e16a622db7de7ae251a394617836c3cdf4f061c230632d4f1ba1227`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { Navigate, useLocation } from "react-router-dom";
+
+import { getAuthToken } from "../services/authApi";
+
+const ProtectedRoute = ({ children }) => {
+  const location = useLocation();
+
+  const token = getAuthToken();
+
+  if (!token) {
+    return (
+      <Navigate
+        to="/login"
+        replace
+        state={{
+          from: location.pathname,
+        }}
+      />
+    );
+  }
+
+  return children;
+};
+
+export default ProtectedRoute;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-components-registerform-jsx"></a>📄 `src/features/auth/components/RegisterForm.jsx`
+
+**File Info:**
+- **Size**: 21.42 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/RegisterForm.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:44 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `2b8265c6943a8d3fec746a416068de18`
+- **SHA256**: `4abd2295f0c8b769d408512450e2699ecc977fe44136d84abe8c141194f11483`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useEffect, useMemo, useState } from "react";
+
+import { motion, AnimatePresence } from "motion/react";
+
+import { useFormik } from "formik";
+import * as Yup from "yup";
+
+import { useTranslation } from "react-i18next";
+
+import { Link, useNavigate } from "react-router-dom";
+
+import {
+  Mail,
+  Lock,
+  User,
+  Phone,
+  Stethoscope,
+  Building2,
+  ChevronDown,
+  Eye,
+  EyeOff,
+  ArrowLeft,
+  ArrowRight,
+  Loader2,
+} from "lucide-react";
+
+import FormField from "../../../component/ui/Field";
+
+import {
+  getApiErrorMessage,
+  getSpecialties,
+  registerDoctor,
+} from "../services/authApi";
+
+const STEP1_FIELDS = ["firstName", "lastName", "email", "phone"];
+
+const RegisterForm = () => {
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language?.startsWith("ar") ? "ar" : "en";
+
+  const navigate = useNavigate();
+
+  const isRtl = i18n.dir() === "rtl";
+
+  const NextIcon = isRtl ? ArrowLeft : ArrowRight;
+
+  const [step, setStep] = useState(1);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+  const [specialties, setSpecialties] = useState([]);
+  const [isLoadingSpecialties, setIsLoadingSpecialties] = useState(true);
+
+  const [apiError, setApiError] = useState("");
+
+  /* Load Specialties */
+  useEffect(() => {
+    let isMounted = true;
+
+    const loadSpecialties = async () => {
+      setIsLoadingSpecialties(true);
+
+      try {
+        const response = await getSpecialties();
+        if (!isMounted) {
+          return;
+        }
+
+        const data = Array.isArray(response.data) ? response.data : [];
+
+        setSpecialties(data);
+      } catch (error) {
+        console.error(
+          "SPECIALTIES ERROR:",
+          error.response?.data || error.message,
+        );
+
+        if (isMounted) {
+          setApiError(
+            getApiErrorMessage(error, t("auth.register.errors.generic")),
+          );
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoadingSpecialties(false);
+        }
+      }
+    };
+
+    loadSpecialties();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [t]);
+
+  /*
+   * Validation
+   * ============================
+   * first_name:
+   * max 50
+   * last_name:
+   * max 50
+   *
+   * email:
+   * unique + max 70
+   *
+   * phone:
+   * 09xxxxxxxx
+   * max 10
+   *
+   * password:
+   * min 8
+   * max 50
+   * letters
+   * numbers
+   * symbols
+   */
+  const validationSchema = useMemo(
+    () =>
+      Yup.object({
+        firstName: Yup.string()
+          .trim()
+          .max(
+            50,
+            t("auth.register.errors.firstNameMax", "Maximum 50 characters"),
+          )
+          .required(t("auth.register.errors.firstNameRequired")),
+
+        lastName: Yup.string()
+          .trim()
+          .max(
+            50,
+            t("auth.register.errors.lastNameMax", "Maximum 50 characters"),
+          )
+          .required(t("auth.register.errors.lastNameRequired")),
+
+        email: Yup.string()
+          .trim()
+          .email(t("auth.errors.emailInvalid"))
+          .max(70, t("auth.register.errors.emailMax", "Maximum 70 characters"))
+          .required(t("auth.errors.emailRequired")),
+
+        phone: Yup.string()
+          .matches(/^09[0-9]{8}$/, {
+            message: t(
+              "auth.register.errors.phoneInvalid",
+              "Phone number must start with 09 and contain 10 digits",
+            ),
+            excludeEmptyString: true,
+          })
+          .nullable(),
+
+        specialty: Yup.string().required(
+          t("auth.register.errors.specialtyRequired"),
+        ),
+
+        clinicName: Yup.string()
+          .trim()
+          .max(
+            50,
+            t("auth.register.errors.clinicMax", "Maximum 50 characters"),
+          ),
+
+        password: Yup.string()
+          .min(8, t("auth.register.passwordMin"))
+          .max(
+            50,
+            t(
+              "auth.register.errors.passwordMax",
+              "Password must not exceed 50 characters",
+            ),
+          )
+
+          /*
+           * حرف على الأقل.
+           */
+          .matches(
+            /[A-Za-z]/,
+            t(
+              "auth.register.errors.passwordLetter",
+              "Password must contain at least one letter",
+            ),
+          )
+
+          /*
+           * رقم على الأقل.
+           */
+          .matches(
+            /[0-9]/,
+            t(
+              "auth.register.errors.passwordNumber",
+              "Password must contain at least one number",
+            ),
+          )
+
+          /*
+           * رمز خاص واحد على الأقل.
+           */
+          .matches(
+            /[^A-Za-z0-9]/,
+            t(
+              "auth.register.errors.passwordSymbol",
+              "Password must contain at least one special character",
+            ),
+          )
+
+          .required(t("auth.errors.passwordRequired")),
+
+        confirmPassword: Yup.string()
+          .oneOf(
+            [Yup.ref("password")],
+            t("auth.register.errors.confirmPasswordMismatch"),
+          )
+          .required(t("auth.register.errors.confirmPasswordRequired")),
+      }),
+    [t],
+  );
+
+  // Formik
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      specialty: "",
+      clinicName: "",
+      password: "",
+      confirmPassword: "",
+    },
+
+    validationSchema,
+
+    /*
+     * Register
+     */
+    onSubmit: async (values, helpers) => {
+      setApiError("");
+
+      try {
+        const doctorData = {
+          first_name: values.firstName.trim(),
+          last_name: values.lastName.trim(),
+          email: values.email.trim().toLowerCase(),
+          // Backend يسمح بـ null.
+          phone: values.phone.trim() || null,
+          specialty_ids: [String(values.specialty)],
+          hospital_or_clinic: values.clinicName.trim() || null,
+          password: values.password,
+          password_confirmation: values.confirmPassword,
+        };
+
+        console.log("REGISTER DATA:", {
+          ...doctorData,
+          password: "********",
+          password_confirmation: "********",
+        });
+
+        /*
+         * POST:
+         *
+         * /api/doctor/register
+         */
+        const response = await registerDoctor(doctorData);
+
+        console.log("REGISTER RESPONSE:", response.data);
+        sessionStorage.removeItem("pendingVerificationEmail");
+        sessionStorage.removeItem("pendingVerificationExpiresAt");
+        sessionStorage.removeItem("pendingVerificationRemember");
+
+        navigate("/verify", {
+          replace: true,
+          state: {
+            email: values.email.trim().toLowerCase(),
+            purpose: "confirmation",
+            /*
+             * بعد التسجيل نحتفظ
+             * بالجلسة بعد Verify.
+             */
+            remember: true,
+            otpJustSent: true,
+          },
+        });
+      } catch (error) {
+        console.error("REGISTER ERROR:", error.response?.data || error.message);
+        const message = getApiErrorMessage(
+          error,
+          t("auth.register.errors.generic"),
+        );
+
+        setApiError(message);
+      } finally {
+        helpers.setSubmitting(false);
+      }
+    },
+  });
+
+  /*
+   * Step 1 → Step 2
+   */
+  const goToNextStep = async () => {
+    setApiError("");
+
+    const errors = await formik.validateForm();
+
+    const hasErrors = STEP1_FIELDS.some((field) => errors[field]);
+
+    if (hasErrors) {
+      const touched = {};
+
+      STEP1_FIELDS.forEach((field) => {
+        touched[field] = true;
+      });
+
+      formik.setTouched({
+        ...formik.touched,
+        ...touched,
+      });
+
+      return;
+    }
+
+    setStep(2);
+  };
+
+  /*
+   * Step 2 → Step 1
+   */
+  const goBack = () => {
+    if (formik.isSubmitting) {
+      return;
+    }
+
+    setApiError("");
+    setStep(1);
+  };
+
+  /*
+   * Password Strength
+   */
+  const calculatePasswordStrength = (password) => {
+    if (!password) {
+      return 0;
+    }
+
+    let strength = 0;
+
+    if (password.length >= 8) {
+      strength += 1;
+    }
+
+    if (/[A-Za-z]/.test(password)) {
+      strength += 1;
+    }
+
+    if (/[0-9]/.test(password)) {
+      strength += 1;
+    }
+
+    if (/[^A-Za-z0-9]/.test(password)) {
+      strength += 1;
+    }
+
+    return strength;
+  };
+
+  const passwordStrength = calculatePasswordStrength(formik.values.password);
+
+  /*
+   * Step Indicator
+   */
+  const StepIndicator = () => (
+    <div className="mb-8 flex items-center gap-2">
+      {[1, 2].map((s) => (
+        <div key={s} className="flex flex-1 items-center gap-2">
+          <div
+            className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-sm font-medium transition-colors ${
+              step >= s
+                ? "bg-primary text-white"
+                : "bg-slate-100 text-slate-400"
+            }`}
+          >
+            {s}
+          </div>
+
+          <span
+            className={`text-xs ${
+              step >= s ? "text-slate-700" : "text-slate-400"
+            }`}
+          >
+            {s === 1
+              ? t("auth.register.steps.personalInfo")
+              : t("auth.register.steps.professionalInfo")}
+          </span>
+
+          {s < 2 && (
+            <div
+              className={`mx-2 h-0.5 flex-1 ${
+                step > s ? "bg-[#0b7a9e]" : "bg-slate-200"
+              }`}
+            />
+          )}
+        </div>
+      ))}
+    </div>
+  );
+
+  return (
+    <div className="w-full max-w-lg">
+      {/*  Title */}
+
+      <h1 className="text-2xl font-bold text-slate-800">
+        {t("auth.register.title")}
+      </h1>
+
+      <p className="mt-1 mb-8 text-sm text-slate-500">
+        {t("auth.register.subtitle")}
+      </p>
+
+      {/* API Error */}
+
+      {apiError && (
+        <div
+          role="alert"
+          className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600"
+        >
+          {apiError}
+        </div>
+      )}
+
+      {/* Step Indicator */}
+
+      <StepIndicator />
+
+      {/*  Steps */}
+
+      <AnimatePresence mode="wait" initial={false}>
+        {/* ==========================================
+            STEP 1
+        ========================================== */}
+
+        {step === 1 ? (
+          <motion.form
+            key="step1"
+            initial={{
+              opacity: 0,
+              x: isRtl ? -16 : 16,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            exit={{
+              opacity: 0,
+              x: isRtl ? 16 : -16,
+            }}
+            transition={{
+              duration: 0.2,
+            }}
+            onSubmit={(event) => {
+              event.preventDefault();
+
+              goToNextStep();
+            }}
+            className="space-y-4"
+            noValidate
+          >
+            {/* First Name + Last Name */}
+
+            <div className="grid grid-cols-2 gap-4">
+              <FormField
+                label={t("auth.register.firstName")}
+                name="firstName"
+                dir="ltr"
+                placeholder={t("auth.register.firstNamePlaceholder")}
+                icon={User}
+                formik={formik}
+                isRtl={isRtl}
+                extraClasses="pe-10 ps-4"
+              />
+
+              <FormField
+                label={t("auth.register.lastName")}
+                name="lastName"
+                dir="ltr"
+                placeholder={t("auth.register.lastNamePlaceholder")}
+                icon={User}
+                formik={formik}
+                isRtl={isRtl}
+                extraClasses="pe-10 ps-4"
+              />
+            </div>
+
+            {/* Email */}
+
+            <FormField
+              label={t("auth.email")}
+              name="email"
+              type="email"
+              dir="ltr"
+              placeholder={t("auth.emailPlaceholder")}
+              icon={Mail}
+              formik={formik}
+              isRtl={isRtl}
+              extraClasses="pe-10 ps-4"
+            />
+
+            {/* Phone */}
+
+            <FormField
+              label={t("auth.register.phone")}
+              name="phone"
+              type="tel"
+              dir="ltr"
+              placeholder={t("auth.register.phonePlaceholder")}
+              icon={Phone}
+              formik={formik}
+              isRtl={isRtl}
+              extraClasses="pe-10 ps-4"
+            />
+
+            {/* Next */}
+
+            <motion.button
+              type="submit"
+              whileTap={{
+                scale: 0.98,
+              }}
+              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-semibold text-white transition hover:cursor-pointer"
+            >
+              {t("auth.register.next")}
+
+              <NextIcon className="h-4 w-4" />
+            </motion.button>
+
+            {/* Login */}
+
+            <p className="text-center text-sm text-slate-500">
+              {t("auth.register.haveAccount")}{" "}
+              <Link
+                to="/login"
+                className="font-medium text-primary hover:underline"
+              >
+                {t("auth.register.signIn")}
+              </Link>
+            </p>
+          </motion.form>
+        ) : (
+          /* ==========================================
+             STEP 2
+          ========================================== */
+
+          <motion.form
+            key="step2"
+            initial={{
+              opacity: 0,
+              x: isRtl ? 16 : -16,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            exit={{
+              opacity: 0,
+              x: isRtl ? -16 : 16,
+            }}
+            transition={{
+              duration: 0.2,
+            }}
+            onSubmit={formik.handleSubmit}
+            className="space-y-4"
+            noValidate
+          >
+            {/* Specialty  */}
+
+            <div className="space-y-1.5">
+              <label className="block text-sm font-medium text-slate-700">
+                {t("auth.register.specialty")}
+              </label>
+
+              <div className="relative">
+                <ChevronDown className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+
+                <Stethoscope className="pointer-events-none absolute end-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+
+                <select
+                  name="specialty"
+                  value={formik.values.specialty}
+                  onChange={(event) => {
+                    formik.handleChange(event);
+
+                    if (apiError) {
+                      setApiError("");
+                    }
+                  }}
+                  onBlur={formik.handleBlur}
+                  disabled={isLoadingSpecialties || formik.isSubmitting}
+                  className={`w-full appearance-none rounded-xl border bg-white px-4 py-3 text-sm text-slate-800 transition focus:outline-none focus:ring-2 focus:ring-teal-500/20 pe-10 ps-9 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:opacity-60 ${
+                    formik.touched.specialty && formik.errors.specialty
+                      ? "border-danger"
+                      : "border-slate-200 focus:border-teal-500"
+                  }`}
+                >
+                  <option value="">
+                    {isLoadingSpecialties
+                      ? t(
+                          "auth.register.loadingSpecialties",
+                          "Loading specialties...",
+                        )
+                      : t("auth.register.specialtyPlaceholder")}
+                  </option>
+
+                  {specialties.map((specialty) => (
+                    <option key={specialty.id} value={String(specialty.id)}>
+                      {typeof specialty.name === "object"
+                        ? specialty.name?.[currentLang] ||
+                          specialty.name?.en ||
+                          specialty.name?.ar ||
+                          specialty.slug
+                        : specialty.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {formik.touched.specialty && formik.errors.specialty && (
+                <p className="text-xs text-red-500">
+                  {formik.errors.specialty}
+                </p>
+              )}
+            </div>
+
+            {/*  Clinic  */}
+
+            <FormField
+              label={t("auth.register.clinicName")}
+              name="clinicName"
+              placeholder={t("auth.register.clinicNamePlaceholder")}
+              icon={Building2}
+              formik={formik}
+              isRtl={isRtl}
+              extraClasses="pe-10 ps-4"
+            />
+
+            {/* Password */}
+
+            <FormField
+              label={t("auth.password")}
+              name="password"
+              type={showPassword ? "text" : "password"}
+              dir="ltr"
+              placeholder="••••••••"
+              formik={formik}
+              isRtl={isRtl}
+              extraClasses="pe-10 ps-10"
+              icon={Lock}
+              startElement={
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((previous) => !previous)}
+                  className="text-slate-400 transition hover:text-slate-600"
+                  aria-label={
+                    showPassword
+                      ? t("auth.hidePassword")
+                      : t("auth.showPassword")
+                  }
+                >
+                  {showPassword ? (
+                    <EyeOff className="h-4 w-4" />
+                  ) : (
+                    <Eye className="h-4 w-4" />
+                  )}
+                </button>
+              }
+            >
+              {/* Password Strength */}
+
+              {formik.values.password && (
+                <div className="mt-1 flex gap-1">
+                  {[1, 2, 3, 4].map((level) => (
+                    <div
+                      key={level}
+                      className={`h-1 flex-1 rounded-full ${
+                        passwordStrength >= level
+                          ? "bg-primary"
+                          : "bg-slate-100"
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
+            </FormField>
+
+            {/* Confirm Password */}
+
+            <FormField
+              label={t("auth.register.confirmPassword")}
+              name="confirmPassword"
+              type={showConfirmPassword ? "text" : "password"}
+              dir="ltr"
+              placeholder="••••••••"
+              formik={formik}
+              isRtl={isRtl}
+              extraClasses="pe-10 ps-10"
+              icon={Lock}
+              startElement={
+                <button
+                  type="button"
+                  onClick={() =>
+                    setShowConfirmPassword((previous) => !previous)
+                  }
+                  className="text-slate-400 transition hover:text-slate-600"
+                  aria-label={
+                    showConfirmPassword
+                      ? t("auth.hidePassword")
+                      : t("auth.showPassword")
+                  }
+                >
+                  {showConfirmPassword ? (
+                    <EyeOff className="h-4 w-4" />
+                  ) : (
+                    <Eye className="h-4 w-4" />
+                  )}
+                </button>
+              }
+            />
+
+            {/* Buttons */}
+
+            <div className="mt-6 flex gap-3">
+              {/* Back */}
+
+              <button
+                type="button"
+                onClick={goBack}
+                disabled={formik.isSubmitting}
+                className="flex-1 cursor-pointer rounded-xl border border-slate-200 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {t("auth.register.back")}
+              </button>
+
+              {/* Create Account */}
+              <motion.button
+                type="submit"
+                whileTap={
+                  formik.isSubmitting
+                    ? {}
+                    : {
+                        scale: 0.98,
+                      }
+                }
+                disabled={formik.isSubmitting || isLoadingSpecialties}
+                className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-semibold text-white transition hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {formik.isSubmitting && (
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                )}
+
+                <span>
+                  {formik.isSubmitting
+                    ? t("auth.register.creatingAccount")
+                    : t("auth.register.createAccount")}
+                </span>
+              </motion.button>
+            </div>
+          </motion.form>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default RegisterForm;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-components-resetpass-jsx"></a>📄 `src/features/auth/components/ResetPass.jsx`
+
+**File Info:**
+- **Size**: 7.99 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/ResetPass.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:44 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `ddb626f3350b8d7ab39695fcb9a58cd8`
+- **SHA256**: `1db7b565283c4aa9c933ef5d201d407fbb7438bf57472f6febc9e5c8cf7f9be5`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useEffect, useMemo, useState } from "react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Loader2,
+  Eye,
+  EyeOff,
+  Lock,
+} from "lucide-react";
+import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import FormField from "../../../component/ui/Field";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { getApiErrorMessage, resetDoctorPassword } from "../services/authApi";
+
+const PASSWORD_RESET_TOKEN_KEY = "pendingPasswordResetToken";
+const ResetPass = () => {
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const isRtl = i18n.dir() === "rtl";
+  const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [apiError, setApiError] = useState("");
+
+  const resetToken = sessionStorage.getItem(PASSWORD_RESET_TOKEN_KEY);
+
+  /*
+   * إذا دخل المستخدم /reset-password
+   * مباشرة بدون Verify OTP،
+   * نعيده إلى Forget Password.
+   */
+  useEffect(() => {
+    if (!resetToken) {
+      navigate("/forget-password", {
+        replace: true,
+      });
+    }
+  }, [resetToken, navigate]);
+
+  /*
+   * min 8
+   * uppercase
+   * lowercase
+   * special character
+   */
+  const validationSchema = useMemo(
+    () =>
+      Yup.object({
+        password: Yup.string()
+
+          .min(8, t("auth.register.passwordMin"))
+          .matches(
+            /[A-Z]/,
+            t(
+              "auth.resetPass.errors.uppercase",
+              "Password must contain at least one uppercase letter",
+            ),
+          )
+
+          .matches(
+            /[a-z]/,
+            t(
+              "auth.resetPass.errors.lowercase",
+              "Password must contain at least one lowercase letter",
+            ),
+          )
+
+          .matches(
+            /[^A-Za-z0-9]/,
+            t(
+              "auth.resetPass.errors.symbol",
+              "Password must contain at least one special character",
+            ),
+          )
+
+          .required(t("auth.errors.passwordRequired")),
+
+        confirmPassword: Yup.string()
+
+          .oneOf(
+            [Yup.ref("password")],
+
+            t("auth.register.errors.confirmPasswordMismatch"),
+          )
+
+          .required(t("auth.register.errors.confirmPasswordRequired")),
+      }),
+
+    [t],
+  );
+
+  /*
+   * Formik
+   */
+  const formik = useFormik({
+    initialValues: {
+      password: "",
+      confirmPassword: "",
+    },
+
+    validationSchema,
+
+    onSubmit: async (values, helpers) => {
+      setApiError("");
+
+      if (!resetToken) {
+        navigate("/forget-password", {
+          replace: true,
+        });
+        return;
+      }
+
+      try {
+        const response = await resetDoctorPassword(
+          resetToken,
+          values.password,
+          values.confirmPassword,
+
+          false,
+        );
+
+        console.log("RESET PASSWORD RESPONSE:", response.data);
+
+        /*
+         * Reset انتهى.
+         * نحذف Token المؤقت.
+         */
+        sessionStorage.removeItem(PASSWORD_RESET_TOKEN_KEY);
+        sessionStorage.removeItem("pendingVerificationEmail");
+        sessionStorage.removeItem("pendingVerificationExpiresAt");
+        sessionStorage.removeItem("pendingVerificationPurpose");
+        sessionStorage.removeItem("pendingVerificationRemember");
+
+        /*
+         * العودة إلى Login.
+         * LoginForm عندنا أصلًا
+         * يدعم passwordReset.
+         */
+        navigate("/login", {
+          replace: true,
+          state: {
+            passwordReset: true,
+          },
+        });
+      } catch (error) {
+        console.error(
+          "RESET PASSWORD ERROR:",
+          error.response?.data || error.message,
+        );
+
+        setApiError(
+          getApiErrorMessage(
+            error,
+            t(
+              "auth.resetPass.errors.resetFailed",
+              "Couldn't reset your password. Please try again.",
+            ),
+          ),
+        );
+      } finally {
+        helpers.setSubmitting(false);
+      }
+    },
+  });
+
+  return (
+    <div className="w-full max-w-md">
+      {/* Title  */}
+
+      <h1 className="text-2xl font-bold text-slate-800">
+        {t("auth.resetPass.title")}
+      </h1>
+
+      <p className="mt-2 mb-8 text-sm text-slate-500">
+        {t("auth.resetPass.subtitle")}
+      </p>
+
+      {/*  API Error  */}
+
+      {apiError && (
+        <div
+          role="alert"
+          className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600"
+        >
+          {apiError}
+        </div>
+      )}
+
+      {/* Form  */}
+
+      <form onSubmit={formik.handleSubmit} className="space-y-4" noValidate>
+        {/* New Password*/}
+
+        <FormField
+          label={t("auth.password")}
+          name="password"
+          type={showPassword ? "text" : "password"}
+          dir="ltr"
+          placeholder="••••••••"
+          formik={formik}
+          isRtl={isRtl}
+          extraClasses="pe-10 ps-10"
+          icon={Lock}
+          startElement={
+            <button
+              type="button"
+              onClick={() => setShowPassword((previous) => !previous)}
+              className="text-slate-400 transition hover:text-slate-600"
+              aria-label={
+                showPassword ? t("auth.hidePassword") : t("auth.showPassword")
+              }
+            >
+              {showPassword ? (
+                <EyeOff className="h-4 w-4" />
+              ) : (
+                <Eye className="h-4 w-4" />
+              )}
+            </button>
+          }
+        />
+
+        {/*  Confirm Password */}
+
+        <FormField
+          label={t("auth.register.confirmPassword")}
+          name="confirmPassword"
+          type={showConfirmPassword ? "text" : "password"}
+          dir="ltr"
+          placeholder="••••••••"
+          formik={formik}
+          isRtl={isRtl}
+          extraClasses="pe-10 ps-10"
+          icon={Lock}
+          startElement={
+            <button
+              type="button"
+              onClick={() => setShowConfirmPassword((previous) => !previous)}
+              className="text-slate-400 transition hover:text-slate-600"
+              aria-label={
+                showConfirmPassword
+                  ? t("auth.hidePassword")
+                  : t("auth.showPassword")
+              }
+            >
+              {showConfirmPassword ? (
+                <EyeOff className="h-4 w-4" />
+              ) : (
+                <Eye className="h-4 w-4" />
+              )}
+            </button>
+          }
+        />
+
+        {/*  Submit */}
+
+        <motion.button
+          type="submit"
+          whileTap={
+            formik.isSubmitting
+              ? {}
+              : {
+                  scale: 0.98,
+                }
+          }
+          disabled={formik.isSubmitting}
+          className="
+            mt-10
+            flex
+            w-full
+            items-center
+            justify-center
+            gap-2
+            rounded-xl
+            bg-primary
+            py-3
+            text-sm
+            font-semibold
+            text-white
+            transition
+            hover:cursor-pointer
+            disabled:cursor-not-allowed
+            disabled:opacity-60
+          "
+        >
+          {formik.isSubmitting ? (
+            <>
+              <Loader2 className="h-5 w-5 animate-spin" />
+
+              <span>
+                {t("auth.resetPass.resetting", "Resetting password...")}
+              </span>
+            </>
+          ) : (
+            <>
+              <span>{t("auth.resetPass.sendButton")}</span>
+
+              <ArrowIcon className="h-4 w-4" />
+            </>
+          )}
+        </motion.button>
+      </form>
+    </div>
+  );
+};
+
+export default ResetPass;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-components-verifyform-jsx"></a>📄 `src/features/auth/components/VerifyForm.jsx`
+
+**File Info:**
+- **Size**: 14.33 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/components/VerifyForm.jsx`
+- **Relative Path**: `src/features/auth/components`
+- **Created**: 2026-08-17 16:50:46 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `51ea79e9776511ac818af12be06a6477`
+- **SHA256**: `bfe15fe5a34cfecbea0bded0f7b11cfa15455efa022d9cc88a0ca214b2aec9fe`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useEffect, useRef, useState } from "react";
+import { Mail, ArrowLeft, Loader2, RefreshCw } from "lucide-react";
+import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
+
+import {
+  extractToken,
+  getApiErrorMessage,
+  resendEmailVerificationOtp,
+  saveAuthToken,
+  sendResetPasswordOtp,
+  verifyEmail,
+  verifyResetPasswordOtp,
+} from "../services/authApi";
+
+const OTP_VALIDITY_SECONDS = 5 * 60;
+const VERIFICATION_EMAIL_KEY = "pendingVerificationEmail";
+const VERIFICATION_EXPIRES_KEY = "pendingVerificationExpiresAt";
+const VERIFICATION_REMEMBER_KEY = "pendingVerificationRemember";
+
+const VERIFICATION_PURPOSE_KEY = "pendingVerificationPurpose";
+
+const PASSWORD_RESET_TOKEN_KEY = "pendingPasswordResetToken";
+
+const EmailVerification = () => {
+  const { t, i18n } = useTranslation();
+
+  const location = useLocation();
+  const navigate = useNavigate();
+  const inputRefs = useRef([]);
+  const [code, setCode] = useState(["", "", "", "", "", ""]);
+  const [apiError, setApiError] = useState("");
+  const [resendMessage, setResendMessage] = useState("");
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [isResending, setIsResending] = useState(false);
+
+  const email =
+    location.state?.email ||
+    sessionStorage.getItem(VERIFICATION_EMAIL_KEY) ||
+    "";
+
+  const purpose =
+    location.state?.purpose ||
+    sessionStorage.getItem(VERIFICATION_PURPOSE_KEY) ||
+    "confirmation";
+
+  const getInitialTimer = () => {
+    const expiresAt = Number(sessionStorage.getItem(VERIFICATION_EXPIRES_KEY));
+
+    if (!expiresAt) {
+      return 0;
+    }
+
+    const remaining = Math.ceil((expiresAt - Date.now()) / 1000);
+    return Math.max(remaining, 0);
+  };
+
+  const [timer, setTimer] = useState(getInitialTimer);
+
+  useEffect(() => {
+    const loginEmail = location.state?.email;
+    const otpJustSent = location.state?.otpJustSent;
+
+    if (!loginEmail) {
+      return;
+    }
+
+    sessionStorage.setItem(VERIFICATION_EMAIL_KEY, loginEmail);
+
+    sessionStorage.setItem(
+      VERIFICATION_REMEMBER_KEY,
+      String(location.state?.remember ?? true),
+    );
+
+    sessionStorage.setItem(
+      VERIFICATION_PURPOSE_KEY,
+      location.state?.purpose || "confirmation",
+    );
+
+    if (otpJustSent) {
+      const expiresAt = Date.now() + OTP_VALIDITY_SECONDS * 1000;
+
+      sessionStorage.setItem(VERIFICATION_EXPIRES_KEY, String(expiresAt));
+
+      setTimer(OTP_VALIDITY_SECONDS);
+
+      navigate("/verify", {
+        replace: true,
+        state: {
+          email: loginEmail,
+          purpose: location.state?.purpose,
+          remember: location.state?.remember,
+          otpJustSent: false,
+        },
+      });
+    }
+  }, [
+    location.state?.email,
+    location.state?.otpJustSent,
+    location.state?.purpose,
+    location.state?.remember,
+    navigate,
+  ]);
+
+  useEffect(() => {
+    if (!email) {
+      navigate("/login", {
+        replace: true,
+      });
+    }
+  }, [email, navigate]);
+
+  useEffect(() => {
+    const updateTimer = () => {
+      const expiresAt = Number(
+        sessionStorage.getItem(VERIFICATION_EXPIRES_KEY),
+      );
+
+      if (!expiresAt) {
+        setTimer(0);
+        return;
+      }
+
+      const remaining = Math.ceil((expiresAt - Date.now()) / 1000);
+
+      setTimer(Math.max(remaining, 0));
+    };
+
+    updateTimer();
+
+    const interval = setInterval(updateTimer, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+
+    const remainingSeconds = seconds % 60;
+
+    return `${String(minutes).padStart(2, "0")}:${String(
+      remainingSeconds,
+    ).padStart(2, "0")}`;
+  };
+
+  const handleCodeChange = (index, value) => {
+    const digit = value.replace(/\D/g, "");
+
+    if (!digit) {
+      const newCode = [...code];
+      newCode[index] = "";
+      setCode(newCode);
+      return;
+    }
+
+    const newCode = [...code];
+
+    newCode[index] = digit[digit.length - 1];
+
+    setCode(newCode);
+
+    setApiError("");
+    setResendMessage("");
+
+    if (index < 5 && inputRefs.current[index + 1]) {
+      inputRefs.current[index + 1].focus();
+    }
+  };
+
+  const handleKeyDown = (index, event) => {
+    if (event.key === "Backspace" && !code[index] && index > 0) {
+      inputRefs.current[index - 1]?.focus();
+    }
+
+    if (event.key === "Enter") {
+      handleVerify();
+    }
+  };
+
+  const handlePaste = (event) => {
+    event.preventDefault();
+
+    const pastedValue = event.clipboardData
+      .getData("text")
+      .replace(/\D/g, "")
+      .slice(0, 6);
+
+    if (!pastedValue) {
+      return;
+    }
+
+    const newCode = ["", "", "", "", "", ""];
+
+    pastedValue.split("").forEach((digit, index) => {
+      newCode[index] = digit;
+    });
+
+    setCode(newCode);
+
+    setApiError("");
+    setResendMessage("");
+
+    const nextIndex = Math.min(pastedValue.length, 5);
+
+    inputRefs.current[nextIndex]?.focus();
+  };
+
+  const handleVerify = async () => {
+    if (isVerifying) {
+      return;
+    }
+
+    setApiError("");
+    setResendMessage("");
+
+    const otp = code.join("");
+
+    if (otp.length !== 6) {
+      setApiError(t("auth.verify.errors.codeIncomplete"));
+
+      return;
+    }
+
+    if (timer <= 0) {
+      setApiError(t("auth.verify.codeExpired"));
+
+      return;
+    }
+
+    if (!email) {
+      navigate("/login", {
+        replace: true,
+      });
+
+      return;
+    }
+
+    setIsVerifying(true);
+
+    try {
+      // تمت الإضافة: اختيار API المناسب حسب نوع عملية التحقق
+      let response;
+
+      if (purpose === "password-reset") {
+        response = await verifyResetPasswordOtp(email, otp);
+      } else {
+        response = await verifyEmail(email, otp);
+      }
+      console.log("VERIFY RESPONSE:", response.data);
+      const token = extractToken(response);
+
+      if (!token) {
+        throw new Error(t("auth.errors.tokenMissing"));
+      }
+
+      // تمت الإضافة: في Forget Password لا نحفظ Token كتسجيل دخول
+      if (purpose === "password-reset") {
+        sessionStorage.setItem(PASSWORD_RESET_TOKEN_KEY, token);
+        sessionStorage.removeItem(VERIFICATION_EMAIL_KEY);
+        sessionStorage.removeItem(VERIFICATION_EXPIRES_KEY);
+        sessionStorage.removeItem(VERIFICATION_REMEMBER_KEY);
+        sessionStorage.removeItem(VERIFICATION_PURPOSE_KEY);
+        navigate("/reset-password", {
+          replace: true,
+        });
+
+        return;
+      }
+
+      const storedRemember = sessionStorage.getItem(VERIFICATION_REMEMBER_KEY);
+      const remember = location.state?.remember ?? storedRemember === "true";
+      saveAuthToken(token, remember);
+      sessionStorage.removeItem(VERIFICATION_EMAIL_KEY);
+      sessionStorage.removeItem(VERIFICATION_EXPIRES_KEY);
+      sessionStorage.removeItem(VERIFICATION_REMEMBER_KEY);
+      sessionStorage.removeItem(VERIFICATION_PURPOSE_KEY);
+
+      navigate("/dashboard/overview", {
+        replace: true,
+      });
+    } catch (error) {
+      console.error("VERIFY ERROR:", error.response?.data || error.message);
+
+      setApiError(
+        getApiErrorMessage(error, t("auth.verify.errors.codeInvalid")),
+      );
+    } finally {
+      setIsVerifying(false);
+    }
+  };
+
+  const handleResend = async () => {
+    if (timer > 0) {
+      return;
+    }
+
+    if (isResending || !email) {
+      return;
+    }
+
+    setApiError("");
+    setResendMessage("");
+
+    setIsResending(true);
+
+    try {
+      // تمت الإضافة: Resend يستخدم API مختلف في حالة Forget Password
+      let response;
+
+      if (purpose === "password-reset") {
+        response = await sendResetPasswordOtp(email);
+      } else {
+        response = await resendEmailVerificationOtp(email);
+      }
+
+      console.log("RESEND OTP RESPONSE:", response.data);
+
+      const expiresAt = Date.now() + OTP_VALIDITY_SECONDS * 1000;
+
+      sessionStorage.setItem(VERIFICATION_EXPIRES_KEY, String(expiresAt));
+
+      sessionStorage.setItem(VERIFICATION_EMAIL_KEY, email);
+
+      // تمت الإضافة: إبقاء purpose محفوظاً بعد إرسال OTP جديد
+      sessionStorage.setItem(VERIFICATION_PURPOSE_KEY, purpose);
+      setTimer(OTP_VALIDITY_SECONDS);
+      setCode(["", "", "", "", "", ""]);
+
+      setTimeout(() => {
+        inputRefs.current[0]?.focus();
+      }, 0);
+
+      setResendMessage(
+        response?.data?.message || t("auth.verify.resendSuccess"),
+      );
+    } catch (error) {
+      console.error("RESEND OTP ERROR:", error.response?.data || error.message);
+
+      setApiError(
+        getApiErrorMessage(error, t("auth.verify.errors.resendFailed")),
+      );
+    } finally {
+      setIsResending(false);
+    }
+  };
+
+  const loading = isVerifying || isResending;
+
+  const isRTL = i18n.language === "ar";
+
+  return (
+    <div className="w-full max-w-md">
+      {/* Title  */}
+
+      <h1 className="text-2xl font-bold text-slate-800">
+        {t("auth.verify.title")}
+      </h1>
+
+      <p className="mt-2 mb-8 text-sm text-slate-500">
+        {t("auth.verify.subtitle")}
+      </p>
+
+      {/* Email */}
+
+      <div className="mb-8 flex items-center justify-between rounded-xl bg-sky-100 px-4 py-3">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
+            <Mail className="h-5 w-5" />
+          </div>
+
+          <div className="space-y-1 text-sm">
+            <p className="text-xs text-slate-400">{t("auth.verify.sentTo")}</p>
+
+            <p className="font-medium text-slate-800" dir="ltr">
+              {email}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* API Error  */}
+
+      {apiError && (
+        <div
+          role="alert"
+          className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600"
+        >
+          {apiError}
+        </div>
+      )}
+
+      {/*  Resend Success  */}
+
+      {resendMessage && (
+        <div
+          role="status"
+          className="mb-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700"
+        >
+          {resendMessage}
+        </div>
+      )}
+
+      {/* OTP  */}
+
+      <div className="mb-6">
+        <label className="mb-3 block text-sm font-medium text-slate-700">
+          {t("auth.verify.codeLabel")}
+        </label>
+
+        <div
+          className="flex justify-between gap-2"
+          dir="ltr"
+          onPaste={handlePaste}
+        >
+          {code.map((digit, index) => (
+            <input
+              key={index}
+              ref={(element) => {
+                inputRefs.current[index] = element;
+              }}
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              maxLength={1}
+              value={digit}
+              disabled={loading || timer <= 0}
+              autoFocus={index === 0}
+              onChange={(event) => handleCodeChange(index, event.target.value)}
+              onKeyDown={(event) => handleKeyDown(index, event)}
+              className="
+                  h-14
+                  w-12
+                  rounded-xl
+                  border
+                  border-slate-200
+                  bg-white
+                  text-center
+                  text-lg
+                  font-semibold
+                  text-slate-800
+                  transition
+                  focus:border-primary
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-primary/20
+                  disabled:cursor-not-allowed
+                  disabled:opacity-60
+                "
+            />
+          ))}
+        </div>
+      </div>
+
+      {/*  Verify Button */}
+
+      <motion.button
+        type="button"
+        whileTap={
+          loading || timer <= 0
+            ? {}
+            : {
+                scale: 0.98,
+              }
+        }
+        onClick={handleVerify}
+        disabled={loading || timer <= 0}
+        className="
+          flex
+          w-full
+          items-center
+          justify-center
+          gap-2
+          rounded-xl
+          bg-primary
+          py-3
+          text-sm
+          font-semibold
+          text-white
+          transition
+          hover:cursor-pointer
+          disabled:cursor-not-allowed
+          disabled:opacity-60
+        "
+      >
+        {isVerifying ? (
+          <>
+            <Loader2 className="h-5 w-5 animate-spin" />
+
+            <span>{t("auth.verify.verifying")}</span>
+          </>
+        ) : (
+          <>
+            <span>{t("auth.verify.verifyButton")}</span>
+
+            <ArrowLeft className={`h-4 w-4 ${!isRTL ? "rotate-180" : ""}`} />
+          </>
+        )}
+      </motion.button>
+
+      {/* Timer / Resend */}
+
+      <div className="mt-6 flex flex-col items-center gap-2 text-center text-sm">
+        {timer > 0 ? (
+          <>
+            <p className="text-slate-500">{t("auth.verify.codeExpiresIn")}</p>
+
+            <span dir="ltr" className="text-base font-semibold text-primary">
+              {formatTime(timer)}
+            </span>
+          </>
+        ) : (
+          <>
+            <p className="text-red-500">{t("auth.verify.codeExpired")}</p>
+
+            <button
+              type="button"
+              onClick={handleResend}
+              disabled={isResending}
+              className="
+                inline-flex
+                items-center
+                gap-2
+                font-medium
+                text-primary
+                hover:underline
+                disabled:cursor-not-allowed
+                disabled:opacity-60
+              "
+            >
+              {isResending ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                <RefreshCw className="h-4 w-4" />
+              )}
+
+              <span>
+                {isResending
+                  ? t("auth.verify.resending")
+                  : t("auth.verify.resend")}
+              </span>
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default EmailVerification;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-hooks-h-txt"></a>📄 `src/features/auth/hooks/h.txt`
+
+**File Info:**
+- **Size**: 10 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/features/auth/hooks/h.txt`
+- **Relative Path**: `src/features/auth/hooks`
+- **Created**: 2026-08-17 16:50:46 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `4b6918a16bd65e1a1acc3203c7a529b1`
+- **SHA256**: `c5375e2ab9d238b1770d6dff64c980bd6fa61d81bb465584cd2dcf6412308d23`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+useAuth ..
+```
+
+---
+
+### <a id="📄-src-features-auth-pages-forgetpage-jsx"></a>📄 `src/features/auth/pages/ForgetPage.jsx`
+
+**File Info:**
+- **Size**: 150 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/pages/ForgetPage.jsx`
+- **Relative Path**: `src/features/auth/pages`
+- **Created**: 2026-08-17 16:50:48 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `c42ea14f84fc8dc86dc7addac201f751`
+- **SHA256**: `b34968146ea5226bcd8bebd9d488e6de436348a7488e37e1e2d93570f399fd22`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import ForgetPass from "../components/forgetPass";
+
+const ForgetPassPage = () => {
+  return <ForgetPass />;
+};
+
+export default ForgetPassPage;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-pages-loginpage-jsx"></a>📄 `src/features/auth/pages/loginpage.jsx`
+
+**File Info:**
+- **Size**: 137 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/pages/loginpage.jsx`
+- **Relative Path**: `src/features/auth/pages`
+- **Created**: 2026-08-17 16:50:50 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `5571fef9999143cbb3bd780d04bf9b7f`
+- **SHA256**: `e8f82747849146daafdd0716983c30c670a76623ab515d58ed30170e21285d7a`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import LoginForm from "../components/loginForm";
+
+const LoginPage = () => {
+  return <LoginForm />;
+};
+
+export default LoginPage;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-pages-registerpage-jsx"></a>📄 `src/features/auth/pages/RegisterPage.jsx`
+
+**File Info:**
+- **Size**: 152 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/pages/RegisterPage.jsx`
+- **Relative Path**: `src/features/auth/pages`
+- **Created**: 2026-08-17 16:50:50 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `5093cc3982cb113e6b5c38a097db80b0`
+- **SHA256**: `d54a2bbe9cac7d526a4c113b69745aba3ea89acf38d137c9f3d239fa7ece811b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import RegisterForm from "../components/RegisterForm";
+
+const RegisterPage = () => {
+  return <RegisterForm />;
+};
+
+export default RegisterPage;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-pages-resetpage-jsx"></a>📄 `src/features/auth/pages/ResetPage.jsx`
+
+**File Info:**
+- **Size**: 145 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/pages/ResetPage.jsx`
+- **Relative Path**: `src/features/auth/pages`
+- **Created**: 2026-08-17 16:50:50 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `0880b18985ecffd48502bf058ad31044`
+- **SHA256**: `87f8dc08ec6bfa67d9bb905f4c51824081191aed9a51642764055b1db08d0c87`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import ResetPass from "../components/ResetPass";
+
+const ResetPassPage = () => {
+  return <ResetPass />;
+};
+
+export default ResetPassPage;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-pages-verifypage-jsx"></a>📄 `src/features/auth/pages/verifyPage.jsx`
+
+**File Info:**
+- **Size**: 156 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/auth/pages/verifyPage.jsx`
+- **Relative Path**: `src/features/auth/pages`
+- **Created**: 2026-08-17 16:50:50 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `ae34df4713bc58f3094d822bb8f4f5a1`
+- **SHA256**: `f123c56fb12c4bf38e86af3cb35642d48cb3d4b5b838c95e023c6158e76c7b40`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import EmailVerification from "../components/VerifyForm";
+
+const VerifyPage = () => {
+  return <EmailVerification />;
+};
+
+export default VerifyPage;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-services-authapi-js"></a>📄 `src/features/auth/services/authApi.js`
+
+**File Info:**
+- **Size**: 4.88 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/features/auth/services/authApi.js`
+- **Relative Path**: `src/features/auth/services`
+- **Created**: 2026-08-17 16:50:52 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `111b4332c9525e59a60fa656aea19efb`
+- **SHA256**: `7de804b1fa27cb90176c11f577477c6b641c8df8eff1cdc5a2269116523fcc52`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```javascript
+import axios from "axios";
+
+const TOKEN_KEY = "doctorToken";
+
+const api = axios.create({
+  baseURL: "https://tibscribe-api.onrender.com/api/doctor",
+
+  headers: {
+    Accept: "application/json",
+  },
+}); 
+
+//Token Helpers
+
+export const saveAuthToken = (token, remember = true) => {
+  localStorage.removeItem(TOKEN_KEY);
+  sessionStorage.removeItem(TOKEN_KEY);
+  if (remember) {
+    localStorage.setItem(TOKEN_KEY, token);
+  } else {
+    sessionStorage.setItem(TOKEN_KEY, token);
+  }
+};
+
+export const getAuthToken = () => {
+  return localStorage.getItem(TOKEN_KEY) || sessionStorage.getItem(TOKEN_KEY);
+};
+
+export const removeAuthToken = () => {
+  localStorage.removeItem(TOKEN_KEY);
+
+  sessionStorage.removeItem(TOKEN_KEY);
+};
+
+// Axios Interceptor
+
+api.interceptors.request.use(
+  (config) => {
+    const token = getAuthToken();
+    /*
+     * هذه endpoints عامة
+     * ولا نرسل معها Bearer Token.
+     */
+    const publicRoutes = [
+      "/login",
+      "/register",
+      "/confirmation/email",
+      "/confirmation/verify",
+      "/passwords/email",
+      "/passwords/verify",
+      "/passwords/reset",
+      "/specialties",
+    ];
+
+    const isPublicRoute = publicRoutes.some((route) =>
+      config.url?.startsWith(route),
+    );
+
+    if (token && !isPublicRoute) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+
+    return config;
+  },
+
+  (error) => {
+    return Promise.reject(error);
+  },
+);
+
+//Login
+export const loginDoctor = async (email, password) => {
+  const formData = new FormData();
+
+  formData.append("email", email);
+
+  formData.append("password", password);
+
+  const response = await api.post("/login", formData);
+
+  return response;
+};
+
+// Logout
+export const logoutDoctor = async () => {
+  const response = await api.post("/logout");
+
+  return response;
+};
+
+// Extract Token
+export const extractToken = (response) => {
+  return response?.data?.token || response?.data?.data?.token || null;
+};
+
+// Error Message
+export const getApiErrorMessage = (
+  error,
+  fallbackMessage = "Something went wrong.",
+) => {
+  if (error?.response?.data?.message) {
+    return error.response.data.message;
+  }
+
+  const errors = error?.response?.data?.errors;
+  if (errors) {
+    const firstError = Object.values(errors)?.[0];
+    if (Array.isArray(firstError)) {
+      return firstError[0];
+    }
+
+    if (typeof firstError === "string") {
+      return firstError;
+    }
+  }
+
+  return fallbackMessage;
+};
+
+//Email verification required?
+
+export const isEmailVerificationRequired = (error) => {
+  const status = error?.response?.status;
+
+  const message = error?.response?.data?.message?.toLowerCase() || "";
+
+  return (
+    status === 401 &&
+    (message.includes("not confirmed") ||
+      message.includes("verification code") ||
+      message.includes("confirm your email"))
+  );
+};
+
+// Confirm Email
+export const verifyEmail = async (email, otp) => {
+  const formData = new FormData();
+
+  formData.append("email", email);
+  formData.append("OTP", otp);
+  const response = await api.post("/confirmation/verify", formData);
+
+  return response;
+};
+
+// Resend OTP
+
+export const resendEmailVerificationOtp = async (email) => {
+  const formData = new FormData();
+
+  formData.append("email", email);
+
+  const response = await api.post("/confirmation/email", formData);
+
+  return response;
+};
+
+// Get Specialties
+export const getSpecialties = async () => {
+  const response = await api.get("/specialties");
+
+  return response;
+};
+
+// Register Doctor
+export const registerDoctor = async (doctorData) => {
+  const response = await api.post("/register", doctorData);
+
+  return response;
+};
+
+// Send Forgot Password OTP
+export const sendResetPasswordOtp = async (email) => {
+  const formData = new FormData();
+
+  formData.append("email", email);
+
+  const response = await api.post("/passwords/email", formData);
+
+  return response;
+};
+
+// Verify Forgot Password OTP
+export const verifyResetPasswordOtp = async (email, otp) => {
+  const formData = new FormData();
+  formData.append("email", email);
+  formData.append("OTP", otp);
+  const response = await api.post("/passwords/verify", formData);
+
+  return response;
+};
+
+// ==========================================
+// Reset Password
+// ==========================================
+
+export const resetDoctorPassword = async (
+  token,
+  password,
+  passwordConfirmation,
+  logoutOtherDevices = false,
+) => {
+  const formData = new FormData();
+
+  formData.append("password", password);
+
+  formData.append("password_confirmation", passwordConfirmation);
+
+  formData.append("logout_oth_dev", String(logoutOtherDevices));
+
+  const response = await api.post("/passwords/reset", formData, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  return response;
+};
+
+export default api;
+
+```
+
+---
+
+### <a id="📄-src-features-auth-services-s-txt"></a>📄 `src/features/auth/services/s.txt`
+
+**File Info:**
+- **Size**: 12 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/features/auth/services/s.txt`
+- **Relative Path**: `src/features/auth/services`
+- **Created**: 2026-08-17 16:50:54 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `37e7037c80dfbf93ffb1fe9e61281f05`
+- **SHA256**: `c7ce30d6162febd77119bf842af4c86164144d441cfce7d92f4071db4ac52819`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+fetch api 
+
+```
+
+---
+
+### <a id="📄-src-features-create-session-components-fileuploader-jsx"></a>📄 `src/features/create_session/components/FileUploader.jsx`
+
+**File Info:**
+- **Size**: 3.56 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/create_session/components/FileUploader.jsx`
+- **Relative Path**: `src/features/create_session/components`
+- **Created**: 2026-08-17 16:50:54 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `b2b50143735d41a5c8a2466b2f4fd1b9`
+- **SHA256**: `8b2d0a034cbac7d3cee2778bb7bb2a040b6c319f8aa9bcd9e8754a292fede542`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import { useState, useRef } from "react";
+import { Upload, FileAudio, X } from "lucide-react";
+
+const FileUploader = ({ onFileSelect, onClear }) => {
+  const [isDragging, setIsDragging] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
+  const inputRef = useRef(null);
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith("audio/")) {
+      setSelectedFile(file);
+      onFileSelect(file);
+    } else {
+      alert("يرجى رفع ملف صوتي فقط");
+    }
+  };
+
+  const handleFileSelect = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setSelectedFile(file);
+      onFileSelect(file);
+    }
+  };
+
+  const clearFile = () => {
+    setSelectedFile(null);
+    if (inputRef.current) inputRef.current.value = "";
+    onClear?.();
+  };
+
+  return (
+    <div className="w-full felx justify-center items-center ">
+      {!selectedFile ? (
+        <div
+          onDragOver={handleDragOver}
+          onDragLeave={handleDragLeave}
+          onDrop={handleDrop}
+          onClick={() => inputRef.current?.click()}
+          className={`flex flex-col items-center gap-4 rounded-xl border-2 border-dashed p-12 transition cursor-pointer ${
+            isDragging
+              ? "border-primary bg-primary/5"
+              : "border-slate-200 bg-slate-50 hover:border-blue-200"
+          }`}
+        >
+          <div
+            className={`flex h-14 w-14 items-center justify-center rounded-full transition ${
+              isDragging
+                ? "bg-[#0b7a9e] text-white"
+                : "bg-slate-100 text-slate-400"
+            }`}
+          >
+            <Upload className="h-6 w-6" />
+          </div>
+          <div className="text-center">
+            <p className="text-sm font-medium text-slate-700">اسحب الملف هنا</p>
+            <p className="mt-1 text-xs text-slate-400">
+              أو انقر للاختيار من الجهاز
+            </p>
+          </div>
+          <p className="text-xs text-slate-400">MP3, WAV, WEBM حتى 10MB</p>
+
+          <input
+            ref={inputRef}
+            type="file"
+            accept="audio/*"
+            className="hidden"
+            onChange={handleFileSelect}
+          />
+        </div>
+      ) : (
+        /* ─── عرض الملف المختار ─── */
+        <div className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <FileAudio className="h-5 w-5" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-medium text-slate-800 truncate">
+              {selectedFile.name}
+            </p>
+            <p className="text-xs text-slate-400">
+              {(selectedFile.size / 1024 / 1024).toFixed(2)} MB
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              clearFile();
+            }}
+            className="text-slate-400 hover:text-red-500 transition"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default FileUploader;
+
+```
+
+---
+
+### <a id="📄-src-features-create-session-components-sessionschema-jsx"></a>📄 `src/features/create_session/components/sessionSchema.jsx`
+
+**File Info:**
+- **Size**: 1.91 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/create_session/components/sessionSchema.jsx`
+- **Relative Path**: `src/features/create_session/components`
+- **Created**: 2026-08-17 16:50:54 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `039f7bc59a2f0319fe07f51fb496e77e`
+- **SHA256**: `824077b8897afb6497b597e86b85db1c6d909c36b29fa62ba7bc6f9a3d121124`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import * as Yup from "yup";
+
+// ═══════════════════════════════════════════════════
+// الخطوة 1: معلومات الجلسة
+// ═══════════════════════════════════════════════════
+export const step1Schema = Yup.object({
+  patientName: Yup.string().required("يرجى إدخال اسم المريض"),
+  sessionType: Yup.string().oneOf(["new", "followup"]).required(),
+  notes: Yup.string().max(150).nullable(),
+});
+
+// ═══════════════════════════════════════════════════
+// الخطوة 2: التشخيص (التسجيل)
+// ═══════════════════════════════════════════════════
+export const step2Schema = Yup.object({
+  diagnosisAudio: Yup.string().nullable(), // رابط/بيانات التسجيل
+  diagnosisText: Yup.string().nullable(), // النص المستخرج (لاحقاً)
+  recordingDuration: Yup.number().min(0).default(0),
+});
+
+// ═══════════════════════════════════════════════════
+// حقول كل خطوة (للفحص قبل الانتقال)
+// ═══════════════════════════════════════════════════
+export const STEP_FIELDS = {
+  1: ["patientName", "sessionType", "notes"],
+  2: ["diagnosisAudio"], // هلق إجباري بس لما يكون في تسجيل
+};
+
+// الـ Schema الكامل (للحفظ النهائي)
+export const fullSessionSchema = step1Schema.concat(step2Schema);
+
+```
+
+---
+
+### <a id="📄-src-features-create-session-components-setupsess-jsx"></a>📄 `src/features/create_session/components/SetupSess.jsx`
+
+**File Info:**
+- **Size**: 5.37 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/create_session/components/SetupSess.jsx`
+- **Relative Path**: `src/features/create_session/components`
+- **Created**: 2026-08-17 16:50:56 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `e043be873343323341f7bea7410d7cc0`
+- **SHA256**: `230187d62575883330d563aef74310f8376f15bac63a5473a8b0d33395b5daff`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import { useEffect, useState } from "react";
+import {
+  User,
+  Plus,
+  Search,
+  Check,
+  Stethoscope,
+  FileText,
+  Mic,
+} from "lucide-react";
+import FormField from "../../../component/ui/Field";
+
+const StepInfo = ({ formik, onNext }) => {
+  const [sessionType, setSessionType] = useState("new");
+  useEffect(() => {
+    formik.setFieldValue("sessionType", sessionType);
+  }, [sessionType]);
+  return (
+    <div className="space-y-5 bg-blue-50">
+      {/* ─── قسم المريض ─── */}
+      <div className="rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+        <div className="mb-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <User className="h-5 w-5 text-slate-400" />
+            <h3 className="font-semibold text-slate-800">اختيار المريض</h3>
+          </div>
+          {/* <button
+            type="button"
+            className="flex items-center gap-1 rounded-lg bg-[#0b7a9e] px-3 py-1.5 text-xs font-medium text-white"
+          >
+            <Plus className="h-3.5 w-3.5" />
+            عرض جديد
+          </button> */}
+        </div>
+
+        <FormField
+          name="patientName"
+          placeholder="اسم المريض"
+          icon={Search}
+          formik={formik}
+          extraClasses="pe-10 ps-4"
+        />
+      </div>
+
+      {/* ─── قسم نوع الجلسة ─── */}
+      <div className="rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+        <div className="mb-4 flex items-center gap-2">
+          <Stethoscope className="h-5 w-5 text-slate-400" />
+          <h3 className="font-semibold text-slate-800">نوع الجلسة</h3>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          {/* زيارة جديدة */}
+          <button
+            type="button"
+            onClick={() => setSessionType("new")}
+            className={`relative flex flex-col items-start rounded-xl border p-4 text-start transition ${
+              sessionType === "new"
+                ? "border-[#0b7a9e] bg-[#0b7a9e]/5"
+                : "border-slate-200 bg-white"
+            }`}
+          >
+            {sessionType === "new" && (
+              <div className="absolute top-3 end-3 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white">
+                <Check className="h-3 w-3" />
+              </div>
+            )}
+            <div
+              className={`mb-2 flex h-8 w-8 items-center justify-center rounded-full ${sessionType === "new" ? "bg-primary text-white" : "bg-slate-100 text-slate-500"}`}
+            >
+              <Plus className="h-4 w-4" />
+            </div>
+            <p className="text-sm font-semibold text-slate-800">زيارة جديدة</p>
+            <p className="mt-1 text-xs text-slate-500">مرضى جديد أو أول مرة</p>
+          </button>
+
+          {/* متابعة */}
+          <button
+            type="button"
+            onClick={() => setSessionType("followup")}
+            className={`relative flex flex-col items-start rounded-xl border p-4 text-start transition ${
+              sessionType === "followup"
+                ? "border-primary bg-primary/5"
+                : "border-slate-200 bg-white"
+            }`}
+          >
+            {sessionType === "followup" && (
+              <div className="absolute top-3 end-3 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white">
+                <Check className="h-3 w-3" />
+              </div>
+            )}
+            <div
+              className={`mb-2 flex h-8 w-8 items-center justify-center rounded-full ${sessionType === "followup" ? "bg-primary text-white" : "bg-slate-100 text-slate-500"}`}
+            >
+              <FileText className="h-4 w-4" />
+            </div>
+            <p className="text-sm font-semibold text-slate-800">متابعة</p>
+            <p className="mt-1 text-xs text-slate-500">متابعة حالة سابقة</p>
+          </button>
+        </div>
+      </div>
+
+      {/* ─── قسم الملاحظات ─── */}
+      <div className="rounded-xl bg-white p-6 shadow-sm border border-slate-100">
+        <div className="mb-4 flex items-center gap-2">
+          <FileText className="h-5 w-5 text-slate-400" />
+          <h3 className="font-semibold text-slate-800">ملاحظات سريعة</h3>
+        </div>
+        <textarea
+          name="notes"
+          value={formik.values.notes}
+          onChange={formik.handleChange}
+          placeholder="أضف أي ملاحظات أولية..."
+          className="min-h-[100px] w-full resize-none rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+        />
+        <div className="mt-2 text-end text-xs text-slate-400">
+          {formik.values.notes?.length || 0}/150
+        </div>
+      </div>
+
+      {/* ─── زر التسجيل الصوتي ─── */}
+      <button
+        type="button"
+        onClick={onNext}
+        className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3.5 text-sm font-semibold text-white transition hover:cursor-pointer"
+      >
+        <Mic className="h-4 w-4" />
+        بدء التسجيل الصوتي
+      </button>
+    </div>
+  );
+};
+
+export default StepInfo;
+
+```
+
+---
+
+### <a id="📄-src-features-create-session-components-stepdiagnosis-jsx"></a>📄 `src/features/create_session/components/StepDiagnosis.jsx`
+
+**File Info:**
+- **Size**: 9.29 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/create_session/components/StepDiagnosis.jsx`
+- **Relative Path**: `src/features/create_session/components`
+- **Created**: 2026-08-17 16:50:56 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `eca54eb70ec0d7c39e4ff083368816bd`
+- **SHA256**: `c8e74b38a60fe5748de7f485510fd4b8c2f01cb142b35f767584747082806a8b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useState, useEffect, useRef } from "react";
+import {
+  Play,
+  Square,
+  RotateCcw,
+  ArrowRight,
+  ArrowLeft,
+  Mic,
+  Upload,
+} from "lucide-react";
+import FileUploader from "./FileUploader";
+
+const StepDiagnosis = ({ formik, onNext, onBack }) => {
+  const [activeTab, setActiveTab] = useState("record");
+  const [isRecording, setIsRecording] = useState(false);
+  const [recordingTime, setRecordingTime] = useState(0);
+  const [audioUrl, setAudioUrl] = useState(null);
+
+  const timerRef = useRef(null);
+  const mediaRecorderRef = useRef(null);
+  const chunksRef = useRef([]);
+
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60)
+      .toString()
+      .padStart(2, "0");
+    const secs = (seconds % 60).toString().padStart(2, "0");
+    return `${mins}:${secs}`;
+  };
+
+  useEffect(() => {
+    if (isRecording) {
+      timerRef.current = setInterval(() => {
+        setRecordingTime((prev) => prev + 1);
+      }, 1000);
+    } else {
+      clearInterval(timerRef.current);
+    }
+    return () => clearInterval(timerRef.current);
+  }, [isRecording]);
+
+  useEffect(() => {
+    return () => {
+      if (mediaRecorderRef.current) {
+        mediaRecorderRef.current.stop();
+        mediaRecorderRef.current.stream
+          .getTracks()
+          .forEach((track) => track.stop());
+      }
+      clearInterval(timerRef.current);
+    };
+  }, []);
+
+  const startRecording = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mediaRecorder = new MediaRecorder(stream);
+      mediaRecorderRef.current = mediaRecorder;
+      chunksRef.current = [];
+
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data.size > 0) chunksRef.current.push(e.data);
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(chunksRef.current, { type: "audio/webm" });
+        const url = URL.createObjectURL(blob);
+        setAudioUrl(url);
+        formik.setFieldValue("diagnosisAudio", url);
+        formik.setFieldValue("recordingDuration", recordingTime);
+      };
+
+      mediaRecorder.start();
+      setIsRecording(true);
+      setRecordingTime(0);
+    } catch (e) {
+      alert("يرجى السماح بالوصول للمايكروفون");
+    }
+  };
+
+  const stopRecording = () => {
+    if (mediaRecorderRef.current && isRecording) {
+      mediaRecorderRef.current.stop();
+      mediaRecorderRef.current.stream
+        .getTracks()
+        .forEach((track) => track.stop());
+      setIsRecording(false);
+    }
+  };
+
+  const handleRecordToggle = () => {
+    if (isRecording) {
+      stopRecording();
+    } else {
+      startRecording();
+    }
+  };
+
+  const resetRecording = () => {
+    setAudioUrl(null);
+    setRecordingTime(0);
+    formik.setFieldValue("diagnosisAudio", null);
+    formik.setFieldValue("recordingDuration", 0);
+  };
+
+  return (
+    <div className="space-y-6 bg-white p-4 my-10  rounded-xl">
+      <div className="flex justify-center gap-2">
+        <button
+          type="button"
+          onClick={() => setActiveTab("upload")}
+          className={`flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium transition ${
+            activeTab === "upload"
+              ? "bg-[#0b7a9e] text-white"
+              : "bg-white text-slate-600 border border-slate-200"
+          }`}
+        >
+          <Upload className="h-4 w-4" />
+          رفع ملف
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setActiveTab("record")}
+          className={`flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium transition ${
+            activeTab === "record"
+              ? "bg-primary text-white"
+              : "bg-white text-slate-600 border border-slate-200"
+          }`}
+        >
+          <Mic className="h-4 w-4" />
+          تسجيل مباشر
+        </button>
+      </div>
+
+      {activeTab === "record" ? (
+        <div className="flex flex-col items-center gap-4">
+          <button
+            type="button"
+            onClick={handleRecordToggle}
+            className={`flex h-24 w-24 items-center justify-center rounded-full border-2 transition ${
+              isRecording
+                ? "border-red-400 bg-red-50 text-red-500 animate-pulse"
+                : audioUrl
+                  ? "border-[#0b7a9e] bg-[#0b7a9e]/5 text-[#0b7a9e]"
+                  : "border-[#0b7a9e] text-[#0b7a9e] hover:bg-[#0b7a9e]/5"
+            }`}
+          >
+            {isRecording ? (
+              <Square className="h-8 w-8 fill-current" />
+            ) : (
+              <Play className="h-8 w-8 fill-current" />
+            )}
+          </button>
+
+          <p className="text-sm text-slate-600">
+            {isRecording
+              ? "جاري التسجيل..."
+              : audioUrl
+                ? "انتهى التسجيل"
+                : "انقر للتسجيل"}
+          </p>
+
+          {/* المؤقت */}
+          <p className="text-2xl font-bold text-slate-800 font-mono">
+            {formatTime(recordingTime)}
+          </p>
+
+          {/* شريط الصوت */}
+          <div className="h-16 w-full max-w-md rounded-xl bg-slate-50 overflow-hidden relative">
+            {isRecording && (
+              <div className="flex h-full items-center justify-center px-4">
+                <div className="h-2 w-full bg-red-100 rounded-full overflow-hidden">
+                  <div className="h-full w-full bg-red-400 animate-pulse" />
+                </div>
+              </div>
+            )}
+
+            {audioUrl && !isRecording && (
+              <div className="flex items-end justify-center gap-1 h-full px-4 py-2">
+                {Array.from({ length: 40 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-1.5 rounded-full bg-[#0b7a9e]/30"
+                    style={{
+                      height: `${Math.random() * 100}%`,
+                      opacity: 0.3 + Math.random() * 0.7,
+                    }}
+                  />
+                ))}
+              </div>
+            )}
+
+            {!audioUrl && !isRecording && (
+              <div className="flex items-end justify-center gap-1 h-full px-4 py-2">
+                {Array.from({ length: 40 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-1.5 rounded-full bg-[#0b7a9e]/30"
+                    style={{
+                      height: `${Math.random() * 100}%`,
+                      opacity: 0.3 + Math.random() * 0.7,
+                    }}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="flex w-full max-w-md gap-3">
+            <button
+              type="button"
+              onClick={resetRecording}
+              className="flex-1 rounded-xl border border-slate-200 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+            >
+              <RotateCcw className="inline h-4 w-4 ms-2" />
+              إعادة التسجيل
+            </button>
+
+            <button
+              type="button"
+              onClick={onNext}
+              disabled={!audioUrl}
+              className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#0b7a9e] py-3 text-sm font-semibold text-white transition hover:bg-[#0B4658] disabled:opacity-50"
+            >
+              التالي: إرسال للمعالجة
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
+
+          <button
+            type="button"
+            onClick={onBack}
+            className="flex items-center gap-1 text-sm text-slate-500 transition hover:text-slate-700"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            رجوع
+          </button>
+        </div>
+      ) : (
+        <div className="w-full space-y-4">
+          <FileUploader
+            onFileSelect={(file) => {
+              const url = URL.createObjectURL(file);
+              setAudioUrl(url);
+              formik.setFieldValue("diagnosisAudio", url);
+              formik.setFieldValue("recordingDuration", 0);
+            }}
+            onClear={() => {
+              setAudioUrl(null);
+              formik.setFieldValue("diagnosisAudio", null);
+              formik.setFieldValue("recordingDuration", 0);
+            }}
+          />
+
+          <div className="flex flex-col gap-3">
+            <button
+              type="button"
+              onClick={onNext}
+              disabled={!audioUrl}
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#0b7a9e] py-3 text-sm font-semibold text-white transition hover:bg-[#0B4658] disabled:opacity-50"
+            >
+              التالي: إرسال للمعالجة
+              <ArrowRight className="h-4 w-4" />
+            </button>
+
+            <button
+              type="button"
+              onClick={onBack}
+              className="flex items-center justify-center gap-1 text-sm text-slate-500 transition hover:text-slate-700"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              رجوع
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default StepDiagnosis;
+
+```
+
+---
+
+### <a id="📄-src-features-create-session-components-stepper-jsx"></a>📄 `src/features/create_session/components/Stepper.jsx`
+
+**File Info:**
+- **Size**: 1.1 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/create_session/components/Stepper.jsx`
+- **Relative Path**: `src/features/create_session/components`
+- **Created**: 2026-08-17 16:50:56 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `cf73f2c305b19f9f5be84375b34390c0`
+- **SHA256**: `4f5192e029a76f55ace2bb97b136d29def9faa6dfc3bb6bfbead807d8bfda0dc`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+const SessionStepper = ({ step }) => {
+  const steps = ["معلومات الجلسة", "التشخيص", "المعالجة", "التوصيات"];
+
+  return (
+    <div className="mb-8 flex items-center justify-center gap-2">
+      {[1, 2, 3, 4].map((s, idx) => (
+        <React.Fragment key={s}>
+          <div className="flex flex-col items-center gap-1">
+            <div
+              className={`flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium transition-colors ${
+                step >= s ? "bg-primary text-white" : "bg-white text-slate-400"
+              }`}
+            >
+              {s}
+            </div>
+            <span
+              className={`text-xs ${step >= s ? "text-slate-700" : "text-slate-400"}`}
+            >
+              {steps[idx]}
+            </span>
+          </div>
+          {s < 4 && (
+            <div
+              className={`mx-2 h-0.5 w-12 ${step > s ? "bg-primary" : "bg-slate-200"}`}
+            />
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};
+
+export default SessionStepper;
+
+```
+
+---
+
+### <a id="📄-src-features-create-session-pages-newsession-jsx"></a>📄 `src/features/create_session/pages/NewSession.jsx`
+
+**File Info:**
+- **Size**: 2.16 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/create_session/pages/NewSession.jsx`
+- **Relative Path**: `src/features/create_session/pages`
+- **Created**: 2026-08-17 16:50:58 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `1b038aaa4d947377e4875ad1b816da08`
+- **SHA256**: `b7598902bf311696b0e9cf0cf61196e175917031e38cf0d663d60677e38feec1`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import { useFormik } from "formik";
+import {
+  step1Schema,
+  step2Schema,
+  fullSessionSchema,
+  STEP_FIELDS,
+} from "../components/sessionSchema";
+import SessionStepper from "../components/Stepper";
+import StepInfo from "../components/SetupSess";
+import StepDiagnosis from "../components/StepDiagnosis";
+
+import { useState } from "react";
+
+const NewSessionPage = () => {
+  const [step, setStep] = useState(1);
+
+  const formik = useFormik({
+    initialValues: {
+      patientName: "",
+      sessionType: "new",
+      notes: "",
+      diagnosisAudio: null,
+      diagnosisText: "",
+      recordingDuration: 0,
+    },
+    validationSchema: step === 1 ? step1Schema : step2Schema,
+    // ★ ما بدنا onSubmit هلق — بنتعامل مع الزر يدوياً
+  });
+
+  const goNext = async () => {
+    const errors = await formik.validateForm();
+    const currentFields = STEP_FIELDS[step];
+    const hasErrors = currentFields.some((f) => errors[f]);
+
+    if (hasErrors) {
+      const touched = {};
+      currentFields.forEach((f) => (touched[f] = true));
+      formik.setTouched({ ...formik.touched, ...touched });
+      return;
+    }
+
+    if (step < 4) setStep(step + 1);
+  };
+
+  const goBack = () => {
+    if (step > 1) setStep(step - 1);
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-blue-50">
+      <div className="w-full max-w-2xl">
+        <div className="mb-6 text-center">
+          <h1 className="text-2xl font-bold text-slate-800">جلسة طبية جديدة</h1>
+          <p className="mt-1 text-sm text-slate-500">أكمل المعلومات أدناه</p>
+        </div>
+
+        <SessionStepper step={step} />
+
+        {/* ★ شلنا onSubmit من هون — صار div عادي */}
+        <div className="space-y-5">
+          {step === 1 && <StepInfo formik={formik} onNext={goNext} />}
+          {step === 2 && (
+            <StepDiagnosis
+              formik={formik}
+              isRtl={true}
+              onNext={goNext}
+              onBack={goBack}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NewSessionPage;
+
+```
+
+---
+
+### <a id="📄-src-features-dashboard-components-appointmentstab-jsx"></a>📄 `src/features/dashboard/components/AppointmentsTab.jsx`
+
+**File Info:**
+- **Size**: 9.09 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/dashboard/components/AppointmentsTab.jsx`
+- **Relative Path**: `src/features/dashboard/components`
+- **Created**: 2026-08-17 16:50:58 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `ee49baeb859e70b51054deb81d55b3ee`
+- **SHA256**: `a316be59096ee4c30a63351face07261a26ef904ee6d2b1967b2e287398a2a8f`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Search, ChevronDown, Plus, Eye, Trash2, CheckCircle2, Clock, AlertCircle } from "lucide-react";
+
+const AppointmentsTab = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
+  const formatDate = (date) => {
+    const locale = isRTL ? 'ar-SA' : 'en-US';
+    return new Intl.DateTimeFormat(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(date);
+  };
+
+  const formatNumber = (num) => {
+    const locale = isRTL ? 'ar-SA' : 'en-US';
+    return new Intl.NumberFormat(locale).format(num);
+  };
+
+  const appointments = [
+    { 
+      id: "SESS-2026-00142", 
+      patient: isRTL ? "محمد العلي" : "Mohammed Al-Ali", 
+      patientId: "PAT-2026-089",
+      date: new Date(2026, 5, 13),
+      duration: "10:34", 
+      status: "pending",
+      statusText: t("dashboard.sessions.pendingReview")
+    },
+    { 
+      id: "SESS-2026-00141", 
+      patient: isRTL ? "سارة أحمد" : "Sarah Ahmed", 
+      patientId: "PAT-2026-076",
+      date: new Date(2026, 5, 13),
+      duration: "07:00", 
+      status: "processing",
+      statusText: t("dashboard.sessions.inTreatment") 
+    },
+    { 
+      id: "SESS-2026-00140", 
+      patient: isRTL ? "خالد محمود" : "Khaled Mahmoud", 
+      patientId: "PAT-2026-065",
+      date: new Date(2026, 5, 12),
+      duration: "08:30", 
+      status: "approved",
+      statusText: t("dashboard.sessions.approved")
+    },
+    { 
+      id: "SESS-2026-00139", 
+      patient: isRTL ? "فاطمة حسن" : "Fatima Hassan", 
+      patientId: "PAT-2026-054",
+      date: new Date(2026, 5, 12),
+      duration: "06:20", 
+      status: "approved",
+      statusText: t("dashboard.sessions.approved") 
+    },
+    { 
+      id: "SESS-2026-00138", 
+      patient: isRTL ? "عبدالله سالم" : "Abdullah Salem", 
+      patientId: "PAT-2026-043",
+      date: new Date(2026, 5, 11),
+      duration: "04:50", 
+      status: "pending",
+      statusText: t("dashboard.sessions.pendingReview") 
+    },
+  ];
+
+  const getStatusStyle = (status) => {
+    switch(status) {
+      case "approved":
+        return "bg-emerald-50 text-emerald-600 border border-emerald-100";
+      case "pending":
+        return "bg-purple-50 text-purple-600 border border-purple-100";
+      case "processing":
+        return "bg-amber-50 text-amber-600 border border-amber-100";
+      default:
+        return "bg-slate-50 text-slate-600 border border-slate-100";
+    }
+  };
+
+  const getStatusIcon = (status) => {
+    switch(status) {
+      case "approved":
+        return <CheckCircle2 className="h-3.5 w-3.5" />;
+      case "pending":
+        return <AlertCircle className="h-3.5 w-3.5" />;
+      case "processing":
+        return <Clock className="h-3.5 w-3.5" />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Header */}
+      <div className={isRTL ? "text-right" : "text-left"}>
+        <h1 className="text-2xl font-bold text-slate-800">
+          {t("dashboard.sessions.title", "الجلسات")}
+        </h1>
+        <p className="text-sm text-slate-500 mt-1">
+          {t("dashboard.sessions.subtitle", "إدارة ومراقبة جميع جلساتك الطبية")}
+        </p>
+      </div>
+
+      {/* Toolbar */}
+      <div className="flex flex-col sm:flex-row gap-3 justify-between items-start sm:items-center">
+        <div className="flex gap-3 w-full sm:w-auto order-1 sm:order-1">
+          <div className="relative flex-1 sm:flex-none sm:min-w-[280px]">
+            <input
+              type="text"
+              placeholder={t("dashboard.sessions.searchPatient", "البحث باسم المريض...")}
+              className={`w-full px-4 py-2.5 ${isRTL ? 'pr-10' : 'pl-10'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20`}
+            />
+            <Search className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400`} />
+          </div>
+
+          <div className="relative flex-1 sm:flex-none">
+            <select className={`w-full appearance-none px-4 py-2.5 ${isRTL ? 'pr-10 pl-4' : 'pl-10 pr-4'} rounded-xl border border-slate-200 bg-white text-sm text-slate-700 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 cursor-pointer`}>
+              <option>{t("dashboard.sessions.allCases", "جميع الحالات")}</option>
+              <option>{t("dashboard.sessions.pending", "بانتظار المراجعة")}</option>
+              <option>{t("dashboard.sessions.processing", "قيد المعالجة")}</option>
+              <option>{t("dashboard.sessions.approved", "معتمدة")}</option>
+            </select>
+            <ChevronDown className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400 pointer-events-none`} />
+          </div>
+        </div>
+
+        <button className="px-4 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium text-sm transition-all flex items-center gap-2 shadow-sm hover:shadow-primary/25 order-2 sm:order-2">
+          <Plus className="h-4 w-4" />
+          {t("dashboard.sessions.newSession", "جلسة جديدة")}
+        </button>
+      </div>
+
+      {/* Table */}
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-slate-50/50 border-b border-slate-100">
+                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
+                  {t("dashboard.sessions.sessionNumber", "رقم الجلسة")}
+                </th>
+                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
+                  {t("dashboard.sessions.patient", "المريض")}
+                </th>
+                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
+                  {t("dashboard.sessions.date", "التاريخ")}
+                </th>
+                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
+                  {t("dashboard.sessions.duration", "المدة")}
+                </th>
+                <th className={`px-6 py-4 ${isRTL ? 'text-right' : 'text-left'} text-xs font-semibold text-slate-600`}>
+                  {t("dashboard.sessions.status", "الحالة")}
+                </th>
+                <th className="px-6 py-4 text-center text-xs font-semibold text-slate-600">
+                  {t("dashboard.sessions.actions", "الإجراءات")}
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {appointments.map((appointment) => (
+                <tr key={appointment.id} className="hover:bg-slate-50/50 transition-colors group">
+                  <td className="px-6 py-4 text-sm text-slate-600 font-mono">
+                    {appointment.id}
+                  </td>
+                  <td className="px-6 py-4">
+                    <div>
+                      <div className="text-sm font-semibold text-slate-800">{appointment.patient}</div>
+                      <div className="text-xs text-slate-400 mt-0.5">{appointment.patientId}</div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-sm text-slate-600">
+                    {formatDate(appointment.date)}
+                  </td>
+                  <td className="px-6 py-4 text-sm text-slate-600">
+                    {appointment.duration}
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium ${getStatusStyle(appointment.status)}`}>
+                      {getStatusIcon(appointment.status)}
+                      <span>{appointment.statusText}</span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <button className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors">
+                        <Eye className="h-4 w-4" />
+                      </button>
+                      <button className="p-2 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors">
+                        <Trash2 className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AppointmentsTab;
+```
+
+---
+
+### <a id="📄-src-features-dashboard-components-overviewtab-jsx"></a>📄 `src/features/dashboard/components/OverviewTab.jsx`
+
+**File Info:**
+- **Size**: 10.93 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/dashboard/components/OverviewTab.jsx`
+- **Relative Path**: `src/features/dashboard/components`
+- **Created**: 2026-08-17 16:50:58 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `ef3741e4e1a005c7f1d424b8f03fa86f`
+- **SHA256**: `c79f3aaa3549bbaa66dbc518c2cb856972fe9abd0ac482f4092ef071d14ed49a`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { AlertTriangle, CheckCircle2, Clock, Calendar, Mic, FolderOpen, Eye } from "lucide-react";
+
+const OverviewTab = () => {
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate(); 
+  const isRTL = i18n.language === "ar";
+
+  const formatNumber = (num) => {
+    const locale = isRTL ? 'ar-SA' : 'en-US';
+    return new Intl.NumberFormat(locale).format(num);
+  };
+
+  const formatDate = (date) => {
+    const locale = isRTL ? 'ar-SA' : 'en-US';
+    return new Intl.DateTimeFormat(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(date);
+  };
+
+  const stats = [
+    { 
+      title: t("dashboard.stats.todaySessions", isRTL ? "جلسات اليوم" : "Today's Sessions"), 
+      value: formatNumber(5), 
+      subtitle: t("dashboard.stats.newSessions", isRTL ? "جديدة" : "New"),
+      icon: Calendar, 
+      bgColor: "bg-primary/10",
+      textColor: "text-primary"
+    },
+    { 
+      title: t("dashboard.stats.inProgress", isRTL ? "قيد المعالجة" : "In Progress"), 
+      value: formatNumber(2), 
+      subtitle: t("dashboard.stats.session", isRTL ? "جلسة" : "Session"),
+      icon: Clock, 
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-500"
+    },
+    { 
+      title: t("dashboard.stats.approvedToday", isRTL ? "معتمدة اليوم" : "Approved Today"), 
+      value: formatNumber(3), 
+      subtitle: t("dashboard.stats.sessions", isRTL ? "جلسات" : "Sessions"),
+      icon: CheckCircle2, 
+      bgColor: "bg-emerald-50",
+      textColor: "text-emerald-500"
+    },
+    { 
+      title: t("dashboard.stats.warnings", isRTL ? "تحذيرات" : "Warnings"), 
+      value: formatNumber(1), 
+      subtitle: t("dashboard.stats.alert", isRTL ? "تنبيه" : "Alert"),
+      icon: AlertTriangle, 
+      bgColor: "bg-red-50",
+      textColor: "text-red-500"
+    },
+  ];
+
+  const recentSessions = [
+    { id: 1, name: isRTL ? "محمد العلي" : "Mohammed Al-Ali", date: new Date(2026, 5, 13), status: "pending", statusText: t("dashboard.sessions.pendingReview", "بانتظار المراجعة") },
+    { id: 2, name: isRTL ? "سارة أحمد" : "Sarah Ahmed", date: new Date(2026, 5, 13), status: "processing", statusText: t("dashboard.sessions.inTreatment", "قيد المعالجة") },
+    { id: 3, name: isRTL ? "خالد محمود" : "Khaled Mahmoud", date: new Date(2026, 5, 12), status: "approved", statusText: t("dashboard.sessions.approved", "معتمدة") },
+    { id: 4, name: isRTL ? "فاطمة حسن" : "Fatima Hassan", date: new Date(2026, 5, 12), status: "approved", statusText: t("dashboard.sessions.approved", "معتمدة") },
+    { id: 5, name: isRTL ? "عبدالله سالم" : "Abdullah Salem", date: new Date(2026, 5, 11), status: "pending", statusText: t("dashboard.sessions.pendingReview", "بانتظار المراجعة") },
+    { id: 6, name: isRTL ? "محمد العلي" : "Mohammed Al-Ali", date: new Date(2026, 5, 13), status: "pending", statusText: t("dashboard.sessions.pendingReview", "بانتظار المراجعة") },
+    { id: 7, name: isRTL ? "سارة أحمد" : "Sarah Ahmed", date: new Date(2026, 5, 13), status: "processing", statusText: t("dashboard.sessions.inTreatment", "قيد المعالجة") },
+    { id: 8, name: isRTL ? "خالد محمود" : "Khaled Mahmoud", date: new Date(2026, 5, 12), status: "approved", statusText: t("dashboard.sessions.approved", "معتمدة") },
+    { id: 9, name: isRTL ? "فاطمة حسن" : "Fatima Hassan", date: new Date(2026, 5, 12), status: "approved", statusText: t("dashboard.sessions.approved", "معتمدة") },
+    { id: 10, name: isRTL ? "عبدالله سالم" : "Abdullah Salem", date: new Date(2026, 5, 11), status: "pending", statusText: t("dashboard.sessions.pendingReview", "بانتظار المراجعة") },
+  ];
+
+  const displayedSessions = recentSessions.slice(0, 5);
+
+  const daysLabels = isRTL 
+    ? ["سب", "أحد", "إثن", "ثل", "أرب", "خم", "جم"]
+    : ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+
+  const chartData = [
+    { day: daysLabels[0], value: 5 },
+    { day: daysLabels[1], value: 9 },
+    { day: daysLabels[2], value: 12 },
+    { day: daysLabels[3], value: 8 },
+    { day: daysLabels[4], value: 15 },
+    { day: daysLabels[5], value: 11 },
+    { day: daysLabels[6], value: 3 },
+  ];
+
+  const maxValue = Math.max(...chartData.map(item => item.value)) || 1;
+
+  const getStatusStyle = (status) => {
+    switch(status) {
+      case "approved":
+        return "bg-emerald-50 text-emerald-600 border border-emerald-100";
+      case "pending":
+        return "bg-purple-50 text-purple-600 border border-purple-100";
+      case "processing":
+        return "bg-amber-50 text-amber-600 border border-amber-100";
+      default:
+        return "bg-slate-50 text-slate-600";
+    }
+  };
+
+  const getStatusIcon = (status) => {
+    switch(status) {
+      case "approved":
+        return <CheckCircle2 className="h-3.5 w-3.5" />;
+      case "pending":
+        return <Eye className="h-3.5 w-3.5" />;
+      case "processing":
+        return <Clock className="h-3.5 w-3.5" />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* شبكة البطاقات الإحصائية */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {stats.map((stat, idx) => (
+          <div 
+            key={idx}
+            className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow"
+          >
+            <div className={`h-12 w-12 rounded-full ${stat.bgColor} ${stat.textColor} flex items-center justify-center mb-3`}>
+              <stat.icon className="h-6 w-6" />
+            </div>
+            <h3 className="text-sm font-medium text-slate-600 mb-1">{stat.title}</h3>
+            <div className="flex items-baseline gap-2">
+              <span className="text-xl font-bold text-slate-800">{stat.value}</span>
+              <span className="text-xs text-slate-400">{stat.subtitle}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* المحتوى الرئيسي */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* الجلسات الحديثة */}
+        <div className="lg:col-span-2 bg-white rounded-2xl border border-slate-100 shadow-sm">
+          <div className="p-6 border-b border-slate-100">
+            <h3 className="text-lg font-bold text-slate-800">
+              {t("dashboard.recentSessions.title", isRTL ? "الجلسات الحديثة" : "Recent Sessions")}
+            </h3>
+            <p className="text-sm text-slate-500 mt-1">
+              {t("dashboard.recentSessions.subtitle", isRTL ? "آخر الجلسات" : "Latest Sessions")}
+            </p>
+          </div>
+          <div className="divide-y divide-slate-100">
+            {displayedSessions.map((session) => (
+              <div 
+                key={session.id}
+                className="p-4 flex items-center justify-between hover:bg-slate-50 transition-colors"
+              >
+                <div>
+                  <h4 className="text-sm font-semibold text-slate-800">{session.name}</h4>
+                  <p className="text-xs text-slate-400 mt-0.5">{formatDate(session.date)}</p>
+                </div>
+                <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium ${getStatusStyle(session.status)}`}>
+                  {getStatusIcon(session.status)}
+                  <span>{session.statusText}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="p-4 border-t border-slate-100">
+            <button 
+              onClick={() => navigate("/dashboard/appointments")}
+              className={`text-sm font-medium text-primary hover:text-primary-dark transition-colors flex items-center gap-1 ${isRTL ? 'justify-start' : 'justify-end'} cursor-pointer`}
+            >
+              {t("dashboard.recentSessions.viewAll", isRTL ? "عرض الكل" : "View All")}
+              <Eye className={`h-4 w-4 ${isRTL ? 'rotate-180' : ''}`} />
+            </button>
+          </div>
+        </div>
+
+        {/* الرسم البياني والإجراءات السريعة */}
+        <div className="lg:col-span-1 space-y-6">
+          <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <h3 className="text-base font-bold text-slate-800 mb-6 text-center">
+              {t("dashboard.charts.weeklyActivity", isRTL ? "نشاط الأسبوع" : "Weekly Activity")}
+            </h3>
+            <div className="flex items-end justify-between h-48 gap-2">
+              {chartData.map((item, idx) => (
+                <div key={idx} className="flex-1 flex flex-col items-center gap-2">
+                  <div 
+                    className="w-full bg-primary rounded-t-md transition-all hover:bg-primary-dark cursor-pointer"
+                    style={{ 
+                      height: `${Math.max((item.value / maxValue) * 100, 5)}%`,
+                      minHeight: '8px'
+                    }}
+                    title={`${formatNumber(item.value)} ${isRTL ? 'جلسات' : 'sessions'}`}
+                  />
+                  <span className="text-xs text-slate-400">{item.day}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+            <h3 className="text-base font-bold text-slate-800 mb-4 text-center">
+              {t("dashboard.quickActions.title", isRTL ? "إجراءات سريعة" : "Quick Actions")}
+            </h3>
+            <div className="space-y-3">
+              <button 
+                onClick={() => navigate("/dashboard/new-session")}
+                className="w-full py-3 px-4 bg-primary hover:bg-primary-dark text-white rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
+              >
+                <Mic className="h-5 w-5" />
+                {t("dashboard.quickActions.newSession", isRTL ? "بدء جلسة جديدة" : "Start New Session")}
+              </button>
+              <button 
+                onClick={() => navigate("/dashboard/appointments")}
+                className="w-full py-3 px-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
+              >
+                <FolderOpen className="h-5 w-5" />
+                {t("dashboard.quickActions.viewSessions", isRTL ? "عرض الجلسات" : "View Sessions")}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default OverviewTab;
+```
+
+---
+
+### <a id="📄-src-features-dashboard-components-patientstab-jsx"></a>📄 `src/features/dashboard/components/PatientsTab.jsx`
+
+**File Info:**
+- **Size**: 3.82 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/dashboard/components/PatientsTab.jsx`
+- **Relative Path**: `src/features/dashboard/components`
+- **Created**: 2026-08-17 16:51:00 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `66eb419156dc949417402b8b07f036f1`
+- **SHA256**: `054a0933c1389136872a4743c6c9eaf5a83276f78fbc089e393706641a8ee1bd`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Eye, Edit2, Trash2 } from "lucide-react";
+
+const PatientsTab = () => {
+  const { t } = useTranslation();
+
+  const patients = [
+    { id: "MED-9921", name: "خالد منصور العتيبي", age: "42 سنة", diagnostic: "السكري من النوع الثاني", lastVisit: "2026-06-10" },
+    { id: "MED-8840", name: "ريما عبد العزيز السلطان", age: "29 سنة", diagnostic: "قصور الغدة الدرقية", lastVisit: "2026-05-24" },
+    { id: "MED-7712", name: "فيصل فهد القحطاني", age: "61 سنة", diagnostic: "ارتفاع ضغط الدم الشرياني", lastVisit: "2026-06-14" },
+  ];
+
+  return (
+    <div className="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+      <div className="p-5 border-b border-slate-100 flex justify-between items-center">
+        <h2 className="text-sm font-bold text-slate-800">{t("dashboard.patients.title", "سجلات السيرة الطبية للمرضى")}</h2>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-start border-collapse">
+          <thead>
+            <tr className="bg-slate-50 text-slate-500 text-[11px] font-semibold uppercase tracking-wider border-b border-slate-100">
+              <th className="px-5 py-3 text-start">{t("dashboard.patients.id", "المعرف الطبي")}</th>
+              <th className="px-5 py-3 text-start">{t("dashboard.patients.name", "الاسم الكامل")}</th>
+              <th className="px-5 py-3 text-start">{t("dashboard.patients.age", "العمر")}</th>
+              <th className="px-5 py-3 text-start">{t("dashboard.patients.diagnostic", "التشخيص الرئيسي")}</th>
+              <th className="px-5 py-3 text-start">{t("dashboard.patients.lastVisit", "آخر زيارة")}</th>
+              <th className="px-5 py-3 text-center">{t("dashboard.patients.actions", "الإجراءات")}</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100 text-xs text-slate-700">
+            {patients.map((patient) => (
+              <tr key={patient.id} className="hover:bg-slate-50/80 transition-colors group">
+                <td className="px-5 py-3.5 font-mono text-slate-500">{patient.id}</td>
+                <td className="px-5 py-3.5 font-bold text-slate-900">{patient.name}</td>
+                <td className="px-5 py-3.5 text-slate-600">{patient.age}</td>
+                <td className="px-5 py-3.5">
+                  <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-800 font-medium">{patient.diagnostic}</span>
+                </td>
+                <td className="px-5 py-3.5 text-slate-500">{patient.lastVisit}</td>
+                <td className="px-5 py-3.5 text-center">
+                  <div className="flex items-center justify-center gap-2">
+                    <button className="p-1.5 rounded-lg border border-slate-100 bg-white text-slate-400 hover:text-primary hover:border-primary/20 transition-colors">
+                      <Eye className="h-3.5 w-3.5" />
+                    </button>
+                    <button className="p-1.5 rounded-lg border border-slate-100 bg-white text-slate-400 hover:text-amber-500 hover:border-amber-100 transition-colors">
+                      <Edit2 className="h-3.5 w-3.5" />
+                    </button>
+                    <button className="p-1.5 rounded-lg border border-slate-100 bg-white text-slate-400 hover:text-red-500 hover:border-red-100 transition-colors">
+                      <Trash2 className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default PatientsTab;
+```
+
+---
+
+### <a id="📄-src-features-dashboard-components-reportdetail-jsx"></a>📄 `src/features/dashboard/components/ReportDetail.jsx`
+
+**File Info:**
+- **Size**: 13.82 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/dashboard/components/ReportDetail.jsx`
+- **Relative Path**: `src/features/dashboard/components`
+- **Created**: 2026-08-17 16:51:00 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `8834f9ed33b84d17a10beba6a5d15b98`
+- **SHA256**: `4f9fff3487d9aaecd2fde8035f1b57c72131ce62efdaecbe4bc099be8e533c3e`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { useNavigate, useParams } from "react-router-dom";
+import {
+  ArrowRight,
+  Download,
+  Copy,
+  CheckCircle2,
+  Stethoscope,
+} from "lucide-react";
+
+const ReportDetail = () => {
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { reportId } = useParams();
+  const isRTL = i18n.language === "ar";
+
+  const formatDate = (date) => {
+    const locale = isRTL ? "ar-SA" : "en-US";
+    return new Intl.DateTimeFormat(locale, {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(date);
+  };
+
+  const report = {
+    id: reportId || "SESS-2026-00140",
+    patientName: isRTL ? "خالد محمود" : "Khaled Mahmoud",
+    date: new Date(2026, 5, 12),
+    duration: "8:30",
+    doctorName: isRTL ? "د. أحمد" : "Dr. Ahmed",
+    status: "approved",
+    symptoms: isRTL
+      ? [
+          "أعاني من ألم في أسفل الظهر منذ شهر",
+          "الألم يشع إلى الرجل اليسرى",
+        ]
+      : [
+          "Suffering from lower back pain for a month",
+          "Pain radiates to the left leg",
+        ],
+    diagnosis: isRTL
+      ? "فحص العمود الفقري يشير إلى انزلاق غضروفي بسيط"
+      : "Spine examination indicates a mild disc herniation",
+    treatmentPlan: isRTL
+      ? "نقترح العلاج الطبيعي وتمارين تقوية الظهر"
+      : "We recommend physiotherapy and back strengthening exercises",
+    soap: isRTL
+      ? {
+          subjective: "أعاني من ألم في أسفل الظهر منذ شهر؛ الألم يشع إلى الرجل اليسرى",
+          objective: "لا توجد بيانات",
+          assessment: "فحص العمود الفقري يشير إلى انزلاق غضروفي بسيط",
+          plan: "نقترح العلاج الطبيعي وتمارين تقوية الظهر",
+        }
+      : {
+          subjective: "Suffering from lower back pain for a month; pain radiates to the left leg",
+          objective: "No data available",
+          assessment: "Spine examination indicates a mild disc herniation",
+          plan: "We recommend physiotherapy and back strengthening exercises",
+        },
+  };
+
+  const handleCopy = () => {
+    const text = `
+${t("dashboard.reports.medicalReport")} - ${t("auth.sidebar.title")}
+${t("dashboard.reports.patientName")}: ${report.patientName}
+${t("dashboard.reports.sessionNumber")}: ${report.id}
+${t("dashboard.reports.date")}: ${formatDate(report.date)}
+
+${t("dashboard.reports.symptoms")}:
+${report.symptoms.map((s) => `- ${s}`).join("\n")}
+
+${t("dashboard.reports.diagnosis")}: ${report.diagnosis}
+
+${t("dashboard.reports.treatmentPlan")}: ${report.treatmentPlan}
+    `.trim();
+
+    navigator.clipboard.writeText(text);
+    alert(
+      isRTL ? t("dashboard.reports.copySuccess") : "Report copied successfully!"
+    );
+  };
+
+  return (
+    <div className="space-y-6" dir={isRTL ? "rtl" : "ltr"}>
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+        <div className={isRTL ? "text-right" : "text-left"}>
+          <button
+            onClick={() => navigate("/dashboard/reports")}
+            className={`text-sm text-slate-500 hover:text-primary transition-colors flex items-center gap-2 mb-3 ${
+              isRTL ? "flex-row" : "flex-row"
+            }`}
+          >
+            <ArrowRight className={`h-4 w-4 ${isRTL ? "" : "rotate-180"}`} />
+            {t("dashboard.reports.backToReports", "العودة للتقارير")}
+          </button>
+
+          <h1 className="text-2xl font-bold text-slate-800">
+            {t("dashboard.reports.reportTitle", "التقرير الطبي")}
+          </h1>
+          <p className="text-sm text-slate-600 mt-1">{report.patientName}</p>
+          <p className="text-xs text-slate-400 mt-1">
+            {t("dashboard.reports.approvedOn", "معتمد بتاريخ")}{" "}
+            {formatDate(report.date)} – {report.doctorName}
+          </p>
+        </div>
+
+        <div className="flex items-center gap-2 flex-wrap">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100">
+            <CheckCircle2 className="h-3.5 w-3.5" />
+            <span className="text-xs font-medium">
+              {t("dashboard.reports.approved", "معتمدة")}
+            </span>
+          </div>
+
+          <button className="px-4 py-2 rounded-xl border border-slate-200 bg-white text-slate-700 text-sm font-medium hover:bg-slate-50 hover:border-primary/30 hover:text-primary transition-colors flex items-center gap-2">
+            <Download className="h-4 w-4" />
+            {t("dashboard.reports.downloadPDF", "تحميل PDF")}
+          </button>
+
+          <button
+            onClick={handleCopy}
+            className="px-4 py-2 rounded-xl border border-slate-200 bg-white text-slate-700 text-sm font-medium hover:bg-slate-50 hover:border-primary/30 hover:text-primary transition-colors flex items-center gap-2"
+          >
+            <Copy className="h-4 w-4" />
+            {t("dashboard.reports.copyText", "نسخ النص")}
+          </button>
+        </div>
+      </div>
+
+      {/* محتوى التقرير */}
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+        <div className="p-8 border-b border-slate-100 text-center">
+          <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white mb-4 shadow-md shadow-primary/20">
+            <Stethoscope className="h-6 w-6" />
+          </div>
+          <h2 className="text-2xl font-bold text-slate-800">
+            {t("dashboard.reports.medicalReport", "التقرير الطبي")}
+          </h2>
+          <p className="text-sm text-slate-500 mt-1">
+            {t("dashboard.reports.reportSubtitle", "مساعد الطبيب – نظام التوثيق الذكي")}
+          </p>
+        </div>
+
+        <div className="p-6 border-b border-slate-100 bg-slate-50/30">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className={isRTL ? "text-right" : "text-left"}>
+              <p className="text-xs text-slate-400 mb-1">
+                {t("dashboard.reports.patientName", "اسم المريض")}
+              </p>
+              <p className="text-sm font-semibold text-slate-800">
+                {report.patientName}
+              </p>
+            </div>
+            <div className={isRTL ? "text-right" : "text-left"}>
+              <p className="text-xs text-slate-400 mb-1">
+                {t("dashboard.reports.sessionNumber", "رقم الجلسة")}
+              </p>
+              <p className="text-sm font-mono text-slate-800">{report.id}</p>
+            </div>
+            <div className={isRTL ? "text-right" : "text-left"}>
+              <p className="text-xs text-slate-400 mb-1">
+                {t("dashboard.reports.date", "التاريخ")}
+              </p>
+              <p className="text-sm text-slate-800">{formatDate(report.date)}</p>
+            </div>
+            <div className={isRTL ? "text-right" : "text-left"}>
+              <p className="text-xs text-slate-400 mb-1">
+                {t("dashboard.reports.duration", "المدة")}
+              </p>
+              <p className="text-sm text-slate-800">{report.duration}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-6 md:p-8 space-y-8">
+          {/* الأعراض */}
+          <div>
+            <div className={`flex items-center gap-2 mb-4 ${isRTL ? "flex-row" : "flex-row"}`}>
+              <span className="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-sm font-semibold">
+                {t("dashboard.reports.symptomsLabel", "أعراض")}
+              </span>
+              <h3 className="text-lg font-bold text-slate-800">
+                {t("dashboard.reports.symptoms", "أعراض")}
+              </h3>
+            </div>
+            <div className="border-t border-slate-100 pt-4">
+              <ul className="space-y-2">
+                {report.symptoms.map((symptom, idx) => (
+                  <li
+                    key={idx}
+                    className={`flex items-start gap-2 text-sm text-slate-700 ${
+                      isRTL ? "flex-row" : "flex-row"
+                    }`}
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                    <span className={isRTL ? "text-right" : "text-left"}>{symptom}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* التشخيص */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="px-3 py-1.5 rounded-lg bg-amber-50 text-amber-600 text-sm font-semibold">
+                {t("dashboard.reports.diagnosisLabel", "تشخيص")}
+              </span>
+              <h3 className="text-lg font-bold text-slate-800">
+                {t("dashboard.reports.diagnosis", "تشخيص")}
+              </h3>
+            </div>
+            <div className="border-t border-slate-100 pt-4">
+              <ul className="space-y-2">
+                <li
+                  className={`flex items-start gap-2 text-sm text-slate-700 ${
+                    isRTL ? "flex-row" : "flex-row"
+                  }`}
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                  <span className={isRTL ? "text-right" : "text-left"}>{report.diagnosis}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* خطة العلاج */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-600 text-sm font-semibold">
+                {t("dashboard.reports.treatmentLabel", "خطة علاج")}
+              </span>
+              <h3 className="text-lg font-bold text-slate-800">
+                {t("dashboard.reports.treatmentPlan", "خطة علاج")}
+              </h3>
+            </div>
+            <div className="border-t border-slate-100 pt-4">
+              <ul className="space-y-2">
+                <li
+                  className={`flex items-start gap-2 text-sm text-slate-700 ${
+                    isRTL ? "flex-row" : "flex-row"
+                  }`}
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                  <span className={isRTL ? "text-right" : "text-left"}>{report.treatmentPlan}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* ملخص SOAP */}
+          <div>
+            <h3 className={`text-lg font-bold text-slate-800 mb-4 ${isRTL ? "text-right" : "text-left"}`}>
+              {t("dashboard.reports.soapSummary", "ملخص SOAP")}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-primary/30 transition-colors">
+                <p className={`text-xs font-semibold text-primary mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+                  {t("dashboard.reports.soap.subjective", "SUBJECTIVE (S)")}
+                </p>
+                <p className={`text-sm text-slate-700 ${isRTL ? "text-right" : "text-left"}`}>{report.soap.subjective}</p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-primary/30 transition-colors">
+                <p className={`text-xs font-semibold text-primary mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+                  {t("dashboard.reports.soap.objective", "OBJECTIVE (O)")}
+                </p>
+                <p className={`text-sm text-slate-700 ${isRTL ? "text-right" : "text-left"}`}>{report.soap.objective}</p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-primary/30 transition-colors">
+                <p className={`text-xs font-semibold text-primary mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+                  {t("dashboard.reports.soap.assessment", "ASSESSMENT (A)")}
+                </p>
+                <p className={`text-sm text-slate-700 ${isRTL ? "text-right" : "text-left"}`}>{report.soap.assessment}</p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-primary/30 transition-colors">
+                <p className={`text-xs font-semibold text-primary mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+                  {t("dashboard.reports.soap.plan", "PLAN (P)")}
+                </p>
+                <p className={`text-sm text-slate-700 ${isRTL ? "text-right" : "text-left"}`}>{report.soap.plan}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-6 border-t border-slate-100 bg-slate-50/30 text-center">
+          <p className="text-xs text-slate-400 mb-2">
+            {t(
+              "dashboard.reports.reportDisclaimer",
+              "هذا التقرير تم إنشاؤه بواسطة نظام مساعد الطبيب بالذكاء الاصطناعي وتمت مراجعته والاعتماد من قبل الطبيب."
+            )}
+          </p>
+          <p className="text-sm font-semibold text-slate-600">
+            {t("dashboard.reports.doctorSignature", "توقيع الطبيب")}:{" "}
+            {report.doctorName} – {formatDate(report.date)}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ReportDetail;
+```
+
+---
+
+### <a id="📄-src-features-dashboard-components-reportstab-jsx"></a>📄 `src/features/dashboard/components/ReportsTab.jsx`
+
+**File Info:**
+- **Size**: 4.33 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/dashboard/components/ReportsTab.jsx`
+- **Relative Path**: `src/features/dashboard/components`
+- **Created**: 2026-08-17 16:51:00 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `d0100692c95930d83beb5ef0d915c172`
+- **SHA256**: `286e8dc8fb52d6c68b7c27928084886949b7cf0842b367cf1aa739948f1f4c62`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { CheckCircle2, FileText, Download, Eye } from "lucide-react";
+
+const ReportsTab = () => {
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const isRTL = i18n.language === "ar";
+
+  const formatDate = (date) => {
+    const locale = isRTL ? 'ar-SA' : 'en-US';
+    return new Intl.DateTimeFormat(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(date);
+  };
+
+  const reports = [
+    { 
+      id: "SESS-2026-00140", 
+      patientName: isRTL ? "خالد محمود" : "Khaled Mahmoud", 
+      date: new Date(2026, 5, 12),
+      status: "approved",
+      statusText: t("dashboard.reports.approved", "معتمدة")
+    },
+    { 
+      id: "SESS-2026-00139", 
+      patientName: isRTL ? "فاطمة حسن" : "Fatima Hassan", 
+      date: new Date(2026, 5, 12),
+      status: "approved",
+      statusText: t("dashboard.reports.approved", "معتمدة")
+    },
+    { 
+      id: "SESS-2026-00138", 
+      patientName: isRTL ? "عبدالله سالم" : "Abdullah Salem", 
+      date: new Date(2026, 5, 11),
+      status: "approved",
+      statusText: t("dashboard.reports.approved", "معتمدة")
+    },
+  ];
+
+  return (
+    <div className="space-y-6">
+      <div className={isRTL ? "text-right" : "text-left"}>
+        <h1 className="text-2xl font-bold text-slate-800">
+          {t("dashboard.reports.title", "التقارير المعتمدة")}
+        </h1>
+        <p className="text-sm text-slate-500 mt-1">
+          {t("dashboard.reports.subtitle", "جميع التقارير الطبية المعتمدة")}
+        </p>
+      </div>
+
+      <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+        <div className="divide-y divide-slate-100">
+          {reports.map((report) => (
+            <div 
+              key={report.id}
+              className="p-5 flex items-center justify-between hover:bg-slate-50 transition-colors group cursor-pointer"
+              onClick={() => navigate(`/dashboard/reports/${report.id}`)}
+            >
+              <div className="flex items-center gap-4 flex-1">
+                <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <FileText className="h-5 w-5" />
+                </div>
+
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm font-bold text-slate-800 mb-1">
+                    {report.patientName}
+                  </h3>
+                  <div className="flex items-center gap-2 text-xs text-slate-500">
+                    <span className="font-mono">{report.id}</span>
+                    <span>•</span>
+                    <span>{formatDate(report.date)}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-100">
+                  <CheckCircle2 className="h-3.5 w-3.5" />
+                  <span className="text-xs font-medium">
+                    {report.statusText}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <button 
+                    className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      navigate(`/dashboard/reports/${report.id}`);
+                    }}
+                  >
+                    <Eye className="h-4 w-4" />
+                  </button>
+                  <button 
+                    className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary/5 transition-colors"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Download className="h-4 w-4" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ReportsTab;
+```
+
+---
+
+### <a id="📄-src-features-dashboard-hooks-h-txt"></a>📄 `src/features/dashboard/hooks/h.txt`
+
+**File Info:**
+- **Size**: 10 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/features/dashboard/hooks/h.txt`
+- **Relative Path**: `src/features/dashboard/hooks`
+- **Created**: 2026-08-17 16:51:02 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `4b6918a16bd65e1a1acc3203c7a529b1`
+- **SHA256**: `c5375e2ab9d238b1770d6dff64c980bd6fa61d81bb465584cd2dcf6412308d23`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+useAuth ..
+```
+
+---
+
+### <a id="📄-src-features-dashboard-pages-dashboardpage-jsx"></a>📄 `src/features/dashboard/pages/DashboardPage.jsx`
+
+**File Info:**
+- **Size**: 2.31 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/dashboard/pages/DashboardPage.jsx`
+- **Relative Path**: `src/features/dashboard/pages`
+- **Created**: 2026-08-17 16:52:02 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `1e43360ffbcdd1503f40d2a0d0138582`
+- **SHA256**: `9665339cd36fd334753e7786ed0a1bf0b0d222fee7be752781444d5149b87d71`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Outlet, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "motion/react";
+import Sidebar from "../../../component/layout/Sidebar";
+import Header from "../../../component/layout/Header";
+import { DoctorProfileProvider } from "../../profile/context/DoctorProfileContext";
+
+const DashboardPage = () => {
+  const { t } = useTranslation();
+  const location = useLocation();
+  const [sidebarOpen, setSidebarOpen] = React.useState(false);
+
+  const getCurrentTitle = () => {
+    const path = location.pathname.split("/").pop();
+    switch (path) {
+      case "overview": return t("dashboard.menu.overview", "المؤشرات العامة");
+      case "appointments": return t("dashboard.menu.appointments", "المواعيد والجدول");
+      case "patients": return t("dashboard.menu.patients", "إدارة المرضى");
+      case "new-session": return t("dashboard.menu.newSession", "جلسة جديدة");
+      case "reports": return t("dashboard.menu.reports", "التقارير المعتمدة");
+      case "profile": return t("dashboard.menu.profile", "الملف الشخصي");
+      default: return t("dashboard.menu.overview", "المؤشرات العامة");
+    }
+  };
+
+  return (
+    <DoctorProfileProvider>
+      <div className="flex min-h-screen bg-slate-50 font-sans antialiased">
+        <Sidebar 
+          isOpen={sidebarOpen}
+          setIsOpen={setSidebarOpen}
+        />
+
+        <div className="flex-1 flex flex-col min-w-0">
+          <Header 
+            currentTitle={getCurrentTitle()}
+            onMenuClick={() => setSidebarOpen(!sidebarOpen)}
+          />
+
+          <main className="p-6 md:p-8 flex-1 overflow-y-auto">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={location.pathname}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.22, ease: "easeInOut" }}
+              >
+                <Outlet />
+              </motion.div>
+            </AnimatePresence>
+          </main>
+        </div>
+      </div>
+    </DoctorProfileProvider>
+  );
+};
+
+export default DashboardPage;
+```
+
+---
+
+### <a id="📄-src-features-dashboard-services-s-txt"></a>📄 `src/features/dashboard/services/s.txt`
+
+**File Info:**
+- **Size**: 12 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/features/dashboard/services/s.txt`
+- **Relative Path**: `src/features/dashboard/services`
+- **Created**: 2026-08-17 16:51:04 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `37e7037c80dfbf93ffb1fe9e61281f05`
+- **SHA256**: `c7ce30d6162febd77119bf842af4c86164144d441cfce7d92f4071db4ac52819`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+fetch api 
+
+```
+
+---
+
+### <a id="📄-src-features-dashboard-d-txt"></a>📄 `src/features/dashboard/d.txt`
+
+**File Info:**
+- **Size**: 20 B
+- **Extension**: `.txt`
+- **Language**: `text`
+- **Location**: `src/features/dashboard/d.txt`
+- **Relative Path**: `src/features/dashboard`
+- **Created**: 2026-08-17 16:51:02 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `35da94b2a8875272439b8156ffbdf453`
+- **SHA256**: `639e2d731164654951a2c2e9063a2328b99a08d7a0b98ec52a4f227169c8c444`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```text
+same the folder auth
+```
+
+---
+
+### <a id="📄-src-features-profile-context-doctorprofilecontext-jsx"></a>📄 `src/features/profile/context/DoctorProfileContext.jsx`
+
+**File Info:**
+- **Size**: 3.41 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/profile/context/DoctorProfileContext.jsx`
+- **Relative Path**: `src/features/profile/context`
+- **Created**: 2026-08-17 16:51:54 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `b3ffc2cb54815288af7b694bfafcf73d`
+- **SHA256**: `67604d8f6a5b619ec5f099578af49a7cd22460f8a694ce1857a8b94394810da9`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { getDoctorProfile, updateDoctorProfile, updateDoctorProfileImage } from "../services/profileApi";
+import { getSpecialties } from "../../auth/services/authApi";
+
+const DoctorProfileContext = createContext(null);
+
+const extractProfileData = (response) => {
+  return response?.data?.profile_info || 
+         response?.data?.data || 
+         response?.data?.doctor || 
+         response?.data?.profile || 
+         response?.data?.user || 
+         response?.data || 
+         null;
+};
+
+export const DoctorProfileProvider = ({ children }) => {
+  const [profile, setProfile] = useState(null);
+  const [specialties, setSpecialties] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingSpecialties, setIsLoadingSpecialties] = useState(false);
+  const [error, setError] = useState(null);
+
+  const fetchProfile = async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const response = await getDoctorProfile();
+      console.log("PROFILE API FULL RESPONSE:", response);
+      console.log("PROFILE API DATA:", response?.data);
+      
+      const data = extractProfileData(response);
+                   
+      console.log("EXTRACTED PROFILE DATA:", data);
+      setProfile(data);
+    } catch (err) {
+      console.error("Error fetching doctor profile:", err);
+      setError(err?.response?.data?.message || err?.message || "Failed to load profile");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const fetchSpecialties = async () => {
+    setIsLoadingSpecialties(true);
+    try {
+      const response = await getSpecialties();
+      const data = Array.isArray(response?.data) ? response.data : [];
+      setSpecialties(data);
+    } catch (err) {
+      console.error("Error fetching specialties:", err);
+    } finally {
+      setIsLoadingSpecialties(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchProfile();
+    fetchSpecialties();
+  }, []);
+
+  const updateProfile = async (profileData) => {
+    try {
+      const response = await updateDoctorProfile(profileData);
+      const updatedData = extractProfileData(response);
+      setProfile(updatedData);
+      return updatedData;
+    } catch (err) {
+      console.error("Error updating profile:", err);
+      throw err;
+    }
+  };
+
+  const updateImage = async (file) => {
+    try {
+      const response = await updateDoctorProfileImage(file);
+      const responseData = extractProfileData(response);
+      
+      // Update image path in the profile state
+      const img = responseData?.image || responseData?.image_path;
+      if (responseData && img) {
+        setProfile((prev) => (prev ? { ...prev, image: img } : null));
+      } else {
+        // Fallback: refetch profile to be safe
+        await fetchProfile();
+      }
+      return responseData;
+    } catch (err) {
+      console.error("Error updating profile image:", err);
+      throw err;
+    }
+  };
+
+  return (
+    <DoctorProfileContext.Provider
+      value={{
+        profile,
+        specialties,
+        isLoading,
+        isLoadingSpecialties,
+        error,
+        refetchProfile: fetchProfile,
+        updateProfile,
+        updateImage,
+      }}
+    >
+      {children}
+    </DoctorProfileContext.Provider>
+  );
+};
+
+export const useDoctorProfile = () => {
+  const context = useContext(DoctorProfileContext);
+  if (!context) {
+    throw new Error("useDoctorProfile must be used within a DoctorProfileProvider");
+  }
+  return context;
+};
+
+```
+
+---
+
+### <a id="📄-src-features-profile-pages-profiletab-jsx"></a>📄 `src/features/profile/pages/ProfileTab.jsx`
+
+**File Info:**
+- **Size**: 26.12 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/features/profile/pages/ProfileTab.jsx`
+- **Relative Path**: `src/features/profile/pages`
+- **Created**: 2026-08-17 16:52:10 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 21:44:31 (Asia/Damascus / GMT+03:00)
+- **MD5**: `a7a341a20627de3182d64dfaa217e3ff`
+- **SHA256**: `898f6f8a27394c3d2c5914d9df8b7a5fbcac542d2551824eb39cab6846e92224`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React, { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  User,
+  Phone,
+  Building2,
+  Mail,
+  Camera,
+  Save,
+  Loader2,
+  X,
+  CheckCircle2,
+  AlertCircle,
+  Lock,
+  Stethoscope,
+  ChevronDown,
+  UserCheck,
+} from "lucide-react";
+import { useDoctorProfile } from "../context/DoctorProfileContext";
+
+const ProfileTab = () => {
+  const { t, i18n } = useTranslation();
+  const {
+    profile,
+    specialties,
+    isLoading,
+    error,
+    refetchProfile,
+    updateProfile,
+    updateImage,
+  } = useDoctorProfile();
+
+  const isRTL = i18n.language === "ar";
+  const currentLang = i18n.language?.startsWith("ar") ? "ar" : "en";
+
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveSuccess, setSaveSuccess] = useState(false);
+  const [saveError, setSaveError] = useState("");
+
+  const [isUploadingImage, setIsUploadingImage] = useState(false);
+  const [imageError, setImageError] = useState("");
+  const [imageSuccess, setImageSuccess] = useState("");
+  const [imgError, setImgError] = useState(false);
+
+  const validationSchema = Yup.object({
+    firstName: Yup.string()
+      .trim()
+      .max(50, t("auth.register.errors.firstNameMax", "Maximum 50 characters"))
+      .required(
+        t("auth.register.errors.firstNameRequired", "First name is required")
+      ),
+    lastName: Yup.string()
+      .trim()
+      .max(50, t("auth.register.errors.lastNameMax", "Maximum 50 characters"))
+      .required(
+        t("auth.register.errors.lastNameRequired", "Last name is required")
+      ),
+    phone: Yup.string()
+      .matches(/^09[0-9]{8}$/, {
+        message: t(
+          "auth.register.errors.phoneInvalid",
+          "Phone number must start with 09 and contain 10 digits"
+        ),
+        excludeEmptyString: true,
+      })
+      .nullable(),
+    clinicName: Yup.string()
+      .trim()
+      .max(50, t("auth.register.errors.clinicMax", "Maximum 50 characters"))
+      .nullable(),
+    specialties: Yup.array()
+      .min(
+        1,
+        t(
+          "dashboard.profile.specialtyRequired",
+          "At least one specialty is required"
+        )
+      )
+      .required(
+        t("dashboard.profile.specialtyRequired", "Specialties are required")
+      ),
+  });
+
+  const formik = useFormik({
+    enableReinitialize: true,
+    initialValues: {
+      firstName: profile?.first_name || "",
+      lastName: profile?.last_name || "",
+      phone: profile?.phone || "",
+      clinicName: profile?.hospital_or_clinic || "",
+      specialties: profile?.specialties?.map((s) => String(s.id)) || [],
+    },
+    validationSchema,
+    onSubmit: async (values) => {
+      setIsSaving(true);
+      setSaveSuccess(false);
+      setSaveError("");
+
+      try {
+        const payload = {
+          first_name: values.firstName.trim(),
+          last_name: values.lastName.trim(),
+          phone: values.phone.trim() || null,
+          hospital_or_clinic: values.clinicName.trim() || null,
+          specialty_ids: values.specialties.map((id) => Number(id)),
+        };
+        await updateProfile(payload);
+        setSaveSuccess(true);
+        setTimeout(() => setSaveSuccess(false), 4000);
+      } catch (err) {
+        console.error("Update profile error:", err);
+        setSaveError(
+          err?.response?.data?.message ||
+            t(
+              "dashboard.profile.saveError",
+              "Failed to update profile details."
+            )
+        );
+      } finally {
+        setIsSaving(false);
+      }
+    },
+  });
+
+  const handleImageChange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    if (file.size > 5 * 1024 * 1024) {
+      setImageError(
+        t("dashboard.profile.imageSizeError", "Image must be smaller than 5MB")
+      );
+      return;
+    }
+
+    setIsUploadingImage(true);
+    setImageError("");
+    setImageSuccess("");
+
+    try {
+      await updateImage(file);
+      setImgError(false);
+      setImageSuccess(
+        t(
+          "dashboard.profile.imageSuccess",
+          "Profile picture updated successfully!"
+        )
+      );
+      setTimeout(() => setImageSuccess(""), 4000);
+    } catch (err) {
+      console.error("Upload avatar error:", err);
+      setImageError(
+        err?.response?.data?.message ||
+          t(
+            "dashboard.profile.imageError",
+            "Failed to upload profile picture."
+          )
+      );
+    } finally {
+      setIsUploadingImage(false);
+    }
+  };
+
+  const doctorFullName =
+    profile?.first_name && profile?.last_name
+      ? `${profile.first_name} ${profile.last_name}`
+      : "";
+
+  if (isLoading) {
+    return (
+      <div className="flex h-[60vh] flex-col items-center justify-center gap-4">
+        <div className="relative">
+          <div className="h-14 w-14 rounded-full border-4 border-primary/20 border-t-primary animate-spin" />
+        </div>
+        <p className="text-sm font-medium text-slate-500">
+          {t("dashboard.profile.loadingData", "Loading profile details...")}
+        </p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div
+        className="flex h-[60vh] flex-col items-center justify-center gap-5 text-center max-w-md mx-auto px-6"
+        dir={isRTL ? "rtl" : "ltr"}
+      >
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-50">
+          <AlertCircle className="h-8 w-8 text-red-500" />
+        </div>
+        <div className="space-y-2">
+          <h3 className="text-lg font-bold text-slate-800">
+            {t("dashboard.profile.fetchErrorTitle", "Failed to load profile")}
+          </h3>
+          <p className="text-sm text-slate-500 leading-relaxed">{error}</p>
+        </div>
+        <button
+          type="button"
+          onClick={refetchProfile}
+          className="mt-1 px-6 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold shadow-md shadow-primary/20 hover:bg-primary-dark hover:shadow-lg transition-all duration-200 cursor-pointer"
+        >
+          {t("dashboard.profile.tryAgain", "Try Again")}
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className="space-y-8 max-w-4xl mx-auto pb-8"
+      dir={isRTL ? "rtl" : "ltr"}
+    >
+      {/* Profile Banner Card */}
+      <div className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden" dir="ltr">
+        {/* Colored Banner */}
+        <div className="h-28 sm:h-32 bg-gradient-to-r from-teal-600 via-primary to-emerald-600 relative">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.2),transparent_60%)] pointer-events-none" />
+        </div>
+
+        {/* Content: Name + Email (Left) | Avatar (Right) */}
+        <div className="px-6 sm:px-8 pb-6 relative">
+          <div className="flex items-end justify-between gap-5 -mt-12 sm:-mt-14">
+            
+            {/* Left Side: Name (at green edge) + Email under it */}
+            <div className="flex-1 min-w-0 pt-10 sm:pt-11">
+              {/* Name - black, sitting at the green border */}
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight truncate">
+                {isRTL ? `د. ${doctorFullName}` : `Dr. ${doctorFullName}`}
+              </h2>
+              {/* Email - slightly raised under the name */}
+              <p className="mt-1.5 text-sm font-medium text-slate-500 flex items-center gap-2 truncate">
+                <Mail className="h-4 w-4 shrink-0 text-primary" />
+                <span className="truncate">{profile?.email}</span>
+              </p>
+            </div>
+
+            {/* Right Side: Avatar */}
+            <div className="relative group h-28 w-28 sm:h-32 sm:w-32 shrink-0 rounded-2xl bg-white p-1.5 shadow-xl z-10">
+              <div className="h-full w-full rounded-xl bg-slate-100 overflow-hidden relative flex items-center justify-center ring-2 ring-white">
+                {profile?.image && !imgError ? (
+                  <img
+                    src={`https://tibscribe-api.onrender.com/api/doctor/images/${profile.image}`}
+                    alt={doctorFullName}
+                    onError={() => setImgError(true)}
+                    className="h-full w-full object-cover rounded-xl"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center text-slate-400 bg-slate-100 h-full w-full">
+                    <UserCheck className="h-12 w-12 text-primary/70" />
+                  </div>
+                )}
+
+                {/* Upload Overlay */}
+                <label
+                  htmlFor="avatar-input"
+                  className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center gap-1.5 cursor-pointer text-white transition-all duration-300 rounded-xl backdrop-blur-[2px]"
+                >
+                  {isUploadingImage ? (
+                    <Loader2 className="h-6 w-6 animate-spin" />
+                  ) : (
+                    <>
+                      <Camera className="h-5 w-5" />
+                      <span className="text-[11px] font-bold tracking-wide">
+                        {t("dashboard.profile.changePhoto", "Change")}
+                      </span>
+                    </>
+                  )}
+                </label>
+
+                <input
+                  id="avatar-input"
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={handleImageChange}
+                  disabled={isUploadingImage}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Alerts for Image */}
+        <AnimatePresence>
+          {imageSuccess && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="border-t border-emerald-100 bg-emerald-50/80 px-6 sm:px-8 py-3.5 flex items-center gap-2.5 text-sm font-semibold text-emerald-700"
+            >
+              <CheckCircle2 className="h-4.5 w-4.5 shrink-0" />
+              <span>{imageSuccess}</span>
+            </motion.div>
+          )}
+          {imageError && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="border-t border-red-100 bg-red-50/80 px-6 sm:px-8 py-3.5 flex items-center gap-2.5 text-sm font-semibold text-red-600"
+            >
+              <AlertCircle className="h-4.5 w-4.5 shrink-0" />
+              <span>{imageError}</span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* Form Section */}
+      <form
+        onSubmit={formik.handleSubmit}
+        className="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 sm:p-8 space-y-7"
+      >
+        <AnimatePresence>
+          {saveSuccess && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              className="rounded-2xl border border-emerald-200/80 bg-emerald-50 px-4 py-3.5 flex items-center gap-2.5 text-sm text-emerald-700 font-medium"
+            >
+              <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-600" />
+              <span>
+                {t(
+                  "dashboard.profile.success",
+                  "Profile updated successfully!"
+                )}
+              </span>
+            </motion.div>
+          )}
+          {saveError && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              className="rounded-2xl border border-red-200/80 bg-red-50 px-4 py-3.5 flex items-center gap-2.5 text-sm text-red-600 font-medium"
+            >
+              <AlertCircle className="h-5 w-5 shrink-0" />
+              <span>{saveError}</span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Column 1: Personal Info */}
+          <div className="space-y-5">
+            <h3 className="text-base sm:text-lg font-extrabold text-slate-900 border-b border-slate-100 pb-3 flex items-center gap-2.5">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <User className="h-4 w-4" />
+              </span>
+              {t("dashboard.profile.personalInfo", "Personal Information")}
+            </h3>
+
+            {/* First Name */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="firstName"
+                className="block text-sm font-bold text-slate-700"
+              >
+                {t("dashboard.profile.firstName", "First Name")}
+              </label>
+              <div className="relative flex items-center">
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  value={formik.values.firstName}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  className={`w-full rounded-xl border bg-white px-4 py-2.5 text-sm font-medium text-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 ${
+                    formik.touched.firstName && formik.errors.firstName
+                      ? "border-red-400 focus:border-red-400 focus:ring-red-100"
+                      : "border-slate-200 focus:border-primary hover:border-slate-300"
+                  } ${isRTL ? "pl-11 pr-4" : "pr-11 pl-4"}`}
+                />
+                <User
+                  className={`absolute h-4 w-4 text-slate-400 pointer-events-none ${
+                    isRTL ? "left-3.5" : "right-3.5"
+                  }`}
+                />
+              </div>
+              {formik.touched.firstName && formik.errors.firstName && (
+                <p className="text-xs text-red-500 font-medium">
+                  {formik.errors.firstName}
+                </p>
+              )}
+            </div>
+
+            {/* Last Name */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="lastName"
+                className="block text-sm font-bold text-slate-700"
+              >
+                {t("dashboard.profile.lastName", "Last Name")}
+              </label>
+              <div className="relative flex items-center">
+                <input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  value={formik.values.lastName}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  className={`w-full rounded-xl border bg-white px-4 py-2.5 text-sm font-medium text-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 ${
+                    formik.touched.lastName && formik.errors.lastName
+                      ? "border-red-400 focus:border-red-400 focus:ring-red-100"
+                      : "border-slate-200 focus:border-primary hover:border-slate-300"
+                  } ${isRTL ? "pl-11 pr-4" : "pr-11 pl-4"}`}
+                />
+                <User
+                  className={`absolute h-4 w-4 text-slate-400 pointer-events-none ${
+                    isRTL ? "left-3.5" : "right-3.5"
+                  }`}
+                />
+              </div>
+              {formik.touched.lastName && formik.errors.lastName && (
+                <p className="text-xs text-red-500 font-medium">
+                  {formik.errors.lastName}
+                </p>
+              )}
+            </div>
+
+            {/* Phone */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-bold text-slate-700"
+              >
+                {t("dashboard.profile.phone", "Phone Number")}
+              </label>
+              <div className="relative flex items-center">
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  dir="ltr"
+                  placeholder="09xxxxxxxx"
+                  value={formik.values.phone || ""}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  className={`w-full rounded-xl border bg-white py-2.5 text-sm font-medium text-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 ${
+                    formik.touched.phone && formik.errors.phone
+                      ? "border-red-400 focus:border-red-400 focus:ring-red-100"
+                      : "border-slate-200 focus:border-primary hover:border-slate-300"
+                  } ${isRTL ? "pl-11 pr-4 text-right" : "pr-11 pl-4 text-left"}`}
+                />
+                <Phone
+                  className={`absolute h-4 w-4 text-slate-400 pointer-events-none ${
+                    isRTL ? "left-3.5" : "right-3.5"
+                  }`}
+                />
+              </div>
+              {formik.touched.phone && formik.errors.phone && (
+                <p className="text-xs text-red-500 font-medium">
+                  {formik.errors.phone}
+                </p>
+              )}
+            </div>
+
+            {/* Email Address (Disabled) */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="email"
+                className="block text-sm font-bold text-slate-400"
+              >
+                {t("dashboard.profile.email", "Email Address")}
+              </label>
+              <div className="relative flex items-center">
+                <input
+                  id="email"
+                  type="email"
+                  disabled
+                  value={profile?.email || ""}
+                  className={`w-full rounded-xl border border-slate-200 bg-slate-50/80 py-2.5 text-sm font-medium text-slate-400 cursor-not-allowed select-none ${
+                    isRTL ? "pl-11 pr-4" : "pr-11 pl-4"
+                  }`}
+                />
+                <Lock
+                  className={`absolute h-4 w-4 text-slate-300 pointer-events-none ${
+                    isRTL ? "left-3.5" : "right-3.5"
+                  }`}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Column 2: Professional Info */}
+          <div className="space-y-5">
+            <h3 className="text-base sm:text-lg font-extrabold text-slate-900 border-b border-slate-100 pb-3 flex items-center gap-2.5">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Building2 className="h-4 w-4" />
+              </span>
+              {t(
+                "dashboard.profile.professionalInfo",
+                "Professional Information"
+              )}
+            </h3>
+
+            {/* Clinic Name */}
+            <div className="space-y-1.5">
+              <label
+                htmlFor="clinicName"
+                className="block text-sm font-bold text-slate-700"
+              >
+                {t(
+                  "dashboard.profile.hospitalOrClinic",
+                  "Hospital or Clinic"
+                )}
+              </label>
+              <div className="relative flex items-center">
+                <input
+                  id="clinicName"
+                  name="clinicName"
+                  type="text"
+                  value={formik.values.clinicName || ""}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  className={`w-full rounded-xl border bg-white py-2.5 text-sm font-medium text-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 ${
+                    formik.touched.clinicName && formik.errors.clinicName
+                      ? "border-red-400 focus:border-red-400 focus:ring-red-100"
+                      : "border-slate-200 focus:border-primary hover:border-slate-300"
+                  } ${isRTL ? "pl-11 pr-4" : "pr-11 pl-4"}`}
+                />
+                <Building2
+                  className={`absolute h-4 w-4 text-slate-400 pointer-events-none ${
+                    isRTL ? "left-3.5" : "right-3.5"
+                  }`}
+                />
+              </div>
+              {formik.touched.clinicName && formik.errors.clinicName && (
+                <p className="text-xs text-red-500 font-medium">
+                  {formik.errors.clinicName}
+                </p>
+              )}
+            </div>
+
+            {/* Medical Specialties */}
+            <div className="space-y-1.5">
+              <label className="block text-sm font-bold text-slate-700">
+                {t("dashboard.profile.specialties", "Medical Specialties")}
+              </label>
+
+              <div className="relative flex items-center">
+                <ChevronDown
+                  className={`pointer-events-none absolute h-4 w-4 text-slate-400 ${
+                    isRTL ? "right-3.5" : "left-3.5"
+                  }`}
+                />
+                <Stethoscope
+                  className={`pointer-events-none absolute h-4 w-4 text-slate-400 ${
+                    isRTL ? "left-3.5" : "right-3.5"
+                  }`}
+                />
+
+                <select
+                  value=""
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (
+                      value &&
+                      !formik.values.specialties.includes(value)
+                    ) {
+                      formik.setFieldValue("specialties", [
+                        ...formik.values.specialties,
+                        value,
+                      ]);
+                    }
+                    e.target.value = "";
+                  }}
+                  className={`w-full appearance-none rounded-xl border border-slate-200 bg-white py-2.5 text-sm font-medium text-slate-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary hover:border-slate-300 ${
+                    isRTL ? "pl-10 pr-10" : "pr-10 pl-10"
+                  }`}
+                >
+                  <option value="">
+                    {t(
+                      "dashboard.profile.selectSpecialty",
+                      "Add a specialty..."
+                    )}
+                  </option>
+
+                  {specialties
+                    .filter(
+                      (spec) =>
+                        !formik.values.specialties.includes(String(spec.id))
+                    )
+                    .map((spec) => (
+                      <option key={spec.id} value={String(spec.id)}>
+                        {typeof spec.name === "object"
+                          ? spec.name?.[currentLang] ||
+                            spec.name?.en ||
+                            spec.name?.ar ||
+                            spec.slug
+                          : spec.name}
+                      </option>
+                    ))}
+                </select>
+              </div>
+
+              {formik.touched.specialties && formik.errors.specialties && (
+                <p className="text-xs text-red-500 font-medium">
+                  {formik.errors.specialties}
+                </p>
+              )}
+
+              {/* Specialties Badges */}
+              <div className="flex flex-wrap gap-2 mt-4 min-h-[36px]">
+                <AnimatePresence>
+                  {formik.values.specialties.map((specId) => {
+                    const spec = specialties.find(
+                      (s) => String(s.id) === String(specId)
+                    );
+                    if (!spec) return null;
+
+                    const specLabel =
+                      typeof spec.name === "object"
+                        ? spec.name?.[currentLang] ||
+                          spec.name?.en ||
+                          spec.name?.ar ||
+                          spec.slug
+                        : spec.name;
+
+                    return (
+                      <motion.span
+                        key={specId}
+                        initial={{ scale: 0.85, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.85, opacity: 0 }}
+                        transition={{ duration: 0.15 }}
+                        className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-bold px-3 py-1.5 rounded-full border border-primary/15 shadow-sm"
+                      >
+                        <span>{specLabel}</span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const updated = formik.values.specialties.filter(
+                              (id) => id !== specId
+                            );
+                            formik.setFieldValue("specialties", updated);
+                          }}
+                          className="hover:bg-primary/20 rounded-full p-0.5 transition-colors cursor-pointer shrink-0"
+                        >
+                          <X size={11} className="stroke-[2.5]" />
+                        </button>
+                      </motion.span>
+                    );
+                  })}
+                </AnimatePresence>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Submit Button */}
+        <div className="border-t border-slate-100 pt-6 flex justify-end">
+          <button
+            type="submit"
+            disabled={isSaving || !formik.isValid}
+            className="flex items-center justify-center gap-2.5 rounded-xl bg-primary hover:bg-primary-dark transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg px-7 py-3 text-sm font-bold text-white shadow-md shadow-primary/25 cursor-pointer disabled:cursor-not-allowed disabled:opacity-55 disabled:transform-none disabled:shadow-none"
+          >
+            {isSaving ? (
+              <Loader2 className="h-4 w-4 animate-spin" />
+            ) : (
+              <Save className="h-4 w-4" />
+            )}
+            <span>
+              {isSaving
+                ? t("dashboard.profile.saving", "Saving...")
+                : t("dashboard.profile.save", "Save Changes")}
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default ProfileTab;
+
+```
+
+---
+
+### <a id="📄-src-features-profile-services-profileapi-js"></a>📄 `src/features/profile/services/profileApi.js`
+
+**File Info:**
+- **Size**: 1.01 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/features/profile/services/profileApi.js`
+- **Relative Path**: `src/features/profile/services`
+- **Created**: 2026-08-17 16:51:48 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `6ad3f87a95bd7fe4f41382f623195078`
+- **SHA256**: `bee93c53518a9b2ea2a3947c1adf4f074f1048ff3f50cfd3271cf6feabfe473b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import api from "../../auth/services/authApi";
+
+/**
+ * Get doctor's profile details.
+ * GET /api/doctor/profile
+ */
+export const getDoctorProfile = async () => {
+  return await api.get("/profile");
+};
+
+/**
+ * Update doctor's profile details.
+ * PATCH /api/doctor/profile
+ * @param {Object} profileData
+ * @param {string} profileData.first_name
+ * @param {string} profileData.last_name
+ * @param {string} [profileData.phone]
+ * @param {string} [profileData.hospital_or_clinic]
+ * @param {number[]} [profileData.specialty_ids]
+ */
+export const updateDoctorProfile = async (profileData) => {
+  return await api.patch("/profile", profileData);
+};
+
+/**
+ * Update doctor's profile image.
+ * POST /api/doctor/profile/image
+ * @param {File} imageFile - The image binary file
+ */
+export const updateDoctorProfileImage = async (imageFile) => {
+  const formData = new FormData();
+  formData.append("image", imageFile);
+
+  return await api.post("/profile/image", formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+};
+
+```
+
+---
+
+### <a id="📄-src-i18n-locales-ar-translation-json"></a>📄 `src/i18n/locales/ar/translation.json`
+
+**File Info:**
+- **Size**: 13.42 KB
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `src/i18n/locales/ar/translation.json`
+- **Relative Path**: `src/i18n/locales/ar`
+- **Created**: 2026-08-17 16:51:08 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `a774814de34a0d790130ca92d520fcff`
+- **SHA256**: `e30889dba52f383abd1e1dca2727037d9a63b586a2533c32b44058fa993b25cc`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```json
+{
+  "auth": {
+    "sidebar": {
+      "title": "المساعد الطبي",
+      "titleHighlight": "الذكي للأطباء",
+      "description": "منصة متكاملة تساعد الأطباء في إدارة الملفات الطبية، تتبع الحالات والحصول على دعم طبي فوري.",
+      "features": [
+        {
+          "title": "تقرير جاهز فوراً"
+        },
+        {
+          "title": "توفير وقت التوثيق"
+        },
+        {
+          "title": "حماية بيانات المرضى"
+        }
+      ],
+      "quote": "الطب فن يطلب الدقة والرعاية. نحن هنا لنجعل عملك أسهل وأكثر كفاءة."
+    },
+
+    "welcomeBack": "مرحباً بعودتك",
+    "welcomeSubtitle": "سجّل دخولك للمتابعة إلى لوحة التحكم",
+
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "doctor@hospital.com",
+
+    "password": "كلمة المرور",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني",
+
+    "login": "تسجيل الدخول",
+    "loggingIn": "جارٍ تسجيل الدخول...",
+    "logout": "تسجيل الخروج",
+    "loggingOut": "جارٍ تسجيل الخروج...",
+
+    "or": "أو",
+    "noAccount": "ليس لديك حساب؟",
+    "createAccount": "إنشاء حساب جديد",
+
+    "errors": {
+      "emailInvalid": "البريد الإلكتروني غير صالح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "passwordMin": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "tokenMissing": "تم تسجيل الدخول ولكن لم يتم استلام رمز الدخول من الخادم.",
+      "generic": "حدث خطأ أثناء تسجيل الدخول، تحقق من البيانات وحاول مرة أخرى"
+    },
+
+    "register": {
+      "title": "إنشاء حساب جديد",
+      "subtitle": "انضم إلى منصة MedAssist واحصل على دعم متكامل لمتابعة الحمل",
+
+      "steps": {
+        "personalInfo": "المعلومات الشخصية",
+        "professionalInfo": "معلومات مهنية"
+      },
+
+      "firstName": "الاسم الأول",
+      "firstNamePlaceholder": "زين",
+
+      "lastName": "اسم العائلة",
+      "lastNamePlaceholder": "رحمون",
+
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "9xx xxx xxx",
+
+      "specialty": "التخصص الطبي",
+      "specialtyPlaceholder": "اختر التخصص",
+
+      "specialties": [
+        "أمراض النسائية والتوليد",
+        "طب الأجنة وحديثي الولادة",
+        "التغذية وصحة الحمل",
+        "تخصص آخر"
+      ],
+
+      "licenseNumber": "رقم الترخيص الطبي",
+      "licenseNumberPlaceholder": "MED-XXXXXXX",
+
+      "clinicName": "المستشفى / العيادة (اختياري)",
+      "clinicNamePlaceholder": "مستشفى الولادة التخصصي",
+
+      "confirmPassword": "تأكيد كلمة المرور",
+      "passwordMin": "كلمة المرور يجب أن تكون 8 أحرف على الأقل",
+
+      "agreeTermsPrefix": "أوافق على",
+      "termsLink": "الشروط والأحكام",
+      "and": "و",
+      "privacyLink": "سياسة الخصوصية",
+
+      "next": "التالي",
+      "back": "رجوع",
+
+      "createAccount": "إنشاء الحساب",
+      "creatingAccount": "جارٍ إنشاء الحساب...",
+
+      "haveAccount": "لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول",
+
+      "errors": {
+        "firstNameRequired": "الاسم الأول مطلوب",
+        "lastNameRequired": "اسم العائلة مطلوب",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "specialtyRequired": "يرجى اختيار التخصص",
+        "licenseRequired": "رقم الترخيص الطبي مطلوب",
+        "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+        "confirmPasswordMismatch": "كلمتا المرور غير متطابقتين",
+        "termsRequired": "يجب الموافقة على الشروط والأحكام للاستمرار",
+        "generic": "حدث خطأ أثناء إنشاء الحساب، حاول مرة أخرى"
+      }
+    },
+
+    "verify": {
+      "title": "تحقق من بريدك الإلكتروني",
+      "subtitle": "أدخل رمز التحقق المرسل إلى بريدك",
+      "sentTo": "أرسلنا رمز التحقق إلى",
+      "codeLabel": "رمز التحقق",
+
+      "verifyButton": "تحقق من الرمز",
+      "verifying": "جارٍ التحقق...",
+
+      "noCode": "لم يصلك الرمز؟",
+      "resend": "إعادة إرسال الرمز",
+      "resendIn": "إعادة الإرسال بعد {{seconds}} ثانية",
+
+      "backToLogin": "العودة إلى تسجيل الدخول",
+      "codeExpiresIn": "ينتهي صلاحية الرمز خلال",
+"codeExpired": "انتهت صلاحية رمز التحقق",
+"resendSuccess": "تم إرسال رمز تحقق جديد إلى بريدك الإلكتروني",
+"resending": "جارٍ إعادة الإرسال...",
+
+      "errors": {
+        "codeIncomplete": "يرجى إدخال الرمز كاملاً (6 أرقام)",
+        "codeInvalid": "رمز التحقق غير صحيح، حاول مرة أخرى",
+        "resendFailed": "تعذّر إعادة إرسال الرمز، حاول مرة أخرى"
+      }
+    },
+
+    "forgetPass": {
+      "title": "نسيت كلمة المرور؟",
+      "subtitle": "أدخل بريدك الإلكتروني وسنرسل لك رابط إعادة التعيين",
+      "sendTo": "سنرسل رابطاً إلى بريدك الإلكتروني لإعادة تعيين كلمة المرور. تأكد من إدخال البريد المرتبط بحسابك.",
+      "Mail": "البريد الإلكتروني",
+      "sendButton": "إرسال رابط الإعادة",
+      "back": "العودة لتسجيل الدخول",
+      "sending": "جارٍ إرسال رمز التحقق...",
+"errors": {
+  "sendFailed": "تعذّر إرسال رمز التحقق، تحقق من البريد الإلكتروني وحاول مرة أخرى"
+}
+    },
+
+    "resetPass": {
+
+      "title": "إنشاء كلمة مرور جديدة",
+      "subtitle": "أدخل كلمة مرور قوية لحماية حسابك",
+      "titleF1": "كلمة المرور الجديدة",
+      "titleF2": "تأكيد كلمة المرور",
+      "sendButton": "حفظ كلمة المرور الجديدة",
+      "back": "العودة لتسجيل الدخول",
+      "success": "تم تغيير كلمة المرور بنجاح. يمكنك تسجيل الدخول الآن.",
+
+      "resetting": "جارٍ تغيير كلمة المرور...",
+"errors": {
+  "uppercase": "يجب أن تحتوي كلمة المرور على حرف إنجليزي كبير واحد على الأقل",
+  "lowercase": "يجب أن تحتوي كلمة المرور على حرف إنجليزي صغير واحد على الأقل",
+  "symbol": "يجب أن تحتوي كلمة المرور على رمز خاص واحد على الأقل",
+  "resetFailed": "تعذّر تغيير كلمة المرور، حاول مرة أخرى"
+}
+    }
+  },
+
+  "dashboard": {
+    "stats": {
+      "warnings": "تحذيرات",
+      "alert": "تنبيه",
+      "approvedToday": "معتمدة اليوم",
+      "sessions": "جلسات",
+      "inProgress": "قيد المعالجة",
+      "session": "جلسة",
+      "todaySessions": "جلسات اليوم",
+      "newSessions": "جديدة",
+      "totalPatients": "إجمالي المرضى",
+      "appointmentsToday": "مواعيد اليوم",
+      "revenue": "الصافي المالي",
+      "occupancy": "معدل الإشغال السريري"
+    },
+
+    "sessions": {
+      "title": "الجلسات",
+      "subtitle": "إدارة ومراقبة جميع جلساتك الطبية",
+      "sessionNumber": "رقم الجلسة",
+      "patient": "المريض",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "status": "الحالة",
+      "actions": "الإجراءات",
+      "searchPatient": "البحث باسم المريض...",
+      "allCases": "جميع الحالات",
+      "pending": "بانتظار المراجعة",
+      "processing": "قيد المعالجة",
+      "approved": "معتمدة",
+      "pendingReview": "بانتظار المراجعة",
+      "inTreatment": "قيد المعالجة",
+      "newSession": "جلسة جديدة"
+    },
+
+    "charts": {
+      "weeklyActivity": "نشاط الأسبوع",
+      "analytics": "تحليلات التدفق الطبي والأرباح",
+      "viewReport": "تقرير مفصل",
+      "distribution": "توزيع الحالات المرضية"
+    },
+
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "newSession": "بدء جلسة جديدة",
+      "viewSessions": "عرض الجلسات"
+    },
+
+    "recentSessions": {
+      "title": "الجلسات الحديثة",
+      "subtitle": "آخر الجلسات",
+      "viewAll": "عرض الكل"
+    },
+
+    "menu": {
+      "overview": "المؤشرات العامة",
+      "appointments": "المواعيد والجدول",
+      "patients": "إدارة المرضى",
+      "sessions": "الجلسات",
+      "newSession": "جلسة جديدة",
+      "reports": "التقارير المعتمدة",
+      "settings": "الإعدادات",
+      "profile": "الملف الشخصي"
+    },
+
+    "common": {
+      "emptyFeature": "هذه الشاشة تحت التطوير البرمجي حالياً سيتم ربطها قريباً."
+    },
+
+    "profile": {
+      "doctorName": "د. أحمد محمد",
+      "doctorTitle": "طبيب ممارس",
+      "doctorInitial": "د",
+      "title": "الملف الشخصي للطبيب",
+      "subtitle": "إدارة إعدادات حسابك وتخصصاتك الطبية",
+      "personalInfo": "المعلومات الشخصية",
+      "professionalInfo": "المعلومات المهنية",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "phone": "رقم الهاتف",
+      "hospitalOrClinic": "المستشفى أو العيادة",
+      "email": "البريد الإلكتروني",
+      "specialties": "التخصصات الطبية",
+      "save": "حفظ التغييرات",
+      "saving": "جاري الحفظ...",
+      "success": "تم تحديث الملف الشخصي بنجاح!",
+      "imageSuccess": "تم تحديث الصورة الشخصية بنجاح!",
+      "imageError": "فشل تحميل الصورة الشخصية.",
+      "saveError": "فشل في تحديث تفاصيل الملف الشخصي.",
+      "imageSizeError": "يجب أن يكون حجم الصورة أقل من 5 ميجابايت",
+      "loadingData": "جاري تحميل تفاصيل الملف الشخصي...",
+      "changePhoto": "تغيير الصورة",
+      "selectSpecialty": "أضف تخصصاً...",
+      "specialtyRequired": "يجب اختيار تخصص واحد على الأقل",
+      "fetchErrorTitle": "فشل تحميل بيانات الملف الشخصي",
+      "tryAgain": "حاول مجدداً"
+    },
+
+    "reports": {
+      "title": "التقارير المعتمدة",
+      "subtitle": "جميع التقارير الطبية المعتمدة",
+      "approved": "معتمدة",
+      "viewAll": "عرض الكل",
+      "backToReports": "العودة للتقارير",
+      "reportTitle": "التقرير الطبي",
+      "medicalReport": "التقرير الطبي",
+      "reportSubtitle": "مساعد الطبيب – نظام التوثيق الذكي",
+      "approvedOn": "معتمد بتاريخ",
+      "downloadPDF": "تحميل PDF",
+      "copyText": "نسخ النص",
+      "copySuccess": "تم نسخ التقرير بنجاح!",
+      "patientName": "اسم المريض",
+      "sessionNumber": "رقم الجلسة",
+      "date": "التاريخ",
+      "duration": "المدة",
+      "symptoms": "أعراض",
+      "symptomsLabel": "أعراض",
+      "diagnosis": "تشخيص",
+      "diagnosisLabel": "تشخيص",
+      "treatmentPlan": "خطة علاج",
+      "treatmentLabel": "خطة علاج",
+      "soapSummary": "ملخص SOAP",
+
+      "soap": {
+        "subjective": "ذاتي (S)",
+        "objective": "موضوعي (O)",
+        "assessment": "تقييم (A)",
+        "plan": "خطة (P)"
+      },
+
+      "reportDisclaimer": "هذا التقرير تم إنشاؤه بواسطة نظام مساعد الطبيب بالذكاء الاصطناعي وتمت مراجعته والاعتماد من قبل الطبيب.",
+      "doctorSignature": "توقيع الطبيب"
+    }
+  },
+
+  "days": {
+    "sat": "سب",
+    "sun": "أحد",
+    "mon": "إثن",
+    "tue": "ثل",
+    "wed": "أرب",
+    "thu": "خم",
+    "fri": "جم"
+  },
+
+  "common": {
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية"
+  }
+}
+```
+
+---
+
+### <a id="📄-src-i18n-locales-en-translation-json"></a>📄 `src/i18n/locales/en/translation.json`
+
+**File Info:**
+- **Size**: 10.47 KB
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `src/i18n/locales/en/translation.json`
+- **Relative Path**: `src/i18n/locales/en`
+- **Created**: 2026-08-17 16:51:08 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `556319a56890288db4049c39b26f7392`
+- **SHA256**: `246475cde081d3a0086b7049539c103eb33b475f14821fca8fccf1c4163388a0`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "auth": {
+    "sidebar": {
+      "title": "Smart Medical Assistant",
+      "titleHighlight": "For Doctors",
+      "description": "An all-in-one platform that helps doctors manage medical records, track cases, and get instant clinical support.",
+      "features": [
+        {
+          "title": "Report ready immediately"
+        },
+        {
+          "title": "Saving documentation time"
+        },
+        {
+          "title": "Patient Data Protection"
+        }
+      ],
+      "quote": "Medicine is an art that requires precision and care. We're here to make your work easier and more efficient."
+    },
+
+    "welcomeBack": "Welcome back",
+    "welcomeSubtitle": "Sign in to continue to your dashboard",
+
+    "email": "Email address",
+    "emailPlaceholder": "doctor@hospital.com",
+
+    "password": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+
+    "login": "Sign in",
+    "loggingIn": "Signing in...",
+    "logout": "Log out",
+    "loggingOut": "Signing out...",
+
+    "or": "or",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create a new account",
+
+    "errors": {
+      "emailInvalid": "Invalid email address",
+      "emailRequired": "Email is required",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordRequired": "Password is required",
+      "tokenMissing": "You signed in successfully, but no authentication token was returned by the server.",
+      "generic": "Something went wrong while signing in. Please check your details and try again"
+    },
+
+    "register": {
+      "title": "Create a new account",
+      "subtitle": "Join MedAssist and get complete support for pregnancy follow-up",
+
+      "steps": {
+        "personalInfo": "Personal information",
+        "professionalInfo": "Professional information"
+      },
+
+      "firstName": "First name",
+      "firstNamePlaceholder": "Zain",
+
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Rahmoun",
+
+      "phone": "Phone number",
+      "phonePlaceholder": "9xx xxx xxx",
+
+      "specialty": "Medical specialty",
+      "specialtyPlaceholder": "Select specialty",
+
+      "specialties": [
+        "Obstetrics & Gynecology",
+        "Fetal & Neonatal Medicine",
+        "Pregnancy Nutrition",
+        "Other"
+      ],
+
+      "licenseNumber": "Medical license number",
+      "licenseNumberPlaceholder": "MED-XXXXXXX",
+
+      "clinicName": "Hospital / Clinic (optional)",
+      "clinicNamePlaceholder": "Maternity Specialist Hospital",
+
+      "confirmPassword": "Confirm password",
+      "passwordMin": "Password must be at least 8 characters",
+
+      "agreeTermsPrefix": "I agree to the",
+      "termsLink": "Terms & Conditions",
+      "and": "and",
+      "privacyLink": "Privacy Policy",
+
+      "next": "Next",
+      "back": "Back",
+
+      "createAccount": "Create account",
+      "creatingAccount": "Creating account...",
+
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+
+      "errors": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "phoneRequired": "Phone number is required",
+        "specialtyRequired": "Please select your specialty",
+        "licenseRequired": "Medical license number is required",
+        "confirmPasswordRequired": "Please confirm your password",
+        "confirmPasswordMismatch": "Passwords do not match",
+        "termsRequired": "You must agree to the terms to continue",
+        "generic": "Something went wrong while creating your account, please try again"
+      }
+    },
+
+    "verify": {
+      "title": "Verify your email",
+      "subtitle": "Enter the verification code sent to your email",
+      "sentTo": "We sent a verification code to",
+      "codeLabel": "Verification code",
+
+      "verifyButton": "Verify code",
+      "verifying": "Verifying...",
+
+      "noCode": "Didn't receive the code?",
+      "resend": "Resend code",
+      "resendIn": "Resend in {{seconds}}s",
+
+      "codeExpiresIn": "Verification code expires in",
+"codeExpired": "The verification code has expired",
+"resendSuccess": "A new verification code has been sent to your email",
+"resending": "Resending...",
+
+      "backToLogin": "Back to sign in",
+
+      "errors": {
+        "codeIncomplete": "Please enter the full 6-digit code",
+        "codeInvalid": "Invalid verification code, please try again",
+        "resendFailed": "Couldn't resend the code, please try again"
+      }
+    },
+
+    "forgetPass": {
+      "title": "Forgot Password?",
+      "subtitle": "Enter your email address and we'll send you a reset link.",
+      "sendTo": "We'll send a link to your email to reset your password. Make sure you enter the email associated with your account.",
+      "Mail": "Email Address",
+      "sendButton": "Send Reset Link",
+      "back": "Back to login",
+      "sending": "Sending verification code...",
+"errors": {
+  "sendFailed": "Couldn't send the verification code. Check your email and try again"
+}
+    },
+
+    "resetPass": {
+      "title": "Create a New Password",
+      "subtitle": "Enter a strong password to protect your account.",
+      "titleF1": "New Password",
+      "titleF2": "Confirm Password",
+      "sendButton": "Save New Password",
+      "back": "Back to Sign In",
+      "success": "Your password has been changed successfully. You can now sign in.",
+
+      "resetting": "Resetting password...",
+"errors": {
+  "uppercase": "Password must contain at least one uppercase letter",
+  "lowercase": "Password must contain at least one lowercase letter",
+  "symbol": "Password must contain at least one special character",
+  "resetFailed": "Couldn't reset your password. Please try again"
+}
+    }
+  },
+
+  "dashboard": {
+    "stats": {
+      "warnings": "Warnings",
+      "alert": "Alert",
+      "approvedToday": "Approved Today",
+      "sessions": "Sessions",
+      "inProgress": "In Progress",
+      "session": "Session",
+      "todaySessions": "Today's Sessions",
+      "newSessions": "New",
+      "totalPatients": "Total Patients",
+      "appointmentsToday": "Today's Appointments",
+      "revenue": "Revenue",
+      "occupancy": "Bed Occupancy Rate"
+    },
+
+    "sessions": {
+      "title": "Sessions",
+      "subtitle": "Manage and monitor all your medical sessions",
+      "sessionNumber": "Session Number",
+      "patient": "Patient",
+      "date": "Date",
+      "duration": "Duration",
+      "status": "Status",
+      "actions": "Actions",
+      "searchPatient": "Search by patient name...",
+      "allCases": "All Cases",
+      "pending": "Pending Review",
+      "processing": "In Treatment",
+      "approved": "Approved",
+      "pendingReview": "Pending Review",
+      "inTreatment": "In Treatment",
+      "newSession": "New Session"
+    },
+
+    "charts": {
+      "weeklyActivity": "Weekly Activity",
+      "analytics": "Medical Flow & Revenue Analytics",
+      "viewReport": "View Report",
+      "distribution": "Case Distribution"
+    },
+
+    "quickActions": {
+      "title": "Quick Actions",
+      "newSession": "Start New Session",
+      "viewSessions": "View Sessions"
+    },
+
+    "recentSessions": {
+      "title": "Recent Sessions",
+      "subtitle": "Latest Sessions",
+      "viewAll": "View All"
+    },
+
+    "menu": {
+      "overview": "Overview",
+      "appointments": "Appointments & Schedule",
+      "patients": "Patient Management",
+      "sessions": "Sessions",
+      "newSession": "New Session",
+      "reports": "Approved Reports",
+      "settings": "Settings",
+      "profile": "Profile"
+    },
+
+    "common": {
+      "emptyFeature": "This screen is currently under development and will be linked soon."
+    },
+
+    "profile": {
+      "doctorName": "Dr. Ahmed Mohamed",
+      "doctorTitle": "Practicing Physician",
+      "doctorInitial": "Dr",
+      "title": "Doctor Profile",
+      "subtitle": "Manage your account settings and specialties",
+      "personalInfo": "Personal Information",
+      "professionalInfo": "Professional Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone Number",
+      "hospitalOrClinic": "Hospital or Clinic",
+      "email": "Email Address",
+      "specialties": "Medical Specialties",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "success": "Profile updated successfully!",
+      "imageSuccess": "Profile picture updated successfully!",
+      "imageError": "Failed to upload profile picture.",
+      "saveError": "Failed to update profile details.",
+      "imageSizeError": "Image must be smaller than 5MB.",
+      "loadingData": "Loading profile details...",
+      "changePhoto": "Change Photo",
+      "selectSpecialty": "Add a specialty...",
+      "specialtyRequired": "At least one specialty is required",
+      "fetchErrorTitle": "Failed to load profile data",
+      "tryAgain": "Try Again"
+    },
+
+    "reports": {
+      "title": "Approved Reports",
+      "subtitle": "All approved medical reports",
+      "approved": "Approved",
+      "viewAll": "View All",
+      "backToReports": "Back to Reports",
+      "reportTitle": "Medical Report",
+      "medicalReport": "Medical Report",
+      "reportSubtitle": "Medical Assistant – Smart Documentation System",
+      "approvedOn": "Approved on",
+      "downloadPDF": "Download PDF",
+      "copyText": "Copy Text",
+      "copySuccess": "Report copied successfully!",
+      "patientName": "Patient Name",
+      "sessionNumber": "Session Number",
+      "date": "Date",
+      "duration": "Duration",
+      "symptoms": "Symptoms",
+      "symptomsLabel": "Symptoms",
+      "diagnosis": "Diagnosis",
+      "diagnosisLabel": "Diagnosis",
+      "treatmentPlan": "Treatment Plan",
+      "treatmentLabel": "Treatment Plan",
+      "soapSummary": "SOAP Summary",
+
+      "soap": {
+        "subjective": "SUBJECTIVE (S)",
+        "objective": "OBJECTIVE (O)",
+        "assessment": "ASSESSMENT (A)",
+        "plan": "PLAN (P)"
+      },
+
+      "reportDisclaimer": "This report was generated by the Medical Assistant AI system and has been reviewed and approved by the doctor.",
+      "doctorSignature": "Doctor's Signature"
+    }
+  },
+
+  "days": {
+    "sat": "Sat",
+    "sun": "Sun",
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri"
+  },
+
+  "common": {
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية"
+  }
+}
+```
+
+---
+
+### <a id="📄-src-i18n-config-js"></a>📄 `src/i18n/config.js`
+
+**File Info:**
+- **Size**: 876 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/i18n/config.js`
+- **Relative Path**: `src/i18n`
+- **Created**: 2026-08-17 16:51:06 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:35 (Asia/Damascus / GMT+03:00)
+- **MD5**: `0d8bc7b5e84dcda8de31e84d708bb5a9`
+- **SHA256**: `cd1808420cacafc7437a41271d132c9177c5a78263064da858ba3ca06e243a68`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```javascript
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+import ar from "./locales/ar/translation.json";
+import en from "./locales/en/translation.json";
+
+const storedLang =
+  typeof window !== "undefined" ? localStorage.getItem("lang") : null;
+
+i18n.use(initReactI18next).init({
+  resources: {
+    ar: { translation: ar },
+    en: { translation: en },
+  },
+  lng: storedLang || "ar",
+  fallbackLng: "ar",
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
+// مزامنة اتجاه ولغة الصفحة <html dir="" lang="">
+const applyDocumentDirection = (lng) => {
+  if (typeof document === "undefined") return;
+  document.documentElement.lang = lng;
+  document.documentElement.dir = i18n.dir(lng);
+};
+
+applyDocumentDirection(i18n.language);
+i18n.on("languageChanged", applyDocumentDirection);
+
+export default i18n;
+
+```
+
+---
+
+### <a id="📄-src-app-jsx"></a>📄 `src/App.jsx`
+
+**File Info:**
+- **Size**: 2.65 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/App.jsx`
+- **Relative Path**: `src`
+- **Created**: 2026-08-17 16:52:10 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `abe34a8f1956f90a83445e49ca442ba6`
+- **SHA256**: `41716e1dc38e86ace40092955ad3164e4455034b4d34738b456190d6ebca9d9d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import LoginPage from "./features/auth/pages/loginpage";
+import RegisterPage from "./features/auth/pages/RegisterPage";
+import ForgetPassPage from "./features/auth/pages/ForgetPage";
+import ResetPassPage from "./features/auth/pages/ResetPage";
+import VerifyPage from "./features/auth/pages/verifyPage";
+import DashboardPage from "./features/dashboard/pages/DashboardPage";
+import OverviewTab from "./features/dashboard/components/OverviewTab";
+import AppointmentsTab from "./features/dashboard/components/AppointmentsTab";
+import PatientsTab from "./features/dashboard/components/PatientsTab";
+import ReportsTab from "./features/dashboard/components/ReportsTab";
+import ReportDetail from "./features/dashboard/components/ReportDetail";
+import NewSessionPage from "./features/create_session/pages/NewSession";
+import ProfileTab from "./features/profile/pages/ProfileTab";
+import AuthLayout from "./component/layout/AuthLayout";
+
+import ProtectedRoute from "./features/auth/components/ProtectedRoute";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* auth */}
+        <Route element={<AuthLayout />}>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/forget-password" element={<ForgetPassPage />} />
+          <Route path="/verify" element={<VerifyPage />} />
+          <Route path="/reset-password" element={<ResetPassPage />} />
+          <Route path="/" element={<LoginPage />} />
+        </Route>
+
+        {/* Protected Dashboard  */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<Navigate to="overview" replace />} />
+          <Route path="overview" element={<OverviewTab />} />
+          <Route path="appointments" element={<AppointmentsTab />} />
+          <Route path="patients" element={<PatientsTab />} />
+          <Route path="new-session" element={<NewSessionPage />} />
+          <Route path="reports" element={<ReportsTab />} />
+          <Route path="reports/:reportId" element={<ReportDetail />} />
+          <Route path="profile" element={<ProfileTab />} />
+        </Route>
+
+        <Route
+          path="/setup-session"
+          element={<Navigate to="/dashboard/new-session" replace />}
+        />
+        {/*  Fallback  */}
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+```
+
+---
+
+### <a id="📄-src-index-css"></a>📄 `src/index.css`
+
+**File Info:**
+- **Size**: 321 B
+- **Extension**: `.css`
+- **Language**: `css`
+- **Location**: `src/index.css`
+- **Relative Path**: `src`
+- **Created**: 2026-08-17 16:51:08 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `75ce3347a9e122e7d4278749d1e06157`
+- **SHA256**: `9ae06ecd10d92b965d93cffa7cdbab791d2e720225372c02db0a2d58539d6669`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```css
+@import "tailwindcss";
+
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+}
+
+@theme {
+  --color-primary: #0b7a9e;
+  --color-primary-dark: #0B4658;
+  --color-secondary: #0d9488;
+  --color-danger: #ef4444;
+  --color-surface: #f8fafc;
+}
+```
+
+---
+
+### <a id="📄-src-main-jsx"></a>📄 `src/main.jsx`
+
+**File Info:**
+- **Size**: 269 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/main.jsx`
+- **Relative Path**: `src`
+- **Created**: 2026-08-17 16:51:10 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `5039fdd6c759317a9f7f1a1a1c2965d3`
+- **SHA256**: `e590ecc553ca337f8770bf6b2208def7ee0c8855f346bc51422cff7fff5feb24`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import "./i18n/config";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+
+```
+
+---
+
+### <a id="📄-eslint-config-js"></a>📄 `eslint.config.js`
+
+**File Info:**
+- **Size**: 589 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `eslint.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-08-17 16:50:30 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `fa91453358b56681481f75f81d1bfccd`
+- **SHA256**: `9f9b44b8e55768eaf86e417b96919510b12055d87806e0e2f0703c5a0eb64817`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+  },
+])
+
+```
+
+---
+
+### <a id="📄-index-html"></a>📄 `index.html`
+
+**File Info:**
+- **Size**: 382 B
+- **Extension**: `.html`
+- **Language**: `html`
+- **Location**: `index.html`
+- **Relative Path**: `root`
+- **Created**: 2026-08-17 16:50:30 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `8c867d983767b74d3d24c1442ef99fe0`
+- **SHA256**: `aa395eb86bb07efb581914cafdf26509ccc57692ea1347c03e3c9c02c2be22b5`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>medical-assistant</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+```
+
+---
+
+### <a id="📄-package-lock-json"></a>📄 `package-lock.json`
+
+**File Info:**
+- **Size**: 117.86 KB
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `package-lock.json`
+- **Relative Path**: `root`
+- **Created**: 2026-08-17 16:50:30 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:34:05 (Asia/Damascus / GMT+03:00)
+- **MD5**: `ad36a2f20cf04360b4adc4905908bd87`
+- **SHA256**: `75453a88098be43ad824cf3f5543c8db1e765601d5f99d223894217bcf9c8f23`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "name": "medical-assistant",
+  "version": "0.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "medical-assistant",
+      "version": "0.0.0",
+      "dependencies": {
+        "@tailwindcss/vite": "^4.3.1",
+        "axios": "^1.19.0",
+        "formik": "^2.4.9",
+        "framer-motion": "^12.40.0",
+        "i18next": "^26.3.1",
+        "lucide-react": "^1.18.0",
+        "motion": "^12.40.0",
+        "react": "^19.2.6",
+        "react-dom": "^19.2.6",
+        "react-i18next": "^17.0.8",
+        "react-router-dom": "^7.17.0",
+        "tailwindcss": "^4.3.1",
+        "yup": "^1.7.1"
+      },
+      "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^6.0.1",
+        "eslint": "^10.3.0",
+        "eslint-plugin-react-hooks": "^7.1.1",
+        "eslint-plugin-react-refresh": "^0.5.2",
+        "globals": "^17.6.0",
+        "vite": "^8.0.12"
+      }
+    },
+    "node_modules/@babel/code-frame": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.7.tgz",
+      "integrity": "sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-validator-identifier": "^7.29.7",
+        "js-tokens": "^4.0.0",
+        "picocolors": "^1.1.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/compat-data": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.29.7.tgz",
+      "integrity": "sha512-locTkQyKvwIEgBzVrn8693ebc97F2U8ZHjbXwDXJ5Fn2TCpNwTlKcaKLkdHop5c/icOFE7qt7Q9JC5hnKNa6Gg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/core": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.29.7.tgz",
+      "integrity": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.29.7",
+        "@babel/generator": "^7.29.7",
+        "@babel/helper-compilation-targets": "^7.29.7",
+        "@babel/helper-module-transforms": "^7.29.7",
+        "@babel/helpers": "^7.29.7",
+        "@babel/parser": "^7.29.7",
+        "@babel/template": "^7.29.7",
+        "@babel/traverse": "^7.29.7",
+        "@babel/types": "^7.29.7",
+        "@jridgewell/remapping": "^2.3.5",
+        "convert-source-map": "^2.0.0",
+        "debug": "^4.1.0",
+        "gensync": "^1.0.0-beta.2",
+        "json5": "^2.2.3",
+        "semver": "^6.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/babel"
+      }
+    },
+    "node_modules/@babel/generator": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/generator/-/generator-7.29.7.tgz",
+      "integrity": "sha512-DkXD5OJQaAQIdZ1bt3UZdEnHAn9Imd3IVBdX03UFe+ony9Ojw5pzr9YVKGDY1jt+Gcn/FnGkNf8r+Vj5NOJWtQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.29.7",
+        "@babel/types": "^7.29.7",
+        "@jridgewell/gen-mapping": "^0.3.12",
+        "@jridgewell/trace-mapping": "^0.3.28",
+        "jsesc": "^3.0.2"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-compilation-targets": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.29.7.tgz",
+      "integrity": "sha512-wem6WaBj4NaVYVdNhLPPVacES6ZJ+KBBfSkTMD3YZxbP3rm3Di85tJU5ljaUNhaOynt+Aj0xruhYuzQBt8n71g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/compat-data": "^7.29.7",
+        "@babel/helper-validator-option": "^7.29.7",
+        "browserslist": "^4.24.0",
+        "lru-cache": "^5.1.1",
+        "semver": "^6.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-globals": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.29.7.tgz",
+      "integrity": "sha512-3nQVUAtvkKH9zahfWgw96Jc/uFOmjACE1kQz82E2lqWmHBgjzbNlsC22nuQTfahmWeQtTq5nQ/4Nnd2A1wj4zA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-module-imports": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.29.7.tgz",
+      "integrity": "sha512-ejHwrQQYcm9xnTivShn2IDOlIzInN34AXskvq9QicvCtEzq1Vzclu/tKF8Jq1Cg8JG2GL6/EmjgsCT7lXepE3g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/traverse": "^7.29.7",
+        "@babel/types": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-module-transforms": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.29.7.tgz",
+      "integrity": "sha512-UPUVSyXbOh627KiCIGQSgwWzGeBKLkaJ9PJEdrngIwMSzxLR4jS4+f1f1jb7VzBbg8nFLaYotvVPFCTqdrmTAg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-module-imports": "^7.29.7",
+        "@babel/helper-validator-identifier": "^7.29.7",
+        "@babel/traverse": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0"
+      }
+    },
+    "node_modules/@babel/helper-string-parser": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.29.7.tgz",
+      "integrity": "sha512-Pb5ijPrZ89GDH8223L4UP8i6QApWxs04RbPQJTeWDV0/keR2E36MeKnyr6LYmUUvqRRI+Iv87SuF1W6ErINzYw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-validator-identifier": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz",
+      "integrity": "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-validator-option": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.29.7.tgz",
+      "integrity": "sha512-N9ZErrD+yW5geCDtBqnOoxmR8+tNKiGuxKlDpuJxfsqpa2dFcexaziGAE/qoHLiDDreVNMupxGmSoNlyvsA3gw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helpers": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.7.tgz",
+      "integrity": "sha512-1k2lAGRMfHTcwuNYcCNUmaUffmQv8KWMfh2iJUUeRlwlwH4FdNG7mfPI10NPfLHJFThE4Tyr4mv7kTNZOiPuBg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/template": "^7.29.7",
+        "@babel/types": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/parser": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.29.7.tgz",
+      "integrity": "sha512-hnORnjP/1P/zFEndoeX+n+t1RwWRJiJpM/jO7FW32Kn9r5+sJB2JWOdYo4L6k78j15eCwY3Gm/7364B1EMwtNg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.29.7"
+      },
+      "bin": {
+        "parser": "bin/babel-parser.js"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@babel/runtime": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz",
+      "integrity": "sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/template": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/template/-/template-7.29.7.tgz",
+      "integrity": "sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.29.7",
+        "@babel/parser": "^7.29.7",
+        "@babel/types": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/traverse": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.7.tgz",
+      "integrity": "sha512-EhlfNQtZ+NK22w5BM61ciuiq1m58ed33Wr1Xan//ZRTy6hgjnwyCffRYwzsGXdASJSUJ1guZILsErh1eQcl+zw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.29.7",
+        "@babel/generator": "^7.29.7",
+        "@babel/helper-globals": "^7.29.7",
+        "@babel/parser": "^7.29.7",
+        "@babel/template": "^7.29.7",
+        "@babel/types": "^7.29.7",
+        "debug": "^4.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/types": {
+      "version": "7.29.7",
+      "resolved": "https://registry.npmjs.org/@babel/types/-/types-7.29.7.tgz",
+      "integrity": "sha512-4zBIxpPzowiZpusoFkyGVwakdRJUyuH5PxQ/PrqghfdFWWasvnCdPfQXHrenDai+gyLARulZjZowCOj6fjT4pA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-string-parser": "^7.29.7",
+        "@babel/helper-validator-identifier": "^7.29.7"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@emnapi/core": {
+      "version": "1.10.0",
+      "resolved": "https://registry.npmjs.org/@emnapi/core/-/core-1.10.0.tgz",
+      "integrity": "sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "@emnapi/wasi-threads": "1.2.1",
+        "tslib": "^2.4.0"
+      }
+    },
+    "node_modules/@emnapi/runtime": {
+      "version": "1.10.0",
+      "resolved": "https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.10.0.tgz",
+      "integrity": "sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "tslib": "^2.4.0"
+      }
+    },
+    "node_modules/@emnapi/wasi-threads": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.1.tgz",
+      "integrity": "sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "tslib": "^2.4.0"
+      }
+    },
+    "node_modules/@eslint-community/eslint-utils": {
+      "version": "4.9.1",
+      "resolved": "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.1.tgz",
+      "integrity": "sha512-phrYmNiYppR7znFEdqgfWHXR6NCkZEK7hwWDHZUjit/2/U0r6XvkDl0SYnoM51Hq7FhCGdLDT6zxCCOY1hexsQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "eslint-visitor-keys": "^3.4.3"
+      },
+      "engines": {
+        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/eslint"
+      },
+      "peerDependencies": {
+        "eslint": "^6.0.0 || ^7.0.0 || >=8.0.0"
+      }
+    },
+    "node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys": {
+      "version": "3.4.3",
+      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz",
+      "integrity": "sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/@eslint-community/regexpp": {
+      "version": "4.12.2",
+      "resolved": "https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz",
+      "integrity": "sha512-EriSTlt5OC9/7SXkRSCAhfSxxoSUgBm33OH+IkwbdpgoqsSsUg7y3uh+IICI/Qg4BBWr3U2i39RpmycbxMq4ew==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": "^12.0.0 || ^14.0.0 || >=16.0.0"
+      }
+    },
+    "node_modules/@eslint/config-array": {
+      "version": "0.23.5",
+      "resolved": "https://registry.npmjs.org/@eslint/config-array/-/config-array-0.23.5.tgz",
+      "integrity": "sha512-Y3kKLvC1dvTOT+oGlqNQ1XLqK6D1HU2YXPc52NmAlJZbMMWDzGYXMiPRJ8TYD39muD/OTjlZmNJ4ib7dvSrMBA==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@eslint/object-schema": "^3.0.5",
+        "debug": "^4.3.1",
+        "minimatch": "^10.2.4"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      }
+    },
+    "node_modules/@eslint/config-helpers": {
+      "version": "0.6.0",
+      "resolved": "https://registry.npmjs.org/@eslint/config-helpers/-/config-helpers-0.6.0.tgz",
+      "integrity": "sha512-ii6Bw9jJ2zi2cWA2Z+9/QZ/+3DX6kwaV5Q986D/CdP3Lap3w/pgQZ373FV7byY/i7L4IRH/G43I5dz1ClsCbpA==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@eslint/core": "^1.2.1"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      }
+    },
+    "node_modules/@eslint/core": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/@eslint/core/-/core-1.2.1.tgz",
+      "integrity": "sha512-MwcE1P+AZ4C6DWlpin/OmOA54mmIZ/+xZuJiQd4SyB29oAJjN30UW9wkKNptW2ctp4cEsvhlLY/CsQ1uoHDloQ==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@types/json-schema": "^7.0.15"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      }
+    },
+    "node_modules/@eslint/js": {
+      "version": "10.0.1",
+      "resolved": "https://registry.npmjs.org/@eslint/js/-/js-10.0.1.tgz",
+      "integrity": "sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "funding": {
+        "url": "https://eslint.org/donate"
+      },
+      "peerDependencies": {
+        "eslint": "^10.0.0"
+      },
+      "peerDependenciesMeta": {
+        "eslint": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/@eslint/object-schema": {
+      "version": "3.0.5",
+      "resolved": "https://registry.npmjs.org/@eslint/object-schema/-/object-schema-3.0.5.tgz",
+      "integrity": "sha512-vqTaUEgxzm+YDSdElad6PiRoX4t8VGDjCtt05zn4nU810UIx/uNEV7/lZJ6KwFThKZOzOxzXy48da+No7HZaMw==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      }
+    },
+    "node_modules/@eslint/plugin-kit": {
+      "version": "0.7.2",
+      "resolved": "https://registry.npmjs.org/@eslint/plugin-kit/-/plugin-kit-0.7.2.tgz",
+      "integrity": "sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@eslint/core": "^1.2.1",
+        "levn": "^0.4.1"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      }
+    },
+    "node_modules/@humanfs/core": {
+      "version": "0.19.2",
+      "resolved": "https://registry.npmjs.org/@humanfs/core/-/core-0.19.2.tgz",
+      "integrity": "sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@humanfs/types": "^0.15.0"
+      },
+      "engines": {
+        "node": ">=18.18.0"
+      }
+    },
+    "node_modules/@humanfs/node": {
+      "version": "0.16.8",
+      "resolved": "https://registry.npmjs.org/@humanfs/node/-/node-0.16.8.tgz",
+      "integrity": "sha512-gE1eQNZ3R++kTzFUpdGlpmy8kDZD/MLyHqDwqjkVQI0JMdI1D51sy1H958PNXYkM2rAac7e5/CnIKZrHtPh3BQ==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@humanfs/core": "^0.19.2",
+        "@humanfs/types": "^0.15.0",
+        "@humanwhocodes/retry": "^0.4.0"
+      },
+      "engines": {
+        "node": ">=18.18.0"
+      }
+    },
+    "node_modules/@humanfs/types": {
+      "version": "0.15.0",
+      "resolved": "https://registry.npmjs.org/@humanfs/types/-/types-0.15.0.tgz",
+      "integrity": "sha512-ZZ1w0aoQkwuUuC7Yf+7sdeaNfqQiiLcSRbfI08oAxqLtpXQr9AIVX7Ay7HLDuiLYAaFPu8oBYNq/QIi9URHJ3Q==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=18.18.0"
+      }
+    },
+    "node_modules/@humanwhocodes/module-importer": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz",
+      "integrity": "sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=12.22"
+      },
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/nzakas"
+      }
+    },
+    "node_modules/@humanwhocodes/retry": {
+      "version": "0.4.3",
+      "resolved": "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz",
+      "integrity": "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=18.18"
+      },
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/nzakas"
+      }
+    },
+    "node_modules/@jridgewell/gen-mapping": {
+      "version": "0.3.13",
+      "resolved": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
+      "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/sourcemap-codec": "^1.5.0",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/remapping": {
+      "version": "2.3.5",
+      "resolved": "https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz",
+      "integrity": "sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/gen-mapping": "^0.3.5",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/resolve-uri": {
+      "version": "3.1.2",
+      "resolved": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz",
+      "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@jridgewell/sourcemap-codec": {
+      "version": "1.5.5",
+      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz",
+      "integrity": "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==",
+      "license": "MIT"
+    },
+    "node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.31",
+      "resolved": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
+      "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/resolve-uri": "^3.1.0",
+        "@jridgewell/sourcemap-codec": "^1.4.14"
+      }
+    },
+    "node_modules/@napi-rs/wasm-runtime": {
+      "version": "1.1.5",
+      "resolved": "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.5.tgz",
+      "integrity": "sha512-AWPoBRJ9tsnVhor4sjO7rkni+7p+2IAEFj6cx06UgP10jkQHqay/36uRV/bFkgrh18D9vb4cr8Q0Pthskgzy+Q==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "@tybys/wasm-util": "^0.10.2"
+      },
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/Brooooooklyn"
+      },
+      "peerDependencies": {
+        "@emnapi/core": "^1.7.1",
+        "@emnapi/runtime": "^1.7.1"
+      }
+    },
+    "node_modules/@oxc-project/types": {
+      "version": "0.133.0",
+      "resolved": "https://registry.npmjs.org/@oxc-project/types/-/types-0.133.0.tgz",
+      "integrity": "sha512-KzkdCd6Uxqnf6l3HOw1xfatAlUURA0g14cvBYFyJ5SaNOQbOUvBr9PKArcPcrNIeRsBdgcUzOGrhKveVpvOIGA==",
+      "license": "MIT",
+      "funding": {
+        "url": "https://github.com/sponsors/Boshen"
+      }
+    },
+    "node_modules/@rolldown/binding-android-arm64": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-android-arm64/-/binding-android-arm64-1.0.3.tgz",
+      "integrity": "sha512-454rs7jHngixp/NMxd5srYD57OnzSlZ/eFTETjORQHLwJG1lRtmNOJcBerZlfu4GjKqeq8aCCIQrMdHyhI51Hw==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-darwin-arm64": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.0.3.tgz",
+      "integrity": "sha512-PcAhP+ynjURNyy8SKGl5DQP94aGuB/7JrXJb/t7P+hanXvQVMWzUvRRhBAcg/lNRadBhoUPqSoP4xw5tR/KBEA==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-darwin-x64": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-darwin-x64/-/binding-darwin-x64-1.0.3.tgz",
+      "integrity": "sha512-9YpfeUvSE2RS7wysJ81uOZkXJz7f7Q55H2Gvp3VEw/EsahqDtrphrZ0EwDLK5vvKOzaCrBsjF8JmnMLcUt78Gg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-freebsd-x64": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-freebsd-x64/-/binding-freebsd-x64-1.0.3.tgz",
+      "integrity": "sha512-yB1IlAsSNHncV6SCTL27/MVGR5htvQsoGxIv5KMGXALp+Ll1wYsn+x98M9MW7qa+NdSbvrrY7ANI4wLJ0n1e6g==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-arm-gnueabihf": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.0.3.tgz",
+      "integrity": "sha512-Yi30IVAAfLUCy2MseFjbB1jAMDl1VMCAas5StnYp8da9+CKvMd2H2cbEjWcw5NPaPqzvYkVIaF1nNUG+b7u/sw==",
+      "cpu": [
+        "arm"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-arm64-gnu": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.0.3.tgz",
+      "integrity": "sha512-jsO7R8To+AdlYgUmN5sHSCZbfhtMBkO0WUx8iORQnPcMMdgr7qM2DQmMwgabs3GhNztdmoKkMKQFHD6DTMCIQw==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-arm64-musl": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.0.3.tgz",
+      "integrity": "sha512-VWkUHwWriDciit80wleYwKILoR/KMvxh/IdwS/paX+ZgpuRpCrKLUdadJbc0NpBEiyhpYawsJ73j9aCvOH+f7Q==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-ppc64-gnu": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.0.3.tgz",
+      "integrity": "sha512-5f1laC0SlIR0yDbFCd8acUhvJIag6N3zC5P7oUPN6wX0aOma+uKJ0wBDH5aq7I1PVI2ttTlhJwzwRIBnLiSGEg==",
+      "cpu": [
+        "ppc64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-s390x-gnu": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.0.3.tgz",
+      "integrity": "sha512-Iq4ko0r4XsgbrF/LunNgHtAGLRRVE2kXonAXQ/MV0mC6jQpMOhW1SvtZja2EhC/kd05++bP78dsqBeIQyYJ6Yg==",
+      "cpu": [
+        "s390x"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-x64-gnu": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.0.3.tgz",
+      "integrity": "sha512-B8m6tD5+/N5FeNQFbKlLA/2yVq9ycQP1SeedyEYYKWBNR3ZQbkvIUcNnDNM03lO1l5F2roiiFJGgvoLLyZXtSg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-linux-x64-musl": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-linux-x64-musl/-/binding-linux-x64-musl-1.0.3.tgz",
+      "integrity": "sha512-pSdpdUJHkuCxun9LE7jvgUB9qsRgaiyNNCX7m/AvHTcq67AiT/Yhoxvw5zPfhrM8k/BfP8ce/hMOpthKDpEUow==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-openharmony-arm64": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-openharmony-arm64/-/binding-openharmony-arm64-1.0.3.tgz",
+      "integrity": "sha512-OXXS3RKJgX2uLwM+gYyuH5omcH8fL1LJs96pZGgtetVCahON57+d4SJHzTgZiOjxgGkSnpXpOsWuPDGAKAigEg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openharmony"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-wasm32-wasi": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-wasm32-wasi/-/binding-wasm32-wasi-1.0.3.tgz",
+      "integrity": "sha512-JTtb8BWFynicNSoPrehsCzBtOKjZ6jhMiPFEmOiuXg1Fl8dn2KHQob+GuPSGR0dryQa1PQJbzjF3dqO/whhjLg==",
+      "cpu": [
+        "wasm32"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "@emnapi/core": "1.10.0",
+        "@emnapi/runtime": "1.10.0",
+        "@napi-rs/wasm-runtime": "^1.1.4"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-win32-arm64-msvc": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.0.3.tgz",
+      "integrity": "sha512-gEdFFEN70A/jxb2svrWsN3aDL7OUtmvlOy+6fa2jxG8K0wQ1ZbdeLGnidov6Yu5/733dI5ySfzFlQ/cb0bSz1g==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/binding-win32-x64-msvc": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.0.3.tgz",
+      "integrity": "sha512-eXB7CHuaQdqmJcc3koCNtNPmT/bj2gc999kUFgBxG8Ac0NdgXc4rkCHhqrgrhN3zddvvvrgzj1e90SuSfmyIXA==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      }
+    },
+    "node_modules/@rolldown/pluginutils": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.1.tgz",
+      "integrity": "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==",
+      "license": "MIT"
+    },
+    "node_modules/@tailwindcss/node": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.1.tgz",
+      "integrity": "sha512-6NDaqRoAMSXD1mr/RXu0HBvNE9a2n5tHPsxu9XHLws8o4Twes5rBM2205SUUiJ9goAtadrN6xTGX0UDEwp/N4A==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/remapping": "^2.3.5",
+        "enhanced-resolve": "5.21.6",
+        "jiti": "^2.7.0",
+        "lightningcss": "1.32.0",
+        "magic-string": "^0.30.21",
+        "source-map-js": "^1.2.1",
+        "tailwindcss": "4.3.1"
+      }
+    },
+    "node_modules/@tailwindcss/oxide": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.1.tgz",
+      "integrity": "sha512-yVPyo8RNkabVr3O2EhHEE0Rewu7YKzc1DhIqfL46LKveFrmu9XbDazNOJY7/GRuvw1h6u3utWnR29H/p5JPlgA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 20"
+      },
+      "optionalDependencies": {
+        "@tailwindcss/oxide-android-arm64": "4.3.1",
+        "@tailwindcss/oxide-darwin-arm64": "4.3.1",
+        "@tailwindcss/oxide-darwin-x64": "4.3.1",
+        "@tailwindcss/oxide-freebsd-x64": "4.3.1",
+        "@tailwindcss/oxide-linux-arm-gnueabihf": "4.3.1",
+        "@tailwindcss/oxide-linux-arm64-gnu": "4.3.1",
+        "@tailwindcss/oxide-linux-arm64-musl": "4.3.1",
+        "@tailwindcss/oxide-linux-x64-gnu": "4.3.1",
+        "@tailwindcss/oxide-linux-x64-musl": "4.3.1",
+        "@tailwindcss/oxide-wasm32-wasi": "4.3.1",
+        "@tailwindcss/oxide-win32-arm64-msvc": "4.3.1",
+        "@tailwindcss/oxide-win32-x64-msvc": "4.3.1"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-android-arm64": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-android-arm64/-/oxide-android-arm64-4.3.1.tgz",
+      "integrity": "sha512-SVlyf61g374l5cHyg8x9kf5xmLcOaxvOTsbsqDnSsDJaKOEFZ7GCvi84VAVGpxojYOs1+3K6M0UjXfqPU8vmOQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-darwin-arm64": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-darwin-arm64/-/oxide-darwin-arm64-4.3.1.tgz",
+      "integrity": "sha512-hVnWLwv+e/l7c4WKyVtHVrIPvYdqWHjRB3MDIqARynzFtnQg85kmQEFCbV9Ja0VVx4xXTIiDWY60Y7iz/iNoDA==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-darwin-x64": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.3.1.tgz",
+      "integrity": "sha512-Cf7abu0WVgbhU7ANgPUnSAvm7nCvMweusHb8FnaHlLfv/Caq4GYaEZg7ZImzzmjx4lIAfuS8q+eLIS7A7IzxIg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-freebsd-x64": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-freebsd-x64/-/oxide-freebsd-x64-4.3.1.tgz",
+      "integrity": "sha512-ZZqzX2Y+GXtXXfqSfpJhDm60OoZfvLHLCgm+J7NVqgHHJjG/m9ugZI77RwTsVd4fnBJuCFP6Ae6kTJb71UdS8g==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-linux-arm-gnueabihf": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-linux-arm-gnueabihf/-/oxide-linux-arm-gnueabihf-4.3.1.tgz",
+      "integrity": "sha512-/Ah/xik0LaMYfv9DZ0S/t4pBlBNYOcqtRwusjgovHkvT8ixueWCLyJjsaF5kQIckjb4IT8Q6K6p/iPmZMixYgg==",
+      "cpu": [
+        "arm"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-linux-arm64-gnu": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-gnu/-/oxide-linux-arm64-gnu-4.3.1.tgz",
+      "integrity": "sha512-gqdFoVJlw444GvpnheZLHmvTzSxI/cOUUh2KSNejQjTcYkW062SVD+En0rUgD+QV91bz1XGIGtt1HJd48xUGbQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-linux-arm64-musl": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-linux-arm64-musl/-/oxide-linux-arm64-musl-4.3.1.tgz",
+      "integrity": "sha512-Bwv9KwOvE0VKa86xPFif9b9c3Y1NxOV1P0gLti/IYaWEsQYZXDlxfGEtA8mdDZ7SG3wyNXAWYT5SIn3giL57oA==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-linux-x64-gnu": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-gnu/-/oxide-linux-x64-gnu-4.3.1.tgz",
+      "integrity": "sha512-Ymi8O8T15HYQdOUWUtTI6ldN0neHP85FC+Qz32xTcZ7iJXtem/x8ITev0o1e9e5rkqj4lONZfTRLvkmin1+tKg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-linux-x64-musl": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-musl/-/oxide-linux-x64-musl-4.3.1.tgz",
+      "integrity": "sha512-M+P/91qJ6uILLw4k2G93GMDRAXj61SMvFQYt39AqvUqYgExXpLL5aepfns7sj4HiAQeolirQF9E0lzRvdf4zPQ==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-wasm32-wasi": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.1.tgz",
+      "integrity": "sha512-zsM8uOeqvVGHsAXsJxsT28ttosFahLJKCLOTUBqRAtKnVgGSRitds9T432QiT8b77Yga7JIBkulIRRlJPtYhRA==",
+      "bundleDependencies": [
+        "@napi-rs/wasm-runtime",
+        "@emnapi/core",
+        "@emnapi/runtime",
+        "@tybys/wasm-util",
+        "@emnapi/wasi-threads",
+        "tslib"
+      ],
+      "cpu": [
+        "wasm32"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "@emnapi/core": "^1.10.0",
+        "@emnapi/runtime": "^1.10.0",
+        "@emnapi/wasi-threads": "^1.2.1",
+        "@napi-rs/wasm-runtime": "^1.1.4",
+        "@tybys/wasm-util": "^0.10.2",
+        "tslib": "^2.8.1"
+      },
+      "engines": {
+        "node": ">=14.0.0"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-win32-arm64-msvc": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-win32-arm64-msvc/-/oxide-win32-arm64-msvc-4.3.1.tgz",
+      "integrity": "sha512-aiNvSq9BsVk8V513lDKlrCFAgf8qBMPZTpgEhInL+NwQqs97mYmupVMrPrgBBSL8Pv/0zXu9MrMF9rMun1ZeNg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/oxide-win32-x64-msvc": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.1.tgz",
+      "integrity": "sha512-xDEyu1rg290472FEGaKHnzyDyh5QH+AlWvsU5hMoMtPpzmKlRI0jaYKCgSHDYtaQWZOYbMaduSyCwFwY4n1HmA==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 20"
+      }
+    },
+    "node_modules/@tailwindcss/vite": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.3.1.tgz",
+      "integrity": "sha512-hItDHuIIlEV61R+faXu66s1K36aTurO/Qw0e45Vskz57gXl9pWOT6eg3zmcEui6CZXddbN7zd41bwmvag4JGwQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@tailwindcss/node": "4.3.1",
+        "@tailwindcss/oxide": "4.3.1",
+        "tailwindcss": "4.3.1"
+      },
+      "peerDependencies": {
+        "vite": "^5.2.0 || ^6 || ^7 || ^8"
+      }
+    },
+    "node_modules/@tybys/wasm-util": {
+      "version": "0.10.2",
+      "resolved": "https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.2.tgz",
+      "integrity": "sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "tslib": "^2.4.0"
+      }
+    },
+    "node_modules/@types/esrecurse": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/@types/esrecurse/-/esrecurse-4.3.1.tgz",
+      "integrity": "sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@types/estree": {
+      "version": "1.0.9",
+      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+      "integrity": "sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@types/hoist-non-react-statics": {
+      "version": "3.3.7",
+      "resolved": "https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.7.tgz",
+      "integrity": "sha512-PQTyIulDkIDro8P+IHbKCsw7U2xxBYflVzW/FgWdCAePD9xGSidgA76/GeJ6lBKoblyhf9pBY763gbrN+1dI8g==",
+      "license": "MIT",
+      "dependencies": {
+        "hoist-non-react-statics": "^3.3.0"
+      },
+      "peerDependencies": {
+        "@types/react": "*"
+      }
+    },
+    "node_modules/@types/json-schema": {
+      "version": "7.0.15",
+      "resolved": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz",
+      "integrity": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@types/react": {
+      "version": "19.2.17",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.2.17.tgz",
+      "integrity": "sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==",
+      "license": "MIT",
+      "dependencies": {
+        "csstype": "^3.2.2"
+      }
+    },
+    "node_modules/@types/react-dom": {
+      "version": "19.2.3",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.3.tgz",
+      "integrity": "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==",
+      "dev": true,
+      "license": "MIT",
+      "peerDependencies": {
+        "@types/react": "^19.2.0"
+      }
+    },
+    "node_modules/@vitejs/plugin-react": {
+      "version": "6.0.2",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.0.2.tgz",
+      "integrity": "sha512-DlSMqo4WhThw4vB8Mpn0Woe9J+Jfq1geJ61AKW0QEgLzGMNwtIMdxbDUzLxcun8W7NbJO0e2Jg/Nxm3cCSVzzg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@rolldown/pluginutils": "^1.0.0"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0",
+        "vite": "^8.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@rolldown/plugin-babel": {
+          "optional": true
+        },
+        "babel-plugin-react-compiler": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/acorn": {
+      "version": "8.17.0",
+      "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.17.0.tgz",
+      "integrity": "sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "acorn": "bin/acorn"
+      },
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/acorn-jsx": {
+      "version": "5.3.2",
+      "resolved": "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz",
+      "integrity": "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==",
+      "dev": true,
+      "license": "MIT",
+      "peerDependencies": {
+        "acorn": "^6.0.0 || ^7.0.0 || ^8.0.0"
+      }
+    },
+    "node_modules/agent-base": {
+      "version": "6.0.2",
+      "resolved": "https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz",
+      "integrity": "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==",
+      "license": "MIT",
+      "dependencies": {
+        "debug": "4"
+      },
+      "engines": {
+        "node": ">= 6.0.0"
+      }
+    },
+    "node_modules/ajv": {
+      "version": "6.15.0",
+      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.15.0.tgz",
+      "integrity": "sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "fast-deep-equal": "^3.1.1",
+        "fast-json-stable-stringify": "^2.0.0",
+        "json-schema-traverse": "^0.4.1",
+        "uri-js": "^4.2.2"
+      },
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/epoberezkin"
+      }
+    },
+    "node_modules/asynckit": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz",
+      "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==",
+      "license": "MIT"
+    },
+    "node_modules/axios": {
+      "version": "1.19.0",
+      "resolved": "https://registry.npmjs.org/axios/-/axios-1.19.0.tgz",
+      "integrity": "sha512-ht/iuYZXEjFxLH/Hkezgd7m6JKlHHXEUSneaDz8uZe1Gj5QZtCnpyDsckvAiEnT89OEbCLmnte4R4sn7P0EKFw==",
+      "license": "MIT",
+      "dependencies": {
+        "follow-redirects": "^1.16.0",
+        "form-data": "^4.0.6",
+        "https-proxy-agent": "^5.0.1",
+        "proxy-from-env": "^2.1.0"
+      }
+    },
+    "node_modules/balanced-match": {
+      "version": "4.0.4",
+      "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-4.0.4.tgz",
+      "integrity": "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": "18 || 20 || >=22"
+      }
+    },
+    "node_modules/baseline-browser-mapping": {
+      "version": "2.10.37",
+      "resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.10.37.tgz",
+      "integrity": "sha512-girxaJ7WZssDOFhzCGZTDKoTa1gk6A1TbflaYTpykLJ4UU9Fz9kx1aREM8JCuoVHbL8X8T/mJg7w2oYSq72Oig==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "bin": {
+        "baseline-browser-mapping": "dist/cli.cjs"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/brace-expansion": {
+      "version": "5.0.6",
+      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.6.tgz",
+      "integrity": "sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "balanced-match": "^4.0.2"
+      },
+      "engines": {
+        "node": "18 || 20 || >=22"
+      }
+    },
+    "node_modules/browserslist": {
+      "version": "4.28.2",
+      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.28.2.tgz",
+      "integrity": "sha512-48xSriZYYg+8qXna9kwqjIVzuQxi+KYWp2+5nCYnYKPTr0LvD89Jqk2Or5ogxz0NUMfIjhh2lIUX/LyX9B4oIg==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/browserslist"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "baseline-browser-mapping": "^2.10.12",
+        "caniuse-lite": "^1.0.30001782",
+        "electron-to-chromium": "^1.5.328",
+        "node-releases": "^2.0.36",
+        "update-browserslist-db": "^1.2.3"
+      },
+      "bin": {
+        "browserslist": "cli.js"
+      },
+      "engines": {
+        "node": "^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7"
+      }
+    },
+    "node_modules/call-bind-apply-helpers": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz",
+      "integrity": "sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0",
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/caniuse-lite": {
+      "version": "1.0.30001799",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001799.tgz",
+      "integrity": "sha512-hG1bReV+OUU+MOqK4t/ZWI0tZOyz3rqS9XuhOUz1cIcbwBKjOyJEJuw9ER5JuNyqxNk8u/JUVbGibBOL1yrjFw==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/caniuse-lite"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    "node_modules/combined-stream": {
+      "version": "1.0.8",
+      "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz",
+      "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
+      "license": "MIT",
+      "dependencies": {
+        "delayed-stream": "~1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.8"
+      }
+    },
+    "node_modules/convert-source-map": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz",
+      "integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/cookie": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz",
+      "integrity": "sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/express"
+      }
+    },
+    "node_modules/cross-spawn": {
+      "version": "7.0.6",
+      "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
+      "integrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "path-key": "^3.1.0",
+        "shebang-command": "^2.0.0",
+        "which": "^2.0.1"
+      },
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/csstype": {
+      "version": "3.2.3",
+      "resolved": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "license": "MIT"
+    },
+    "node_modules/debug": {
+      "version": "4.4.3",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+      "integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+      "license": "MIT",
+      "dependencies": {
+        "ms": "^2.1.3"
+      },
+      "engines": {
+        "node": ">=6.0"
+      },
+      "peerDependenciesMeta": {
+        "supports-color": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/deep-is": {
+      "version": "0.1.4",
+      "resolved": "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz",
+      "integrity": "sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/deepmerge": {
+      "version": "2.2.1",
+      "resolved": "https://registry.npmjs.org/deepmerge/-/deepmerge-2.2.1.tgz",
+      "integrity": "sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/delayed-stream": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz",
+      "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/detect-libc": {
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz",
+      "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/dunder-proto": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz",
+      "integrity": "sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==",
+      "license": "MIT",
+      "dependencies": {
+        "call-bind-apply-helpers": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "gopd": "^1.2.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/electron-to-chromium": {
+      "version": "1.5.372",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.372.tgz",
+      "integrity": "sha512-M3yhbAlilnwqC8D21t28UCDGHyitShTmmLRU/H+b74P6Ski16Nb9HONYEaVpMj/pwC7BEo5B95FpjODLCWbtfA==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/enhanced-resolve": {
+      "version": "5.21.6",
+      "resolved": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.21.6.tgz",
+      "integrity": "sha512-aNnGCvbJ/RIyWo1IuhNdVjnNF+EjH9wpzpNHt+ci/m9He9LJvUN8wrCcXjp9cWsGNAuvSpVFTx/vraAFQ8qGjQ==",
+      "license": "MIT",
+      "dependencies": {
+        "graceful-fs": "^4.2.4",
+        "tapable": "^2.3.3"
+      },
+      "engines": {
+        "node": ">=10.13.0"
+      }
+    },
+    "node_modules/es-define-property": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz",
+      "integrity": "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-errors": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz",
+      "integrity": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-object-atoms": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.2.tgz",
+      "integrity": "sha512-HWcBoN6NileqtSydK2FqHbS/LoDd2pqrnQHLyJzBj4kOp/ky2MWMN694xOfkK8/SnUsW2DH7EfyVlydKCsm1Zw==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-set-tostringtag": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz",
+      "integrity": "sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0",
+        "get-intrinsic": "^1.2.6",
+        "has-tostringtag": "^1.0.2",
+        "hasown": "^2.0.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/escalade": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz",
+      "integrity": "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/escape-string-regexp": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz",
+      "integrity": "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/eslint": {
+      "version": "10.5.0",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-10.5.0.tgz",
+      "integrity": "sha512-1y+7C+vi12bUK1IpZeaV3gsH9fHLBmPvYmPx42pvT/E9yG0IC8g3PUZZgp0+JLJl7ZDK0flc2gc+Aw9dpCvIsQ==",
+      "dev": true,
+      "license": "MIT",
+      "workspaces": [
+        "packages/*"
+      ],
+      "dependencies": {
+        "@eslint-community/eslint-utils": "^4.8.0",
+        "@eslint-community/regexpp": "^4.12.2",
+        "@eslint/config-array": "^0.23.5",
+        "@eslint/config-helpers": "^0.6.0",
+        "@eslint/core": "^1.2.1",
+        "@eslint/plugin-kit": "^0.7.2",
+        "@humanfs/node": "^0.16.6",
+        "@humanwhocodes/module-importer": "^1.0.1",
+        "@humanwhocodes/retry": "^0.4.2",
+        "@types/estree": "^1.0.6",
+        "ajv": "^6.14.0",
+        "cross-spawn": "^7.0.6",
+        "debug": "^4.3.2",
+        "escape-string-regexp": "^4.0.0",
+        "eslint-scope": "^9.1.2",
+        "eslint-visitor-keys": "^5.0.1",
+        "espree": "^11.2.0",
+        "esquery": "^1.7.0",
+        "esutils": "^2.0.2",
+        "fast-deep-equal": "^3.1.3",
+        "file-entry-cache": "^8.0.0",
+        "find-up": "^5.0.0",
+        "glob-parent": "^6.0.2",
+        "ignore": "^5.2.0",
+        "imurmurhash": "^0.1.4",
+        "is-glob": "^4.0.0",
+        "json-stable-stringify-without-jsonify": "^1.0.1",
+        "minimatch": "^10.2.4",
+        "natural-compare": "^1.4.0",
+        "optionator": "^0.9.3"
+      },
+      "bin": {
+        "eslint": "bin/eslint.js"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "funding": {
+        "url": "https://eslint.org/donate"
+      },
+      "peerDependencies": {
+        "jiti": "*"
+      },
+      "peerDependenciesMeta": {
+        "jiti": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/eslint-plugin-react-hooks": {
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz",
+      "integrity": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/core": "^7.24.4",
+        "@babel/parser": "^7.24.4",
+        "hermes-parser": "^0.25.1",
+        "zod": "^3.25.0 || ^4.0.0",
+        "zod-validation-error": "^3.5.0 || ^4.0.0"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {
+        "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+      }
+    },
+    "node_modules/eslint-plugin-react-refresh": {
+      "version": "0.5.3",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.5.3.tgz",
+      "integrity": "sha512-5EMmLCV98Pi4o/f/3DP/v/tNqLHMIc9I8LKClNDWhZ9JTho89/kQcitCXQBMG7sAfVRK0Ie3T2EDOzp1YXYiVA==",
+      "dev": true,
+      "license": "MIT",
+      "peerDependencies": {
+        "eslint": "^9 || ^10"
+      }
+    },
+    "node_modules/eslint-scope": {
+      "version": "9.1.2",
+      "resolved": "https://registry.npmjs.org/eslint-scope/-/eslint-scope-9.1.2.tgz",
+      "integrity": "sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==",
+      "dev": true,
+      "license": "BSD-2-Clause",
+      "dependencies": {
+        "@types/esrecurse": "^4.3.1",
+        "@types/estree": "^1.0.8",
+        "esrecurse": "^4.3.0",
+        "estraverse": "^5.2.0"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "funding": {
+        "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/eslint-visitor-keys": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-5.0.1.tgz",
+      "integrity": "sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "funding": {
+        "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/espree": {
+      "version": "11.2.0",
+      "resolved": "https://registry.npmjs.org/espree/-/espree-11.2.0.tgz",
+      "integrity": "sha512-7p3DrVEIopW1B1avAGLuCSh1jubc01H2JHc8B4qqGblmg5gI9yumBgACjWo4JlIc04ufug4xJ3SQI8HkS/Rgzw==",
+      "dev": true,
+      "license": "BSD-2-Clause",
+      "dependencies": {
+        "acorn": "^8.16.0",
+        "acorn-jsx": "^5.3.2",
+        "eslint-visitor-keys": "^5.0.1"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "funding": {
+        "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/esquery": {
+      "version": "1.7.0",
+      "resolved": "https://registry.npmjs.org/esquery/-/esquery-1.7.0.tgz",
+      "integrity": "sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==",
+      "dev": true,
+      "license": "BSD-3-Clause",
+      "dependencies": {
+        "estraverse": "^5.1.0"
+      },
+      "engines": {
+        "node": ">=0.10"
+      }
+    },
+    "node_modules/esrecurse": {
+      "version": "4.3.0",
+      "resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.3.0.tgz",
+      "integrity": "sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==",
+      "dev": true,
+      "license": "BSD-2-Clause",
+      "dependencies": {
+        "estraverse": "^5.2.0"
+      },
+      "engines": {
+        "node": ">=4.0"
+      }
+    },
+    "node_modules/estraverse": {
+      "version": "5.3.0",
+      "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+      "integrity": "sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==",
+      "dev": true,
+      "license": "BSD-2-Clause",
+      "engines": {
+        "node": ">=4.0"
+      }
+    },
+    "node_modules/esutils": {
+      "version": "2.0.3",
+      "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz",
+      "integrity": "sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==",
+      "dev": true,
+      "license": "BSD-2-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/fast-deep-equal": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/fast-json-stable-stringify": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
+      "integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/fast-levenshtein": {
+      "version": "2.0.6",
+      "resolved": "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz",
+      "integrity": "sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/fdir": {
+      "version": "6.5.0",
+      "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "peerDependencies": {
+        "picomatch": "^3 || ^4"
+      },
+      "peerDependenciesMeta": {
+        "picomatch": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/file-entry-cache": {
+      "version": "8.0.0",
+      "resolved": "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-8.0.0.tgz",
+      "integrity": "sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "flat-cache": "^4.0.0"
+      },
+      "engines": {
+        "node": ">=16.0.0"
+      }
+    },
+    "node_modules/find-up": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/find-up/-/find-up-5.0.0.tgz",
+      "integrity": "sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "locate-path": "^6.0.0",
+        "path-exists": "^4.0.0"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/flat-cache": {
+      "version": "4.0.1",
+      "resolved": "https://registry.npmjs.org/flat-cache/-/flat-cache-4.0.1.tgz",
+      "integrity": "sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "flatted": "^3.2.9",
+        "keyv": "^4.5.4"
+      },
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/flatted": {
+      "version": "3.4.2",
+      "resolved": "https://registry.npmjs.org/flatted/-/flatted-3.4.2.tgz",
+      "integrity": "sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/follow-redirects": {
+      "version": "1.16.0",
+      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.16.0.tgz",
+      "integrity": "sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==",
+      "funding": [
+        {
+          "type": "individual",
+          "url": "https://github.com/sponsors/RubenVerborgh"
+        }
+      ],
+      "license": "MIT",
+      "engines": {
+        "node": ">=4.0"
+      },
+      "peerDependenciesMeta": {
+        "debug": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/form-data": {
+      "version": "4.0.6",
+      "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.6.tgz",
+      "integrity": "sha512-vKatAh4SlVfgbv+YtmhiRjhEMJsYpsG1Y2rMQtR+SVSbytsSD1YGzDIcrAJmdFec88u/+VoGmxnl+80gL1tRCQ==",
+      "license": "MIT",
+      "dependencies": {
+        "asynckit": "^0.4.0",
+        "combined-stream": "^1.0.8",
+        "es-set-tostringtag": "^2.1.0",
+        "hasown": "^2.0.4",
+        "mime-types": "^2.1.35"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/formik": {
+      "version": "2.4.9",
+      "resolved": "https://registry.npmjs.org/formik/-/formik-2.4.9.tgz",
+      "integrity": "sha512-5nI94BMnlFDdQRBY4Sz39WkhxajZJ57Fzs8wVbtsQlm5ScKIR1QLYqv/ultBnobObtlUyxpxoLodpixrsf36Og==",
+      "funding": [
+        {
+          "type": "individual",
+          "url": "https://opencollective.com/formik"
+        }
+      ],
+      "license": "Apache-2.0",
+      "dependencies": {
+        "@types/hoist-non-react-statics": "^3.3.1",
+        "deepmerge": "^2.1.1",
+        "hoist-non-react-statics": "^3.3.0",
+        "lodash": "^4.17.21",
+        "lodash-es": "^4.17.21",
+        "react-fast-compare": "^2.0.1",
+        "tiny-warning": "^1.0.2",
+        "tslib": "^2.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=16.8.0"
+      }
+    },
+    "node_modules/framer-motion": {
+      "version": "12.40.0",
+      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-12.40.0.tgz",
+      "integrity": "sha512-uaBd3qC1v3KQqBEjwTUd183K6PbS+j0yR9w9VmEOLWA/tnUcSn8Xa3uck7t4dgpDoUss8xQTcj8W2L07lrnLFg==",
+      "license": "MIT",
+      "dependencies": {
+        "motion-dom": "^12.40.0",
+        "motion-utils": "^12.39.0",
+        "tslib": "^2.4.0"
+      },
+      "peerDependencies": {
+        "@emotion/is-prop-valid": "*",
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@emotion/is-prop-valid": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/fsevents": {
+      "version": "2.3.3",
+      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "hasInstallScript": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
+      }
+    },
+    "node_modules/function-bind": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
+      "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
+      "license": "MIT",
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/gensync": {
+      "version": "1.0.0-beta.2",
+      "resolved": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
+      "integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/get-intrinsic": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz",
+      "integrity": "sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==",
+      "license": "MIT",
+      "dependencies": {
+        "call-bind-apply-helpers": "^1.0.2",
+        "es-define-property": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "es-object-atoms": "^1.1.1",
+        "function-bind": "^1.1.2",
+        "get-proto": "^1.0.1",
+        "gopd": "^1.2.0",
+        "has-symbols": "^1.1.0",
+        "hasown": "^2.0.2",
+        "math-intrinsics": "^1.1.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/get-proto": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz",
+      "integrity": "sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==",
+      "license": "MIT",
+      "dependencies": {
+        "dunder-proto": "^1.0.1",
+        "es-object-atoms": "^1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/glob-parent": {
+      "version": "6.0.2",
+      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz",
+      "integrity": "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "is-glob": "^4.0.3"
+      },
+      "engines": {
+        "node": ">=10.13.0"
+      }
+    },
+    "node_modules/globals": {
+      "version": "17.6.0",
+      "resolved": "https://registry.npmjs.org/globals/-/globals-17.6.0.tgz",
+      "integrity": "sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/gopd": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz",
+      "integrity": "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/graceful-fs": {
+      "version": "4.2.11",
+      "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz",
+      "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==",
+      "license": "ISC"
+    },
+    "node_modules/has-symbols": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz",
+      "integrity": "sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/has-tostringtag": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz",
+      "integrity": "sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==",
+      "license": "MIT",
+      "dependencies": {
+        "has-symbols": "^1.0.3"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/hasown": {
+      "version": "2.0.4",
+      "resolved": "https://registry.npmjs.org/hasown/-/hasown-2.0.4.tgz",
+      "integrity": "sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==",
+      "license": "MIT",
+      "dependencies": {
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/hermes-estree": {
+      "version": "0.25.1",
+      "resolved": "https://registry.npmjs.org/hermes-estree/-/hermes-estree-0.25.1.tgz",
+      "integrity": "sha512-0wUoCcLp+5Ev5pDW2OriHC2MJCbwLwuRx+gAqMTOkGKJJiBCLjtrvy4PWUGn6MIVefecRpzoOZ/UV6iGdOr+Cw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/hermes-parser": {
+      "version": "0.25.1",
+      "resolved": "https://registry.npmjs.org/hermes-parser/-/hermes-parser-0.25.1.tgz",
+      "integrity": "sha512-6pEjquH3rqaI6cYAXYPcz9MS4rY6R4ngRgrgfDshRptUZIc3lw0MCIJIGDj9++mfySOuPTHB4nrSW99BCvOPIA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "hermes-estree": "0.25.1"
+      }
+    },
+    "node_modules/hoist-non-react-statics": {
+      "version": "3.3.2",
+      "resolved": "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz",
+      "integrity": "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==",
+      "license": "BSD-3-Clause",
+      "dependencies": {
+        "react-is": "^16.7.0"
+      }
+    },
+    "node_modules/html-parse-stringify": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/html-parse-stringify/-/html-parse-stringify-3.0.1.tgz",
+      "integrity": "sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==",
+      "license": "MIT",
+      "dependencies": {
+        "void-elements": "3.1.0"
+      }
+    },
+    "node_modules/https-proxy-agent": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz",
+      "integrity": "sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==",
+      "license": "MIT",
+      "dependencies": {
+        "agent-base": "6",
+        "debug": "4"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/i18next": {
+      "version": "26.3.1",
+      "resolved": "https://registry.npmjs.org/i18next/-/i18next-26.3.1.tgz",
+      "integrity": "sha512-txQqd5EULsqEh9OJqRH15aCaOuy/nLJyhw5EHCSKLKJE1aBbb3Zve2+uQIxgWhPm1QqUQoWyQBm2kfmmIrzkcQ==",
+      "funding": [
+        {
+          "type": "individual",
+          "url": "https://www.locize.com/i18next"
+        },
+        {
+          "type": "individual",
+          "url": "https://www.i18next.com/how-to/faq#i18next-is-awesome.-how-can-i-support-the-project"
+        },
+        {
+          "type": "individual",
+          "url": "https://www.locize.com"
+        }
+      ],
+      "license": "MIT",
+      "peerDependencies": {
+        "typescript": "^5 || ^6"
+      },
+      "peerDependenciesMeta": {
+        "typescript": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/ignore": {
+      "version": "5.3.2",
+      "resolved": "https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz",
+      "integrity": "sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 4"
+      }
+    },
+    "node_modules/imurmurhash": {
+      "version": "0.1.4",
+      "resolved": "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz",
+      "integrity": "sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.8.19"
+      }
+    },
+    "node_modules/is-extglob": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
+      "integrity": "sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/is-glob": {
+      "version": "4.0.3",
+      "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+      "integrity": "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "is-extglob": "^2.1.1"
+      },
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/isexe": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
+      "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/jiti": {
+      "version": "2.7.0",
+      "resolved": "https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz",
+      "integrity": "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==",
+      "license": "MIT",
+      "bin": {
+        "jiti": "lib/jiti-cli.mjs"
+      }
+    },
+    "node_modules/js-tokens": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/jsesc": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz",
+      "integrity": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "jsesc": "bin/jsesc"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/json-buffer": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/json-buffer/-/json-buffer-3.0.1.tgz",
+      "integrity": "sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/json-schema-traverse": {
+      "version": "0.4.1",
+      "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
+      "integrity": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/json-stable-stringify-without-jsonify": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
+      "integrity": "sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/json5": {
+      "version": "2.2.3",
+      "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
+      "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "json5": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/keyv": {
+      "version": "4.5.4",
+      "resolved": "https://registry.npmjs.org/keyv/-/keyv-4.5.4.tgz",
+      "integrity": "sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "json-buffer": "3.0.1"
+      }
+    },
+    "node_modules/levn": {
+      "version": "0.4.1",
+      "resolved": "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz",
+      "integrity": "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "prelude-ls": "^1.2.1",
+        "type-check": "~0.4.0"
+      },
+      "engines": {
+        "node": ">= 0.8.0"
+      }
+    },
+    "node_modules/lightningcss": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz",
+      "integrity": "sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==",
+      "license": "MPL-2.0",
+      "dependencies": {
+        "detect-libc": "^2.0.3"
+      },
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      },
+      "optionalDependencies": {
+        "lightningcss-android-arm64": "1.32.0",
+        "lightningcss-darwin-arm64": "1.32.0",
+        "lightningcss-darwin-x64": "1.32.0",
+        "lightningcss-freebsd-x64": "1.32.0",
+        "lightningcss-linux-arm-gnueabihf": "1.32.0",
+        "lightningcss-linux-arm64-gnu": "1.32.0",
+        "lightningcss-linux-arm64-musl": "1.32.0",
+        "lightningcss-linux-x64-gnu": "1.32.0",
+        "lightningcss-linux-x64-musl": "1.32.0",
+        "lightningcss-win32-arm64-msvc": "1.32.0",
+        "lightningcss-win32-x64-msvc": "1.32.0"
+      }
+    },
+    "node_modules/lightningcss-android-arm64": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-android-arm64/-/lightningcss-android-arm64-1.32.0.tgz",
+      "integrity": "sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-darwin-arm64": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.32.0.tgz",
+      "integrity": "sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-darwin-x64": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.32.0.tgz",
+      "integrity": "sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-freebsd-x64": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.32.0.tgz",
+      "integrity": "sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-linux-arm-gnueabihf": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.32.0.tgz",
+      "integrity": "sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw==",
+      "cpu": [
+        "arm"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-linux-arm64-gnu": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.32.0.tgz",
+      "integrity": "sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-linux-arm64-musl": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.32.0.tgz",
+      "integrity": "sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-linux-x64-gnu": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.32.0.tgz",
+      "integrity": "sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-linux-x64-musl": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.32.0.tgz",
+      "integrity": "sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-win32-arm64-msvc": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.32.0.tgz",
+      "integrity": "sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/lightningcss-win32-x64-msvc": {
+      "version": "1.32.0",
+      "resolved": "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz",
+      "integrity": "sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "MPL-2.0",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">= 12.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/locate-path": {
+      "version": "6.0.0",
+      "resolved": "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz",
+      "integrity": "sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "p-locate": "^5.0.0"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/lodash": {
+      "version": "4.18.1",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.18.1.tgz",
+      "integrity": "sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==",
+      "license": "MIT"
+    },
+    "node_modules/lodash-es": {
+      "version": "4.18.1",
+      "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.18.1.tgz",
+      "integrity": "sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==",
+      "license": "MIT"
+    },
+    "node_modules/lru-cache": {
+      "version": "5.1.1",
+      "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz",
+      "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "yallist": "^3.0.2"
+      }
+    },
+    "node_modules/lucide-react": {
+      "version": "1.18.0",
+      "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.18.0.tgz",
+      "integrity": "sha512-LZDb7H/0YfM+RJncD0hDQRCAu+vSGODqpe35TuVI8EuXaRjkczbsx7p8dY4J87F/MUSj6bpYqeI8nw8qXaAdmA==",
+      "license": "ISC",
+      "peerDependencies": {
+        "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      }
+    },
+    "node_modules/magic-string": {
+      "version": "0.30.21",
+      "resolved": "https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz",
+      "integrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/sourcemap-codec": "^1.5.5"
+      }
+    },
+    "node_modules/math-intrinsics": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz",
+      "integrity": "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/mime-db": {
+      "version": "1.52.0",
+      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/mime-types": {
+      "version": "2.1.35",
+      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+      "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+      "license": "MIT",
+      "dependencies": {
+        "mime-db": "1.52.0"
+      },
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/minimatch": {
+      "version": "10.2.5",
+      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.5.tgz",
+      "integrity": "sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==",
+      "dev": true,
+      "license": "BlueOak-1.0.0",
+      "dependencies": {
+        "brace-expansion": "^5.0.5"
+      },
+      "engines": {
+        "node": "18 || 20 || >=22"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/isaacs"
+      }
+    },
+    "node_modules/motion": {
+      "version": "12.40.0",
+      "resolved": "https://registry.npmjs.org/motion/-/motion-12.40.0.tgz",
+      "integrity": "sha512-yjrHUrBFW6kQvjJwRsoiPSAhC5tRwRqNGJWmiJ4CrGnbKp0V88AdzkhBmDoqIsIPfarOe0Uddd37Xq43/gIocA==",
+      "license": "MIT",
+      "dependencies": {
+        "framer-motion": "^12.40.0",
+        "tslib": "^2.4.0"
+      },
+      "peerDependencies": {
+        "@emotion/is-prop-valid": "*",
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@emotion/is-prop-valid": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/motion-dom": {
+      "version": "12.40.0",
+      "resolved": "https://registry.npmjs.org/motion-dom/-/motion-dom-12.40.0.tgz",
+      "integrity": "sha512-HxU3ZaBwNPVQUBQf1xxgq+7JrPNZvjLVxgbpEZL7RrWJnsxOf0/OM+yrHG9ogLQ31Do/r57Oz2gQWPK+6q62mg==",
+      "license": "MIT",
+      "dependencies": {
+        "motion-utils": "^12.39.0"
+      }
+    },
+    "node_modules/motion-utils": {
+      "version": "12.39.0",
+      "resolved": "https://registry.npmjs.org/motion-utils/-/motion-utils-12.39.0.tgz",
+      "integrity": "sha512-8nadJAJjTtqRkmRF36FoJTrywK9nnFmnPwnSMyxaOCU7GDjN9RTMJIxx9De8ErM+vpPhMccr/6fo5WciyQLnMQ==",
+      "license": "MIT"
+    },
+    "node_modules/ms": {
+      "version": "2.1.3",
+      "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+      "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+      "license": "MIT"
+    },
+    "node_modules/nanoid": {
+      "version": "3.3.12",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.12.tgz",
+      "integrity": "sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==",
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "bin": {
+        "nanoid": "bin/nanoid.cjs"
+      },
+      "engines": {
+        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+      }
+    },
+    "node_modules/natural-compare": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
+      "integrity": "sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/node-releases": {
+      "version": "2.0.47",
+      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.47.tgz",
+      "integrity": "sha512-Uzmd6LXpouKo8EUK68IjH4+E01w/hXyV3R3g/geCJo+rXLNfh1xucB+LOzYEOQPSiUK3h/xZf0cQGcSsmyL2Og==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/optionator": {
+      "version": "0.9.4",
+      "resolved": "https://registry.npmjs.org/optionator/-/optionator-0.9.4.tgz",
+      "integrity": "sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "deep-is": "^0.1.3",
+        "fast-levenshtein": "^2.0.6",
+        "levn": "^0.4.1",
+        "prelude-ls": "^1.2.1",
+        "type-check": "^0.4.0",
+        "word-wrap": "^1.2.5"
+      },
+      "engines": {
+        "node": ">= 0.8.0"
+      }
+    },
+    "node_modules/p-limit": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz",
+      "integrity": "sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "yocto-queue": "^0.1.0"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/p-locate": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/p-locate/-/p-locate-5.0.0.tgz",
+      "integrity": "sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "p-limit": "^3.0.2"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/path-exists": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
+      "integrity": "sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/path-key": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
+      "integrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/picocolors": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "license": "ISC"
+    },
+    "node_modules/picomatch": {
+      "version": "4.0.4",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.4.tgz",
+      "integrity": "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=12"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/jonschlinkert"
+      }
+    },
+    "node_modules/postcss": {
+      "version": "8.5.15",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.15.tgz",
+      "integrity": "sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==",
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/postcss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "nanoid": "^3.3.12",
+        "picocolors": "^1.1.1",
+        "source-map-js": "^1.2.1"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/prelude-ls": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
+      "integrity": "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.8.0"
+      }
+    },
+    "node_modules/property-expr": {
+      "version": "2.0.6",
+      "resolved": "https://registry.npmjs.org/property-expr/-/property-expr-2.0.6.tgz",
+      "integrity": "sha512-SVtmxhRE/CGkn3eZY1T6pC8Nln6Fr/lu1mKSgRud0eC73whjGfoAogbn78LkD8aFL0zz3bAFerKSnOl7NlErBA==",
+      "license": "MIT"
+    },
+    "node_modules/proxy-from-env": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-2.1.0.tgz",
+      "integrity": "sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "node_modules/punycode": {
+      "version": "2.3.1",
+      "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz",
+      "integrity": "sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/react": {
+      "version": "19.2.7",
+      "resolved": "https://registry.npmjs.org/react/-/react-19.2.7.tgz",
+      "integrity": "sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-dom": {
+      "version": "19.2.7",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.7.tgz",
+      "integrity": "sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==",
+      "license": "MIT",
+      "dependencies": {
+        "scheduler": "^0.27.0"
+      },
+      "peerDependencies": {
+        "react": "^19.2.7"
+      }
+    },
+    "node_modules/react-fast-compare": {
+      "version": "2.0.4",
+      "resolved": "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-2.0.4.tgz",
+      "integrity": "sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==",
+      "license": "MIT"
+    },
+    "node_modules/react-i18next": {
+      "version": "17.0.8",
+      "resolved": "https://registry.npmjs.org/react-i18next/-/react-i18next-17.0.8.tgz",
+      "integrity": "sha512-0ooKbGLU8JXhe1zwpQUWIeXSgLPOfwJmgheWRIUpcoA0CpyabpGhayjdG+/eA5esC1AQ8h2jWpXjJfzQzeDOCw==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/runtime": "^7.29.2",
+        "html-parse-stringify": "^3.0.1",
+        "use-sync-external-store": "^1.6.0"
+      },
+      "peerDependencies": {
+        "i18next": ">= 26.2.0",
+        "react": ">= 16.8.0",
+        "typescript": "^5 || ^6"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        },
+        "react-native": {
+          "optional": true
+        },
+        "typescript": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/react-is": {
+      "version": "16.13.1",
+      "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
+      "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
+      "license": "MIT"
+    },
+    "node_modules/react-router": {
+      "version": "7.17.0",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-7.17.0.tgz",
+      "integrity": "sha512-FDELK7rTMlCHO5+reyXsPlmfr7N1F91lPHsWYfMEGQm/KQ+F4JFM8jGoeQDmDvdTs93Fw9aSilH+uKRb4/jXvQ==",
+      "license": "MIT",
+      "dependencies": {
+        "cookie": "^1.0.1",
+        "set-cookie-parser": "^2.6.0"
+      },
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/react-router-dom": {
+      "version": "7.17.0",
+      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.17.0.tgz",
+      "integrity": "sha512-fyU2yjGups/hE6Xz0I5ZYbVL8Gx29eCjgpHaRaTaVU+OOAdfRX05KsvyRm0GO8YQwOkhpU3MurW1jyMUJn+zSw==",
+      "license": "MIT",
+      "dependencies": {
+        "react-router": "7.17.0"
+      },
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+      }
+    },
+    "node_modules/rolldown": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/rolldown/-/rolldown-1.0.3.tgz",
+      "integrity": "sha512-i00lAJ2ks1BYr7rjNjKC7BcqAS7nVfiT3QX1SI5aY+AFHblCmaUf9OE9dbdzDvW6dJxbi2ZCZiy9v3CcwOiX3g==",
+      "license": "MIT",
+      "dependencies": {
+        "@oxc-project/types": "=0.133.0",
+        "@rolldown/pluginutils": "^1.0.0"
+      },
+      "bin": {
+        "rolldown": "bin/cli.mjs"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "optionalDependencies": {
+        "@rolldown/binding-android-arm64": "1.0.3",
+        "@rolldown/binding-darwin-arm64": "1.0.3",
+        "@rolldown/binding-darwin-x64": "1.0.3",
+        "@rolldown/binding-freebsd-x64": "1.0.3",
+        "@rolldown/binding-linux-arm-gnueabihf": "1.0.3",
+        "@rolldown/binding-linux-arm64-gnu": "1.0.3",
+        "@rolldown/binding-linux-arm64-musl": "1.0.3",
+        "@rolldown/binding-linux-ppc64-gnu": "1.0.3",
+        "@rolldown/binding-linux-s390x-gnu": "1.0.3",
+        "@rolldown/binding-linux-x64-gnu": "1.0.3",
+        "@rolldown/binding-linux-x64-musl": "1.0.3",
+        "@rolldown/binding-openharmony-arm64": "1.0.3",
+        "@rolldown/binding-wasm32-wasi": "1.0.3",
+        "@rolldown/binding-win32-arm64-msvc": "1.0.3",
+        "@rolldown/binding-win32-x64-msvc": "1.0.3"
+      }
+    },
+    "node_modules/scheduler": {
+      "version": "0.27.0",
+      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz",
+      "integrity": "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==",
+      "license": "MIT"
+    },
+    "node_modules/semver": {
+      "version": "6.3.1",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz",
+      "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
+      "dev": true,
+      "license": "ISC",
+      "bin": {
+        "semver": "bin/semver.js"
+      }
+    },
+    "node_modules/set-cookie-parser": {
+      "version": "2.7.2",
+      "resolved": "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz",
+      "integrity": "sha512-oeM1lpU/UvhTxw+g3cIfxXHyJRc/uidd3yK1P242gzHds0udQBYzs3y8j4gCCW+ZJ7ad0yctld8RYO+bdurlvw==",
+      "license": "MIT"
+    },
+    "node_modules/shebang-command": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
+      "integrity": "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "shebang-regex": "^3.0.0"
+      },
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/shebang-regex": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
+      "integrity": "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/source-map-js": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz",
+      "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/tailwindcss": {
+      "version": "4.3.1",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.1.tgz",
+      "integrity": "sha512-hk+TB1m+K8CYNrP6rjQaq/Y+4Zylwpa87mLYBKCunwnnQ9p+fHb7kmSfGqyEJoxF/O6CDyABWVFEafNSYKll+Q==",
+      "license": "MIT"
+    },
+    "node_modules/tapable": {
+      "version": "2.3.3",
+      "resolved": "https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz",
+      "integrity": "sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/webpack"
+      }
+    },
+    "node_modules/tiny-case": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/tiny-case/-/tiny-case-1.0.3.tgz",
+      "integrity": "sha512-Eet/eeMhkO6TX8mnUteS9zgPbUMQa4I6Kkp5ORiBD5476/m+PIRiumP5tmh5ioJpH7k51Kehawy2UDfsnxxY8Q==",
+      "license": "MIT"
+    },
+    "node_modules/tiny-warning": {
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz",
+      "integrity": "sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==",
+      "license": "MIT"
+    },
+    "node_modules/tinyglobby": {
+      "version": "0.2.17",
+      "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+      "integrity": "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==",
+      "license": "MIT",
+      "dependencies": {
+        "fdir": "^6.5.0",
+        "picomatch": "^4.0.4"
+      },
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/SuperchupuDev"
+      }
+    },
+    "node_modules/toposort": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/toposort/-/toposort-2.0.2.tgz",
+      "integrity": "sha512-0a5EOkAUp8D4moMi2W8ZF8jcga7BgZd91O/yabJCFY8az+XSzeGyTKs0Aoo897iV1Nj6guFq8orWDS96z91oGg==",
+      "license": "MIT"
+    },
+    "node_modules/tslib": {
+      "version": "2.8.1",
+      "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz",
+      "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
+      "license": "0BSD"
+    },
+    "node_modules/type-check": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
+      "integrity": "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "prelude-ls": "^1.2.1"
+      },
+      "engines": {
+        "node": ">= 0.8.0"
+      }
+    },
+    "node_modules/type-fest": {
+      "version": "2.19.0",
+      "resolved": "https://registry.npmjs.org/type-fest/-/type-fest-2.19.0.tgz",
+      "integrity": "sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==",
+      "license": "(MIT OR CC0-1.0)",
+      "engines": {
+        "node": ">=12.20"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/update-browserslist-db": {
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz",
+      "integrity": "sha512-Js0m9cx+qOgDxo0eMiFGEueWztz+d4+M3rGlmKPT+T4IS/jP4ylw3Nwpu6cpTTP8R1MAC1kF4VbdLt3ARf209w==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/browserslist"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "escalade": "^3.2.0",
+        "picocolors": "^1.1.1"
+      },
+      "bin": {
+        "update-browserslist-db": "cli.js"
+      },
+      "peerDependencies": {
+        "browserslist": ">= 4.21.0"
+      }
+    },
+    "node_modules/uri-js": {
+      "version": "4.4.1",
+      "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
+      "integrity": "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==",
+      "dev": true,
+      "license": "BSD-2-Clause",
+      "dependencies": {
+        "punycode": "^2.1.0"
+      }
+    },
+    "node_modules/use-sync-external-store": {
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz",
+      "integrity": "sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==",
+      "license": "MIT",
+      "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      }
+    },
+    "node_modules/vite": {
+      "version": "8.0.16",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.0.16.tgz",
+      "integrity": "sha512-h9bXPmJichP5fLmVQo3PyaGSDE2n3aPuomeAlVRm0JLmt4rY6zmPKd59HYI4LNW8oTK7tlTsuC7l/m7awx9Jcw==",
+      "license": "MIT",
+      "dependencies": {
+        "lightningcss": "^1.32.0",
+        "picomatch": "^4.0.4",
+        "postcss": "^8.5.15",
+        "rolldown": "1.0.3",
+        "tinyglobby": "^0.2.17"
+      },
+      "bin": {
+        "vite": "bin/vite.js"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "funding": {
+        "url": "https://github.com/vitejs/vite?sponsor=1"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.3"
+      },
+      "peerDependencies": {
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "@vitejs/devtools": "^0.1.18",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "sass-embedded": "^1.70.0",
+        "stylus": ">=0.54.8",
+        "sugarss": "^5.0.0",
+        "terser": "^5.16.0",
+        "tsx": "^4.8.1",
+        "yaml": "^2.4.2"
+      },
+      "peerDependenciesMeta": {
+        "@types/node": {
+          "optional": true
+        },
+        "@vitejs/devtools": {
+          "optional": true
+        },
+        "esbuild": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "tsx": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/void-elements": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/void-elements/-/void-elements-3.1.0.tgz",
+      "integrity": "sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/which": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
+      "integrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "isexe": "^2.0.0"
+      },
+      "bin": {
+        "node-which": "bin/node-which"
+      },
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/word-wrap": {
+      "version": "1.2.5",
+      "resolved": "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.5.tgz",
+      "integrity": "sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/yallist": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz",
+      "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/yocto-queue": {
+      "version": "0.1.0",
+      "resolved": "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz",
+      "integrity": "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/yup": {
+      "version": "1.7.1",
+      "resolved": "https://registry.npmjs.org/yup/-/yup-1.7.1.tgz",
+      "integrity": "sha512-GKHFX2nXul2/4Dtfxhozv701jLQHdf6J34YDh2cEkpqoo8le5Mg6/LrdseVLrFarmFygZTlfIhHx/QKfb/QWXw==",
+      "license": "MIT",
+      "dependencies": {
+        "property-expr": "^2.0.5",
+        "tiny-case": "^1.0.3",
+        "toposort": "^2.0.2",
+        "type-fest": "^2.19.0"
+      }
+    },
+    "node_modules/zod": {
+      "version": "4.4.3",
+      "resolved": "https://registry.npmjs.org/zod/-/zod-4.4.3.tgz",
+      "integrity": "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==",
+      "dev": true,
+      "license": "MIT",
+      "funding": {
+        "url": "https://github.com/sponsors/colinhacks"
+      }
+    },
+    "node_modules/zod-validation-error": {
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/zod-validation-error/-/zod-validation-error-4.0.2.tgz",
+      "integrity": "sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "peerDependencies": {
+        "zod": "^3.25.0 || ^4.0.0"
+      }
+    }
+  }
+}
+
+```
+
+---
+
+### <a id="📄-package-json"></a>📄 `package.json`
+
+**File Info:**
+- **Size**: 968 B
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `package.json`
+- **Relative Path**: `root`
+- **Created**: 2026-08-17 16:50:30 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `8bfeb05ddbf96ff02d3fe69c252456ae`
+- **SHA256**: `0722fb7c54cb1bf07c4ec336ec21e1aaf0971c1c381c636d7c08a148c8853663`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "name": "medical-assistant",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "axios": "^1.19.0",
+    "formik": "^2.4.9",
+    "framer-motion": "^12.40.0",
+    "i18next": "^26.3.1",
+    "lucide-react": "^1.18.0",
+    "motion": "^12.40.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-i18next": "^17.0.8",
+    "react-router-dom": "^7.17.0",
+    "tailwindcss": "^4.3.1",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "vite": "^8.0.12"
+  }
+}
+
+```
+
+---
+
+### <a id="📄-readme-md"></a>📄 `README.md`
+
+**File Info:**
+- **Size**: 1.02 KB
+- **Extension**: `.md`
+- **Language**: `text`
+- **Location**: `README.md`
+- **Relative Path**: `root`
+- **Created**: 2026-08-17 16:50:34 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `abfa161e3e5434e3e85394bf03d387a4`
+- **SHA256**: `a2648adf2f4e92d188d79e14c2b26e207bb0654e90beb5d99e7eb594d995fe65`
+- **Encoding**: ASCII
+
+**File code content:**
+
+````markdown
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+````
+
+---
+
+### <a id="📄-vite-config-js"></a>📄 `vite.config.js`
+
+**File Info:**
+- **Size**: 342 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `vite.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-08-17 16:51:10 (Asia/Damascus / GMT+03:00)
+- **Modified**: 2026-08-17 20:13:34 (Asia/Damascus / GMT+03:00)
+- **MD5**: `b107dbeb1787c4c8dfda9494aa960d45`
+- **SHA256**: `17a0e998bee561b982d9806f27b8a2333071cf0d18fa26fca1520f763cd75748`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://127.0.0.1:8000",
+        changeOrigin: true,
+      },
+    },
+  },
+});
+
+```
+
+---
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `pregnancy_mt5_train.jsonl`
+

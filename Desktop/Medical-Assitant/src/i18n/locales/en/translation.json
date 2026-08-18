@@ -1,0 +1,324 @@
+{
+  "auth": {
+    "sidebar": {
+      "title": "Smart Medical Assistant",
+      "titleHighlight": "For Doctors",
+      "description": "An all-in-one platform that helps doctors manage medical records, track cases, and get instant clinical support.",
+      "features": [
+        {
+          "title": "Report ready immediately"
+        },
+        {
+          "title": "Saving documentation time"
+        },
+        {
+          "title": "Patient Data Protection"
+        }
+      ],
+      "quote": "Medicine is an art that requires precision and care. We're here to make your work easier and more efficient."
+    },
+
+    "welcomeBack": "Welcome back",
+    "welcomeSubtitle": "Sign in to continue to your dashboard",
+
+    "email": "Email address",
+    "emailPlaceholder": "doctor@hospital.com",
+
+    "password": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+
+    "login": "Sign in",
+    "loggingIn": "Signing in...",
+    "logout": "Log out",
+    "loggingOut": "Signing out...",
+
+    "or": "or",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create a new account",
+
+    "errors": {
+      "emailInvalid": "Invalid email address",
+      "emailRequired": "Email is required",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordRequired": "Password is required",
+      "tokenMissing": "You signed in successfully, but no authentication token was returned by the server.",
+      "generic": "Something went wrong while signing in. Please check your details and try again"
+    },
+
+    "register": {
+      "title": "Create a new account",
+      "subtitle": "Join MedAssist and get complete support for pregnancy follow-up",
+
+      "steps": {
+        "personalInfo": "Personal information",
+        "professionalInfo": "Professional information"
+      },
+
+      "firstName": "First name",
+      "firstNamePlaceholder": "Zain",
+
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Rahmoun",
+
+      "phone": "Phone number",
+      "phonePlaceholder": "9xx xxx xxx",
+
+      "specialty": "Medical specialty",
+      "specialtyPlaceholder": "Select specialty",
+
+      "specialties": [
+        "Obstetrics & Gynecology",
+        "Fetal & Neonatal Medicine",
+        "Pregnancy Nutrition",
+        "Other"
+      ],
+
+      "licenseNumber": "Medical license number",
+      "licenseNumberPlaceholder": "MED-XXXXXXX",
+
+      "clinicName": "Hospital / Clinic (optional)",
+      "clinicNamePlaceholder": "Maternity Specialist Hospital",
+
+      "confirmPassword": "Confirm password",
+      "passwordMin": "Password must be at least 8 characters",
+
+      "agreeTermsPrefix": "I agree to the",
+      "termsLink": "Terms & Conditions",
+      "and": "and",
+      "privacyLink": "Privacy Policy",
+
+      "next": "Next",
+      "back": "Back",
+
+      "createAccount": "Create account",
+      "creatingAccount": "Creating account...",
+
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+
+      "errors": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "phoneRequired": "Phone number is required",
+        "specialtyRequired": "Please select your specialty",
+        "licenseRequired": "Medical license number is required",
+        "confirmPasswordRequired": "Please confirm your password",
+        "confirmPasswordMismatch": "Passwords do not match",
+        "termsRequired": "You must agree to the terms to continue",
+        "generic": "Something went wrong while creating your account, please try again"
+      }
+    },
+
+    "verify": {
+      "title": "Verify your email",
+      "subtitle": "Enter the verification code sent to your email",
+      "sentTo": "We sent a verification code to",
+      "codeLabel": "Verification code",
+
+      "verifyButton": "Verify code",
+      "verifying": "Verifying...",
+
+      "noCode": "Didn't receive the code?",
+      "resend": "Resend code",
+      "resendIn": "Resend in {{seconds}}s",
+
+      "codeExpiresIn": "Verification code expires in",
+"codeExpired": "The verification code has expired",
+"resendSuccess": "A new verification code has been sent to your email",
+"resending": "Resending...",
+
+      "backToLogin": "Back to sign in",
+
+      "errors": {
+        "codeIncomplete": "Please enter the full 6-digit code",
+        "codeInvalid": "Invalid verification code, please try again",
+        "resendFailed": "Couldn't resend the code, please try again"
+      }
+    },
+
+    "forgetPass": {
+      "title": "Forgot Password?",
+      "subtitle": "Enter your email address and we'll send you a reset link.",
+      "sendTo": "We'll send a link to your email to reset your password. Make sure you enter the email associated with your account.",
+      "Mail": "Email Address",
+      "sendButton": "Send Reset Link",
+      "back": "Back to login",
+      "sending": "Sending verification code...",
+"errors": {
+  "sendFailed": "Couldn't send the verification code. Check your email and try again"
+}
+    },
+
+    "resetPass": {
+      "title": "Create a New Password",
+      "subtitle": "Enter a strong password to protect your account.",
+      "titleF1": "New Password",
+      "titleF2": "Confirm Password",
+      "sendButton": "Save New Password",
+      "back": "Back to Sign In",
+      "success": "Your password has been changed successfully. You can now sign in.",
+
+      "resetting": "Resetting password...",
+"errors": {
+  "uppercase": "Password must contain at least one uppercase letter",
+  "lowercase": "Password must contain at least one lowercase letter",
+  "symbol": "Password must contain at least one special character",
+  "resetFailed": "Couldn't reset your password. Please try again"
+}
+    }
+  },
+
+  "dashboard": {
+    "stats": {
+      "warnings": "Warnings",
+      "alert": "Alert",
+      "approvedToday": "Approved Today",
+      "sessions": "Sessions",
+      "inProgress": "In Progress",
+      "session": "Session",
+      "todaySessions": "Today's Sessions",
+      "newSessions": "New",
+      "totalPatients": "Total Patients",
+      "appointmentsToday": "Today's Appointments",
+      "revenue": "Revenue",
+      "occupancy": "Bed Occupancy Rate"
+    },
+
+    "sessions": {
+      "title": "Sessions",
+      "subtitle": "Manage and monitor all your medical sessions",
+      "sessionNumber": "Session Number",
+      "patient": "Patient",
+      "date": "Date",
+      "duration": "Duration",
+      "status": "Status",
+      "actions": "Actions",
+      "searchPatient": "Search by patient name...",
+      "allCases": "All Cases",
+      "pending": "Pending Review",
+      "processing": "In Treatment",
+      "approved": "Approved",
+      "pendingReview": "Pending Review",
+      "inTreatment": "In Treatment",
+      "newSession": "New Session"
+    },
+
+    "charts": {
+      "weeklyActivity": "Weekly Activity",
+      "analytics": "Medical Flow & Revenue Analytics",
+      "viewReport": "View Report",
+      "distribution": "Case Distribution"
+    },
+
+    "quickActions": {
+      "title": "Quick Actions",
+      "newSession": "Start New Session",
+      "viewSessions": "View Sessions"
+    },
+
+    "recentSessions": {
+      "title": "Recent Sessions",
+      "subtitle": "Latest Sessions",
+      "viewAll": "View All"
+    },
+
+    "menu": {
+      "overview": "Overview",
+      "appointments": "Appointments & Schedule",
+      "patients": "Patient Management",
+      "sessions": "Sessions",
+      "newSession": "New Session",
+      "reports": "Approved Reports",
+      "settings": "Settings",
+      "profile": "Profile"
+    },
+
+    "common": {
+      "emptyFeature": "This screen is currently under development and will be linked soon."
+    },
+
+    "profile": {
+      "doctorName": "Dr. Ahmed Mohamed",
+      "doctorTitle": "Practicing Physician",
+      "doctorInitial": "Dr",
+      "title": "Doctor Profile",
+      "subtitle": "Manage your account settings and specialties",
+      "personalInfo": "Personal Information",
+      "professionalInfo": "Professional Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone Number",
+      "hospitalOrClinic": "Hospital or Clinic",
+      "email": "Email Address",
+      "specialties": "Medical Specialties",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "success": "Profile updated successfully!",
+      "imageSuccess": "Profile picture updated successfully!",
+      "imageError": "Failed to upload profile picture.",
+      "saveError": "Failed to update profile details.",
+      "imageSizeError": "Image must be smaller than 5MB.",
+      "loadingData": "Loading profile details...",
+      "changePhoto": "Change Photo",
+      "selectSpecialty": "Add a specialty...",
+      "specialtyRequired": "At least one specialty is required",
+      "fetchErrorTitle": "Failed to load profile data",
+      "tryAgain": "Try Again"
+    },
+
+    "reports": {
+      "title": "Approved Reports",
+      "subtitle": "All approved medical reports",
+      "approved": "Approved",
+      "viewAll": "View All",
+      "backToReports": "Back to Reports",
+      "reportTitle": "Medical Report",
+      "medicalReport": "Medical Report",
+      "reportSubtitle": "Medical Assistant – Smart Documentation System",
+      "approvedOn": "Approved on",
+      "downloadPDF": "Download PDF",
+      "copyText": "Copy Text",
+      "copySuccess": "Report copied successfully!",
+      "patientName": "Patient Name",
+      "sessionNumber": "Session Number",
+      "date": "Date",
+      "duration": "Duration",
+      "symptoms": "Symptoms",
+      "symptomsLabel": "Symptoms",
+      "diagnosis": "Diagnosis",
+      "diagnosisLabel": "Diagnosis",
+      "treatmentPlan": "Treatment Plan",
+      "treatmentLabel": "Treatment Plan",
+      "soapSummary": "SOAP Summary",
+
+      "soap": {
+        "subjective": "SUBJECTIVE (S)",
+        "objective": "OBJECTIVE (O)",
+        "assessment": "ASSESSMENT (A)",
+        "plan": "PLAN (P)"
+      },
+
+      "reportDisclaimer": "This report was generated by the Medical Assistant AI system and has been reviewed and approved by the doctor.",
+      "doctorSignature": "Doctor's Signature"
+    }
+  },
+
+  "days": {
+    "sat": "Sat",
+    "sun": "Sun",
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri"
+  },
+
+  "common": {
+    "switchToEnglish": "English",
+    "switchToArabic": "العربية"
+  }
+}
