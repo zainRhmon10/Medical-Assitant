@@ -41,6 +41,11 @@ const NewSessionPage = () => {
   const [isRetryingSession, setIsRetryingSession] = useState(false);
   const [sessionError, setSessionError] = useState("");
   const idempotencyKeyRef = useRef(null);
+  const createVisitAtRef = useRef(null);
+
+  const previousPatientIdRef = useRef("");
+  const previousAudioRef = useRef(null);
+
   const pollingTimerRef = useRef(null);
 
   const step1Schema = useMemo(() => createStep1Schema(t), [t]);
@@ -58,6 +63,29 @@ const NewSessionPage = () => {
     validationSchema:
       step === 1 ? step1Schema : step === 2 ? step2Schema : undefined,
   });
+
+  const resetCreateRequestIdentity = useCallback(() => {
+    idempotencyKeyRef.current = null;
+    createVisitAtRef.current = null;
+  }, []);
+
+  useEffect(() => {
+    const patientChanged =
+      previousPatientIdRef.current !== formik.values.patientId;
+    const audioChanged =
+      previousAudioRef.current !== formik.values.diagnosisAudio;
+
+    if (patientChanged || audioChanged) {
+      resetCreateRequestIdentity();
+
+      previousPatientIdRef.current = formik.values.patientId;
+      previousAudioRef.current = formik.values.diagnosisAudio;
+    }
+  }, [
+    formik.values.patientId,
+    formik.values.diagnosisAudio,
+    resetCreateRequestIdentity,
+  ]);
 
   const stopPolling = useCallback(() => {
     if (pollingTimerRef.current) {
@@ -168,14 +196,14 @@ const NewSessionPage = () => {
     setIsCreatingSession(true);
     if (!idempotencyKeyRef.current) {
       idempotencyKeyRef.current = generateIdempotencyKey();
+      createVisitAtRef.current = new Date().toISOString();
     }
 
     try {
       const response = await createClinicalSession({
         patientId: formik.values.patientId,
         audio: formik.values.diagnosisAudio,
-        visitAt: null,
-
+        visitAt: createVisitAtRef.current,
         idempotencyKey: idempotencyKeyRef.current,
       });
 

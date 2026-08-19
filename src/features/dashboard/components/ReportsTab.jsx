@@ -16,8 +16,6 @@ const ReportsTab = () => {
   const navigate = useNavigate();
   const isRTL = i18n.language?.startsWith("ar");
 
-  // تمت الإضافة:
-  // التقارير المعتمدة أصبحت تأتي من Laravel بدل البيانات الوهمية.
   const [reports, setReports] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
@@ -44,16 +42,21 @@ const ReportsTab = () => {
 
   const getPatientName = (patient) => {
     if (!patient) {
-      return t("reports.unknownPatient", isRTL ? "مريض غير معروف" : "Unknown Patient");
+      return t(
+        "reports.unknownPatient",
+        isRTL ? "مريض غير معروف" : "Unknown Patient",
+      );
     }
 
-    const fullName = `${patient.first_name || ""} ${patient.last_name || ""}`.trim();
+    const fullName =
+      `${patient.first_name || ""} ${patient.last_name || ""}`.trim();
 
-    return fullName || t("reports.unknownPatient", isRTL ? "مريض غير معروف" : "Unknown Patient");
+    return (
+      fullName ||
+      t("reports.unknownPatient", isRTL ? "مريض غير معروف" : "Unknown Patient")
+    );
   };
 
-  // تمت الإضافة:
-  // GET /reports/finalized يعيد finalized_reports[] مباشرة داخل الـenvelope.
   const loadReports = useCallback(async () => {
     setIsLoading(true);
     setLoadError("");
@@ -155,15 +158,11 @@ const ReportsTab = () => {
             <h3 className="font-bold text-slate-800">
               {t(
                 "dashboard.reports.loadErrorTitle",
-                isRTL
-                  ? "تعذر تحميل التقارير"
-                  : "Couldn't Load Reports",
+                isRTL ? "تعذر تحميل التقارير" : "Couldn't Load Reports",
               )}
             </h3>
 
-            <p className="mt-2 max-w-md text-sm text-slate-500">
-              {loadError}
-            </p>
+            <p className="mt-2 max-w-md text-sm text-slate-500">{loadError}</p>
 
             <button
               type="button"
@@ -187,9 +186,7 @@ const ReportsTab = () => {
             <h3 className="font-bold text-slate-800">
               {t(
                 "dashboard.reports.empty",
-                isRTL
-                  ? "لا توجد تقارير معتمدة"
-                  : "No Finalized Reports",
+                isRTL ? "لا توجد تقارير معتمدة" : "No Finalized Reports",
               )}
             </h3>
 
