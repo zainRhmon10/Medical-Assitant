@@ -178,7 +178,7 @@ const ReviewQueue = ({ sessionId, onCorrectionSaved }) => {
   const openCorrection = (item) => {
     setEditingItem(item);
     setCorrectionForm({
-      text: item?.text ?? item?.text_rephrased ?? "",
+      text: item?.text_canonical?.trim() || item?.text || "",
       label: item?.label || "",
       soap_section: item?.soap_section || "",
       speaker: item?.speaker ?? "",
@@ -205,8 +205,8 @@ const ReviewQueue = ({ sessionId, onCorrectionSaved }) => {
     setSuccessMessage("");
     const changes = {};
     const originalText = (
-      editingItem?.text ??
-      editingItem?.text_rephrased ??
+      editingItem?.text_canonical?.trim() ||
+      editingItem?.text ||
       ""
     ).trim();
 
@@ -610,7 +610,7 @@ const ReviewQueue = ({ sessionId, onCorrectionSaved }) => {
 
                   <div className="p-4">
                     <p className="text-sm leading-8 text-slate-700">
-                      {item?.text_rephrased || item?.text || "-"}
+                      {item?.text_canonical?.trim() || item?.text || "-"}
                     </p>
 
                     {/* Metrics */}

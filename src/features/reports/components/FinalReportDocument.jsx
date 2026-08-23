@@ -22,7 +22,7 @@ const FinalReportDocument = ({ finalizedReport, session, patient }) => {
 
   const report = finalizedReport?.report_json || {};
   const patientInfo = report?.patient_info || {};
-  const soap = report?.soap || {};
+  const soap = report?.soap_formatted || report?.soap || {};
   const suggestions = Array.isArray(
     finalizedReport?.suggestions_json?.suggestions,
   )
@@ -388,9 +388,18 @@ const FinalReportDocument = ({ finalizedReport, session, patient }) => {
 
           <div className="grid grid-cols-1 gap-4">
             {soapSections.map((section) => {
-              const items = Array.isArray(soap?.[section.key]?.items)
-                ? soap[section.key].items
-                : [];
+              const sectionData = soap?.[section.key] || {};
+
+              const items = Array.isArray(sectionData?.items)
+                ? sectionData.items
+                : sectionData?.text
+                  ? [
+                      {
+                        text: sectionData.text,
+                        item_id: `${section.key}-formatted`,
+                      },
+                    ]
+                  : [];
 
               return (
                 <section

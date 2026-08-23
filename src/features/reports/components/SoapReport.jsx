@@ -56,7 +56,7 @@ const SoapReport = ({ report }) => {
   };
 
   const getItemText = (item) => {
-    return item?.text_rephrased || item?.text || "-";
+    return item?.text_canonical?.trim() || item?.text || "-";
   };
 
   const getItemLabel = (item) => {
